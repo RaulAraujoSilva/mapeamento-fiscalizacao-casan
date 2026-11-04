@@ -1,0 +1,9 @@
+dados/
+__pycache__/
+*.pyc
+.env
+.env.*
+~$*
+.pytest_cache/
+saida/.pipeline.lock
+.claude/settings.local.json

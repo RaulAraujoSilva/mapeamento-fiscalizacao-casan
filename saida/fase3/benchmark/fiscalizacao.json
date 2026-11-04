@@ -1,0 +1,710 @@
+{
+ "familia": "fiscalizacao",
+ "processos": [
+  "P06"
+ ],
+ "pergunta": "Que práticas documentadas de fiscalização baseada em risco, seleção de alvos por dados, monitoramento remoto, escalada responsiva, rapidez da decisão e indicadores de efeito aumentaram a conformidade ou reduziram o tempo em reguladores, e servem à fiscalização técnica de campo da AGENERSA em gás canalizado e saneamento?",
+ "estrategia_busca": [
+  "OpenAlex API (works?search= e works/doi:): \"Machine learning environmental monitoring\", \"Improving regulatory effectiveness through better targeting OSHA\", \"DETERring deforestation Amazon environmental monitoring law enforcement\", \"Crowdsourcing city government tournaments inspection accuracy\", \"Regulation by shaming deterrence publicizing violations\", \"effectiveness of environmental monitoring and enforcement review\", \"responsive regulation Dutch Food and Consumer Product Safety Authority\", \"risk-based inspection reform regulatory enforcement results evaluation\", \"Blanc inspections risk-based enforcement reform\", \"predictive analytics restaurant inspections Chicago\", \"regulação responsiva fiscalização ANEEL\", \"fiscalização baseada em risco agência reguladora\", \"processo administrativo sancionador agência reguladora tempo duração\" (a cota diária do OpenAlex se esgotou no meio da busca; o restante seguiu por Semantic Scholar e Crossref)",
+  "Semantic Scholar API (paper/search e paper/DOI:): \"Hampton review risk-based regulation inspections\", \"testing responsive regulation in regulatory enforcement Nielsen Parker\", \"PHMSA pipeline safety enforcement inspections effect on incidents\"",
+  "Crossref API (query.bibliographic e works/<doi>), usada também para conferir todos os DOI: \"Stafford pipeline enforcement\", \"Escalation of scrutiny dynamic enforcement\", \"Bennear Olmstead right to know drinking water\", \"sunshine regulation Portugal water utilities ERSAR\", \"Does peer review work experiment of experimentalism\", \"vehicle-based natural gas pipeline leaks\", \"Makkai Braithwaite reintegrative shaming\"",
+  "WebSearch e WebFetch: ANEEL fiscalização estratégica (apresentação ENAP/Casa Civil, 2018); circuito deliberativo da ANEEL (gov.br/aneel, 2025); Chicago food inspection forecasting; OCDE Data-Driven, Information-Enabled Regulatory Delivery (pilotos na Itália); Banco Mundial, inspeções eletrônicas no Peru; Anatel, fiscalização regulatória e PADO; Ho, peer review em King County; PHMSA, enforcement de dutos; ERSAR, indicador de água segura; SSA, ferramenta Insight"
+ ],
+ "casos": [
+  {
+   "id": "B-fiscalizacao-01",
+   "pratica": "Seleção de alvos de inspeção ambiental por aprendizado de máquina",
+   "descricao": "Os autores treinaram modelos para prever a probabilidade de uma instalação ser reprovada em inspeção de poluição hídrica (Clean Water Act) e simularam realocações das inspeções para as instalações de maior risco. Testaram versões com restrições institucionais: probabilidade mínima de inspeção para todas as instalações e orçamento de inspeção de cada estado.",
+   "contexto": {
+    "pais": "Estados Unidos",
+    "orgao": "EPA e agências ambientais estaduais (Clean Water Act)",
+    "setor": "saneamento / efluentes",
+    "periodo": "publicado em 2018"
+   },
+   "resultado_reportado": "A alocação orientada por dados detectaria mais de sete vezes o número esperado de violações da prática atual; com restrições (inspeção mínima para todos e orçamento por estado), o número de violações detectadas dobra.",
+   "metrica": {
+    "nome": "violações detectadas pelas inspeções, com restrições institucionais (múltiplo da prática atual)",
+    "antes": 1,
+    "depois": 2,
+    "unidade": "vezes",
+    "variacao_pct": 100
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Miyuki Hino; Elinor Benami; Nina Brooks",
+    "ano": 2018,
+    "titulo": "Machine learning for environmental monitoring",
+    "veiculo": "Nature Sustainability, v. 1, n. 10, p. 583-588",
+    "doi": "10.1038/s41893-018-0142-9",
+    "url": "https://doi.org/10.1038/s41893-018-0142-9",
+    "trecho": "When we impose constraints, such as maintaining a minimum probability of inspection for all facilities and accounting for state-level differences in inspection budgets, our reallocation regimes double the number of violations detected through inspections.",
+    "verificado_em": "https://www.nature.com/articles/s41893-018-0142-9"
+   },
+   "nivel_evidencia": "avaliacao_quantitativa",
+   "fase_melhoria": [
+    2,
+    3
+   ],
+   "atividades_alvo": [
+    "P06:t1"
+   ],
+   "aplicabilidade": "O volume de fiscalizações da AGENERSA passou de 222 (2023) para 662 (2025), e a avaliação de P06 aponta a mesma pendência (Laudo de Exigências e Certificado do CBMERJ) notificada várias vezes na mesma estação. Um modelo de risco alimentado pelo histórico de termos de notificação permitiria dirigir a fiscalização programada às instalações com maior chance de não conformidade, mantendo um sorteio mínimo para todas, como no desenho com restrições do estudo.",
+   "parametro_ganho": "Com restrições realistas, dobrar a taxa de não conformidades encontradas por vistoria programada (2x); sem restrições, até 7x (teto otimista).",
+   "limitacoes": "Simulação retrospectiva, não implantação; o ganho depende de base histórica de vistorias com resultado registrado de forma estruturada, que a AGENERSA ainda precisa montar a partir do SEI.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-fiscalizacao-02",
+   "pratica": "Regra de seleção de inspeções pela maior redução esperada de dano",
+   "descricao": "Usando um programa da OSHA que sorteou parte das inspeções, os autores estimaram o efeito de cada inspeção sobre lesões graves e, com métodos de aprendizado de máquina, compararam regras alternativas de seleção de alvos: maior redução esperada de lesões e maior nível esperado de lesões.",
+   "contexto": {
+    "pais": "Estados Unidos",
+    "orgao": "Occupational Safety and Health Administration (OSHA)",
+    "setor": "segurança do trabalho",
+    "periodo": "uma década de inspeções; publicado em 2023"
+   },
+   "resultado_reportado": "Cada inspeção levou, em média, a 2,4 lesões graves a menos (9%) nos cinco anos seguintes; a OSHA teria evitado o dobro de lesões selecionando pela maior redução esperada e quase isso selecionando pelo maior nível esperado de lesões, com até US$ 850 milhões de valor social na década.",
+   "metrica": {
+    "nome": "lesões graves evitadas pelas inspeções (múltiplo da seleção atual)",
+    "antes": 1,
+    "depois": 2,
+    "unidade": "vezes",
+    "variacao_pct": 100
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Matthew S. Johnson; David I. Levine; Michael W. Toffel",
+    "ano": 2023,
+    "titulo": "Improving Regulatory Effectiveness through Better Targeting: Evidence from OSHA",
+    "veiculo": "American Economic Journal: Applied Economics, v. 15, n. 4, p. 30-67",
+    "doi": "10.1257/app.20200659",
+    "url": "https://doi.org/10.1257/app.20200659",
+    "trecho": "we find that OSHA could have averted as much as twice as many injuries by targeting inspections to workplaces with the highest expected averted injuries and nearly as many by targeting the highest expected level of injuries",
+    "verificado_em": "https://api.openalex.org/works/doi:10.1257/app.20200659"
+   },
+   "nivel_evidencia": "quase_experimental",
+   "fase_melhoria": [
+    2,
+    3
+   ],
+   "atividades_alvo": [
+    "P06:t1"
+   ],
+   "aplicabilidade": "O ganho vem de escolher melhor, não de fiscalizar mais: a regra mais simples (maior nível esperado de dano, por exemplo instalações de gás com histórico de pendências de segurança contra incêndio) já captura quase todo o ganho. Serve ao plano anual de fiscalização programada das câmaras técnicas (CAENE e CASAN).",
+   "parametro_ganho": "Até 2x o resultado de segurança por vistoria com a mesma equipe, trocando só o critério de seleção.",
+   "limitacoes": "Segurança do trabalho, com milhares de estabelecimentos; a AGENERSA fiscaliza poucas concessionárias e muitas instalações delas, o que exige definir a unidade de risco (instalação, estação, trecho de rede).",
+   "verificacao": {
+    "veredito": "corrigir",
+    "correcoes_aplicadas": true
+   }
+  },
+  {
+   "id": "B-fiscalizacao-03",
+   "pratica": "Monitoramento remoto por satélite com alertas que orientam a fiscalização (DETER)",
+   "descricao": "O sistema DETER processa imagens de satélite e emite alertas de desmatamento quase em tempo real, usados para direcionar a fiscalização ambiental na Amazônia. Os autores usaram a cobertura de nuvens, que limita a detecção, como fonte de variação exógena da presença da fiscalização.",
+   "contexto": {
+    "pais": "Brasil",
+    "orgao": "IBAMA, com alertas do INPE (DETER)",
+    "setor": "ambiental",
+    "periodo": "publicado em 2023"
+   },
+   "resultado_reportado": "O monitoramento por satélite com fiscalização direcionada pelos alertas reduziu efetivamente o desmatamento, com resultados robustos a diversos testes.",
+   "metrica": {
+    "nome": "",
+    "antes": null,
+    "depois": null,
+    "unidade": "",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Juliano Assunção; Clarissa Gandour; Romero Rocha",
+    "ano": 2023,
+    "titulo": "DETER-ing Deforestation in the Amazon: Environmental Monitoring and Law Enforcement",
+    "veiculo": "American Economic Journal: Applied Economics, v. 15, n. 2, p. 125-156",
+    "doi": "10.1257/app.20200196",
+    "url": "https://doi.org/10.1257/app.20200196",
+    "trecho": "DETER is a system that processes satellite imagery and issues near-real-time deforestation alerts to target environmental enforcement in the Amazon. [...] Findings indicate that monitoring and enforcement effectively curb deforestation.",
+    "verificado_em": "https://api.openalex.org/works/doi:10.1257/app.20200196"
+   },
+   "nivel_evidencia": "quase_experimental",
+   "fase_melhoria": [
+    2
+   ],
+   "atividades_alvo": [
+    "P06:t1",
+    "P06:t2"
+   ],
+   "aplicabilidade": "Caso brasileiro de fiscalização disparada por alerta automático, e não por calendário. O análogo na AGENERSA é a fiscalização por demanda disparada por dados que já chegam (ocorrências informadas pela concessionária, reclamações da ouvidoria, vencimento de certificados do CBMERJ e de licenças do INEA), com a vistoria indo direto ao alerta.",
+   "parametro_ganho": null,
+   "limitacoes": "O resultado é medido em área desmatada, não em tempo de processo; o resumo não dá número de redução comparável.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-fiscalizacao-04",
+   "pratica": "Algoritmo de priorização de inspeções sanitárias (Chicago)",
+   "descricao": "A prefeitura de Chicago desenvolveu um modelo preditivo com dados abertos para estimar a probabilidade de violação crítica em estabelecimentos de alimentação e o testou em desenho duplo-cego retrospectivo: o Departamento de Saúde Pública inspecionou na ordem normal em setembro e outubro de 2014, e o modelo simulou a ordem alternativa.",
+   "contexto": {
+    "pais": "Estados Unidos",
+    "orgao": "Chicago Department of Public Health e Department of Innovation and Technology",
+    "setor": "alimentos (vigilância sanitária)",
+    "periodo": "setembro e outubro de 2014"
+   },
+   "resultado_reportado": "Estabelecimentos com violação crítica seriam encontrados, em média, 7,5 dias antes; 69% das inspeções com violação crítica cairiam na primeira metade do trabalho, contra 55% na operação normal.",
+   "metrica": {
+    "nome": "inspeções com violação crítica encontradas na primeira metade do período",
+    "antes": 55,
+    "depois": 69,
+    "unidade": "%",
+    "variacao_pct": 25.5
+   },
+   "fonte": {
+    "camada": "oficial",
+    "autores": "City of Chicago (Department of Public Health; Department of Innovation and Technology)",
+    "ano": 2014,
+    "titulo": "Food Inspection Forecasting: Optimizing Inspections with Analytics",
+    "veiculo": "City of Chicago (página oficial da prefeitura no GitHub)",
+    "doi": "",
+    "url": "https://chicago.github.io/food-inspections-evaluation/",
+    "trecho": "Over the two month pilot, establishments with violations were found, on average, 7 and a half days earlier.",
+    "verificado_em": "https://chicago.github.io/food-inspections-evaluation/"
+   },
+   "nivel_evidencia": "relato_oficial",
+   "fase_melhoria": [
+    3
+   ],
+   "atividades_alvo": [
+    "P06:t1"
+   ],
+   "aplicabilidade": "Mostra o ganho em antecipação da constatação sem mudar a equipe. Em P06 a vistoria não é o gargalo, mas antecipar a constatação nas instalações de maior risco reduz o tempo de exposição ao risco de segurança nas redes e estações de gás.",
+   "parametro_ganho": "Antecipar em cerca de uma semana a constatação de não conformidades críticas e elevar de 55% para 69% a fração delas achada na primeira metade do ciclo de vistorias.",
+   "limitacoes": "Simulação retrospectiva de dois meses, relatada pela própria prefeitura; setor com muitos estabelecimentos homogêneos.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-fiscalizacao-05",
+   "pratica": "Concurso aberto para desenvolver o algoritmo de risco com dados públicos",
+   "descricao": "Boston tornou públicos dados de inspeção sanitária e avaliações on-line de restaurantes e ofereceu prêmio ao melhor algoritmo de previsão de violações, como alternativa barata à contratação de consultoria. Os algoritmos foram testados fora da amostra contra inspeções reais.",
+   "contexto": {
+    "pais": "Estados Unidos",
+    "orgao": "Prefeitura de Boston (inspeção sanitária de restaurantes)",
+    "setor": "alimentos (vigilância sanitária)",
+    "periodo": "publicado em 2016"
+   },
+   "resultado_reportado": "O concurso, de baixo custo, produziu algoritmos razoavelmente precisos quando testados fora da amostra em inspeções sanitárias.",
+   "metrica": {
+    "nome": "",
+    "antes": null,
+    "depois": null,
+    "unidade": "",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Edward L. Glaeser; Andrew Hillis; Scott Duke Kominers; Michael Luca",
+    "ano": 2016,
+    "titulo": "Crowdsourcing City Government: Using Tournaments to Improve Inspection Accuracy",
+    "veiculo": "American Economic Review, v. 106, n. 5, p. 114-118",
+    "doi": "10.1257/aer.p20161027",
+    "url": "https://doi.org/10.1257/aer.p20161027",
+    "trecho": "We also report on an inexpensive Boston-based restaurant tournament, which yielded algorithms that proved reasonably accurate when tested “out-of-sample” on hygiene inspections.",
+    "verificado_em": "https://api.openalex.org/works/doi:10.1257/aer.p20161027"
+   },
+   "nivel_evidencia": "estudo_de_caso",
+   "fase_melhoria": [
+    3
+   ],
+   "atividades_alvo": [
+    "P06:t1"
+   ],
+   "aplicabilidade": "Modelo de contratação para uma agência sem cientistas de dados: obter o modelo de risco por concurso ou parceria acadêmica, desde que os dados de fiscalização possam ser publicados ou anonimizados.",
+   "parametro_ganho": null,
+   "limitacoes": "O resumo não quantifica a precisão; dados de concessionárias reguladas podem ter restrição de publicação; artigo curto (Papers and Proceedings).",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-fiscalizacao-06",
+   "pratica": "Rating de risco por operador com histórico de conformidade e modelo calibrado (Trento)",
+   "descricao": "No projeto RAC, financiado pela Comissão Europeia e conduzido pela OCDE, a Província Autônoma de Trento montou um registro único de fiscalizações (RUCP) com motor de cálculo de risco. Na inspeção trabalhista, o histórico das últimas inspeções (conforme ou não conforme) virou variável de risco num modelo de regressão logística calibrado, usado para extrair a amostra a fiscalizar.",
+   "contexto": {
+    "pais": "Itália",
+    "orgao": "Província Autônoma de Trento (inspeção trabalhista), com apoio da OCDE",
+    "setor": "trabalho (com aplicação também ambiental)",
+    "periodo": "piloto relatado em 2021"
+   },
+   "resultado_reportado": "A taxa de não conformidade foi de 5,95% entre empresas conformes nas duas últimas inspeções e de 64,89% entre as não conformes nas duas; o modelo chegou a quase 50% de precisão e, extraindo os 10% e os 5% de maior risco, a 61% e 66%.",
+   "metrica": {
+    "nome": "precisão da previsão de não conformidade nos 5% de empresas de maior risco",
+    "antes": null,
+    "depois": 66,
+    "unidade": "%",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "oficial",
+    "autores": "OCDE (Florentin Blanc; Margarita Escobar; Tiziano Lattisi)",
+    "ano": 2021,
+    "titulo": "Data-Driven, Information-Enabled Regulatory Delivery",
+    "veiculo": "OECD Publishing",
+    "doi": "10.1787/8f99ec8c-en",
+    "url": "https://www.oecd.org/en/publications/data-driven-information-enabled-regulatory-delivery_8f99ec8c-en.html",
+    "trecho": "it was possible to rely on the confidence algorithm to extract a given percentage of companies to be controlled, on which the precision rose to 61%, extracting 10% of the companies, and to 66% extracting 5% of businesses.",
+    "verificado_em": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/09/data-driven-information-enabled-regulatory-delivery_bed351cb/8f99ec8c-en.pdf"
+   },
+   "nivel_evidencia": "relato_oficial",
+   "fase_melhoria": [
+    2,
+    3,
+    4
+   ],
+   "atividades_alvo": [
+    "P06:t1",
+    "P06:t3"
+   ],
+   "aplicabilidade": "Responde à reincidência de P06 (a mesma pendência do CBMERJ notificada em TN 003/2024, TN 002/2025 e TN 018/2025): o histórico de notificações por instalação é o melhor preditor e já está nos autos do SEI. O relatório registra o obstáculo que a AGENERSA também terá: resultados de fiscalização guardados como texto livre, difíceis de analisar.",
+   "parametro_ganho": "Taxa de acerto de cerca de 60% a 66% nas vistorias programadas dirigidas aos 5% a 10% de instalações de maior risco; reincidência como indicador (instalações com duas notificações seguidas sobre a mesma pendência).",
+   "limitacoes": "Piloto não concluído, segundo o próprio relatório; precisão medida em base histórica, sem avaliação de impacto sobre a conformidade.",
+   "verificacao": {
+    "veredito": "corrigir",
+    "correcoes_aplicadas": true
+   }
+  },
+  {
+   "id": "B-fiscalizacao-07",
+   "pratica": "Escalonamento dinâmico da fiscalização para reincidentes",
+   "descricao": "A EPA aplica fiscalização dinâmica às normas de poluição do ar: reincidentes ficam sujeitos a multas mais altas e à designação de violador de alta prioridade (HPV), com fiscalização mais intensa. Os autores estimaram um modelo dinâmico de planta e regulador para medir o valor dessa escalada.",
+   "contexto": {
+    "pais": "Estados Unidos",
+    "orgao": "Environmental Protection Agency (EPA), Clean Air Act",
+    "setor": "ambiental (emissões industriais)",
+    "periodo": "publicado em 2020"
+   },
+   "resultado_reportado": "Eliminar a fiscalização dinâmica aumentaria os danos da poluição em 164% com as mesmas multas, ou exigiria multas 519% maiores para manter o mesmo dano.",
+   "metrica": {
+    "nome": "danos de poluição sem escalonamento dinâmico (contrafactual)",
+    "antes": null,
+    "depois": null,
+    "unidade": "%",
+    "variacao_pct": 164
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Wesley Blundell; Gautam Gowrisankaran; Ashley Langer",
+    "ano": 2020,
+    "titulo": "Escalation of Scrutiny: The Gains from Dynamic Enforcement of Environmental Regulations",
+    "veiculo": "American Economic Review, v. 110, n. 8, p. 2558-2585",
+    "doi": "10.1257/aer.20181012",
+    "url": "https://doi.org/10.1257/aer.20181012",
+    "trecho": "Eliminating dynamic enforcement would raise pollution damages by 164 percent with constant fines or raise fines by 519 percent with constant pollution damages.",
+    "verificado_em": "https://api.crossref.org/works/10.1257/aer.20181012"
+   },
+   "nivel_evidencia": "avaliacao_quantitativa",
+   "fase_melhoria": [
+    2,
+    4
+   ],
+   "atividades_alvo": [
+    "P06:t1",
+    "P06:t3",
+    "P06:t7"
+   ],
+   "aplicabilidade": "Fundamenta uma regra objetiva de escalada (regulação responsiva) que o sistema pode aplicar: a segunda notificação da mesma pendência na mesma instalação muda o status do caso, encurta prazos e leva direto à via sancionadora. Em P06, a reincidência da pendência do CBMERJ terminou em diligência num caso e em advertência no outro, sem regra explícita de escalada.",
+   "parametro_ganho": null,
+   "limitacoes": "Resultado de modelo estrutural (contrafactual), não de experimento; setor e escala de multas dos EUA.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-fiscalizacao-08",
+   "pratica": "Divulgação pública das infrações para dissuasão geral",
+   "descricao": "Desde 2009 a OSHA emite comunicados à imprensa sobre estabelecimentos autuados acima de um valor de multa. O autor usou esse ponto de corte para comparar estabelecimentos próximos aos que foram ou não divulgados.",
+   "contexto": {
+    "pais": "Estados Unidos",
+    "orgao": "Occupational Safety and Health Administration (OSHA)",
+    "setor": "segurança do trabalho",
+    "periodo": "a partir de 2009; publicado em 2020"
+   },
+   "resultado_reportado": "Divulgar as infrações de um estabelecimento melhorou substancialmente a conformidade de outros e reduziu lesões; a OSHA precisaria de 210 inspeções adicionais para obter a mesma melhora de conformidade de um único comunicado.",
+   "metrica": {
+    "nome": "inspeções equivalentes a um comunicado de divulgação",
+    "antes": null,
+    "depois": 210,
+    "unidade": "inspeções",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Matthew S. Johnson",
+    "ano": 2020,
+    "titulo": "Regulation by Shaming: Deterrence Effects of Publicizing Violations of Workplace Safety and Health Laws",
+    "veiculo": "American Economic Review, v. 110, n. 6, p. 1866-1904",
+    "doi": "10.1257/aer.20180501",
+    "url": "https://doi.org/10.1257/aer.20180501",
+    "trecho": "OSHA would need to conduct 210 additional inspections to achieve the same improvement in compliance as achieved with a single press release.",
+    "verificado_em": "https://api.openalex.org/works/doi:10.1257/aer.20180501"
+   },
+   "nivel_evidencia": "quase_experimental",
+   "fase_melhoria": [
+    1,
+    4
+   ],
+   "atividades_alvo": [
+    "P06:t8"
+   ],
+   "aplicabilidade": "A deliberação já é publicada (t8), mas sem painel que mostre às demais concessionárias e ao público as infrações e o cumprimento. Divulgar de forma ativa multiplica o efeito de cada processo concluído, o que importa quando só 56% dos 32 processos da carteira têm deliberação.",
+   "parametro_ganho": "Uma divulgação bem dirigida pode equivaler, em efeito dissuasório, a centenas de vistorias (210 no caso estudado).",
+   "limitacoes": "Mercado com milhares de empregadores; no gás canalizado do Rio de Janeiro há poucas concessionárias, e o efeito reputacional pode ser diferente.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-fiscalizacao-09",
+   "pratica": "Penalidade monetária estadual na fiscalização de gasodutos",
+   "descricao": "O estudo analisou o papel dos estados norte-americanos que assumem, por delegação federal, a fiscalização das normas de segurança de dutos de gás natural, e qual instrumento de fiscalização estadual afeta o desempenho dos dutos.",
+   "contexto": {
+    "pais": "Estados Unidos",
+    "orgao": "Agências estaduais de segurança de dutos (programa delegado pela PHMSA)",
+    "setor": "gás natural (dutos)",
+    "periodo": "publicado em 2017"
+   },
+   "resultado_reportado": "Assumir a fiscalização não teve efeito significativo sobre o esforço de fiscalização nem sobre o desempenho dos dutos; o instrumento estadual mais eficaz foram as penalidades monetárias, que reduzem significativamente incidentes e danos materiais.",
+   "metrica": {
+    "nome": "",
+    "antes": null,
+    "depois": null,
+    "unidade": "",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Sarah L. Stafford",
+    "ano": 2017,
+    "titulo": "Pipeline Performance and Safety in a Federal System: A Study of Natural Gas Pipeline Enforcement by States in the USA",
+    "veiculo": "Journal of Transport Economics and Policy, v. 51, n. 3, p. 193-207",
+    "doi": "10.3828/jtep.2017.51.3.193",
+    "url": "https://doi.org/10.3828/jtep.2017.51.3.193",
+    "trecho": "whether a state has assumed oversight has no significant effect on either state enforcement efforts or pipeline performance. The most effective state enforcement tool is monetary penalties, which significantly decrease incidents and property damage.",
+    "verificado_em": "https://api.crossref.org/works/10.3828/jtep.2017.51.3.193"
+   },
+   "nivel_evidencia": "avaliacao_quantitativa",
+   "fase_melhoria": [
+    1,
+    4
+   ],
+   "atividades_alvo": [
+    "P06:t7",
+    "P06:t8"
+   ],
+   "aplicabilidade": "É o caso mais próximo do papel da AGENERSA (regulador estadual da segurança do gás). Indica que o que melhora a segurança é a sanção efetivamente aplicada, não a existência da competência; com lead time mediano de 387,5 du nos processos nativos do SEI e 44% da carteira sem deliberação, a sanção demora ou não chega.",
+   "parametro_ganho": null,
+   "limitacoes": "Dutos de transporte e coleta nos EUA, não redes de distribuição urbana; o resumo não traz o tamanho do efeito.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-fiscalizacao-10",
+   "pratica": "Revisão sistemática do efeito do monitoramento e da fiscalização",
+   "descricao": "Revisão da evidência empírica, principalmente norte-americana (EPA e estados), sobre o impacto das ações de monitoramento e fiscalização ambiental nas violações e emissões subsequentes.",
+   "contexto": {
+    "pais": "Estados Unidos (principalmente)",
+    "orgao": "EPA e agências ambientais estaduais",
+    "setor": "ambiental (inclui efluentes hídricos)",
+    "periodo": "literatura até 2010; publicado em 2011"
+   },
+   "resultado_reportado": "Achados consistentes: dissuasão específica relevante (menos violações futuras na empresa fiscalizada), dissuasão geral relevante (menos violações em outras instalações) e redução não só de violações mas também de emissões.",
+   "metrica": {
+    "nome": "",
+    "antes": null,
+    "depois": null,
+    "unidade": "",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Wayne B. Gray; Jay P. Shimshack",
+    "ano": 2011,
+    "titulo": "The Effectiveness of Environmental Monitoring and Enforcement: A Review of the Empirical Evidence",
+    "veiculo": "Review of Environmental Economics and Policy, v. 5, n. 1, p. 3-24",
+    "doi": "10.1093/reep/req017",
+    "url": "https://doi.org/10.1093/reep/req017",
+    "trecho": "environmental monitoring and enforcement activities generate substantial specific deterrence, reducing future violations at the targeted firm",
+    "verificado_em": "https://api.openalex.org/works/doi:10.1093/reep/req017"
+   },
+   "nivel_evidencia": "revisao_sistematica",
+   "fase_melhoria": [
+    4
+   ],
+   "atividades_alvo": [
+    "P06:t1",
+    "P06:t7"
+   ],
+   "aplicabilidade": "Justifica medir a fiscalização pelo efeito (reincidência na instalação fiscalizada e conformidade nas demais) e não pelo esforço (número de vistorias), como nos indicadores sugeridos na avaliação de P06.",
+   "parametro_ganho": null,
+   "limitacoes": "Revisão narrativa da literatura norte-americana; não dá um efeito único transferível.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-fiscalizacao-11",
+   "pratica": "Teste empírico da regulação responsiva (pirâmide de fiscalização)",
+   "descricao": "As autoras operacionalizaram duas versões da regulação responsiva (olho por olho e justiça restaurativa) e mediram, junto às empresas investigadas pela autoridade australiana de concorrência e consumidor, as reações do regulador e das empresas ao longo da investigação e da fiscalização.",
+   "contexto": {
+    "pais": "Austrália",
+    "orgao": "Australian Competition and Consumer Commission (ACCC)",
+    "setor": "concorrência e defesa do consumidor",
+    "periodo": "publicado em 2009"
+   },
+   "resultado_reportado": "Houve pouca evidência de responsividade do tipo olho por olho na prática; onde existiu, teve pequeno efeito no comportamento, mas não nas atitudes. A responsividade restaurativa teve efeito nas atitudes, mas não no comportamento.",
+   "metrica": {
+    "nome": "",
+    "antes": null,
+    "depois": null,
+    "unidade": "",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Vibeke Lehmann Nielsen; Christine Parker",
+    "ano": 2009,
+    "titulo": "Testing responsive regulation in regulatory enforcement",
+    "veiculo": "Regulation & Governance, v. 3, n. 4, p. 376-399",
+    "doi": "10.1111/j.1748-5991.2009.01064.x",
+    "url": "https://doi.org/10.1111/j.1748-5991.2009.01064.x",
+    "trecho": "We find little evidence of tit for tat responsiveness actually occurring in practice. [...] We find clearer evidence of restorative justice responsiveness having the hypothesized effects on attitudes but not on behavior.",
+    "verificado_em": "https://api.crossref.org/works/10.1111/j.1748-5991.2009.01064.x"
+   },
+   "nivel_evidencia": "avaliacao_quantitativa",
+   "fase_melhoria": [
+    1
+   ],
+   "atividades_alvo": [
+    "P06:t1",
+    "P06:t6",
+    "P06:t7"
+   ],
+   "aplicabilidade": "Contrapeso necessário: a pirâmide responsiva só funciona se a escalada de fato acontecer. Em P06, a pendência do CBMERJ foi notificada várias vezes antes de chegar à via sancionadora; a lição é escrever a regra de escalada (prazo, número de notificações, quando abrir o processo) em vez de decidi-la caso a caso.",
+   "parametro_ganho": null,
+   "limitacoes": "Percepção das empresas medida por questionário; regulador de concorrência, não de serviços públicos.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-fiscalizacao-12",
+   "pratica": "Consistência do estilo de fiscalização entre fiscais",
+   "descricao": "Por observação, entrevistas e questionário, os autores examinaram se os fiscais da autoridade holandesa de segurança de alimentos e produtos conseguiam aplicar o estilo de fiscalização adequado a cada caso, como supõe a regulação responsiva.",
+   "contexto": {
+    "pais": "Países Baixos",
+    "orgao": "Dutch Food and Consumer Product Safety Authority",
+    "setor": "alimentos e produtos de consumo",
+    "periodo": "publicado em 2009"
+   },
+   "resultado_reportado": "Os fiscais aplicaram estilos diferentes em casos comparáveis, foram impedidos de aplicar o estilo mais adequado e não controlaram os efeitos indesejados, porque os regulados perceberam a atuação como mais coercitiva do que os fiscais pretendiam.",
+   "metrica": {
+    "nome": "",
+    "antes": null,
+    "depois": null,
+    "unidade": "",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Peter Mascini; Eelco van Wijk",
+    "ano": 2009,
+    "titulo": "Responsive regulation at the Dutch Food and Consumer Product Safety Authority: An empirical assessment of assumptions underlying the theory",
+    "veiculo": "Regulation & Governance, v. 3",
+    "doi": "10.1111/j.1748-5991.2009.01047.x",
+    "url": "https://doi.org/10.1111/j.1748-5991.2009.01047.x",
+    "trecho": "enforcement agents apply different styles in comparable cases; they are impeded in applying the most appropriate style; and they do not control the perverse consequences of their conduct",
+    "verificado_em": "https://api.openalex.org/works/doi:10.1111/j.1748-5991.2009.01047.x"
+   },
+   "nivel_evidencia": "estudo_de_caso",
+   "fase_melhoria": [
+    2,
+    4
+   ],
+   "atividades_alvo": [
+    "P06:t1",
+    "P06:t3"
+   ],
+   "aplicabilidade": "Justifica padronizar o relatório de fiscalização e o termo de notificação (t1) e o parecer técnico (t3) com critérios explícitos de enquadramento e de escalada, e conferir a consistência entre as câmaras técnicas (CAENE e CASAN) como controle de qualidade.",
+   "parametro_ganho": null,
+   "limitacoes": "Estudo qualitativo e de levantamento num único órgão; não mede o efeito de uma intervenção corretiva.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-fiscalizacao-13",
+   "pratica": "Divulgação obrigatória das violações aos usuários do serviço de água",
+   "descricao": "A emenda de 1996 à Safe Drinking Water Act obrigou os sistemas de abastecimento a enviar anualmente aos usuários um relatório com as violações às normas de potabilidade (Consumer Confidence Reports). Os autores mediram o efeito sobre as violações de 517 sistemas de Massachusetts entre 1990 e 2003.",
+   "contexto": {
+    "pais": "Estados Unidos",
+    "orgao": "EPA e sistemas comunitários de abastecimento de Massachusetts",
+    "setor": "saneamento (água potável)",
+    "periodo": "1990-2003"
+   },
+   "resultado_reportado": "Os sistemas maiores, obrigados a enviar o relatório diretamente aos usuários, reduziram o total de violações entre 30% e 44% e as violações mais graves à saúde entre 40% e 57%.",
+   "metrica": {
+    "nome": "violações totais às normas de água potável (limite inferior da faixa de 30% a 44%)",
+    "antes": null,
+    "depois": null,
+    "unidade": "%",
+    "variacao_pct": -30
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Lori S. Bennear; Sheila M. Olmstead",
+    "ano": 2008,
+    "titulo": "The impacts of the “right to know”: Information disclosure and the violation of drinking water standards",
+    "veiculo": "Journal of Environmental Economics and Management, v. 56, n. 2, p. 117-130",
+    "doi": "10.1016/j.jeem.2008.03.002",
+    "url": "https://doi.org/10.1016/j.jeem.2008.03.002",
+    "trecho": "Results suggest that larger utilities required to mail CCRs directly to customers reduced total violations by between 30% and 44% as a result of this policy, and reduced the more severe health violations by 40-57%.",
+    "verificado_em": "https://scholars.duke.edu/publication/707778"
+   },
+   "nivel_evidencia": "quase_experimental",
+   "fase_melhoria": [
+    4
+   ],
+   "atividades_alvo": [
+    "P06:t8",
+    "P06:t9"
+   ],
+   "aplicabilidade": "Caso de saneamento: indicadores de conformidade publicados ao usuário funcionam como fiscalização complementar. Para a AGENERSA, um painel público das determinações das deliberações e de seu cumprimento atende à oportunidade de acompanhamento automático das comprovações periódicas (t9) apontada na avaliação.",
+   "parametro_ganho": "Redução de 30% a 44% nas violações quando a conformidade é divulgada diretamente ao usuário.",
+   "limitacoes": "Mede divulgação feita pelo prestador ao consumidor, não pelo regulador; um único estado norte-americano.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-fiscalizacao-14",
+   "pratica": "Fiscalização estratégica da ANEEL: monitoramento, alertas e planos de melhoria",
+   "descricao": "A ANEEL trocou o modelo de fiscalizar todos e punir muito por um modelo baseado em risco e regulação responsiva: monitoramento por inteligência analítica, alertas por e-mail, manuais e publicidade para autorregularização, e planos de melhoria acordados com as distribuidoras antes da via sancionadora.",
+   "contexto": {
+    "pais": "Brasil",
+    "orgao": "Agência Nacional de Energia Elétrica (ANEEL)",
+    "setor": "energia elétrica",
+    "periodo": "2014-2017"
+   },
+   "resultado_reportado": "A conformidade no envio tempestivo de informações subiu de 71% (agosto de 2016) para 95% (agosto de 2017), com 20 pontos atribuídos a mecanismos de autorregularização e 4 a notificações, advertências e multas; os planos de melhoria reduziram em 41% em dois anos as falhas de transmissão de causa desconhecida (de 29% para 17%) e melhoraram em 36% e 54% o indicador de interrupções de uma distribuidora estatal e de uma privada.",
+   "metrica": {
+    "nome": "agentes com envio tempestivo de informações",
+    "antes": 71,
+    "depois": 95,
+    "unidade": "%",
+    "variacao_pct": 33.8
+   },
+   "fonte": {
+    "camada": "oficial",
+    "autores": "ANEEL (Tiago de Barros Correia; Alessandro D´Afonseca Cantarino; Sandoval de Araújo Feitosa Neto; Eduardo Rossi Fernandes; Issao Hirata)",
+    "ano": 2018,
+    "titulo": "Fiscalização Preventiva e Orientativa: Reformas na Fiscalização da ANEEL (apresentação de 23/03/2018)",
+    "veiculo": "Casa Civil da Presidência da República (gov.br)",
+    "doi": "",
+    "url": "https://www.gov.br/casacivil/pt-br/assuntos/governanca/regulacao/eventos/2018/fiscalizacao-preventiva-e-orientativa-aneel/apresentacaoenap-aneel-fiscalizacao_23-03-2018.pdf",
+    "trecho": "71% taxa de conformidade (informação tempestiva) Agosto 2016 95% taxa de conformidade (aumento de 24%) Agosto 2017",
+    "verificado_em": "https://www.gov.br/casacivil/pt-br/assuntos/governanca/regulacao/eventos/2018/fiscalizacao-preventiva-e-orientativa-aneel/apresentacaoenap-aneel-fiscalizacao_23-03-2018.pdf"
+   },
+   "nivel_evidencia": "relato_oficial",
+   "fase_melhoria": [
+    1,
+    2,
+    4
+   ],
+   "atividades_alvo": [
+    "P06:t1",
+    "P06:t2",
+    "P06:t9"
+   ],
+   "aplicabilidade": "Regulador brasileiro de energia sob o mesmo marco legal; mostra que alertas automáticos e plano de melhoria resolvem parte das não conformidades sem processo sancionador, o que reserva o rito completo de P06 (parecer técnico, parecer jurídico, sorteio, razões finais, sessão) aos casos que exigem sanção. O plano de melhoria acompanhado é análogo ao registro de providências de cumprimento (t9).",
+   "parametro_ganho": "Elevar a conformidade em obrigações de envio de informações de cerca de 70% para 95% em um ano com alertas e orientação; reduzir em cerca de 40% a recorrência de falhas com planos de melhoria acompanhados.",
+   "limitacoes": "Apresentação institucional da própria ANEEL, sem grupo de comparação; a atribuição dos ganhos a cada mecanismo é da agência.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-fiscalizacao-15",
+   "pratica": "Deliberação em bloco e votação virtual assíncrona da diretoria (circuito deliberativo)",
+   "descricao": "A ANEEL passou de reuniões longas, com muitos processos lidos, a reuniões quinzenais mais curtas com poucos processos na leitura e deliberação em bloco; delegou competências às unidades em 2023 e instituiu em 2025 o circuito deliberativo, com coleta eletrônica e assíncrona dos votos dos diretores.",
+   "contexto": {
+    "pais": "Brasil",
+    "orgao": "Agência Nacional de Energia Elétrica (ANEEL)",
+    "setor": "energia elétrica",
+    "periodo": "2022-2025"
+   },
+   "resultado_reportado": "O tempo médio de deliberação dos processos na diretoria caiu de 110 para 80 dias (27%) desde 2022, e o estoque mensal de processos na diretoria passou de 758 em 2022 para 332 em 2025.",
+   "metrica": {
+    "nome": "tempo médio de deliberação na diretoria",
+    "antes": 110,
+    "depois": 80,
+    "unidade": "dias",
+    "variacao_pct": -27.3
+   },
+   "fonte": {
+    "camada": "oficial",
+    "autores": "ANEEL",
+    "ano": 2025,
+    "titulo": "Publicada norma que prevê aprovação das decisões da diretoria da ANEEL em circuito deliberativo (notícia de 23/09/2025)",
+    "veiculo": "Portal gov.br/aneel",
+    "doi": "",
+    "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2025/publicada-norma-que-preve-aprovacao-das-decisoes-da-diretoria-da-aneel-em-circuito-deliberativo",
+    "trecho": "Desde 2022, vem ocorrendo uma redução do tempo médio de deliberação dos processos na diretoria, passando de 110 para 80 dias (uma redução de 27%).",
+    "verificado_em": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2025/publicada-norma-que-preve-aprovacao-das-decisoes-da-diretoria-da-aneel-em-circuito-deliberativo"
+   },
+   "nivel_evidencia": "relato_oficial",
+   "fase_melhoria": [
+    1
+   ],
+   "atividades_alvo": [
+    "P06:t5",
+    "P06:t6",
+    "P06:t7"
+   ],
+   "aplicabilidade": "Ataca o gargalo de P06: 82 du (típico) e 81 du (crítico) sem unidade com o processo aberto entre o ofício de razões finais e a juntada da relatoria, com os dois casos julgados na mesma sessão, o que aponta a pauta como fator comum. Pauta contínua com deliberação em bloco ou virtual para os processos de fiscalização prontos é a contrapartida direta da fila de pauta proposta na avaliação.",
+   "parametro_ganho": "Redução de cerca de 27% no tempo médio de deliberação na diretoria (110 para 80 dias, 2022–2025) e de mais da metade no estoque mensal (758 para 332), associada à deliberação em bloco e à delegação de competências; efeito do circuito deliberativo ainda não medido.",
+   "limitacoes": "Relato da própria agência, sem separar o efeito de cada medida (delegação de 2023, reuniões quinzenais, circuito de 2025); abrange todos os processos da diretoria, não só os de fiscalização.",
+   "verificacao": {
+    "veredito": "corrigir",
+    "correcoes_aplicadas": true
+   }
+  }
+ ],
+ "lacunas": [
+  "Inspeção digital com drones, sensores ou imagens aplicada por regulador de gás canalizado ou saneamento, com resultado medido: não encontrada. O estudo de medição móvel de vazamentos de metano em redes urbanas de distribuição (von Fischer et al., 2017, Environmental Science & Technology) é de grupo de pesquisa, não de regulador, e ficou de fora.",
+  "Aplicativo de campo e relatório padronizado com resultado medido: a nota do Banco Mundial sobre o sistema eletrônico de inspeções de segurança de edificações no Peru descreve o sistema e o ensaio randomizado registrado, mas não traz resultado; ficou de fora.",
+  "Redução do tempo entre a constatação e a decisão no processo sancionador decorrente de fiscalização (rito sumário, termo de ajuste, notificação eletrônica), com antes e depois: não encontrada em fonte científica. Há o diagnóstico do TCU sobre demora na decisão de primeira instância na ANEEL e o relato da ANEEL sobre a diretoria (caso 15), que não separa os processos de fiscalização. Os trabalhos sobre consensualidade na ANEEL (Lima, 2023 e 2024) e sobre a Anatel (TCC da ENAP, 2024) são qualitativos, sem números.",
+  "IA para extração de dados dos autos, redação de minuta de parecer ou de relatório de voto em processo sancionador, com resultado medido: não encontrada. Os casos de fase 3 tratam só de seleção de alvos por aprendizado de máquina; a auditoria do órgão de controle da SSA sobre a ferramenta Insight (checagem de minutas de decisão) não pôde ser lida.",
+  "Revisão por pares entre fiscais (ensaio randomizado em King County: Ho, 2017, Stanford Law Review, com 17% a 19% mais violações detectadas e menor variação entre fiscais) ficou de fora por não ter DOI nem handle conferível; é candidato forte para a fase 4 se a regra de camada admitir periódico jurídico sem DOI.",
+  "Experiências da ANP, da ARSESP e da ANTT com fiscalização baseada em risco e resultado medido: não encontradas em fonte verificável.",
+  "Avaliações oficiais do Hampton Review e do Regulators Code (Reino Unido) com números de redução de inspeções e manutenção de resultados: não localizadas em fonte que abrisse.",
+  "Metas e séries de indicadores de desempenho da fiscalização (tempo de resolução, taxa de reincidência) em regulador de gás ou saneamento: não encontradas com evidência; os indicadores do caso 14 (ANEEL) são de conformidade, não de tempo do processo.",
+  "Camada científica com foco específico em redes de distribuição de gás canalizado: só o caso 9 (dutos nos EUA) trata do setor; os demais vêm de segurança do trabalho, ambiental, alimentos e água, transferíveis pela prática e não pelo setor."
+ ]
+}

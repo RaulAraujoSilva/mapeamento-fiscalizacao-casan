@@ -1,0 +1,241 @@
+{
+ "nota": "Priorização da automação por tipo de processo. Premissas de custo e de fração automatizável são hipótese até a medição no piloto.",
+ "parametros": {
+  "criterios": {
+   "volume": [
+    25,
+    [
+     5,
+     10,
+     25,
+     50
+    ]
+   ],
+   "analise": [
+    15,
+    [
+     0.2,
+     0.35,
+     0.5,
+     0.65
+    ]
+   ],
+   "dados": [
+    15,
+    [
+     0.3,
+     0.45,
+     0.6,
+     0.75
+    ]
+   ],
+   "regras": [
+    20,
+    [
+     0.4,
+     0.55,
+     0.7,
+     0.85
+    ]
+   ],
+   "padrao": [
+    15,
+    [
+     0.3,
+     0.4,
+     0.5,
+     0.6
+    ]
+   ],
+   "completude": [
+    10,
+    [
+     0.2,
+     0.35,
+     0.5,
+     0.65
+    ]
+   ]
+  },
+  "naturezas_analise": [
+   "analise_economico_financeira",
+   "analise_juridica",
+   "analise_tecnica_engenharia",
+   "auditoria_conferencia",
+   "fiscalizacao_campo",
+   "relatoria_decisao"
+  ],
+  "portoes": {
+   "nota_volume": 3,
+   "nota_regras": 3,
+   "casos_coorte": 8,
+   "revocacao_volume": 0.75
+  },
+  "fracao_automatizavel": {
+   "alto": [
+    0.4,
+    0.6,
+    0.8
+   ],
+   "médio": [
+    0.15,
+    0.3,
+    0.45
+   ],
+   "baixo": [
+    0.0,
+    0.05,
+    0.1
+   ]
+  },
+  "horas_capacidade": {
+   "automação de tramitação (RPA no SEI)": 40,
+   "monitoramento de prazos e alertas": 24,
+   "painel e indicadores": 24,
+   "classificação e triagem": 60,
+   "extração de dados de documentos": 80,
+   "sumarização e linha do tempo": 40,
+   "busca de precedentes e normas": 60,
+   "verificação de conformidade": 100,
+   "cálculo e conferência automática": 80,
+   "redação assistida de minuta": 80
+  },
+  "horas_plataforma": 160,
+  "horas_config_atividade": 16,
+  "variabilidade_fator": 0.5,
+  "casos_validacao": 30,
+  "horas_validacao_caso": 2,
+  "custo_hora_dev": [
+   220,
+   150,
+   100
+  ],
+  "preco_llm_mchar": [
+   10,
+   5,
+   2
+  ],
+  "manutencao_anual": 0.2,
+  "horizonte_anos": 5,
+  "cenarios": [
+   "conservador",
+   "esperado",
+   "otimista"
+  ],
+  "custo_hora_servidor": 32.71,
+  "fator_custo_total": {
+   "piso": 1.0,
+   "esperado": 1.6,
+   "teto": 2.2
+  }
+ },
+ "codigos": [
+  {
+   "codigo": "P06",
+   "nome": "Fiscalização técnica de campo (programada e por demanda)",
+   "situacao": "estudo_de_caso",
+   "casos_coorte": 1,
+   "casos_nativos": 1,
+   "concordancia_classificador": null,
+   "volume": {
+    "piso_deliberacoes": 3.7,
+    "pct_com_deliberacao": 100,
+    "revocacao": null,
+    "coorte_com_deliberacao": 0,
+    "estimado": null
+   },
+   "sinais": {
+    "pecas": 60,
+    "pecas_analise": 45,
+    "horas_fichas": 318.4,
+    "frac_horas_analise": 0.973,
+    "frac_estruturado": 0.178,
+    "frac_nao_estruturado": 0.378,
+    "frac_norma": 0.489,
+    "frac_teste": 0.978,
+    "frac_texto_padrao": 0.422,
+    "mchar_por_caso": 0.4345
+   },
+   "caminho_mais_frequente": 1.0,
+   "variabilidade": 1.0,
+   "metricas": {
+    "volume": null,
+    "analise": 0.973,
+    "dados": 0.278,
+    "regras": 0.734,
+    "padrao": 0.711,
+    "completude": 0.958
+   },
+   "notas": {
+    "volume": null,
+    "analise": 5,
+    "dados": 1,
+    "regras": 4,
+    "padrao": 5,
+    "completude": 5
+   },
+   "nota_composta": null,
+   "atividades": 8,
+   "atividades_automatizaveis": 8,
+   "atividades_alto": 5,
+   "capacidades": [
+    "automação de tramitação (RPA no SEI)",
+    "busca de precedentes e normas",
+    "cálculo e conferência automática",
+    "extração de dados de documentos",
+    "monitoramento de prazos e alertas",
+    "redação assistida de minuta",
+    "sumarização e linha do tempo",
+    "verificação de conformidade"
+   ],
+   "horas_dev": {
+    "isolado": 856.0,
+    "incremental": 192.0
+   },
+   "horas_caso": {
+    "conservador": 319.2,
+    "esperado": 398.1,
+    "otimista": 477.0
+   },
+   "espera_no_lead": 0.868,
+   "cenarios": {
+    "conservador": {
+     "fracao_automatizavel": 0.39,
+     "custo_construcao": 190283,
+     "custo_incremental": 44203
+    },
+    "esperado": {
+     "fracao_automatizavel": 0.588,
+     "custo_construcao": 131540,
+     "custo_incremental": 31940
+    },
+    "otimista": {
+     "fracao_automatizavel": 0.785,
+     "custo_construcao": 89918,
+     "custo_incremental": 23518
+    }
+   },
+   "portoes": {
+    "volume_medido": false,
+    "nota_volume": false,
+    "nota_regras": true,
+    "casos_coorte": false
+   },
+   "especificacao": {
+    "tarefas": 8,
+    "decisoes": 3,
+    "tarefas_com_gatilho_e_saida": 8,
+    "requisitos": 17,
+    "requisitos_com_teste": 17,
+    "requisitos_medidos": 9,
+    "conformidade_mediana": 100.0,
+    "melhorias": 14,
+    "indicadores": 7,
+    "controles_qualidade_ia": 3,
+    "auditoria_continua": 4
+   },
+   "prioridade": "reavaliar com dados"
+  }
+ ],
+ "carimbo": "6faf68858465ae8cf7281071063ab7d9a73d53932105cf6e8b4e20d4dcea5dd2"
+}

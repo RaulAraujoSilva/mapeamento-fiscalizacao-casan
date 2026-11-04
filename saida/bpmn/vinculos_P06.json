@@ -1,0 +1,151 @@
+{
+ "codigo": "P06",
+ "atividades": {
+  "t1": {
+   "docs": [
+    "SEI-480002/001314/2024:77432319",
+    "SEI-480002/001314/2024:77459067",
+    "SEI-480002/001314/2024:81195142",
+    "SEI-480002/001314/2024:81213540",
+    "SEI-480002/001314/2024:81595411",
+    "SEI-480002/001314/2024:81701160",
+    "SEI-480002/001314/2024:82718456",
+    "SEI-480002/001314/2024:82834832"
+   ],
+   "docs_entrada": [],
+   "descritivo": "A CASAN oficia a concessionária para agendar a vistoria técnica anual em conjuntos de unidades de um município, indicando as estações e a data pretendida, ou para convidá-la a uma vistoria técnica conjunta. O ofício segue por e-mail à concessionária e pede que a resposta indique o processo. Nem todas as vistorias relatadas no processo têm ofício de agendamento juntado.",
+   "gatilho": "Unidades da concessionária previstas na vistoria técnica anual",
+   "saida": "Ofício e e-mail à concessionária solicitando agendamento ou vistoria conjunta",
+   "observacoes": "Os ofícios de agendamento aparecem a partir da metade do ciclo; nos primeiros relatórios não há ofício de agendamento juntado. A confirmação da concessionária não está juntada."
+  },
+  "t2": {
+   "docs": [
+    "SEI-480002/001314/2024:69710124",
+    "SEI-480002/001314/2024:69712392",
+    "SEI-480002/001314/2024:69716140",
+    "SEI-480002/001314/2024:72642867",
+    "SEI-480002/001314/2024:72710417",
+    "SEI-480002/001314/2024:72711316",
+    "SEI-480002/001314/2024:72838107",
+    "SEI-480002/001314/2024:72851141",
+    "SEI-480002/001314/2024:72853692",
+    "SEI-480002/001314/2024:72974318",
+    "SEI-480002/001314/2024:72975320",
+    "SEI-480002/001314/2024:72980247",
+    "SEI-480002/001314/2024:74334571",
+    "SEI-480002/001314/2024:74336951",
+    "SEI-480002/001314/2024:74338948",
+    "SEI-480002/001314/2024:74871240",
+    "SEI-480002/001314/2024:74873701",
+    "SEI-480002/001314/2024:74881165",
+    "SEI-480002/001314/2024:74882333",
+    "SEI-480002/001314/2024:75824539",
+    "SEI-480002/001314/2024:75824232",
+    "SEI-480002/001314/2024:76104339",
+    "SEI-480002/001314/2024:76213730",
+    "SEI-480002/001314/2024:79573239",
+    "SEI-480002/001314/2024:79573103",
+    "SEI-480002/001314/2024:79575319",
+    "SEI-480002/001314/2024:79900134",
+    "SEI-480002/001314/2024:79901118",
+    "SEI-480002/001314/2024:80655356",
+    "SEI-480002/001314/2024:80654568",
+    "SEI-480002/001314/2024:80656194",
+    "SEI-480002/001314/2024:80656240",
+    "SEI-480002/001314/2024:82895573",
+    "SEI-480002/001314/2024:86162193",
+    "SEI-480002/001314/2024:86161531",
+    "SEI-480002/001314/2024:86827856",
+    "SEI-480002/001314/2024:86826650",
+    "SEI-480002/001314/2024:86826664",
+    "SEI-480002/001314/2024:87028948",
+    "SEI-480002/001314/2024:89901514",
+    "SEI-480002/001314/2024:91278977",
+    "SEI-480002/001314/2024:91213447"
+   ],
+   "docs_entrada": [],
+   "descritivo": "O especialista da CASAN vistoria in loco estação elevatória de água ou de esgoto, estação de tratamento ou obra de reforma da concessionária, com checklist e registro fotográfico, e emite relatório de fiscalização com as não conformidades encontradas e as recomendações ou exigências à concessionária. Alguns relatórios pedem cronogramas, histórico de manutenção ou solução para o lodo; outros acompanham o andamento de obra.",
+   "gatilho": "Vistoria programada ou agendada em unidade operada pela concessionária",
+   "saida": "Relatório de fiscalização com não conformidades e recomendações à concessionária",
+   "observacoes": "Atividade repetida ao longo de todo o ciclo anual; concentra a maior parte das peças do processo."
+  },
+  "t3": {
+   "docs": [
+    "SEI-480002/001314/2024:74141761",
+    "SEI-480002/001314/2024:74179603",
+    "SEI-480002/001314/2024:75600516",
+    "SEI-480002/001314/2024:75783205",
+    "SEI-480002/001314/2024:77695170",
+    "SEI-480002/001314/2024:77748737",
+    "SEI-480002/001314/2024:80501066",
+    "SEI-480002/001314/2024:80626379",
+    "SEI-480002/001314/2024:83969598",
+    "SEI-480002/001314/2024:84132825",
+    "SEI-480002/001314/2024:87188346",
+    "SEI-480002/001314/2024:87308946",
+    "SEI-480002/001314/2024:92310062",
+    "SEI-480002/001314/2024:92342599"
+   ],
+   "docs_entrada": [],
+   "descritivo": "A CASAN reúne os relatórios de fiscalização já emitidos e os encaminha à concessionária por ofício, com pedido de manifestação em prazo, e envia o ofício por e-mail. O ciclo se repete a cada lote de relatórios ao longo do ano.",
+   "gatilho": "Lote de relatórios de fiscalização concluído pela câmara",
+   "saida": "Ofício e e-mail à concessionária com relatórios anexos e prazo de manifestação",
+   "observacoes": "As respostas da concessionária a esses ofícios são citadas no parecer técnico e no parecer jurídico, mas não estão juntadas entre as peças coletadas do processo."
+  },
+  "t4": {
+   "docs": [
+    "SEI-480002/001314/2024:104033188",
+    "SEI-480002/001314/2024:104117825"
+   ],
+   "docs_entrada": [],
+   "descritivo": "A CASAN analisa as providências, respostas formais, planos de ação e cronogramas apresentados pela concessionária aos relatórios de fiscalização do ciclo anual e emite parecer técnico, com concordância do gerente da câmara. O parecer conclui pelo cumprimento parcial das recomendações, com pendências estruturais, operacionais e ambientais, e é encaminhado por despacho à Secretaria Executiva.",
+   "gatilho": "Respostas e planos de ação da concessionária às fiscalizações do ciclo",
+   "saida": "Parecer técnico sobre o cumprimento das recomendações e despacho à Secretaria Executiva",
+   "observacoes": "As respostas analisadas não estão juntadas entre as peças coletadas; o parecer as descreve."
+  },
+  "t5": {
+   "docs": [
+    "SEI-480002/001314/2024:114548072",
+    "SEI-480002/001314/2024:114551426"
+   ],
+   "docs_entrada": [],
+   "descritivo": "A Secretaria Executiva encaminha à concessionária, para ciência, o parecer técnico da CASAN, por comunicação enviada por e-mail, informando que os autos estão disponíveis para consulta. A peça não formula pedidos nem fixa prazo.",
+   "gatilho": "Parecer técnico da CASAN encaminhado à Secretaria Executiva",
+   "saida": "Comunicação e e-mail à concessionária com o parecer técnico anexo",
+   "observacoes": "A peça tem o tipo SEI Manifestação, mas é comunicação da Secretaria à concessionária, não manifestação da regulada."
+  },
+  "t6": {
+   "docs": [
+    "SEI-480002/001314/2024:117801870",
+    "SEI-480002/001314/2024:117500524"
+   ],
+   "docs_entrada": [],
+   "descritivo": "A Secretaria Executiva encaminha à CASAN a manifestação da concessionária sobre o parecer técnico. A CASAN reanalisa a manifestação, reitera o parecer e rebate a tese de que a fiscalização se limita aos indicadores de desempenho, com base no Marco Legal do Saneamento, no Regulamento de Serviços e no Contrato de Concessão.",
+   "gatilho": "Manifestação da concessionária contestando o alcance da fiscalização",
+   "saida": "Despacho da CASAN que reitera o parecer técnico e contrapõe os argumentos",
+   "observacoes": "A manifestação da concessionária é citada nos despachos, mas não está juntada entre as peças coletadas. O despacho da Secretaria que abre a passagem entra como trâmite."
+  },
+  "t7": {
+   "docs": [
+    "SEI-480002/001314/2024:120665498",
+    "SEI-480002/001314/2024:117907053"
+   ],
+   "docs_entrada": [],
+   "descritivo": "A Secretaria Executiva remete os autos à Procuradoria com resumo das fiscalizações e das manifestações, diante do pedido de arquivamento formulado pela concessionária. A Procuradoria analisa os fundamentos jurídicos, conclui que o papel fiscalizatório da agência vai além dos indicadores de desempenho, reconhece a regularidade da atuação da CASAN e indica que a concessionária seja cientificada para regularizar os pontos apontados.",
+   "gatilho": "Autos remetidos pela Secretaria diante da contestação e do pedido de arquivamento",
+   "saida": "Parecer jurídico sobre a regularidade e o alcance da fiscalização",
+   "observacoes": "O despacho da Secretaria que abre a passagem entra como trâmite."
+  },
+  "t8": {
+   "docs": [
+    "SEI-480002/001314/2024:140207175",
+    "SEI-480002/001314/2024:140220431"
+   ],
+   "docs_entrada": [],
+   "descritivo": "A Secretaria Executiva dá ciência à concessionária do parecer da Procuradoria por ofício enviado por e-mail, para ciência e adoção das providências cabíveis quanto às recomendações e determinações. O ofício não fixa prazo.",
+   "gatilho": "Parecer jurídico da Procuradoria emitido",
+   "saida": "Ofício e e-mail à concessionária com o parecer jurídico para providências",
+   "observacoes": "Última peça coletada; o processo segue em andamento sem registro posterior de cumprimento."
+  }
+ }
+}

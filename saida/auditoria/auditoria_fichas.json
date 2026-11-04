@@ -1,0 +1,3772 @@
+{
+ "documentos": [
+  {
+   "ref": "SEI-480002/001314/2024:82718456",
+   "tipo": "Ofício - NA 757",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Solicitar agendamento de vistoria técnica à concessionária",
+     "veredito": "suportado",
+     "evidencia": "'solicitar agendamento de Vistoria Técnica nas unidades e datas descritas abaixo'"
+    },
+    {
+     "campo": "entregavel",
+     "item": "Ofício solicitando agendamento de vistoria técnica em unidades de Cambuci e Miracema",
+     "veredito": "suportado",
+     "evidencia": "Ofício com lista de unidades dos Municípios de Cambuci e Miracema"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "null",
+     "veredito": "suportado",
+     "evidencia": "Ofício sem mérito; null coerente"
+    },
+    {
+     "campo": "insumos",
+     "item": "Ficha sem insumos",
+     "veredito": "parcial",
+     "evidencia": "A lista de 26 unidades (PL-RJA...) não tem fonte declarada; ficha não registra de onde saiu"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum documento examinado citado além do processo"
+    },
+    {
+     "campo": "fontes",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhuma fonte externa citada"
+    },
+    {
+     "campo": "calculos",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo no texto"
+    },
+    {
+     "campo": "testes",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Sem teste no texto"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Sem ferramenta citada"
+    },
+    {
+     "campo": "prazos",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Sem prazo de cumprimento; datas de vistoria não registradas (ver omissões)"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum sinal de perda no texto"
+    },
+    {
+     "campo": "encaminhamento",
+     "item": "Concessionária Águas do Rio - Bloco 1",
+     "veredito": "suportado",
+     "evidencia": "Endereçado ao Diretor Presidente da Concessionária Águas do Rio - Bloco 1"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Ofício padrão de solicitação; nível 2 coerente"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "0,5 h compatível com redação de ofício com lista; hipótese declarada na ficha"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "implausivel",
+     "comentario": "Declara 5% transcrição e 40% autoral, mas a lista de 26 unidades (cerca de metade do corpo) é dado reproduzido, não redação própria"
+    },
+    {
+     "campo": "competencias.redacao_oficial",
+     "veredito": "plausivel",
+     "comentario": "Evidência é a própria tarefa de redação; nível básico coerente"
+    }
+   ],
+   "omissoes": [
+    "Número de unidades (26: 11 em Cambuci e 15 em Miracema) não quantificado na ficha",
+    "Datas das vistorias (10, 11 e 12/09/2024) não registradas",
+    "Origem da lista de unidades (códigos PL-RJA) não declarada como insumo"
+   ],
+   "incoerencias": [
+    "Data do ofício (06/09/2024) diverge da data de assinatura eletrônica (09/09/2024); ficha não sinaliza"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:72838107",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Fiscalizar elevatória de esgoto Marina da Glória",
+     "veredito": "suportado",
+     "evidencia": "Fiscalização programada da EEE 08 Marina da Glória; objetivo: verificar funcionamento e conservação"
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório de fiscalização programada com exigências e prazo de 30 dias",
+     "veredito": "suportado",
+     "evidencia": "Relatório nº 053/2024 com cinco recomendações/exigências e conclusão com prazo"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Exige que a concessionária sane as não conformidades no prazo de 30 dias",
+     "veredito": "suportado",
+     "evidencia": "'A concessionária deverá sanar as ... não conformidades ... no prazo de 30 dias'"
+    },
+    {
+     "campo": "insumos",
+     "item": "Vistoria da EEE 08 Marina da Glória em 21/03/2024",
+     "veredito": "suportado",
+     "evidencia": "Data 21/03/2024 no cabeçalho e no texto"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum documento examinado citado"
+    },
+    {
+     "campo": "fontes",
+     "item": "fontes_externas_consultadas: []",
+     "veredito": "contradito",
+     "evidencia": "LOCALIZAÇÃO declara 'Fonte Google Maps'; ficha registra lista vazia"
+    },
+    {
+     "campo": "calculos",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo no texto"
+    },
+    {
+     "campo": "testes",
+     "item": "Verificação de conformidade pelo checklist (aspectos gerais)",
+     "veredito": "suportado",
+     "evidencia": "Anexo 'ESTAÇÃO ELEVATÓRIA (Esgoto) (Aspectos Gerais)'"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Checklist de conformidade e registro fotográfico in loco",
+     "veredito": "suportado",
+     "evidencia": "Anexo de checklist; Fotos 1 a 12"
+    },
+    {
+     "campo": "prazos",
+     "item": "30 dias, cumprimento pela concessionária",
+     "veredito": "suportado",
+     "evidencia": "'no prazo de 30 dias'"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "pedido_complementacao: Prontuário de Instalações Elétricas e Atestado de Saúde Ocupacional",
+     "veredito": "parcial",
+     "evidencia": "É uma das cinco exigências; as outras quatro não aparecem; exigência documental não é sinal de perda"
+    },
+    {
+     "campo": "encaminhamento",
+     "item": "null",
+     "veredito": "parcial",
+     "evidencia": "Conclusão dirige a obrigação à concessionária; ficha registra null"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Inspeção diária e limpeza quinzenal do gradeamento; painel em revitalização (operadores)",
+     "veredito": "suportado",
+     "evidencia": "'Segundo informado pelos operadores, o painel de operações e quadro estão em processo de revitalização'"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Vistoria de uma unidade com checklist e exigências; nível 3 coerente"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "6 h para vistoria, checklist, 12 fotos e relatório; hipótese declarada"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Descrição de campo própria e checklist; introdução padrão compatível com 45%"
+    },
+    {
+     "campo": "competencias.engenharia_saneamento",
+     "veredito": "plausivel",
+     "comentario": "Evidência (poço de visita não inspecionado) é limitação técnica pertinente; nível intermediário aceitável"
+    }
+   ],
+   "omissoes": [
+    "Quatro das cinco exigências não registradas: registros in loco de manutenções, identificação da unidade, manutenção das tampas do poço do gradeamento, adequação da fiação do quadro",
+    "Leituras operacionais não registradas: nível do poço 1,93 m; CMB 1 desliga abaixo de 1,70 m; CMB 3 aciona em 2,50 m; CMB 2 (emergência) em 5,00 m",
+    "Fiação solta aparentemente sem energia no abrigo do quadro não registrada",
+    "Legislação-base (Lei 11.445/2007, Decreto 7.217/2010, CONAMA, ABNT, Portarias) não registrada como insumo normativo",
+    "Dados de projeto (vazão 400 L/s, 3 motobombas submersíveis, lançamento no Interceptor Oceânico) não registrados"
+   ],
+   "incoerencias": [
+    "Datas não registradas na ficha: vistoria 21/03/2024; fecho 'Em 16/04/2024'; assinaturas de 25 a 29/04/2024"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:69710124",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Vistoriar elevatória de água e registrar não conformidades",
+     "veredito": "suportado",
+     "evidencia": "Objetivo: vistoria da operação da Estação Elevatória (Praça Paris); NC apontadas"
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório nº 010/2024 com não conformidades e recomendação",
+     "veredito": "suportado",
+     "evidencia": "'Relatório de Fiscalização AGENERSA/CASAN Nº 010/2024'; 'Recomendações / Exigências'"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Recomenda-se que as não conformidades sejam sanadas",
+     "veredito": "suportado",
+     "evidencia": "'Recomenda-se que as não conformidades observadas sejam sanadas'"
+    },
+    {
+     "campo": "insumos",
+     "item": "Vistoria in loco da estação na Praça Paris",
+     "veredito": "suportado",
+     "evidencia": "Local Fiscalizado: Praça Paris; relatório fotográfico"
+    },
+    {
+     "campo": "insumos",
+     "item": "Informação da coordenadora de operações, classificada como documento_da_regulada",
+     "veredito": "parcial",
+     "evidencia": "Texto registra informação verbal ('Conforme informação...'), não documento escrito"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum documento citado como examinado"
+    },
+    {
+     "campo": "fontes",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhuma fonte externa citada"
+    },
+    {
+     "campo": "calculos",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo no texto"
+    },
+    {
+     "campo": "testes",
+     "item": "Checklist SIM/NÃO; maioria conforme",
+     "veredito": "suportado",
+     "evidencia": "'a maioria dos itens vistoriados está de acordo com as boas práticas sanitárias e de engenharia'"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Vistoria in loco; conjunto motobomba em funcionamento",
+     "veredito": "suportado",
+     "evidencia": "'No momento da vistoria, o conjunto moto bomba estava em funcionamento'"
+    },
+    {
+     "campo": "prazos",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Texto não fixa prazo"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum sinal de perda; recomendações sem prazo"
+    },
+    {
+     "campo": "encaminhamento",
+     "item": "null",
+     "veredito": "suportado",
+     "evidencia": "Destinatário não explicitado no texto; null coerente"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Existência de motobomba reserva no depósito da concessionária",
+     "veredito": "suportado",
+     "evidencia": "Informação da coordenadora de operações: motobomba reserva no depósito"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Vistoria com checklist e NC, sem cálculo; nível 3 coerente"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "6 h para vistoria, checklist, fotos e redação; hipótese declarada"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Descrição própria da vistoria; anexo e cabeçalho padrão"
+    },
+    {
+     "campo": "competencias.engenharia_saneamento",
+     "veredito": "plausivel",
+     "comentario": "Evidência (estado do painel) é constatação; nível intermediário é hipótese fraca mas não implausível"
+    }
+   ],
+   "omissoes": [
+    "As cinco NC enumeradas não aparecem na ficha: identificação da unidade, acesso livre a pessoas não autorizadas, falta de ventilação, falta de iluminação, falta de proteção das instalações elétricas",
+    "Trincas na parede do abrigo, água no interior, abrigo de anéis de concreto (cerca de 1,20 m de diâmetro) e tampão com segredo não registrados",
+    "Dados da motobomba (modelo R1-195/30B, 30 CV, submersível, 100 m³/h) não registrados",
+    "Datas da vistoria e da emissão não registradas"
+   ],
+   "incoerencias": [
+    "Datas inconsistentes no texto: cabeçalho 18/01/2024; fecho 'Em 23/01/2024'; documento de 05/03/2024; assinaturas de 07/03 a 29/04/2024",
+    "Texto descreve bomba submersível, mas o anexo traz observação 'Bomba do tipo anfíbia'",
+    "Anexo marca 'Existe boa iluminação na EEAT? X' e 'A EEAT está em bom estado e protegida? X', enquanto o texto registra abrigo sem iluminação e local aberto; sem coluna legível a leitura não é verificável"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:86826664",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Vistoriar estação elevatória de esgoto",
+     "veredito": "suportado",
+     "evidencia": "Vistoria da operação da EEE Piscinão (rotina)"
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório da EEE Piscinão com recomendações",
+     "veredito": "suportado",
+     "evidencia": "Relatório nº 214/2024 com 'Recomendações'"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Maioria dos itens de acordo e recomenda automação e telemetria",
+     "veredito": "parcial",
+     "evidencia": "Maioria de acordo e recomendação de automação/telemetria existem; a conclusão omite a recomendação de sinalização de risco elétrico"
+    },
+    {
+     "campo": "insumos",
+     "item": "Vistoria da operação da estação (rotina)",
+     "veredito": "suportado",
+     "evidencia": "Vistoria realizada em 20/08/2024"
+    },
+    {
+     "campo": "insumos",
+     "item": "Contrato de Concessão como base da ação",
+     "veredito": "suportado",
+     "evidencia": "'nos termos dos artigos do Contrato de Concessão' (sem artigo indicado)"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum documento citado como examinado"
+    },
+    {
+     "campo": "fontes",
+     "item": "Google Earth (localização)",
+     "veredito": "suportado",
+     "evidencia": "LOCALIZAÇÃO: 'Fonte: Google Earth'"
+    },
+    {
+     "campo": "calculos",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo no texto"
+    },
+    {
+     "campo": "testes",
+     "item": "Checklist de conformidade (aspectos gerais)",
+     "veredito": "suportado",
+     "evidencia": "Anexo 'ESTAÇÃO ELEVATÓRIA (Esgoto) (Aspéctos Gerais)'"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Vistoria in loco; apenas uma bomba instalada",
+     "veredito": "suportado",
+     "evidencia": "'no momento da fiscalização só havia uma bomba submersa instalada em uma das linhas'"
+    },
+    {
+     "campo": "prazos",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Texto não fixa prazo para as recomendações"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum sinal de perda identificado"
+    },
+    {
+     "campo": "encaminhamento",
+     "item": "null",
+     "veredito": "suportado",
+     "evidencia": "Destinatário não explicitado; null coerente"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Vistoria de uma unidade com checklist; nível 3 coerente"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "4 h para uma unidade com uma bomba e checklist; hipótese declarada"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Descrição própria do estado; cabeçalho e fundamentação genérica padrão"
+    },
+    {
+     "campo": "competencias.engenharia_saneamento",
+     "veredito": "plausivel",
+     "comentario": "Evidência (quadro sem automação e sem sinalização) é constatação técnica pertinente"
+    }
+   ],
+   "omissoes": [
+    "Dados de projeto não registrados: vazão de 39,6 L/s, duas bombas projetadas de 4 CV, altura manométrica 24 mca, partida direta, destino à ETE São Gonçalo",
+    "Limitação de inspeção não registrada: poço de gradeamento não visualizado (tampa recém instalada)",
+    "Ausência de telemetria e de automação aparecem só como recomendação, sem ligação ao quadro de achados"
+   ],
+   "incoerencias": [
+    "Trecho de fundamentação diz 'no município de Pomerode', quando a unidade fica em São Gonçalo/RJ; sinal de modelo reutilizado sem revisão",
+    "Anexo marca 'Existe conjunto motor-bomba de reserva instalado? X' enquanto o texto diz que só há uma bomba instalada (se X for SIM, contradição; leitura por coluna não verificável)",
+    "Anexo marca 'O acionamento das bombas é automático? X' enquanto o texto afirma quadro sem automação (mesma limitação de leitura)",
+    "Datas inconsistentes: vistoria 20/08/2024; fecho 'Em 11/10/2024'; cabeçalho 05/11/2024; assinaturas de 06 a 08/11/2024"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:74882333",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Verificar operação de estação elevatória de esgoto",
+     "veredito": "suportado",
+     "evidencia": "Objetivo: 'Verificar Operação dos equipamentos'"
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório com NC e recomendações da EEE 19",
+     "veredito": "suportado",
+     "evidencia": "Relatório nº 060/2024 com resumo de NC e recomendações"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Constata NC e recomenda saná-las em 30 dias",
+     "veredito": "suportado",
+     "evidencia": "'A concessionária deverá sanar as não conformidades ... no prazo 30 (trinta) dias'"
+    },
+    {
+     "campo": "insumos",
+     "item": "Vistoria programada na EEE 19 (Ipanema), 10/04/2024",
+     "veredito": "parcial",
+     "evidencia": "Data 10/04/2024 confere; cabeçalho diz 'Fiscalização Periódica' e introdução 'Fiscalização Programada'"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum documento examinado citado"
+    },
+    {
+     "campo": "fontes",
+     "item": "Google Maps (localização)",
+     "veredito": "suportado",
+     "evidencia": "'Fonte Google Maps'"
+    },
+    {
+     "campo": "calculos",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo no texto"
+    },
+    {
+     "campo": "testes",
+     "item": "Medição do nível de esgoto no poço de sucção",
+     "veredito": "suportado",
+     "evidencia": "'nível de 1,48 m de altura (30% da capacidade)'"
+    },
+    {
+     "campo": "testes",
+     "item": "Avaliação da ventilação da sala de bombas como espaço confinado",
+     "veredito": "suportado",
+     "evidencia": "'Tendo em vista que sala de bombas é um espaço confinado, a ventilação apropriada é fundamental'"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Checklist de conservação, operação e manutenção (anexo)",
+     "veredito": "suportado",
+     "evidencia": "Anexo 'ESTAÇÃO ELEVATÓRIA (Esgoto)'"
+    },
+    {
+     "campo": "prazos",
+     "item": "30 dias, cumprimento",
+     "veredito": "suportado",
+     "evidencia": "'no prazo 30 (trinta) dias e comprovar'"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum sinal de perda classificado; NC do texto não são sinais de perda"
+    },
+    {
+     "campo": "encaminhamento",
+     "item": "null",
+     "veredito": "parcial",
+     "evidencia": "Conclusão dirige a obrigação à concessionária; ficha registra null"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Limpeza manual diária do gradeamento; uma bomba inoperante (operadores)",
+     "veredito": "suportado",
+     "evidencia": "'São feitas manutenções diárias para retirada manual ... segundo informaram os operadores'; 'uma das bombas está inoperante'"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Nível 3 no limite inferior: há patologias estruturais, seis NC e 12 fotos; aceitável"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "6 h para vistoria, medições, checklist e relatório com patologias; hipótese declarada"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Constatações próprias e operadores reproduzidos; introdução padrão compatível com 30%"
+    },
+    {
+     "campo": "competencias.engenharia_saneamento",
+     "veredito": "plausivel",
+     "comentario": "Evidência (sala de bombas como espaço confinado) pertinente à segurança operacional"
+    }
+   ],
+   "omissoes": [
+    "As seis NC enumeradas não aparecem na ficha: falta de registros de manutenção, sem identificação, patologias na infraestrutura civil, ausência de dispositivo para gerador, vazamento por uma das bombas, rachadura em tampa",
+    "Estado ruim da infraestrutura civil (armadura exposta e corroída, rachaduras em vigas, desplacamento de laje, infiltração, bolor) é o principal achado técnico e está ausente",
+    "Exigências adicionais não registradas: comprovar destinação ambientalmente adequada dos resíduos e detalhar procedimentos em caso de falta de energia e de inundação",
+    "Dados técnicos não registrados: 3 conjuntos motobomba de 40 CV, vazão de projeto 390 L/s, duas adutoras de recalque de 400 mm e 425 m",
+    "Fundamentação contratual e legal (Contrato de Concessão, Lei 11.445/2007) não registrada como insumo"
+   ],
+   "incoerencias": [
+    "Tipo da ocorrência: 'Fiscalização Periódica' no cabeçalho e 'Fiscalização Programada' na introdução e nos insumos",
+    "Datas: documento de 17/05/2024; fecho 'Em 07/05/2024'; assinaturas de 20 a 24/05/2024",
+    "Anexo marca 'A EEEB está em bom estado de conservação e protegida? X' e 'Existem sinais de vazamento? X' enquanto o texto registra estado ruim e vazamento; sem coluna legível a leitura não é verificável",
+    "Anexo marca 'Há ponto de entrada ... ligação de gerador? X' enquanto a NC aponta ausência de dispositivo para gerador; leitura por coluna necessária"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:74338948",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Fiscalizar estação elevatória de esgoto Cantagalo",
+     "veredito": "suportado",
+     "evidencia": "EEE 30 Captação em Tempo Seco Cantagalo"
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório com seis NC e recomendações à concessionária",
+     "veredito": "suportado",
+     "evidencia": "Relatório nº 059/2024 com seis não conformidades listadas"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Registra seis NC; maioria dos itens de acordo",
+     "veredito": "suportado",
+     "evidencia": "'a maioria dos itens fiscalizados estão de acordo'; seis itens de NC"
+    },
+    {
+     "campo": "insumos",
+     "item": "Vistoria da EEE 30 em 04/04/2024",
+     "veredito": "suportado",
+     "evidencia": "Data 04/04/2024"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "Anexo de checklist 'Relatório 059/2024'",
+     "veredito": "parcial",
+     "evidencia": "O anexo é o checklist do próprio relatório nº 059/2024; não é documento externo examinado"
+    },
+    {
+     "campo": "fontes",
+     "item": "Google Maps (localização)",
+     "veredito": "suportado",
+     "evidencia": "'Fonte Google Maps'"
+    },
+    {
+     "campo": "calculos",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo no texto"
+    },
+    {
+     "campo": "testes",
+     "item": "Conferência do checklist de conservação, operação e manutenção",
+     "veredito": "suportado",
+     "evidencia": "Anexo 'ESTAÇÃO ELEVATÓRIA (Esgoto)'"
+    },
+    {
+     "campo": "testes",
+     "item": "Medição do nível de esgoto no tanque de sucção",
+     "veredito": "suportado",
+     "evidencia": "'estava com esgoto no nível de 0,64m de altura'"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Vistoria in loco com checklist",
+     "veredito": "suportado",
+     "evidencia": "Anexo e fotos 1 a 7"
+    },
+    {
+     "campo": "prazos",
+     "item": "30 dias",
+     "veredito": "suportado",
+     "evidencia": "'no prazo de 30 (trinta) dias'"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum sinal de perda classificado"
+    },
+    {
+     "campo": "encaminhamento",
+     "item": "null",
+     "veredito": "parcial",
+     "evidencia": "Conclusão dirige a obrigação à concessionária; ficha registra null"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Vistoria de uma unidade com checklist e seis NC; nível 3 coerente"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "6 h para vistoria, checklist, 7 fotos e relatório; hipótese declarada"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Descrição própria dos achados; cabeçalho e fecho padronizados"
+    },
+    {
+     "campo": "competencias.engenharia_saneamento",
+     "veredito": "plausivel",
+     "comentario": "Evidência (bombas submersas, sem avaliação visual) é limitação técnica pertinente"
+    }
+   ],
+   "omissoes": [
+    "As seis NC enumeradas não aparecem na ficha: registros de manutenção, identificação, cópia de licença ambiental, sinalização de risco de choque, dispositivo para gerador, tampa quebrada",
+    "Ausência de cópia do documento de licença ambiental não registrada; achado de natureza regulatória",
+    "Exigências adicionais não registradas: comprovar destinação dos resíduos e detalhar procedimentos em caso de falta de energia e de inundação",
+    "Ausência de iluminação própria e de cercamento da estação não registrada",
+    "Dados técnicos não registrados: 2 motobombas submersíveis de 8 CV, recalque em PVC de cerca de 100 mm e 130 m, tanque de cerca de 3 m"
+   ],
+   "incoerencias": [
+    "Tipo da ocorrência: 'Fiscalização Periódica' no cabeçalho e 'Fiscalização Programada' na introdução",
+    "Campo n_documentos_analisados = 1 conta o próprio anexo do relatório como documento examinado",
+    "Datas: vistoria 04/04/2024; fecho 'Em 07/05/2024'; documento de 10/05/2024; assinaturas de 10 a 24/05/2024",
+    "Anexo marca 'Existem sinais de vazamento? X' e 'Existe sinalização de risco de choque? X', enquanto o texto registra ausência de vazamento e de sinalização; sem coluna legível a leitura não é verificável"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:74334571",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Fiscalizar operação da estação elevatória de esgoto",
+     "veredito": "suportado",
+     "evidencia": "EEE 34 Cantagalo; objetivo: verificar operação dos equipamentos"
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório nº 056/2024 com não conformidades e prazo de 30 dias",
+     "veredito": "suportado",
+     "evidencia": "Relatório nº 056/2024; prazo de 30 dias"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Constata NC na EEE 34 e determina saná-las em 30 dias",
+     "veredito": "suportado",
+     "evidencia": "'deverá sanar as não conformidades ... no prazo de 30 (trinta) dias e detalhar o histórico de manutenções'"
+    },
+    {
+     "campo": "insumos",
+     "item": "Vistoria programada na EEE 34",
+     "veredito": "parcial",
+     "evidencia": "Cabeçalho diz 'Fiscalização Periódica'; introdução diz 'Fiscalização Programada'"
+    },
+    {
+     "campo": "insumos",
+     "item": "Localização no Google Maps",
+     "veredito": "suportado",
+     "evidencia": "'Fonte Google Maps'"
+    },
+    {
+     "campo": "insumos",
+     "item": "Lei 11.445/2007 e Decreto 7.217/2010 como legislação aplicável",
+     "veredito": "suportado",
+     "evidencia": "Citados na introdução"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum documento examinado citado"
+    },
+    {
+     "campo": "fontes",
+     "item": "Google Maps (localização da estação)",
+     "veredito": "suportado",
+     "evidencia": "'Fonte Google Maps'"
+    },
+    {
+     "campo": "calculos",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo no texto"
+    },
+    {
+     "campo": "testes",
+     "item": "Medição de vazão e pressão na motobomba em funcionamento",
+     "veredito": "parcial",
+     "evidencia": "Texto traz 'vazão de 76 L/s e 2,7 mca de pressão', sem método nem instrumento; 'medição' é inferência da ficha"
+    },
+    {
+     "campo": "testes",
+     "item": "Checklist de conservação, operação e manutenção (anexo)",
+     "veredito": "suportado",
+     "evidencia": "Anexo 'ESTAÇÃO ELEVATÓRIA (Esgoto)'"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Vistoria in loco com relatório fotográfico",
+     "veredito": "suportado",
+     "evidencia": "Fotos 1 a 13"
+    },
+    {
+     "campo": "prazos",
+     "item": "30 dias; detalhar histórico de manutenções",
+     "veredito": "suportado",
+     "evidencia": "'no prazo de 30 (trinta) dias e detalhar o histórico de manutenções'"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum sinal de perda classificado"
+    },
+    {
+     "campo": "encaminhamento",
+     "item": "null",
+     "veredito": "parcial",
+     "evidencia": "Conclusão dirige a obrigação à concessionária; ficha registra null"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Vistoria com checklist e várias NC sem cálculo próprio; nível 3 aceitável"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "8 h para vistoria, medições, checklist e 13 fotos; hipótese declarada"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "implausivel",
+     "comentario": "Declara 85% autoral, mas a introdução e o parágrafo sobre componentes de estação são texto genérico reutilizado; padrão de 15% é subestimado"
+    },
+    {
+     "campo": "competencias.engenharia_saneamento",
+     "veredito": "plausivel",
+     "comentario": "Evidência (vazamento na bomba em funcionamento) é constatação técnica"
+    },
+    {
+     "campo": "competencias.auditoria_controle",
+     "veredito": "implausivel",
+     "comentario": "Evidência é o título da fiscalização, não demonstra competência de auditoria de nível intermediário"
+    }
+   ],
+   "omissoes": [
+    "NC do relatório fotográfico não listadas: infiltração e desplacamento da laje, corrosão da eletrocalha e da união do recalque, tubulação de recalque apoiada em tábua de madeira, falta de registros de manutenção, ausência de cópia de licença ambiental",
+    "Vazamento da bomba aparece só como competência, não como NC",
+    "Ausência de gradeamento e de conjunto de reserva (texto) não registrada",
+    "Dados técnicos não registrados: três conjuntos de 100 CV no total, recalques de 200 mm/470 m e 300 mm/1360 m, nível de efluente de 0,9 m, destino à EEE 43 Caiçaras"
+   ],
+   "incoerencias": [
+    "Tipo da ocorrência: 'Fiscalização Periódica' no cabeçalho e 'Fiscalização Programada' na introdução e no insumo",
+    "Texto diz que não há gradeamento nem conjunto de reserva, mas o anexo marca 'Existe gradeamento? X' e 'Existe conjunto motor-bomba de reserva instalado? X'; sem coluna legível (se SIM, contradição)",
+    "Anexo marca 'As bombas estão em bom estado de conservação? X' enquanto o texto registra bomba com vazamento e corrosão na tubulação",
+    "Datas: cabeçalho 04/04/2024; fecho 'Em 23/04/2024'; documento de 10/05/2024; assinaturas de 10 a 24/05/2024"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:72851141",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Fiscalizar estação elevatória de esgoto",
+     "veredito": "suportado",
+     "evidencia": "Fiscalização programada da EEE 29 Urca"
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório da EEE 29 com recomendações à concessionária",
+     "veredito": "suportado",
+     "evidencia": "Relatório nº 054/2024 com cinco recomendações"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Concessionária deverá sanar as NC em 30 dias",
+     "veredito": "suportado",
+     "evidencia": "'A concessionária deverá sanar as não conformidades ... no prazo 30 (trinta) dias'"
+    },
+    {
+     "campo": "insumos",
+     "item": "Fiscalização programada da estação da Urca",
+     "veredito": "suportado",
+     "evidencia": "'1ª Fiscalização Programada'; vistoria de 26/03/2024"
+    },
+    {
+     "campo": "insumos",
+     "item": "Contrato de Concessão como base da ação",
+     "veredito": "suportado",
+     "evidencia": "'nos termos dos artigos do Contrato de Concessão' (sem artigo indicado)"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum documento examinado citado"
+    },
+    {
+     "campo": "fontes",
+     "item": "Google Maps (localização da estação)",
+     "veredito": "suportado",
+     "evidencia": "'Fonte Google Maps'"
+    },
+    {
+     "campo": "calculos",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo no texto"
+    },
+    {
+     "campo": "testes",
+     "item": "Checklist de conformidade (aspectos gerais)",
+     "veredito": "suportado",
+     "evidencia": "Anexo 'ESTAÇÃO ELEVATÓRIA (Esgoto) (Aspectos Gerais)'"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Vistoria in loco",
+     "veredito": "suportado",
+     "evidencia": "'apenas uma das bombas (CMB 1) entrou em operação'"
+    },
+    {
+     "campo": "prazos",
+     "item": "30 dias",
+     "veredito": "suportado",
+     "evidencia": "'no prazo 30 (trinta) dias'"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum sinal de perda classificado"
+    },
+    {
+     "campo": "encaminhamento",
+     "item": "null",
+     "veredito": "parcial",
+     "evidencia": "Conclusão dirige a obrigação à concessionária; ficha registra null"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Vistoria de uma unidade com checklist e recomendações; nível 3 coerente"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "6 h para vistoria, checklist e relatório; hipótese declarada"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Descrição própria dos fatos e checklist; cabeçalho e fecho padrão"
+    },
+    {
+     "campo": "competencias.engenharia_saneamento",
+     "veredito": "plausivel",
+     "comentario": "Evidência é dado de acionamento das bombas (ponto de operação); pertinente, mas é fato e não demonstração de competência"
+    }
+   ],
+   "omissoes": [
+    "Recomendações não registradas: eliminar infiltração severa no abrigo dos quadros, identificar a unidade, reparar trincas, sinalizar risco de choque elétrico, atualizar prontuário e atestado de saúde ocupacional",
+    "Trinca na estrutura e infiltração severa no abrigo dos quadros não registradas; é o achado principal do relatório",
+    "Dados de operação não registrados: vazão de projeto de 32 L/s, três conjuntos convencionais, CMB 3 aciona em 1,80 m, nível máximo de 5,00 m, bomba submersa de contingência com boia, exaustão mecânica"
+   ],
+   "incoerencias": [
+    "Contradição interna: o texto diz que a CMB 1 entrou em operação ao atingir 1,10 m e, depois, que ao cair abaixo de 1,10 m ela desligou e que as três bombas permaneceram desligadas até o fim; a ficha registra 'apenas uma bomba operando'",
+    "Trecho de fundamentação diz 'no município de Pomerode', quando a unidade fica no Rio de Janeiro; modelo reutilizado sem revisão",
+    "Cabeçalho 'Conselho Diretor' diverge do 'Câmara Técnica de Saneamento' dos demais relatórios do mesmo processo",
+    "Datas: vistoria 26/03/2024; fecho 'Em 16/04/2024'; 'Rio de Janeiro, 25 abril de 2024'; assinaturas de 25 a 29/04/2024",
+    "Texto cita fotos 1 a 16, mas só são legendadas as 7 a 9 e 14 a 16; a verificação das demais fotos é impossível"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:117801870",
+   "tipo": "Despacho de Encaminhamento de Processo",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Rebater argumento da concessionária sobre fiscalização",
+     "veredito": "suportado",
+     "evidencia": "Contrapõe a interpretação de que a fiscalização se limita a indicadores de desempenho"
+    },
+    {
+     "campo": "entregavel",
+     "item": "Despacho que reitera o Parecer 250/2025 e contrapõe a tese",
+     "veredito": "suportado",
+     "evidencia": "'esta Câmara reitera o Parecer 250/2025'"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Fiscalização não se limita a indicadores e reitera o Parecer 250/2025",
+     "veredito": "suportado",
+     "evidencia": "'Tais dispositivos demonstram que a fiscalização da Agenersa não se limita à aferição de indicadores'"
+    },
+    {
+     "campo": "insumos",
+     "item": "Parecer 250/2025 (doc. 104033188)",
+     "veredito": "suportado",
+     "evidencia": "'Parecer 250/2025 em 08 de julho de 2025 (104033188)'"
+    },
+    {
+     "campo": "insumos",
+     "item": "Resposta da Águas do Rio de 23/10 (doc. 117463902)",
+     "veredito": "suportado",
+     "evidencia": "'A Águas do Rio, em resposta de 23 de outubro (117463902)'"
+    },
+    {
+     "campo": "insumos",
+     "item": "Marco Legal do Saneamento Básico, art. 11",
+     "veredito": "suportado",
+     "evidencia": "Art. 11, II, transcrito"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "Resposta da Águas do Rio (doc. 117463902)",
+     "veredito": "parcial",
+     "evidencia": "O Parecer 250/2025 é base direta e não consta como documento examinado; n_documentos_analisados = 1 para dois documentos"
+    },
+    {
+     "campo": "fontes",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhuma fonte externa; a legislação citada está no próprio texto"
+    },
+    {
+     "campo": "calculos",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo no texto"
+    },
+    {
+     "campo": "testes",
+     "item": "Confronto da limitação proposta com Marco Legal, Contrato e Regulamento de Serviços",
+     "veredito": "suportado",
+     "evidencia": "'A limitação proposta pela Concessionária contraria o cerne da Lei do Marco do Saneamento'"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Análise normativa",
+     "veredito": "suportado",
+     "evidencia": "'Sob a luz do Marco Legal do Saneamento Básico, fica determinado em seu Art. 11'"
+    },
+    {
+     "campo": "prazos",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Texto sem prazo"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "reiteracao",
+     "veredito": "suportado",
+     "evidencia": "'esta Câmara reitera o Parecer 250/2025 no que concerne à necessidade'"
+    },
+    {
+     "campo": "encaminhamento",
+     "item": "Secretaria Executiva: não declarada no texto",
+     "veredito": "contradito",
+     "evidencia": "Texto inicia com 'À Secretaria Executiva,'"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Conclusões do parecer transcritas e reiteradas",
+     "veredito": "suportado",
+     "evidencia": "Trechos do Parecer transcritos em bloco"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Argumentos da concessionária transcritos e rebatidos",
+     "veredito": "suportado",
+     "evidencia": "Itens 7, 8, 10 e 11 da resposta transcritos"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Confronta a tese da concessionária com três marcos normativos; nível 4 coerente"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "4 h para leitura da resposta, normas e redação; hipótese declarada"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Maior parte transcrita (60%), análise própria curta; coerente com o texto"
+    },
+    {
+     "campo": "competencias.juridico_regulatoria",
+     "veredito": "implausivel",
+     "comentario": "Nível 'especialista' contraria a própria ficha, que diz que a análise própria é curta e 60% do texto é transcrição"
+    }
+   ],
+   "omissoes": [
+    "Escopo do processo não registrado: fiscalização anual de ETAs, ETEs e UTs operadas pela concessionária em 2024",
+    "Art. 23 e art. 25 do Marco Legal, e cláusulas 23.1.4 a 23.1.7 do Contrato (direitos dos usuários), citados no texto, não listados em insumos",
+    "Cláusula 25.5.6, invocada pela concessionária (relatórios de indicadores subsidiam a fiscalização), não registrada; o contraponto depende dela",
+    "Argumento de carência contratual e de ausência histórica de investimentos não registrado como alvo do contraponto",
+    "Recomendações do Parecer 250/2025 (comunicação e transparência, laudos, monitoramento contínuo) não registradas",
+    "Data do despacho (30/10/2025) e assinaturas não registradas"
+   ],
+   "incoerencias": [
+    "Encaminhamento: ficha diz que a Secretaria Executiva não é declarada, mas o texto a declara no cabeçalho",
+    "Escopo divergente: o despacho descreve fiscalização de ETAs, ETEs e UTs sob o mesmo número de processo em que os relatórios tratam de estações elevatórias; a verificar"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:72711316",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Fiscalizar estação elevatória de esgoto",
+     "veredito": "suportado",
+     "evidencia": "Fiscalização periódica da EEE Parque dos Patins"
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório com anexo de checklist e exigências",
+     "veredito": "suportado",
+     "evidencia": "Relatório nº 034/2024 com anexo e seis exigências"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Exige sanar NC em 20 dias e informar a potência da motobomba",
+     "veredito": "suportado",
+     "evidencia": "'sanar as não conformidades ... no prazo de 20 (vinte) dias e informar qual é a potência do conjunto motobomba'"
+    },
+    {
+     "campo": "insumos",
+     "item": "Vistoria periódica in loco da EEE Parque dos Patins",
+     "veredito": "suportado",
+     "evidencia": "'Fiscalização Periódica'; objetivo: verificar operação dos equipamentos"
+    },
+    {
+     "campo": "insumos",
+     "item": "Informação do operador sobre potência, classificada como documento_da_regulada",
+     "veredito": "parcial",
+     "evidencia": "Texto registra informação verbal ('O operador não soube informar'), não documento"
+    },
+    {
+     "campo": "insumos",
+     "item": "Localização por imagem de satélite",
+     "veredito": "suportado",
+     "evidencia": "'Fonte Google Earth'"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Nenhum documento examinado citado"
+    },
+    {
+     "campo": "fontes",
+     "item": "Google Earth (localização)",
+     "veredito": "suportado",
+     "evidencia": "'Fonte Google Earth'"
+    },
+    {
+     "campo": "calculos",
+     "item": "[]",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo no texto"
+    },
+    {
+     "campo": "testes",
+     "item": "Conferência dos itens de conservação, operação e manutenção do anexo",
+     "veredito": "suportado",
+     "evidencia": "'a maioria dos itens fiscalizados estão de acordo com as boas práticas'"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Checklist de conservação, operação e manutenção (anexo)",
+     "veredito": "suportado",
+     "evidencia": "Anexo de checklist"
+    },
+    {
+     "campo": "prazos",
+     "item": "20 dias",
+     "veredito": "suportado",
+     "evidencia": "'no prazo de 20 (vinte) dias'"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "pedido_complementacao (potência) e prazo_concedido (20 dias)",
+     "veredito": "suportado",
+     "evidencia": "'informar qual é a potência do conjunto motobomba'; 'no prazo de 20 (vinte) dias'"
+    },
+    {
+     "campo": "encaminhamento",
+     "item": "null",
+     "veredito": "parcial",
+     "evidencia": "Conclusão dirige a obrigação à concessionária; ficha registra null"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Operador não soube informar a potência da motobomba",
+     "veredito": "suportado",
+     "evidencia": "'O operador não soube informar a potência da motobomba'"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Inspeção de campo com checklist e várias exigências com prazo; nível 3 coerente"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "6 h para vistoria, anexo e exigências; hipótese declarada"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Descrição própria e anexo padronizado; coerente com o texto"
+    },
+    {
+     "campo": "competencias.engenharia_saneamento",
+     "veredito": "plausivel",
+     "comentario": "Evidência (fiação inadequada no poço) é constatação técnica pertinente"
+    },
+    {
+     "campo": "competencias.auditoria_controle",
+     "veredito": "plausivel",
+     "comentario": "Evidência (ausência de sinalização de risco) é detecção de não conformidade, atividade de auditoria; nível básico coerente"
+    }
+   ],
+   "omissoes": [
+    "As NC e exigências não listadas: identificação da unidade, registros de manutenção in loco, sinalização de risco de choque, substituição da tampa do barrilete, adequação da fiação no poço de sucção, prontuário de instalações elétricas e atestado de saúde ocupacional",
+    "Poço de sucção sem trava, tampa do barrilete inadequada e ausência de gradeamento não registrados",
+    "Dois conjuntos submersíveis, um de reserva, alternados e automatizados, não registrados; relevantes para a exigência de potência",
+    "Datas da vistoria (02/04/2024) e da emissão não registradas"
+   ],
+   "incoerencias": [
+    "Texto diz que a EEE não possui identificação, não tem acesso restrito e não tem gradeamento, mas o anexo marca 'O acesso ao local é restrito? X' e 'Existe gradeamento para remoção de sólidos? X'; sem coluna legível a leitura não é verificável",
+    "Datas: cabeçalho 02/04/2024; fecho 'Em 04/04/2024'; 'Rio de Janeiro, 24 abril de 2024'; assinaturas de 24 a 29/04/2024"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:86162193",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Acompanhar obra de reforma de estação elevatória",
+     "veredito": "suportado",
+     "evidencia": "Objeto da fiscalização: verificar andamento e qualidade das obras de reforma (EEE Parafuso)."
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório de vistoria periódica com constatações e recomendações",
+     "veredito": "suportado",
+     "evidencia": "Tipo da ocorrência: Vistoria Periódica; seções VISTORIA e RECOMENDAÇÕES."
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Obra não causou impacto na operação, mas pode afetar o recalque com chuvas de verão",
+     "veredito": "suportado",
+     "evidencia": "CONCLUSÃO: 'não causou impacto na operação ... com a chegada das chuvas de verão pode impactar o recalque'."
+    },
+    {
+     "campo": "insumos",
+     "item": "Vistoria in loco da obra em 14/08/2024",
+     "veredito": "parcial",
+     "evidencia": "A data 14/08/2024 consta do texto, mas a própria seção VISTORIA descreve concretagem concluída em 05/09/2024 e fase de cura, posterior à vistoria."
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Cronograma para o final do ano e próxima etapa, informados por representantes",
+     "veredito": "suportado",
+     "evidencia": "'previsto, segundo os representantes, para o final do ano'; 'próxima etapa será a recolocação do parafuso'."
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Texto não cita peça examinada."
+    },
+    {
+     "campo": "fontes_externas",
+     "item": "Nenhuma",
+     "veredito": "suportado",
+     "evidencia": "Nenhuma fonte externa citada; apenas legislação em tom genérico."
+    },
+    {
+     "campo": "calculos",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Não há cálculo no texto."
+    },
+    {
+     "campo": "testes",
+     "item": "Avaliação do cronograma diante do tempo decorrido e das contingências",
+     "veredito": "suportado",
+     "evidencia": "'pelo tempo decorrido de quatro meses, a mão de obra alocada ... este prazo não será cumprido'."
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Vistoria técnica in loco",
+     "veredito": "suportado",
+     "evidencia": "'foi realizada vistoria em 14/08/2024'; fotos 1 a 10. O registro fotográfico não consta na ficha."
+    },
+    {
+     "campo": "prazos",
+     "item": "Nenhum prazo regulatório",
+     "veredito": "suportado",
+     "evidencia": "Nenhum prazo fixado pelo relatório; o 'final do ano' é cronograma da concessionária (ver omissões)."
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "Nenhum",
+     "veredito": "parcial",
+     "evidencia": "O texto registra risco de atraso ('este prazo não será cumprido') e risco ao recalque; campo vazio."
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "null",
+     "veredito": "parcial",
+     "evidencia": "Recomendação dirigida à concessionária ('Informar quando o reparo ... estiver concluído'); campo null."
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Vistoria única com avaliação de cronograma e conclusão operacional; nível 3 coerente."
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "Vistoria, fotos e relatório de cerca de nove páginas; hipótese declarada."
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Introdução e legislação são boilerplate repetido em outros relatórios; percentuais são estimativa não verificável, direção coerente."
+    },
+    {
+     "campo": "competencias",
+     "veredito": "plausivel",
+     "comentario": "Engenharia de saneamento intermediária pela leitura de fase de cura e cronograma."
+    },
+    {
+     "campo": "fracao_autoral",
+     "veredito": "plausivel",
+     "comentario": "Coerente com pct_autoral 55."
+    }
+   ],
+   "omissoes": [
+    "Cronograma 'final do ano' (prazo informado pela concessionária) e juízo de que não será cumprido não entram em prazos nem em sinais_perda.",
+    "Registro fotográfico (10 fotos) não aparece como insumo; consta só 'vistoria técnica in loco'.",
+    "Remoção do parafuso, do conjunto moto-bomba e do acoplamento para reparo fora do canteiro, e comportas de contingência do poço 4, não registrados; afetam o cronograma.",
+    "Relação com o relatório 209/2024 (ref SEI ...:86161531), que trata da mesma vistoria de 14/08/2024, não registrada."
+   ],
+   "incoerencias": [
+    "Vistoria datada de 14/08/2024 descreve concretagem concluída em 05/09/2024 e cura do concreto: impossível na data indicada e não percebido pela ficha.",
+    "O relatório 209/2024 (ref ...:86161531) descreve a mesma vistoria com fase 'demolição do recobrimento'. São duas versões incompatíveis do mesmo evento, ambas aceitas sem conciliação.",
+    "Datas de emissão desencontradas no próprio texto: cabeçalho 06/09/2024, 'Em 07/10/2024', 'Rio de Janeiro, 24 outubro de 2024' e assinaturas em 06/11 e 08/11/2024."
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:91213447",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Vistoriar ETA Cambuci e registrar não conformidades",
+     "veredito": "suportado",
+     "evidencia": "Objeto: 'Verificar as não conformidades no Sistema de Abastecimento de Cambuci'."
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório de vistoria periódica com NCs e recomendação sobre carvão ativado",
+     "veredito": "suportado",
+     "evidencia": "Seções NÃO CONFORMIDADE e RECOMENDAÇÕES ('sempre que o manancial estiver eutrofizado ... carvão ativado')."
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Não conformidade por ausência de LO e de Outorga de Uso de Recursos Hídricos",
+     "veredito": "parcial",
+     "evidencia": "LO e outorga só aparecem na legenda das fotos 15 e 16. A NC formal é 'bancada do laboratório, necessitando de reparo', e a CONCLUSÃO não menciona LO nem outorga."
+    },
+    {
+     "campo": "insumos",
+     "item": "Vistoria em 11 e 12/09/2024 no município de Cambuci",
+     "veredito": "suportado",
+     "evidencia": "'foi realizada vistoria em 11 e 12/09/2024, no Município de Cambuci'."
+    },
+    {
+     "campo": "calculos",
+     "item": "Balanço de vazões: 20,28 + 1,836 = 22,116 l/s, diferente de 21,82 l/s",
+     "veredito": "parcial",
+     "evidencia": "Aritmética correta (22,116). Porém a equação do texto inclui também 'descarga de limpeza de filtros', omitida na ficha; e 1,836 l/s (água de barragem) conflita com 1,636 l/s por poço na descrição."
+    },
+    {
+     "campo": "testes",
+     "item": "Verificação do estado de operação confrontando com padrão de operação",
+     "veredito": "parcial",
+     "evidencia": "O texto diz só que a ETA 'operava de forma adequada'; nenhum padrão de referência é citado."
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Vistoria in loco com registro fotográfico",
+     "veredito": "suportado",
+     "evidencia": "Fotos 1 a 20 e vistoria de 11 e 12/09/2024."
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "Nenhum",
+     "veredito": "parcial",
+     "evidencia": "A verificação de AAF, LO, outorga e TAC pressupõe exame de documentos de licença que não constam em documentos_examinados."
+    },
+    {
+     "campo": "fontes_externas",
+     "item": "Nenhuma",
+     "veredito": "suportado",
+     "evidencia": "Nenhuma fonte externa citada."
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Nenhum trabalho de terceiro reproduzido no texto."
+    },
+    {
+     "campo": "prazos",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Nenhum prazo no texto."
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "Nenhum",
+     "veredito": "parcial",
+     "evidencia": "TAC (fotos 15 e 16) e carvão ativado em stand-by (sistema suspenso) não registrados."
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "null",
+     "veredito": "parcial",
+     "evidencia": "Recomendação de informar a AGENERSA sobre eutrofização; campo null."
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Vistoria de dois dias, balanço de vazões e verificação de licenças."
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "Dois dias de vistoria, poços e redação; hipótese declarada."
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Descrição de campo própria; cabeçalho e fecho padrão."
+    },
+    {
+     "campo": "competencias",
+     "veredito": "plausivel",
+     "comentario": "Competência ambiental básica baseada em legenda de foto; evidência fraca mas coerente."
+    },
+    {
+     "campo": "fracao_autoral",
+     "veredito": "plausivel",
+     "comentario": "Coerente com pct_autoral 50."
+    }
+   ],
+   "omissoes": [
+    "TAC (fotos 15 e 16) não registrado como insumo, sinal ou encaminhamento.",
+    "NC formal da bancada do laboratório ausente da conclusão_de_merito.",
+    "Termo 'descarga de limpeza de filtros' omitido do balanço de vazões.",
+    "Vazões dos poços (1,636 l/s cada) não reconciliadas com a água de barragem (1,836 l/s).",
+    "Estado do carvão ativado (em stand-by) não registrado, embora sustente a recomendação."
+   ],
+   "incoerencias": [
+    "Datas de emissão conflitantes: 'Em 27/09/2024' contra 'Rio de Janeiro, 13 janeiro de 2025' e assinaturas de janeiro de 2025.",
+    "Vazão de 'água de barragem' de 1,836 l/s na legenda contra vazão de 1,636 l/s por poço na descrição. Ficha usa 1,836 sem notar a divergência.",
+    "Conclusão cita ausência de LO e outorga, mas a NC formal listada é a bancada do laboratório."
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:80656240",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Vistoriar estação elevatória de água tratada Meu Boi",
+     "veredito": "suportado",
+     "evidencia": "Objetivo: verificar condições de operação e manutenção da EEAT 794 - Meu Boi."
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório com dez não conformidades e recomendações de correção em 30 dias",
+     "veredito": "parcial",
+     "evidencia": "Há 10 marcadores de NC, mas o 5º (sem iluminação natural nem artificial) repete o 8º (falta de iluminação natural e artificial). São 9 não conformidades distintas."
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Elevatória consegue suprir a função de pressão manométrica",
+     "veredito": "suportado",
+     "evidencia": "CONCLUSÃO: 'consegue suprir a função ... pressão manométrica suficiente'. Ver omissões sobre a origem dos dados."
+    },
+    {
+     "campo": "insumos",
+     "item": "Vistoria técnica da EEAT em 16/07/2024",
+     "veredito": "suportado",
+     "evidencia": "'vistoria técnica realizada na data de 16/07/2024'; campo Data 16/07/2024."
+    },
+    {
+     "campo": "insumos",
+     "item": "PDA de abastecimento de Magé elaborado pela concessionária",
+     "veredito": "suportado",
+     "evidencia": "'Segundo o Plano Diretor de Abastecimento de Água (PDA) elaborado pela Concessionária'."
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "Anexo de checklist, Relatório 158/2024",
+     "veredito": "parcial",
+     "evidencia": "O anexo faz parte do próprio relatório, não é documento externo examinado. O PDA, citado como insumo, não aparece aqui; n_documentos_analisados = 1 não bate com dois insumos documentais."
+    },
+    {
+     "campo": "fontes_externas",
+     "item": "Google Earth (localização)",
+     "veredito": "suportado",
+     "evidencia": "'Fonte: Google Earth.'"
+    },
+    {
+     "campo": "calculos",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo no texto."
+    },
+    {
+     "campo": "testes",
+     "item": "Conformidade do abrigo, painel e fiação com o checklist",
+     "veredito": "suportado",
+     "evidencia": "Anexo (identificação, conservação, sinalização) e NCs de abrigo, painel e fiação."
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Vistoria in loco com checklist (anexo)",
+     "veredito": "suportado",
+     "evidencia": "Anexo 'ESTAÇÃO ELEVATÓRIA (Água)'."
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "PDA divide o município em cinco sistemas, quatro administrados pela concessionária",
+     "veredito": "suportado",
+     "evidencia": "Texto: 'cinco Sistemas de Abastecimento de Água, sendo quatro deles administrados pela Concessionária'."
+    },
+    {
+     "campo": "prazos",
+     "item": "30 dias, natureza cumprimento, beneficiário concessionária",
+     "veredito": "suportado",
+     "evidencia": "'sanadas no prazo de 30 (trinta) dias'."
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "Nenhum",
+     "veredito": "parcial",
+     "evidencia": "Três avisos de 'PERIGO' à população (fiação, painel, abrigo) e tampa do abrigo presa por um único parafuso não registrados."
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "null",
+     "veredito": "parcial",
+     "evidencia": "Exigências 'Providenciar ...' dirigidas à concessionária; campo null, enquanto relatório 14 do mesmo tipo preenche o campo."
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Vistoria de uma unidade com checklist e conclusão."
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "Vistoria, checklist e redação; hipótese declarada."
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Descrição própria do fato e do checklist; cabeçalho e fecho padrão."
+    },
+    {
+     "campo": "competencias",
+     "veredito": "plausivel",
+     "comentario": "Engenharia intermediária pela observação de falta de manutenção no abrigo."
+    },
+    {
+     "campo": "fracao_autoral",
+     "veredito": "plausivel",
+     "comentario": "Coerente com pct_autoral 60."
+    }
+   ],
+   "omissoes": [
+    "Pressões (5 mca de retaguarda e 15 mca de recalque), potência de 7,5 CV e regime intermitente (12 h em dias alternados) foram informados pela concessionária, mas não constam em trabalho_reproduzido. A conclusão depende deles sem indicar que não foram medidos pela equipe.",
+    "Riscos de 'PERIGO' à população (fiação exposta, painel oxidado, abrigo sem sinalização) não registrados.",
+    "Lista individual das exigências (cerca de nove) não estruturada; só a contagem aparece.",
+    "Local de guarda dos registros de manutenção e da chave do painel (Setor de Eletromecânica) não registrado como limitação de acesso à documentação.",
+    "Abastecimento pelo Sistema Santo Aleixo não registrado."
+   ],
+   "incoerencias": [
+    "Datas de emissão conflitantes: 'Em 16/07/2024' na conclusão, 'Rio de Janeiro, 09 agosto de 2024' no anexo e assinaturas até 24/09/2024.",
+    "Lista de NCs repete o ponto de iluminação, inflando a contagem de 'dez'.",
+    "Anexo marca X ao lado de 'reserva' e 'registros de manutenção', mas o texto diz que não há reserva exclusiva e que os registros ficam no Setor de Eletromecânica. As colunas SIM/NÃO não são identificáveis no texto extraído, então o conflito não se resolve."
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:72710417",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Fiscalizar operação de estação elevatória de esgoto",
+     "veredito": "suportado",
+     "evidencia": "Objetivo: 'Verificar Operação dos equipamentos' (EEE Comida Árabe)."
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório com cinco NCs e exigências",
+     "veredito": "suportado",
+     "evidencia": "Cinco marcadores de NC e cinco exigências 'Providenciar ...'."
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Constata NCs e exige providências em 20 dias",
+     "veredito": "suportado",
+     "evidencia": "CONCLUSÃO: 'sanar as não conformidades ... no prazo de 20 (vinte) dias'."
+    },
+    {
+     "campo": "insumos",
+     "item": "Vistoria in loco da EEE Comida Árabe em 02/04/2024",
+     "veredito": "suportado",
+     "evidencia": "Campo Data: 02/04/2024; vistoria in loco descrita."
+    },
+    {
+     "campo": "insumos",
+     "item": "Anexo (checklist) do relatório",
+     "veredito": "suportado",
+     "evidencia": "'Como indicado no Anexo do relatório, a maioria dos itens fiscalizados estão de acordo'."
+    },
+    {
+     "campo": "insumos",
+     "item": "Boas práticas sanitárias e de engenharia, usadas como norma_ou_contrato",
+     "veredito": "parcial",
+     "evidencia": "Expressão genérica. Nenhuma norma técnica específica nem contrato é identificado; o tipo 'norma_ou_contrato' é superestimado."
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Nenhum documento externo citado."
+    },
+    {
+     "campo": "fontes_externas",
+     "item": "Nenhuma",
+     "veredito": "parcial",
+     "evidencia": "O texto indica 'Fonte Google Earth' para a localização; a ficha omite (diferente do relatório 13)."
+    },
+    {
+     "campo": "calculos",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo."
+    },
+    {
+     "campo": "testes",
+     "item": "Conferência do estado de proteção do painel elétrico e do abrigo",
+     "veredito": "suportado",
+     "evidencia": "'O painel de controle elétrico fica protegido por abrigo de alvenaria com portas metálicas'; falta sinalização."
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Vistoria in loco",
+     "veredito": "suportado",
+     "evidencia": "Vistoria in loco e fotos 1 a 6."
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Nenhum trabalho de terceiro reproduzido."
+    },
+    {
+     "campo": "prazos",
+     "item": "20 dias, cumprimento, concessionária",
+     "veredito": "suportado",
+     "evidencia": "'no prazo de 20 (vinte) dias'."
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "Pedido de complementação: informar a potência do conjunto motobomba",
+     "veredito": "parcial",
+     "evidencia": "O pedido existe (operador não soube informar a potência). Mas o campo é de sinais de perda e um pedido de informação não é sinal de perda; classificação discutível."
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "Concessionária: sanar NCs e informar potência da motobomba",
+     "veredito": "suportado",
+     "evidencia": "CONCLUSÃO: 'a concessionária deverá sanar as não conformidades ... e informar qual é a potência'."
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Descrição própria; boilerplate da função da EE contado como padrão. Transcrição zero é aceitável."
+    },
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Vistoria de uma unidade com checklist e conclusão própria."
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "Vistoria, checklist e redação das NCs; hipótese declarada."
+    },
+    {
+     "campo": "competencias",
+     "veredito": "plausivel",
+     "comentario": "Engenharia intermediária pela observação de fiação inadequada no poço."
+    },
+    {
+     "campo": "fracao_autoral",
+     "veredito": "plausivel",
+     "comentario": "Coerente com pct_autoral 75."
+    }
+   ],
+   "omissoes": [
+    "Fonte Google Earth não registrada (cf. relatório 13).",
+    "Exigência documental (Prontuário de Instalações Elétricas e Atestado de Saúde Ocupacional) não registrada.",
+    "Limitação da vistoria: bombas submersas e estado não constatado (anexo). A conclusão de bom estado da EE não traz essa ressalva.",
+    "Ausência de gradeamento (texto) não registrada.",
+    "Falta de registros de manutenção in loco e a NC de sinalização estão só na lista; não estruturadas como itens."
+   ],
+   "incoerencias": [
+    "Datas conflitantes: 'Em 04/04/2024' na conclusão, 'Rio de Janeiro, 24 abril de 2024' no anexo e assinaturas de 24/04 a 29/04/2024.",
+    "Texto diz que não há conjunto motobomba reserva, mas o anexo marca X em 'Existe conjunto motor-bomba de reserva instalado?'. Coluna não identificável no texto extraído.",
+    "Texto diz que não há gradeamento, mas o anexo marca X em 'Existe gradeamento para remoção de sólidos?'. Mesmo problema de colunas.",
+    "Insumo 'vistoria in loco' usa como evidência um achado (fiação), e não a data da vistoria."
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:80654568",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Vistoriar operação de estação elevatória de água",
+     "veredito": "suportado",
+     "evidencia": "Objetivo: verificar condições de operação e manutenção da EEAT 790 - Mageense."
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório com não conformidades e recomendações à concessionária",
+     "veredito": "suportado",
+     "evidencia": "Seções NÃO CONFORMIDADES e RECOMENDAÇÕES/EXIGÊNCIAS."
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Elevatória supre a função, com NCs a sanar",
+     "veredito": "suportado",
+     "evidencia": "CONCLUSÃO: 'a elevatória consegue suprir a função ...'."
+    },
+    {
+     "campo": "insumos",
+     "item": "Vistoria programada na EEAT 790 em 16/07/2024",
+     "veredito": "suportado",
+     "evidencia": "Data 16/07/2024; Tipo da Ocorrência: Vistoria programada."
+    },
+    {
+     "campo": "insumos",
+     "item": "PDA de Magé elaborado pela concessionária",
+     "veredito": "suportado",
+     "evidencia": "'Segundo o Plano Diretor de Abastecimento de Água (PDA) elaborado pela Concessionária Águas do Rio'."
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Nenhum documento examinado listado."
+    },
+    {
+     "campo": "fontes_externas",
+     "item": "Nenhuma",
+     "veredito": "parcial",
+     "evidencia": "'Fonte: Google Earth' (localização) não registrada."
+    },
+    {
+     "campo": "calculos",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo."
+    },
+    {
+     "campo": "testes",
+     "item": "Verificação de registros de manutenção no local",
+     "veredito": "suportado",
+     "evidencia": "NC: 'Não manter os registros de manutenção no local'."
+    },
+    {
+     "campo": "testes",
+     "item": "Medição de pressão com a bomba em operação (2 mca de retaguarda e 12 mca de recalque)",
+     "veredito": "contradito",
+     "evidencia": "A seção de descrição diz que os dois manômetros 'ainda fora de operação' e a NC lista 'Manômetros que estão no abrigo fora de operação'. O texto atribui a leitura a manômetros que ele mesmo afirma estarem fora de operação."
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Vistoria in loco com checklist de estação elevatória",
+     "veredito": "suportado",
+     "evidencia": "'Conforme o que foi citado acima e no anexo'; anexo ESTAÇÃO ELEVATÓRIA (Água)."
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Quantidade e composição dos sistemas de Magé, segundo o PDA",
+     "veredito": "suportado",
+     "evidencia": "Cinco sistemas, quatro administrados pela concessionária."
+    },
+    {
+     "campo": "prazos",
+     "item": "30 dias, cumprimento, concessionária",
+     "veredito": "suportado",
+     "evidencia": "'sejam sanadas no prazo de 30 (trinta) dias'."
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "Nenhum",
+     "veredito": "parcial",
+     "evidencia": "NC 'Existência de vazamentos na EEAT' é sinal de perda de água e não foi registrada no campo."
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "null",
+     "veredito": "parcial",
+     "evidencia": "Recomendações 'providenciar ...' dirigidas à concessionária; campo null."
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Vistoria com medição, checklist e conclusão; nível 3 razoável."
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "Vistoria, medição, checklist e relatório; hipótese declarada."
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Vistoria própria; caracterização de Magé reproduz o PDA; cabeçalho e anexo padrão."
+    },
+    {
+     "campo": "competencias",
+     "veredito": "implausivel",
+     "comentario": "Única evidência é a leitura de pressão que o próprio texto afirma feita com manômetros fora de operação. A competência fica sem sustentação."
+    },
+    {
+     "campo": "fracao_autoral",
+     "veredito": "plausivel",
+     "comentario": "Coerente com pct_autoral 50."
+    }
+   ],
+   "omissoes": [
+    "Vazamento na EEAT (NC) não registrado em sinais_perda.",
+    "Manômetros fora de operação (limitação da medição) não registrados como limitação do trabalho.",
+    "Dispositivo de proteção antigolpe ausente (NC) não listado.",
+    "Fonte Google Earth não registrada.",
+    "Anúncio de futura transferência da EEAT para abrigo de alvenaria ao lado não registrado."
+   ],
+   "incoerencias": [
+    "Pressões atribuídas a manômetros que o próprio texto diz estarem fora de operação. É a incoerência principal deste relatório, e a ficha a reproduz como medição válida.",
+    "Datas conflitantes: 'Em 24/07/2024' na conclusão, vistoria de 16/07/2024 e assinaturas de 09/08 a 24/09/2024.",
+    "Anexo marca X em 'Existe conjunto motorbomba de reserva no local?' e em 'dispositivos de proteção antigolpe', enquanto o texto diz não haver reserva exclusiva e registra ausência de antigolpe. Colunas não identificáveis no texto extraído."
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:77695170",
+   "tipo": "Ofício - NA 541",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Encaminhar relatórios de fiscalização à concessionária",
+     "veredito": "suportado",
+     "evidencia": "'sirvo-me deste para encaminhar os Relatórios de Fiscalização'."
+    },
+    {
+     "campo": "entregavel",
+     "item": "Ofício de encaminhamento de quatro relatórios e solicitação de manifestação",
+     "veredito": "suportado",
+     "evidencia": "Ofício com quatro itens numerados e pedido de manifestação."
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "null",
+     "veredito": "suportado",
+     "evidencia": "Ofício sem mérito."
+    },
+    {
+     "campo": "insumos",
+     "item": "Relatório 070/2024 - EEE Aquarela do Brasil (encaminhado)",
+     "veredito": "suportado",
+     "evidencia": "Item 1 do ofício."
+    },
+    {
+     "campo": "insumos",
+     "item": "Relatório 073/2024 - EEE Parafuso (encaminhado)",
+     "veredito": "suportado",
+     "evidencia": "Item 2 do ofício."
+    },
+    {
+     "campo": "insumos",
+     "item": "Relatório 065 - EEE Leblon (encaminhado)",
+     "veredito": "suportado",
+     "evidencia": "Item 3 do ofício; número sem ano no original."
+    },
+    {
+     "campo": "insumos",
+     "item": "Relatório 090/2024 - EEE André Azevedo (encaminhado)",
+     "veredito": "suportado",
+     "evidencia": "Item 4 do ofício."
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Relatórios apenas referidos e encaminhados, não examinados."
+    },
+    {
+     "campo": "fontes_externas",
+     "item": "Nenhuma",
+     "veredito": "suportado",
+     "evidencia": "Nenhuma fonte externa citada."
+    },
+    {
+     "campo": "calculos",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo."
+    },
+    {
+     "campo": "testes",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Sem teste."
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Nenhuma",
+     "veredito": "suportado",
+     "evidencia": "Sem ferramenta."
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Orientações e recomendações dos quatro relatórios, apenas referidas",
+     "veredito": "suportado",
+     "evidencia": "'manifestação ... acerca das orientações e recomendações técnicas apontadas nos seguintes relatórios'."
+    },
+    {
+     "campo": "prazos",
+     "item": "30 dias para manifestação, natureza rito",
+     "veredito": "suportado",
+     "evidencia": "'no prazo de 30 (trinta) dias', para manifestação da concessionária."
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Ofício sem sinal de perda."
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "Diretor Presidente da concessionária (Bloco 1): manifestação",
+     "veredito": "suportado",
+     "evidencia": "Destinatário e pedido de manifestação no texto."
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Ofício padrão de encaminhamento."
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "Redação de ofício padrão; hipótese declarada."
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Maior parte é cabeçalho, endereçamento e fecho padrão."
+    },
+    {
+     "campo": "prazos.natureza",
+     "veredito": "plausivel",
+     "comentario": "'rito' é defensável para resposta procedimental. Porém contraria o doc 20, que rotula o mesmo tipo de prazo como 'cumprimento'."
+    }
+   ],
+   "omissoes": [
+    "SEI dos quatro relatórios anexados (75824232, 75824539, 76104339, 76213730) não registrado; prejudica rastreabilidade.",
+    "Data de recebimento, que marca o início do prazo de 30 dias, não registrada."
+   ],
+   "incoerencias": [
+    "Natureza do prazo de manifestação: 'rito' aqui e 'cumprimento' no doc 20, para o mesmo tipo de prazo.",
+    "Relatório 065 escrito sem ano no ofício e na ficha. Numeração irregular copiada sem conferência."
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:69712392",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Fiscalizar estação elevatória de água tratada",
+     "veredito": "suportado",
+     "evidencia": "Objetivo: 'Verificar operação do equipamento' (Estação Elevatória de Água Tratada Barão de Guaratiba)."
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório de fiscalização com NCs e recomendação",
+     "veredito": "suportado",
+     "evidencia": "Seções NÃO CONFORMIDADE e RECOMENDAÇÕES."
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Recomenda sanar as NCs observadas",
+     "veredito": "suportado",
+     "evidencia": "'Recomenda-se que as não conformidades observadas sejam sanadas'."
+    },
+    {
+     "campo": "insumos",
+     "item": "Vistoria in loco da estação elevatória",
+     "veredito": "suportado",
+     "evidencia": "'No momento da vistoria, a bomba estava em funcionamento com pressão manométrica de retaguarda de 4,1 mca e recalque 89,1 mca'."
+    },
+    {
+     "campo": "insumos",
+     "item": "Informação do encarregado da concessionária sobre o acionamento",
+     "veredito": "parcial",
+     "evidencia": "A informação existe (acionamento automatizado, monitoramento no COI). Mas a evidência da ficha é um placeholder não preenchido: 'informação do senhor [nome]'."
+    },
+    {
+     "campo": "insumos",
+     "item": "Localização por mapa (Google Maps)",
+     "veredito": "suportado",
+     "evidencia": "'Fonte Google Maps'."
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Nenhum documento examinado listado."
+    },
+    {
+     "campo": "fontes_externas",
+     "item": "Google Maps (localização)",
+     "veredito": "suportado",
+     "evidencia": "'Fonte Google Maps'."
+    },
+    {
+     "campo": "testes",
+     "item": "Verificação de itens de boas práticas sanitárias e de engenharia",
+     "veredito": "parcial",
+     "evidencia": "O texto afirma conformidade da maioria dos itens, mas o anexo do checklist não consta no texto integral; os itens não são verificáveis."
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Vistoria in loco",
+     "veredito": "suportado",
+     "evidencia": "Vistoria in loco descrita."
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Checklist de conformidade (anexo do relatório)",
+     "veredito": "parcial",
+     "evidencia": "O anexo é referenciado, mas não está presente no texto integral."
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Acionamento automatizado com monitoramento em tempo real no COI",
+     "veredito": "suportado",
+     "evidencia": "'acionamento é feito de forma automatizada, possuindo monitoramento em tempo real no ... COI'."
+    },
+    {
+     "campo": "prazos",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Texto não fixa prazo."
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Sem vazamento ou perda descrita no texto."
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "null",
+     "veredito": "suportado",
+     "evidencia": "Recomendação genérica, sem destinatário nem exigência explícita; null defensável."
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Inspeção de campo de uma unidade com checklist."
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "Visita, checklist e relatório; hipótese declarada."
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Cabeçalho, assinaturas e fecho padrão; descrição própria."
+    },
+    {
+     "campo": "competencias.engenharia_saneamento",
+     "veredito": "plausivel",
+     "comentario": "Nível intermediário sustentado só por observação descritiva; generoso, mas não absurdo."
+    },
+    {
+     "campo": "competencias.auditoria_controle",
+     "veredito": "plausivel",
+     "comentario": "Básico, coerente com a aplicação de checklist."
+    },
+    {
+     "campo": "fracao_autoral",
+     "veredito": "plausivel",
+     "comentario": "Coerente com pct_autoral 55."
+    }
+   ],
+   "omissoes": [
+    "Pressões medidas (retaguarda 4,1 mca e recalque 89,1 mca) e potência de 20 cv não registradas. O recalque de 89,1 mca numa rede de distribuição alimentada diretamente não é avaliado nem no relatório nem na ficha; merece verificação, sem confirmação de norma aplicável nesta auditoria.",
+    "NCs específicas (sem identificação; sem motobomba reserva) não listadas; a conclusão é genérica.",
+    "Informação da concessionária sobre motobombas de potências variadas no depósito, sem saber precisar a relação com as elevatórias, não registrada.",
+    "Data da vistoria não identificada: só a data do relatório (18/01/2024) aparece.",
+    "Anexo do checklist ausente do texto integral."
+   ],
+   "incoerencias": [
+    "Datas conflitantes: 'Data 18/01/2024', 'Em 23/01/2024', 'Rio de Janeiro, 05 março de 2024' e assinaturas de 07/03/2024 a 29/04/2024.",
+    "Evidência de insumo com placeholder não preenchido ('[nome]'). Indica ficha não revisada."
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:117907053",
+   "tipo": "Despacho de Encaminhamento de Processo",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Encaminhar autos à Procuradoria para análise jurídica",
+     "veredito": "suportado",
+     "evidencia": "'À PROCURADORIA ... encaminha-se para ciência e análise da adequação dos fundamentos jurídicos'."
+    },
+    {
+     "campo": "entregavel",
+     "item": "Despacho com resumo das fiscalizações e das manifestações",
+     "veredito": "suportado",
+     "evidencia": "Texto resume parecer, manifestação e reanálise."
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "null",
+     "veredito": "suportado",
+     "evidencia": "Despacho sem mérito."
+    },
+    {
+     "campo": "insumos",
+     "item": "Parecer Nº 250/2025 da CASAN",
+     "veredito": "suportado",
+     "evidencia": "'A Câmara de Saneamento (CASAN) emitiu o Parecer Nº 250/2025'."
+    },
+    {
+     "campo": "insumos",
+     "item": "Manifestação da concessionária (ID 117463902)",
+     "veredito": "suportado",
+     "evidencia": "'a Concessionária apresentou manifestação (ID 117463902)'."
+    },
+    {
+     "campo": "insumos",
+     "item": "Nova manifestação da CASAN reiterando o parecer",
+     "veredito": "suportado",
+     "evidencia": "'reiterou integralmente o Parecer Nº 250/2025'."
+    },
+    {
+     "campo": "insumos",
+     "item": "Leis 11.445/2007 e 14.026/2020, citadas pela CASAN",
+     "veredito": "suportado",
+     "evidencia": "Citação literal: 'Leis nº 11.445/2007 e nº 14.026/2020'."
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "Autos do processo (fiscalizações 2024, manifestações e reanálise)",
+     "veredito": "parcial",
+     "evidencia": "O texto diz 'encaminho os presentes autos', que é encaminhamento, não exame. Não identifica peças examinadas."
+    },
+    {
+     "campo": "fontes_externas",
+     "item": "Nenhuma",
+     "veredito": "suportado",
+     "evidencia": "Nenhuma fonte externa citada."
+    },
+    {
+     "campo": "calculos",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo."
+    },
+    {
+     "campo": "testes",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Sem teste."
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Nenhuma",
+     "veredito": "suportado",
+     "evidencia": "Sem ferramenta."
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Parecer da CASAN: atendimento parcial das recomendações",
+     "veredito": "suportado",
+     "evidencia": "'concluindo pelo atendimento parcial das recomendações técnicas, estruturais e ambientais'."
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Reiteração: fiscalização ampla, abrangendo todas as obrigações",
+     "veredito": "suportado",
+     "evidencia": "'fiscalização da Agência é ampla e abrange a verificação do cumprimento de todas as obrigações'."
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Concessionária: gradualidade, carência, escopo e pedido de arquivamento",
+     "veredito": "suportado",
+     "evidencia": "'gradualidade e carência contratual', 'questiona o escopo', 'solicitou o arquivamento'."
+    },
+    {
+     "campo": "prazos",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Nenhum prazo no texto."
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Nenhum sinal de perda descrito."
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "Procuradoria: ciência e análise da adequação dos fundamentos jurídicos",
+     "veredito": "suportado",
+     "evidencia": "Texto encaminha para 'ciência e análise da adequação dos fundamentos jurídicos'."
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "implausivel",
+     "comentario": "Despacho resume controvérsia jurídica sobre o escopo da fiscalização (obrigações de meio e de resultado). Nível 1 subestima o conteúdo."
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "implausivel",
+     "comentario": "Ficha atribui leitura dos autos (parecer, duas manifestações e relatórios de 2024) a 0,5 hora."
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Texto é paráfrase de pareceres. Classificar 50% como transcrição é alto, mas a estrutura do despacho é coerente."
+    },
+    {
+     "campo": "competencias",
+     "veredito": "plausivel",
+     "comentario": "Gestão processual básica."
+    },
+    {
+     "campo": "fracao_autoral",
+     "veredito": "plausivel",
+     "comentario": "Coerente com pct_autoral 25."
+    }
+   ],
+   "omissoes": [
+    "ID do Parecer 250/2025 (104033188) não registrado; só o ID da manifestação consta.",
+    "Relatórios de fiscalização de 2024 que a CASAN e a concessionária discutem não são identificados nos insumos.",
+    "A questão central (obrigações de resultado contra obrigações de meio) aparece só em encaminha_para, não em tarefa."
+   ],
+   "incoerencias": [
+    "n_documentos_analisados = 1, mas a ficha lista quatro insumos (parecer, manifestação, reiteração e leis). documentos_examinados lista um único agregado 'autos'.",
+    "Competência 'gestao_processual' apoiada só em frase de encaminhamento; evidência fraca."
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:86161531",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Vistoriar andamento de obra de reforma",
+     "veredito": "suportado",
+     "evidencia": "Objeto: verificar andamento e qualidade das obras de reforma (EEE Parafuso)."
+    },
+    {
+     "campo": "entregavel",
+     "item": "Relatório de vistoria da obra com recomendação estrutural",
+     "veredito": "suportado",
+     "evidencia": "RECOMENDAÇÕES: reforço estrutural nos outros poços."
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "Obra não afetou a operação; prazo informado não será cumprido",
+     "veredito": "suportado",
+     "evidencia": "CONCLUSÃO: 'não causou impacto na operação'; VISTORIA: 'este prazo não será cumprido'."
+    },
+    {
+     "campo": "insumos",
+     "item": "Vistoria in loco do canteiro e da estrutura da EEE Parafuso em 14/08/2024",
+     "veredito": "suportado",
+     "evidencia": "'foi realizada vistoria em 14/08/2024'; Data 14/08/2024."
+    },
+    {
+     "campo": "insumos",
+     "item": "Cronograma informado pelos representantes da concessionária",
+     "veredito": "suportado",
+     "evidencia": "'previsto, segundo os representantes, para o final do ano'."
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Nenhum documento examinado listado."
+    },
+    {
+     "campo": "fontes_externas",
+     "item": "Nenhuma",
+     "veredito": "suportado",
+     "evidencia": "Nenhuma fonte externa citada."
+    },
+    {
+     "campo": "calculos",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo."
+    },
+    {
+     "campo": "testes",
+     "item": "Avaliação própria do cronograma frente ao tempo decorrido e à mão de obra",
+     "veredito": "suportado",
+     "evidencia": "'acreditamos que pelo tempo decorrido de quatro meses, a mão de obra alocada ... não será cumprido'."
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Vistoria in loco do estado atual da obra",
+     "veredito": "suportado",
+     "evidencia": "'A fase atual da obra é demolição do recobrimento'."
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Representantes informaram que o cronograma prevê conclusão para o final do ano",
+     "veredito": "suportado",
+     "evidencia": "Mesmo trecho de cronograma, informado pelos representantes."
+    },
+    {
+     "campo": "prazos",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Nenhum prazo regulatório no texto. O 'final do ano' fica fora do campo (ver omissões)."
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "Nenhum",
+     "veredito": "parcial",
+     "evidencia": "Risco de atraso ('não será cumprido') não registrado. Mesmo padrão do relatório 11."
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "null",
+     "veredito": "suportado",
+     "evidencia": "Recomendação sem destinatário explícito; null defensável."
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Vistoria de obra com avaliação de cronograma e recomendação estrutural."
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "Vistoria de obra e redação; hipótese declarada."
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Análise própria; cabeçalho e assinaturas padrão. Texto muito parecido com o relatório 11."
+    },
+    {
+     "campo": "competencias",
+     "veredito": "plausivel",
+     "comentario": "Engenharia intermediária pela recomendação estrutural. A evidência da ficha é a própria recomendação, circular mas coerente."
+    },
+    {
+     "campo": "fracao_autoral",
+     "veredito": "plausivel",
+     "comentario": "Coerente com pct_autoral 70."
+    }
+   ],
+   "omissoes": [
+    "Remoção do parafuso, conjunto moto-bomba e acoplamento para reparo fora do canteiro, e comportas de contingência do poço 4, não registrados.",
+    "Prazo 'final do ano' fora do campo prazos.",
+    "Datas de emissão desencontradas (27/08/2024 na conclusão; 'Rio de Janeiro, 24 outubro de 2024'; assinaturas em 06/11 e 08/11/2024) não registradas.",
+    "Relação com o relatório 11 (mesma vistoria de 14/08/2024, mesma unidade) não identificada."
+   ],
+   "incoerencias": [
+    "Mesma vistoria de 14/08/2024 (EEE Parafuso): o relatório 11 descreve cura após concretagem de 05/09/2024; este descreve demolição do recobrimento. Duas versões incompatíveis do mesmo evento, ambas aceitas.",
+    "Conclusão 'Em 27/08/2024' contra 'Rio de Janeiro, 24 outubro de 2024' e assinaturas de 06/11 e 08/11/2024."
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:74141761",
+   "tipo": "Ofício - NA 349",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "Encaminhar relatórios de fiscalização à concessionária",
+     "veredito": "suportado",
+     "evidencia": "'sirvo-me deste para encaminhar os Relatórios de Fiscalização'."
+    },
+    {
+     "campo": "entregavel",
+     "item": "Ofício de encaminhamento de doze relatórios, com pedido de manifestação em 30 dias",
+     "veredito": "suportado",
+     "evidencia": "Lista de 12 relatórios e pedido de manifestação no prazo de 30 dias."
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "null",
+     "veredito": "suportado",
+     "evidencia": "Ofício sem mérito."
+    },
+    {
+     "campo": "insumos",
+     "item": "Doze relatórios (nº 10 a 55/2024) encaminhados em anexo",
+     "veredito": "parcial",
+     "evidencia": "São 12 relatórios listados, mas os números (10, 11, 12, 33, 34, 38, 46, 47, 48, 53, 54, 55) não são contíguos, e a faixa 'nº 10 a 55' induz a erro. 'Em anexo' é inferência de 'Seguem'."
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Relatórios apenas encaminhados."
+    },
+    {
+     "campo": "fontes_externas",
+     "item": "Nenhuma",
+     "veredito": "suportado",
+     "evidencia": "Nenhuma fonte externa citada."
+    },
+    {
+     "campo": "calculos",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Sem cálculo."
+    },
+    {
+     "campo": "testes",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Sem teste."
+    },
+    {
+     "campo": "ferramentas",
+     "item": "Nenhuma",
+     "veredito": "suportado",
+     "evidencia": "Sem ferramenta."
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Ofício não reproduz conteúdo dos relatórios."
+    },
+    {
+     "campo": "prazos",
+     "item": "30 dias, natureza cumprimento",
+     "veredito": "parcial",
+     "evidencia": "O prazo de 30 dias confere. A natureza 'cumprimento' não cabe em pedido de manifestação; o doc 16 usa 'rito' para o mesmo tipo de prazo."
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "Nenhum",
+     "veredito": "suportado",
+     "evidencia": "Ofício sem sinal de perda."
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "Águas do Rio - Bloco 1: manifestação sobre orientações e recomendações",
+     "veredito": "suportado",
+     "evidencia": "Destinatário e pedido de manifestação no texto."
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausivel",
+     "comentario": "Ofício padrão de encaminhamento com pedido de manifestação."
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausivel",
+     "comentario": "Ofício padrão com lista de relatórios já produzidos; hipótese declarada."
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausivel",
+     "comentario": "Ofício curto, com cabeçalho, fecho e assinatura padrão."
+    },
+    {
+     "campo": "prazos.natureza",
+     "veredito": "implausivel",
+     "comentario": "Pedido de manifestação não é obrigação de cumprimento. Doc 16 classifica o mesmo tipo de prazo como 'rito'."
+    },
+    {
+     "campo": "competencias",
+     "veredito": "plausivel",
+     "comentario": "Redação oficial básica, mas a evidência é uma única frase de abertura."
+    }
+   ],
+   "omissoes": [
+    "Os doze relatórios não são enumerados individualmente, nem com SEI. A ficha só descreve a faixa 10 a 55.",
+    "Relação com relatórios da amostra (Relatório 11/2024, doc 17, e Relatório 033/2024, doc 14) não registrada, embora estejam na lista."
+   ],
+   "incoerencias": [
+    "Natureza do prazo de manifestação: 'cumprimento' aqui e 'rito' no doc 16.",
+    "Faixa 'nº 10 a 55' apresentada como se fosse contínua, quando a lista é esparsa."
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:104033188",
+   "tipo": "Parecer 250",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "analisar respostas da concessionária às fiscalizações de 2024",
+     "veredito": "suportado",
+     "evidencia": "versa sobre a análise das providências adotadas"
+    },
+    {
+     "campo": "entregavel",
+     "item": "parecer sobre cumprimento das recomendações de 42 relatórios de 2024",
+     "veredito": "suportado",
+     "evidencia": "lista numerada de 42 relatórios (contagem confere)"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "cumprimento apenas parcial; concessionária deve intensificar esforços",
+     "veredito": "suportado",
+     "evidencia": "cumprimento apenas parcial das recomendações; deve intensificar seus esforços"
+    },
+    {
+     "campo": "insumos",
+     "item": "relatórios de fiscalização de 2024 (42)",
+     "veredito": "suportado",
+     "evidencia": "As Unidades fiscalizadas no Ano de 2024 foram:"
+    },
+    {
+     "campo": "insumos",
+     "item": "respostas formais, relatórios técnicos e planos de ação da concessionária",
+     "veredito": "suportado",
+     "evidencia": "encaminhou respostas formais e relatórios técnicos detalhados"
+    },
+    {
+     "campo": "insumos",
+     "item": "Contrato de Concessão, Regulamento de Serviços e Anexo IV",
+     "veredito": "suportado",
+     "evidencia": "o Anexo IV – Caderno de Encargos e demais anexos contratuais"
+    },
+    {
+     "campo": "insumos",
+     "item": "Leis federais nº 11.445/2007 e nº 14.026/2020",
+     "veredito": "suportado",
+     "evidencia": "Leis nº 11.445/2007 e nº 14.026/2020"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "ofícios, relatórios, respostas e planos de ação (genérico)",
+     "veredito": "parcial",
+     "evidencia": "termo genérico; os 42 relatórios não são enumerados e n_documentos_analisados = 1"
+    },
+    {
+     "campo": "fontes_externas_consultadas",
+     "item": "nenhuma fonte externa",
+     "veredito": "suportado",
+     "evidencia": "ABNT e ANA citadas apenas como normas aplicáveis, sem consulta registrada"
+    },
+    {
+     "campo": "calculos",
+     "item": "nenhum cálculo",
+     "veredito": "suportado",
+     "evidencia": "texto sem cálculo próprio"
+    },
+    {
+     "campo": "testes",
+     "item": "verificação do cumprimento de prazos e cronogramas",
+     "veredito": "suportado",
+     "evidencia": "parte dos prazos estabelecidos para as adequações foi postergada"
+    },
+    {
+     "campo": "testes",
+     "item": "verificação da comprovação técnica e documental",
+     "veredito": "suportado",
+     "evidencia": "sem a respectiva comprovação técnica e documental do cumprimento integral"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "análise documental de manifestações, cronogramas e evidências",
+     "veredito": "suportado",
+     "evidencia": "a análise detida das manifestações evidencia que"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "justificativas da concessionária (ausência histórica de investimentos; carência contratual)",
+     "veredito": "suportado",
+     "evidencia": "contexto de ausência histórica de investimentos e à vigência de períodos de carência contratual"
+    },
+    {
+     "campo": "prazos",
+     "item": "nenhum prazo registrado",
+     "veredito": "parcial",
+     "evidencia": "texto registra postergação de prazos sem número; a ficha não registra a postergação"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "reiteração (pendências significativas)",
+     "veredito": "parcial",
+     "evidencia": "permanecem pendências significativas; o texto não qualifica o sinal como reiteração"
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "nenhum destinatário",
+     "veredito": "suportado",
+     "evidencia": "texto não indica destinatário específico; fala em monitoramento e medidas cabíveis"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausível",
+     "comentario": "4 coerente com análise cruzada de 42 relatórios e das respostas"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausível",
+     "comentario": "24 h (cerca de 35 min por relatório, mais a redação) é plausível como hipótese; marcada como hipótese"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausível",
+     "comentario": "55/20/25 coerente: lista de relatórios e resumo normativo são transcrição; cabeçalho padrão"
+    },
+    {
+     "campo": "fracao_autoral",
+     "veredito": "plausível",
+     "comentario": "0,55 coincide com pct_autoral 55"
+    }
+   ],
+   "omissoes": [
+    "Deliberação Nº 4216/2021, base das fiscalizações, não consta nos insumos",
+    "Anexo III – Indicadores de Desempenho, citado como fundamento de carência, não consta nos insumos",
+    "Nenhuma quantificação do cumprimento (quantas recomendações cumpridas, parciais ou não cumpridas) e nenhuma tabela por unidade; a ficha não registra essa limitação",
+    "Tipos de unidade (ETAs, ETEs, UTs, EEEs) e a advertência de penalidades em caso de descumprimento não aparecem na ficha",
+    "Compromisso de intensificar monitoramento, auditorias e inspeções em campo não consta no encaminhamento"
+   ],
+   "incoerencias": [
+    "n_documentos_analisados = 1 contra 42 relatórios declarados como analisados (entregável e insumos)",
+    "documentos_examinados traz um item genérico, e não os 42 relatórios",
+    "prazos vazio, mas testes_auditoria registra o teste de prazos postergados"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:79901118",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "vistoriar estação elevatória de água tratada Ojuara",
+     "veredito": "suportado",
+     "evidencia": "vistoria técnica realizada na data de 26/06/2024"
+    },
+    {
+     "campo": "entregavel",
+     "item": "RF nº 159/2024 com irregularidades e recomendações",
+     "veredito": "suportado",
+     "evidencia": "listando-se abaixo as seguintes irregularidades verificadas"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "constata três irregularidades e recomenda saná-las",
+     "veredito": "suportado",
+     "evidencia": "Recomenda-se que as não conformidades observadas sejam sanadas"
+    },
+    {
+     "campo": "insumos",
+     "item": "vistoria in loco da EEAT Ojuara",
+     "veredito": "suportado",
+     "evidencia": "vistoria técnica realizada na data de 26/06/2024"
+    },
+    {
+     "campo": "insumos",
+     "item": "localização no Google Earth",
+     "veredito": "suportado",
+     "evidencia": "Fonte: Google Earth."
+    },
+    {
+     "campo": "insumos",
+     "item": "legislação de saneamento (Lei 11.445/2007; Decreto 7.217/2010)",
+     "veredito": "suportado",
+     "evidencia": "a Lei Federal nº 11.445/2007, o Decreto Federal nº 7.217/2010"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "nenhum documento examinado",
+     "veredito": "suportado",
+     "evidencia": "texto não cita documento do processo"
+    },
+    {
+     "campo": "fontes_externas_consultadas",
+     "item": "Google Earth (localização)",
+     "veredito": "suportado",
+     "evidencia": "Fonte: Google Earth."
+    },
+    {
+     "campo": "calculos",
+     "item": "nenhum cálculo",
+     "veredito": "suportado",
+     "evidencia": "texto sem cálculo próprio"
+    },
+    {
+     "campo": "testes",
+     "item": "checklist de conservação, operação e manutenção (anexo)",
+     "veredito": "suportado",
+     "evidencia": "ESTAÇÃO ELEVATÓRIA (Água)"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "vistoria in loco com relatório fotográfico",
+     "veredito": "suportado",
+     "evidencia": "Foto 4 – Painel de automação e elétrica (fotos existem; a evidência indicada na ficha é observação)"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "nenhuma informação de terceiros reproduzida",
+     "veredito": "suportado",
+     "evidencia": "texto registra apenas representantes e nenhuma informação transcrita"
+    },
+    {
+     "campo": "prazos",
+     "item": "nenhum prazo",
+     "veredito": "suportado",
+     "evidencia": "texto sem prazo"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "nenhum sinal de perda",
+     "veredito": "suportado",
+     "evidencia": "nenhum pedido de complementação no texto"
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "nenhum destinatário",
+     "veredito": "suportado",
+     "evidencia": "sem encaminhamento no texto"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausível",
+     "comentario": "3 coerente com vistoria e checklist sem cálculo"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausível",
+     "comentario": "6 h para vistoria, checklist e relatório curto; marcada como hipótese"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausível",
+     "comentario": "75/0/25 coerente: descrição própria; cabeçalho e assinaturas padrão"
+    }
+   ],
+   "omissoes": [
+    "Limitações da vistoria: abrigo lacrado, bomba não visualizada, iluminação natural e artificial, circulação, manutenção e plano de contingência marcados como não avaliados; não registrados",
+    "Dados técnicos não registrados: vazão de 10 L/s, operação 2h30 por dia, motobomba de 7,5 CV, ausência de conjunto reserva",
+    "Tampa do abrigo não aberta por falta de equipamento"
+   ],
+   "incoerencias": [
+    "competencias usam observações (ex.: falta de iluminação artificial) como evidência de competência, o que é achado e não competência",
+    "conclusão 'constata três irregularidades' sem a ressalva de que parte relevante do checklist não foi avaliada",
+    "datas: 'Em 22/07/2024' (conclusão) e 'Rio de Janeiro, 30 julho de 2024' (anexo)",
+    "anexo marca 'Existe conjunto motor-bomba de reserva? X' enquanto o texto diz 'Não há conjunto motobomba reserva'; colunas do anexo ilegíveis no texto extraído, então não é conclusivo"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:83969598",
+   "tipo": "Ofício - NA 831",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "encaminhar relatórios de fiscalização à concessionária",
+     "veredito": "suportado",
+     "evidencia": "sirvo-me deste para encaminhar os Relatórios de Fiscalização"
+    },
+    {
+     "campo": "entregavel",
+     "item": "ofício que encaminha cinco relatórios e pede manifestação em 30 dias",
+     "veredito": "suportado",
+     "evidencia": "solicitar, no prazo de 30 (trinta) dias, manifestação da Concessionária"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "nenhuma (ofício de encaminhamento)",
+     "veredito": "suportado",
+     "evidencia": "ofício sem análise de mérito"
+    },
+    {
+     "campo": "insumos",
+     "item": "relatórios nº 153/2024 e nº 155/2024 a 158/2024",
+     "veredito": "suportado",
+     "evidencia": "Relatório de Fiscalização AGENERSA/CASAN nº 153/2024"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "nenhum documento analisado",
+     "veredito": "suportado",
+     "evidencia": "n_documentos_analisados = 0; ofício não analisa conteúdo"
+    },
+    {
+     "campo": "fontes_externas_consultadas",
+     "item": "nenhuma",
+     "veredito": "suportado",
+     "evidencia": "sem fonte externa no texto"
+    },
+    {
+     "campo": "calculos",
+     "item": "nenhum cálculo",
+     "veredito": "suportado",
+     "evidencia": "texto sem cálculo"
+    },
+    {
+     "campo": "testes",
+     "item": "nenhum teste",
+     "veredito": "suportado",
+     "evidencia": "texto sem teste"
+    },
+    {
+     "campo": "prazos",
+     "item": "30 dias para manifestação (diligência)",
+     "veredito": "suportado",
+     "evidencia": "no prazo de 30 (trinta) dias"
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "Diretor Presidente da concessionária (manifestação)",
+     "veredito": "suportado",
+     "evidencia": "Diretor Presidente da Concessionária Águas do Rio - Bloco 1"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "nenhum sinal de perda",
+     "veredito": "suportado",
+     "evidencia": "nenhum sinal no texto"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "texto não reproduz informação de terceiros"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausível",
+     "comentario": "2 coerente com ofício padrão"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausível",
+     "comentario": "0,5 h para ofício curto com cinco identificadores; hipótese"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausível",
+     "comentario": "35/15/50 coerente: lista de identificadores é transcrição, cabeçalho e fecho padrão"
+    }
+   ],
+   "omissoes": [
+    "Nomes das cinco unidades (EAT Canal, Mageense, Presídio I, Meu Boi e o relatório 153) não constam; apenas números",
+    "Data do ofício (25/09/2024) não registrada"
+   ],
+   "incoerencias": []
+  },
+  {
+   "ref": "SEI-480002/001314/2024:80655356",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "verificar manutenção de estação elevatória de água",
+     "veredito": "suportado",
+     "evidencia": "Verificar a operação e manutenção da Estação Elevatória de Água Tratada"
+    },
+    {
+     "campo": "entregavel",
+     "item": "relatório com não conformidades e recomendações da EEAT 791",
+     "veredito": "suportado",
+     "evidencia": "seguem as não conformidades constatadas pela equipe de Fiscalização/CASAN"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "elevatória consegue suprir a função, com pressão suficiente",
+     "veredito": "suportado",
+     "evidencia": "a elevatória consegue suprir a função, ou seja, proporcionar pressão manométrica suficiente"
+    },
+    {
+     "campo": "insumos",
+     "item": "vistoria técnica in loco na EEAT 791 em 16/07/2024",
+     "veredito": "suportado",
+     "evidencia": "vistoria técnica realizada na data de 16/07/2024"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "nenhum documento examinado",
+     "veredito": "suportado",
+     "evidencia": "texto não cita documento do processo"
+    },
+    {
+     "campo": "fontes_externas_consultadas",
+     "item": "Google Earth (localização)",
+     "veredito": "suportado",
+     "evidencia": "Fonte: Google Earth."
+    },
+    {
+     "campo": "calculos",
+     "item": "nenhum cálculo",
+     "veredito": "suportado",
+     "evidencia": "medição de pressão é teste e não cálculo"
+    },
+    {
+     "campo": "testes",
+     "item": "medição da pressão de recalque em operação",
+     "veredito": "suportado",
+     "evidencia": "A pressão manométrica de recalque era de 20 mca"
+    },
+    {
+     "campo": "testes",
+     "item": "inspeção do estado do conjunto motobomba",
+     "veredito": "suportado",
+     "evidencia": "A bomba é do tipo centrífuga e não está em bom estado de conservação"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "checklist de conservação e operação (anexo)",
+     "veredito": "suportado",
+     "evidencia": "Existe identificação da estação elevatória (EEAT)?"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "informações do representante sobre reserva, registros de manutenção e potência",
+     "veredito": "suportado",
+     "evidencia": "Segundo representante da Concessionária"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "número de sistemas de abastecimento e quais são administrados pela concessionária (PDA)",
+     "veredito": "suportado",
+     "evidencia": "existem cinco Sistemas de Abastecimento de Água, sendo quatro deles administrados pela Concessionária"
+    },
+    {
+     "campo": "prazos",
+     "item": "30 dias para sanar não conformidades",
+     "veredito": "suportado",
+     "evidencia": "sanadas no prazo de 30 (trinta) dias"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "nenhum sinal de perda",
+     "veredito": "suportado",
+     "evidencia": "nenhum pedido de complementação no texto"
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "nenhum destinatário",
+     "veredito": "suportado",
+     "evidencia": "sem encaminhamento específico"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausível",
+     "comentario": "3 coerente com vistoria e checklist com conclusão sobre não conformidades"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausível",
+     "comentario": "4 h para vistoria, medição, checklist e relatório; hipótese"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausível",
+     "comentario": "60/5/35 coerente com o trabalho reproduzido (PDA)"
+    }
+   ],
+   "omissoes": [
+    "As oito não conformidades do texto (abrigo, identificação, conservação da motobomba, espaço interno, antigolpe, registros, iluminação, proteção elétrica) não são enumeradas; a ficha diz só 'com não conformidades'",
+    "Limitação: pressão de sucção não medida ('não tinha ponto disponível') não registrada",
+    "Tampa do abrigo presa com fio e disjuntor solto (risco elétrico) não registrados como achados"
+   ],
+   "incoerencias": [
+    "datas: 'Em 25/07/2024' (conclusão) e 'Rio de Janeiro, 09 agosto de 2024' (anexo); a ficha não registra",
+    "competencias usa 'disjuntor solto' (achado) como competência"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:72980247",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "realizar fiscalização programada da EEE32",
+     "veredito": "suportado",
+     "evidencia": "realizada em 02/04/2024, na Estação Elevatória de Esgoto José Mariano (EEE32 / José Mariano)"
+    },
+    {
+     "campo": "entregavel",
+     "item": "relatório com não conformidades e recomendações da EEE32",
+     "veredito": "suportado",
+     "evidencia": "contudo foram observadas as não conformidades abaixo"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "maioria conforme; não conformidades de registros e documentação",
+     "veredito": "parcial",
+     "evidencia": "texto conclui sanar 'as não recomendações' e também cita fiação do poço de sucção e planta; a ficha omite estes itens"
+    },
+    {
+     "campo": "insumos",
+     "item": "vistoria da EEE32 em 02/04/2024",
+     "veredito": "suportado",
+     "evidencia": "realizada em 02/04/2024, na Estação Elevatória de Esgoto José Mariano"
+    },
+    {
+     "campo": "insumos",
+     "item": "Lei 11.445/2007 e Decreto 7.217/2010",
+     "veredito": "suportado",
+     "evidencia": "a Lei Federal nº 11.445/2007 e o Decreto Federal nº 7.217/2010"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "nenhum documento examinado",
+     "veredito": "suportado",
+     "evidencia": "texto não cita documento do processo além do checklist do próprio relatório"
+    },
+    {
+     "campo": "fontes_externas_consultadas",
+     "item": "Google Maps (localização)",
+     "veredito": "suportado",
+     "evidencia": "Fonte: Google Maps"
+    },
+    {
+     "campo": "calculos",
+     "item": "nenhum cálculo",
+     "veredito": "suportado",
+     "evidencia": "texto sem cálculo"
+    },
+    {
+     "campo": "testes",
+     "item": "conferência do checklist de conservação, operação e manutenção",
+     "veredito": "suportado",
+     "evidencia": "a maioria dos itens fiscalizados estão de acordo com as boas práticas sanitárias e de engenharia"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "vistoria in loco",
+     "veredito": "suportado",
+     "evidencia": "Foto 1 - Vista da fachada da estação elevatória de esgoto (a evidência indicada na ficha é o campo Objetivo)"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "texto não reproduz informação de terceiros"
+    },
+    {
+     "campo": "prazos",
+     "item": "30 dias para sanar",
+     "veredito": "suportado",
+     "evidencia": "no prazo de 30 (trinta) dias"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "nenhum sinal de perda",
+     "veredito": "suportado",
+     "evidencia": "planta solicitada e fiação são recomendações, não pedidos de complementação"
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "nenhum destinatário",
+     "veredito": "suportado",
+     "evidencia": "A concessionária deverá sanar"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausível",
+     "comentario": "3 coerente com vistoria e checklist"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausível",
+     "comentario": "8 h para vistoria e relatório com checklist; hipótese"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausível",
+     "comentario": "60/10/30 aceitável no autoral, mas os 10% de transcrição não têm trabalho_reproduzido correspondente"
+    }
+   ],
+   "omissoes": [
+    "Recomendação de arquivar no local planta detalhada da bacia de contribuição e do recalque; omitida",
+    "Recomendação de adequação da fiação no poço de sucção; omitida da conclusão",
+    "Dados técnicos não registrados: quatro conjuntos motobomba, vazão de 160 L/s, 130 cv, operação alternada e automatizada, recalques de 250 mm e 450 mm"
+   ],
+   "incoerencias": [
+    "datas: 'Em 02/04/2024' (conclusão) e 'Rio de Janeiro, 26 abril de 2024' (anexo); a ficha não registra",
+    "composicao_texto informa 10% de transcrição, mas trabalho_reproduzido está vazio",
+    "ferramentas usa o campo Objetivo como evidência da ferramenta",
+    "anexo com colunas ilegíveis marca 'Existem registros das manutenções realizadas? X', enquanto o texto registra falta de registros in loco; não é conclusivo sem o layout"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:87028948",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "fiscalizar a ETE São Gonçalo",
+     "veredito": "suportado",
+     "evidencia": "foi realizada fiscalização em 06/03/2024, na Estação de Tratamento de Esgoto São Gonçalo"
+    },
+    {
+     "campo": "entregavel",
+     "item": "relatório com oito recomendações e solicitações",
+     "veredito": "suportado",
+     "evidencia": "RECOMENDAÇÕES E SOLICITAÇÕES (oito itens, contagem confere)"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "tratamento em funcionamento; pendências não impactam, porém merecem atenção",
+     "veredito": "suportado",
+     "evidencia": "não impactam no bom funcionamento da ETE, porém deve ser dada a devida atenção"
+    },
+    {
+     "campo": "insumos",
+     "item": "fiscalização direta da ETE em 06/03/2024",
+     "veredito": "suportado",
+     "evidencia": "Fiscalização direta realizada na Estação de Tratamento de Esgoto São Gonçalo"
+    },
+    {
+     "campo": "insumos",
+     "item": "Lei 11.445/2007 e Decreto 7.217/2010 (base legal declarada)",
+     "veredito": "suportado",
+     "evidencia": "Lei Federal nº 11.445/2007 e o Decreto Federal nº 7.217/2010"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "nenhum documento examinado",
+     "veredito": "suportado",
+     "evidencia": "texto não cita documento do processo"
+    },
+    {
+     "campo": "fontes_externas_consultadas",
+     "item": "nenhuma",
+     "veredito": "parcial",
+     "evidencia": "texto registra 'Fonte Google Earth' na seção de localização; a ficha não registra"
+    },
+    {
+     "campo": "calculos",
+     "item": "nenhum cálculo",
+     "veredito": "suportado",
+     "evidencia": "texto sem cálculo"
+    },
+    {
+     "campo": "testes",
+     "item": "funcionamento do gradeamento médio e das demais etapas",
+     "veredito": "suportado",
+     "evidencia": "O gradeamento médio é composto por duas grades mecanizadas, nenhuma estava em operação"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "vistoria in loco",
+     "veredito": "suportado",
+     "evidencia": "A fiscalização teve início no escritório operacional onde encontra-se a mesa de comando da ETE"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "nenhum",
+     "veredito": "parcial",
+     "evidencia": "texto reporta informações dos representantes (centrífuga em manutenção; biodigestores nunca operaram) que a ficha não registra"
+    },
+    {
+     "campo": "prazos",
+     "item": "nenhum prazo",
+     "veredito": "suportado",
+     "evidencia": "texto sem prazo"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "pedido de análises do efluente dos últimos 90 dias",
+     "veredito": "parcial",
+     "evidencia": "pedido literal está registrado, mas a ficha omite pelo menos outros dois pedidos (justificativa dos aeradores e planejamento dos biodigestores) e o cronograma de manutenção"
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "nenhum destinatário",
+     "veredito": "parcial",
+     "evidencia": "as recomendações e solicitações são dirigidas à concessionária; a ficha registra null"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausível",
+     "comentario": "3 é contestável para uma ETE com 34 fotos e oito recomendações, mas dentro da faixa aceitável para vistoria de campo"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausível",
+     "comentario": "8 h para vistoria extensa de ETE e redação de recomendações; hipótese"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausível",
+     "comentario": "80/0/20 coerente com descrição própria"
+    }
+   ],
+   "omissoes": [
+    "Licença de 450 L/s contra média de 350 L/s; esgoto in natura recebido por elevatórias; não registrados",
+    "Aeradores: 5 de 8 em operação (3 paradas); a conclusão fala em 'funcionamento' sem essa ressalva",
+    "Gradeamento fino mecanizado com corrosão, guarda-corpos instáveis e caixa de chegada sem guarda-corpos (segurança) não registrados",
+    "Cerca do reservatório de oxigênio com falhas não registrada",
+    "Recomendação de cronograma de manutenção geral da ETE não registrada",
+    "Fonte Google Earth não registrada"
+   ],
+   "incoerencias": [
+    "datas: 'Em 16/10/2024' (conclusão), 'Rio de Janeiro, 07 novembro de 2024' (anexo) e fiscalização em 06/03/2024",
+    "conclusão 'não impactam o bom funcionamento' é reproduzida sem contraponto, apesar de duas grades mecanizadas paradas, 3 de 8 aeradores parados e uma centrífuga de duas fora de operação",
+    "trabalho_reproduzido vazio, apesar de informações de representantes no texto"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:77432319",
+   "tipo": "Ofício - NA 516",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "enviar ofício de agendamento de vistoria técnica",
+     "veredito": "suportado",
+     "evidencia": "solicitar agendamento de Vistoria Técnica nas instalações localizadas no Município de Rio Bonito"
+    },
+    {
+     "campo": "entregavel",
+     "item": "ofício solicitando agendamento de vistoria técnica anual",
+     "veredito": "suportado",
+     "evidencia": "Vistoria Técnica Anual (assunto)"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "nenhuma (ofício de solicitação)",
+     "veredito": "suportado",
+     "evidencia": "sem conclusão de mérito"
+    },
+    {
+     "campo": "insumos",
+     "item": "processo SEI de fiscalização da concessionária",
+     "veredito": "parcial",
+     "evidencia": "evidência é fórmula padrão do ofício ('Caso responda este Ofício, indicar...'); o insumo substancial seria a lista das cinco unidades, não registrada"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "n_documentos_analisados = 0"
+    },
+    {
+     "campo": "fontes_externas_consultadas",
+     "item": "nenhuma",
+     "veredito": "suportado",
+     "evidencia": "sem fonte externa"
+    },
+    {
+     "campo": "calculos",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "sem cálculo"
+    },
+    {
+     "campo": "testes",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "sem teste"
+    },
+    {
+     "campo": "prazos",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "texto sem prazo"
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "Diretor Presidente da concessionária",
+     "veredito": "suportado",
+     "evidencia": "Diretor Presidente da Concessionária Águas do Rio - Bloco 1"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "sem pedido de complementação"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "sem informação de terceiros"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausível",
+     "comentario": "2 coerente com ofício padrão"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausível",
+     "comentario": "0,5 h para ofício curto; hipótese"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausível",
+     "comentario": "25/0/75 coerente: pedido em um parágrafo, cabeçalho e fecho padrão"
+    }
+   ],
+   "omissoes": [
+    "Lista das cinco unidades (ETA 25 – Rio Bonito; EEAT 1072 – Ojuara; EEAT 1062 – Rio Vermelho; EEAT 1063 – Jacuba; EEAT 1005 – Boa Esperança) não registrada",
+    "Data da vistoria (26/06/2024) não registrada"
+   ],
+   "incoerencias": [
+    "insumo 'processo SEI' classificado como documento do processo, mas a evidência é fórmula padrão do ofício"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:81595411",
+   "tipo": "Ofício - NA 725",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "solicitar agendamento de vistoria técnica em unidades",
+     "veredito": "suportado",
+     "evidencia": "solicitar agendamento de Vistoria Técnica nas unidades e datas descritas abaixo"
+    },
+    {
+     "campo": "entregavel",
+     "item": "ofício solicitando vistoria técnica em 17 unidades de Aperibé",
+     "veredito": "suportado",
+     "evidencia": "relativo ao Município de Aperibé (17 unidades listadas, contagem confere)"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "nenhuma",
+     "veredito": "suportado",
+     "evidencia": "sem conclusão de mérito"
+    },
+    {
+     "campo": "insumos",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "ficha sem insumos"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "n_documentos_analisados = 0"
+    },
+    {
+     "campo": "fontes_externas_consultadas",
+     "item": "nenhuma",
+     "veredito": "suportado",
+     "evidencia": "sem fonte externa"
+    },
+    {
+     "campo": "calculos",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "sem cálculo"
+    },
+    {
+     "campo": "testes",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "sem teste"
+    },
+    {
+     "campo": "prazos",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "texto sem prazo; apenas datas de vistoria"
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "Diretor Presidente da concessionária",
+     "veredito": "suportado",
+     "evidencia": "Diretor Presidente da Concessionária Águas do Rio - Bloco 1"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "sem pedido de complementação"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "sem informação de terceiros"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausível",
+     "comentario": "2 coerente com ofício padrão"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausível",
+     "comentario": "1 h para ofício com 17 unidades listadas; hipótese"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausível",
+     "comentario": "30/0/70 aceitável, mas a lista de 17 unidades é cadastro transcrito e está classificada como padrão, com 0% de transcrição"
+    }
+   ],
+   "omissoes": [
+    "Códigos e nomes das 17 unidades (EEAB 2; EAT 186; EEE 1008 a 1016; ETA 1; ETE 30; ETE 1004 a 1007) não registrados, apenas contados",
+    "Datas por unidade (28, 29 e 30/08/2024) só aparecem em competencias, sem campo próprio"
+   ],
+   "incoerencias": [
+    "composicao_texto: 0% de transcrição, embora a lista de 17 unidades seja cadastro copiado"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:79573239",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "vistoriar estação elevatória de água tratada",
+     "veredito": "suportado",
+     "evidencia": "Vistoria operacional da Estação Elevatória de Água Tratada Jacuba"
+    },
+    {
+     "campo": "entregavel",
+     "item": "relatório de vistoria com recomendações à concessionária",
+     "veredito": "suportado",
+     "evidencia": "Recomendamos que a concessionária"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "recomenda identificar a EEAT, melhorar abastecimento e eliminar desperdício na sucção",
+     "veredito": "suportado",
+     "evidencia": "Eliminar ponto de consumo na sucção da bomba que causa desperdício."
+    },
+    {
+     "campo": "insumos",
+     "item": "vistoria operacional in loco da EEAT Jacuba em 26/06/2024",
+     "veredito": "suportado",
+     "evidencia": "foi realizada vistoria em 26/06/2024"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "texto não cita documento do processo"
+    },
+    {
+     "campo": "fontes_externas_consultadas",
+     "item": "nenhuma",
+     "veredito": "suportado",
+     "evidencia": "seção de localização vazia no texto"
+    },
+    {
+     "campo": "calculos",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "sem cálculo"
+    },
+    {
+     "campo": "testes",
+     "item": "nenhum teste declarado",
+     "veredito": "suportado",
+     "evidencia": "sem teste declarado na peça"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "vistoria in loco com levantamento técnico",
+     "veredito": "parcial",
+     "evidencia": "vistoria confirmada; o levantamento técnico aparece como Tabela 1 e a evidência indicada é a data"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "tabela técnica não atribuída a terceiros"
+    },
+    {
+     "campo": "prazos",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "texto sem prazo"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "nenhum",
+     "veredito": "parcial",
+     "evidencia": "o texto registra que a unidade estava inoperante no momento da vistoria; a ficha não registra este fato"
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "sem encaminhamento específico"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausível",
+     "comentario": "2 coerente com três recomendações e peça curta"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausível",
+     "comentario": "5 h para vistoria e relatório curto; hipótese"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausível",
+     "comentario": "40/20/40 aceitável, mas os 20% de transcrição (tabela técnica) não têm trabalho_reproduzido correspondente"
+    }
+   ],
+   "omissoes": [
+    "Unidade inoperante no momento da vistoria, dado central para avaliar a recomendação de abastecimento; não registrado",
+    "Tabela técnica não registrada: operação de 3 h a cada 48 h, vazão média de 1,1 L/s, bomba de 4 cv, uma bomba em operação e zero reserva, sem automação/telemetria, sem proteção perimetral",
+    "Área de influência (Alto Jacuba) não registrada"
+   ],
+   "incoerencias": [
+    "conclusão 'melhorar abastecimento' sem a ressalva de que a unidade estava inoperante",
+    "introdução cita Bloco 04, enquanto o cabeçalho cita Bloco 01",
+    "datas: 'Em 08/07/2024' (conclusão), 'Rio de Janeiro, 24 julho de 2024' (anexo) e assinaturas de 25/07 a 06/08/2024",
+    "composicao_texto informa 20% de transcrição, mas trabalho_reproduzido está vazio"
+   ]
+  },
+  {
+   "ref": "SEI-480002/001314/2024:74881165",
+   "tipo": "Relatório de Fiscalização",
+   "itens": [
+    {
+     "campo": "tarefa",
+     "item": "fiscalizar estação de captação em tempo seco (EEE 11)",
+     "veredito": "suportado",
+     "evidencia": "EEE 11 – Captação em Tempo Seco José Mariano"
+    },
+    {
+     "campo": "entregavel",
+     "item": "relatório nº 051/2024 com não conformidades e recomendações",
+     "veredito": "suportado",
+     "evidencia": "foram observadas as não conformidades abaixo"
+    },
+    {
+     "campo": "conclusao_de_merito",
+     "item": "constata não conformidades na EEE 11 e determina saná-las em 30 dias",
+     "veredito": "suportado",
+     "evidencia": "deverá sanar as não conformidades que foram constatadas pela equipe da AGENERSA"
+    },
+    {
+     "campo": "insumos",
+     "item": "vistoria da EEE 11 em área pública",
+     "veredito": "suportado",
+     "evidencia": "A estação encontra-se sob área pública"
+    },
+    {
+     "campo": "insumos",
+     "item": "localização no Google Maps",
+     "veredito": "suportado",
+     "evidencia": "Fonte: Google Maps"
+    },
+    {
+     "campo": "insumos",
+     "item": "Lei 11.445/2007 e Decreto 7.217/2010",
+     "veredito": "suportado",
+     "evidencia": "a Lei Federal nº 11.445/2007 e o Decreto Federal nº 7.217/2010"
+    },
+    {
+     "campo": "documentos_examinados",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "texto não cita documento do processo"
+    },
+    {
+     "campo": "fontes_externas_consultadas",
+     "item": "Google Maps (localização)",
+     "veredito": "suportado",
+     "evidencia": "Fonte: Google Maps"
+    },
+    {
+     "campo": "calculos",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "sem cálculo"
+    },
+    {
+     "campo": "testes",
+     "item": "verificação do estado e da vedação das tampas dos poços",
+     "veredito": "suportado",
+     "evidencia": "havia uma tampa rachada e um com vedação inadequada"
+    },
+    {
+     "campo": "testes",
+     "item": "medição do nível de esgoto no tanque de sucção",
+     "veredito": "parcial",
+     "evidencia": "texto registra nível de 1,8 m, mas não descreve método de medição"
+    },
+    {
+     "campo": "testes",
+     "item": "checklist de conservação, operação e manutenção (anexo)",
+     "veredito": "suportado",
+     "evidencia": "ESTAÇÃO ELEVATÓRIA (Esgoto)"
+    },
+    {
+     "campo": "ferramentas",
+     "item": "vistoria in loco com relatório fotográfico",
+     "veredito": "suportado",
+     "evidencia": "Relatório fotográfico:"
+    },
+    {
+     "campo": "trabalho_reproduzido",
+     "item": "nenhum",
+     "veredito": "suportado",
+     "evidencia": "sem informação de terceiros reproduzida"
+    },
+    {
+     "campo": "prazos",
+     "item": "30 dias para sanar",
+     "veredito": "suportado",
+     "evidencia": "no prazo de 30 (trinta) dias"
+    },
+    {
+     "campo": "sinais_perda",
+     "item": "nenhum",
+     "veredito": "parcial",
+     "evidencia": "texto pede comprovar destinação ambientalmente adequada de resíduos sólidos e detalhar procedimento de interrupção de energia; ficha registra nenhum sinal"
+    },
+    {
+     "campo": "encaminha_para",
+     "item": "nenhum destinatário",
+     "veredito": "suportado",
+     "evidencia": "concessionária como destinatária implícita"
+    }
+   ],
+   "inferencias": [
+    {
+     "campo": "complexidade",
+     "veredito": "plausível",
+     "comentario": "3 coerente com vistoria, checklist e várias não conformidades"
+    },
+    {
+     "campo": "horas_estimadas",
+     "veredito": "plausível",
+     "comentario": "8 h para vistoria e relatório com fotos; hipótese"
+    },
+    {
+     "campo": "composicao_texto",
+     "veredito": "plausível",
+     "comentario": "80/0/20 coerente com redação própria"
+    }
+   ],
+   "omissoes": [
+    "Duas recomendações além de sanar (comprovar destinação dos resíduos sólidos e detalhar procedimento em interrupção de energia) não constam na conclusão nem em sinais_perda",
+    "Sete não conformidades não enumeradas (identificação, registros, licença ambiental, sinalização de choque, tampas, quadro do disjuntor sem tampa, comporta sem manutenção)",
+    "Limitação: os dois conjuntos motobomba não foram avaliados (submersos) e uma tampa não foi aberta por falta de chave; não registrado no mérito",
+    "Ausência de cópia da licença ambiental não registrada"
+   ],
+   "incoerencias": [
+    "três datas na peça: 04/04/2024 (data), 'Em 17/04/2024' (conclusão) e 'Rio de Janeiro, 17 maio de 2024' (anexo); a ficha não registra",
+    "competencias e ferramentas usam a limitação ('não foi possível realizar a avaliação visual') como evidência de competência e de ferramenta",
+    "anexo com colunas ilegíveis marca 'Existe identificação? X' e 'Existem registros? X', enquanto o texto diz 'Não havia identificação' e 'nem registros in loco'; não é conclusivo sem o layout"
+   ]
+  }
+ ],
+ "resumo": {
+  "itens_factuais": 425,
+  "suportado": 367,
+  "parcial": 55,
+  "sem_lastro": 0,
+  "contradito": 3,
+  "inferencias": 123,
+  "inferencias_implausiveis": 8,
+  "omissoes": 115,
+  "incoerencias": 81,
+  "pct_sem_lastro_mais_contradito": 0.7,
+  "pct_parcial_imprecisao": 12.9,
+  "criterio": "sem lastro + contradito <= 2%; imprecisão <= 10% (ROTEIRO E2)",
+  "padroes_de_erro": [
+   "Omissão sistemática do conteúdo enumerado nos relatórios (docs 2, 3, 5, 6, 7, 8 e 10): a ficha registra só o prazo e uma expressão genérica ('não conformidades'), perdendo as NC, exigências e dados técnicos que o leitor mais precisa.",
+   "Campo encaminhamento null em todo relatório cuja conclusão dirige a obrigação à concessionária (docs 2, 5, 6, 7, 8 e 10); a ficha não registra o destinatário.",
+   "Tipo da ocorrência em conflito no próprio texto: 'Periódica' ou 'Rotina' no cabeçalho e 'Programada' na introdução (docs 4, 5, 6 e 7); a ficha adota 'programada' sem sinalizar o conflito.",
+   "Modelo reutilizado com erros não revisados: 'Pomerode' onde deveria ser o município (docs 4 e 8) e cabeçalho 'Conselho Diretor' em destoante (doc 8).",
+   "Datas não conciliadas entre cabeçalho, fecho 'Em', data do documento e assinaturas em quase todos os relatórios; a ficha não registra a data da vistoria nem a da emissão, o que impede checar prazos.",
+   "Anexo de checklist extraído sem coluna SIM/NÃO legível: as marcas 'X' são ambíguas e várias contradizem o texto. A ficha usa o checklist como teste de conformidade sem declarar essa limitação.",
+   "Informação verbal de agente regulado classificada como 'documento_da_regulada' (docs 3 e 10).",
+   "Competências com evidência fraca (título da fiscalização, fato operacional) e nível quase sempre 'intermediário', indicando default e não avaliação (docs 3, 7, 8 e 10).",
+   "Composição textual inflada por boilerplate: doc 7 declara 85% autoral com parágrafos genéricos reutilizados; doc 1 subestima a transcrição da lista de unidades.",
+   "Contagens e campos inconsistentes: n_documentos_analisados = 1 para o próprio anexo (doc 6) e para dois documentos citados (doc 9); fontes_externas_consultadas ausente apesar de 'Fonte Google Maps' no texto (doc 2); campos duplicados (fontes_externas e fontes_externas_consultadas, ferramentas e trabalho_proprio.ferramentas).",
+   "Inferências de horas e complexidade repetem os mesmos valores (complexidade 3 e 6 h) em oito dos dez relatórios; ficam plausíveis, mas indicam estimativa padronizada e não por documento.",
+   "Datas de emissão e assinatura desencontradas dentro do próprio texto-fonte (docs 11, 12, 13, 14, 15, 17, 19). A ficha usa a data do cabeçalho como data da vistoria e não concilia as outras datas.",
+   "Dois relatórios com a mesma vistoria de 14/08/2024 na EEE Parafuso (docs 11 e 19) descrevem estados de obra incompatíveis (cura após concretagem de 05/09/2024 contra demolição do recobrimento). As fichas aceitam ambos sem alerta.",
+   "Medição sem validade: o doc 15 atribui pressões a manômetros que o próprio texto diz estarem fora de operação. A ficha reproduz a medição como 'trabalho próprio' (contradito).",
+   "Dados informados pela concessionária sustentam a conclusão de mérito, mas não são marcados como informação da regulada: pressões e potência no doc 13; pressão de 89,1 mca e potência no doc 17.",
+   "encaminha_para = null em relatórios que dirigem exigências à concessionária (docs 11, 13, 15, 17, 19), enquanto o doc 14 do mesmo tipo preenche o campo. Preenchimento inconsistente.",
+   "Campo sinais_perda usado sem critério claro: pedido de informação no doc 14 entra como sinal, enquanto vazamento (doc 15) e risco de atraso (docs 11 e 19) ficam de fora.",
+   "Natureza do mesmo tipo de prazo (manifestação em 30 dias) rotulada de forma diferente: 'rito' no doc 16 e 'cumprimento' no doc 20.",
+   "Contagem e lista de documentos inconsistentes: n_documentos_analisados não bate com os insumos (doc 18: 1 contra 4 insumos; doc 13: anexo tratado como documento examinado).",
+   "Anexos e checklists referenciados mas ausentes do texto integral (doc 17), o que torna impossível auditar os itens de checklist. Em outros casos as colunas SIM/NÃO do anexo não são identificáveis no texto extraído (docs 13, 14, 15), e a ficha não trata essa ambiguidade.",
+   "Placeholder não preenchido na evidência ('informação do senhor [nome]', doc 17), indicando ficha não revisada antes da gravação.",
+   "Contagem de não conformidades inflada por repetição (doc 13: 'dez' com ponto de iluminação duplicado), aceita sem conferência.",
+   "Horas implausíveis para trabalho de leitura pesada: 0,5 h para ler autos com parecer, duas manifestações e relatórios de 2024 (doc 18).",
+   "Descrição do insumo 'vistoria in loco' ancorada em achado e não em data ou registro (docs 11, 14), o que fragiliza a rastreabilidade.",
+   "Evidência de ferramenta ou competência é o objetivo, a limitação ou uma observação, e não a ferramenta ou a competência (linhas 22, 24, 25, 26, 29, 30)",
+   "Limitações da vistoria ('não foi possível avaliar', 'submersas', 'inoperante') ficam fora do mérito e da conclusão (linhas 22, 24, 29, 30)",
+   "Pedidos e recomendações múltiplos reduzidos a um item ou omitidos da conclusão (linhas 25, 26, 30)",
+   "Contagem ou lista de documentos e unidades inconsistente ou não registrada (linha 21: n=1 contra 42; linhas 27 e 28: unidades não listadas)",
+   "Composição com percentual de transcrição sem trabalho_reproduzido correspondente (linhas 25, 28, 29)",
+   "Fontes de localização (Google Earth/Maps) nem sempre registradas (linha 26; registradas nas linhas 22, 24, 25, 30)",
+   "Datas internas inconsistentes nas peças, não capturadas nas fichas (linhas 22, 24, 25, 26, 29, 30)",
+   "Prazos e postergações não registrados (linha 21)"
+  ]
+ }
+}

@@ -1,0 +1,4181 @@
+{
+ "codigo": "P06",
+ "definicoes": {
+  "execucao": "dias úteis da primeira à última peça própria da ocorrência",
+  "espera_antes": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse",
+  "lead": "dias úteis do início do processo ao último andamento",
+  "posse": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono",
+  "terceiros": "dias úteis de ofício/notificação até a resposta (carta, petição em processo relacionado, anexo recebido pelo protocolo), limitados ao prazo dado no ofício + 5 du (sem prazo: 60 du); intervalos unidos",
+  "indeterminado": "dias úteis além do prazo dado ou até peça sem data real: não separável de processo parado",
+  "horas": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)",
+  "coorte": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+ },
+ "fatos": [
+  {
+   "id": "critico.t2.1.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — execução (ocorrência 1)",
+   "valor": 35.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t2.1.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes (ocorrência 1)",
+   "valor": 19.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t2.1.espera_antes.CASAN",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes com posse da CASAN",
+   "valor": 19.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t2.1.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (piso)",
+   "valor": 76.0,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.1.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (teto)",
+   "valor": 124.0,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.1.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — 1ª peça (ocorrência 1)",
+   "valor": "2024-03-07",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t2.1.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — última peça (ocorrência 1)",
+   "valor": "2024-04-29",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t3.1.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — execução (ocorrência 1)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t3.1.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes (ocorrência 1)",
+   "valor": 6.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t3.1.espera_antes.CASAN",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes com posse da CASAN",
+   "valor": 6.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t3.1.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas (piso)",
+   "valor": 0.8,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t3.1.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas (teto)",
+   "valor": 1.2,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t3.1.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — 1ª peça (ocorrência 1)",
+   "valor": "2024-05-08",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t3.1.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — última peça (ocorrência 1)",
+   "valor": "2024-05-08",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t2.2.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — execução (ocorrência 2)",
+   "valor": 6.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t2.2.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes (ocorrência 2)",
+   "valor": 2.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t2.2.espera_antes.CASAN",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes com posse da CASAN",
+   "valor": 2.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t2.2.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (piso)",
+   "valor": 48.0,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.2.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (teto)",
+   "valor": 78.3,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.2.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — 1ª peça (ocorrência 2)",
+   "valor": "2024-05-10",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t2.2.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — última peça (ocorrência 2)",
+   "valor": "2024-05-20",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t3.2.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — execução (ocorrência 2)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t3.2.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes (ocorrência 2)",
+   "valor": 7.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t3.2.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes com posse da SEM UNIDADE",
+   "valor": 7.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t3.2.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas (piso)",
+   "valor": 0.8,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t3.2.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas (teto)",
+   "valor": 1.1,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t3.2.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — 1ª peça (ocorrência 2)",
+   "valor": "2024-05-29",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t3.2.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — última peça (ocorrência 2)",
+   "valor": "2024-05-29",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t2.3.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — execução (ocorrência 3)",
+   "valor": 3.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t2.3.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes (ocorrência 3)",
+   "valor": 2.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t2.3.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes com posse da SEM UNIDADE",
+   "valor": 2.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t2.3.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (piso)",
+   "valor": 30.0,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.3.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (teto)",
+   "valor": 44.0,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.3.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — 1ª peça (ocorrência 3)",
+   "valor": "2024-06-03",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t2.3.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — última peça (ocorrência 3)",
+   "valor": "2024-06-06",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t1.1.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Solicitar agendamento de vistoria técnica — execução (ocorrência 1)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t1.1.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Solicitar agendamento de vistoria técnica — espera antes (ocorrência 1)",
+   "valor": 12.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t1.1.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Solicitar agendamento de vistoria técnica — espera antes com posse da SEM UNIDADE",
+   "valor": 12.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t1.1.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Solicitar agendamento de vistoria técnica — horas (piso)",
+   "valor": 0.8,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t1.1.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Solicitar agendamento de vistoria técnica — horas (teto)",
+   "valor": 1.1,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t1.1.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Solicitar agendamento de vistoria técnica — 1ª peça (ocorrência 1)",
+   "valor": "2024-06-24",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t1.1.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Solicitar agendamento de vistoria técnica — última peça (ocorrência 1)",
+   "valor": "2024-06-24",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t3.3.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — execução (ocorrência 3)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t3.3.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes (ocorrência 3)",
+   "valor": 3.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t3.3.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes com posse da SEM UNIDADE",
+   "valor": 3.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t3.3.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas (piso)",
+   "valor": 1.2,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t3.3.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas (teto)",
+   "valor": 1.1,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t3.3.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — 1ª peça (ocorrência 3)",
+   "valor": "2024-06-27",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t3.3.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — última peça (ocorrência 3)",
+   "valor": "2024-06-27",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t2.4.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — execução (ocorrência 4)",
+   "valor": 6.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t2.4.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes (ocorrência 4)",
+   "valor": 20.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t2.4.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes com posse da SEM UNIDADE",
+   "valor": 20.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t2.4.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (piso)",
+   "valor": 33.0,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.4.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (teto)",
+   "valor": 50.5,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.4.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — 1ª peça (ocorrência 4)",
+   "valor": "2024-07-25",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t2.4.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — última peça (ocorrência 4)",
+   "valor": "2024-08-02",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t3.4.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — execução (ocorrência 4)",
+   "valor": 1.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t3.4.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes (ocorrência 4)",
+   "valor": 3.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t3.4.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes com posse da SEM UNIDADE",
+   "valor": 3.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t3.4.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas (piso)",
+   "valor": 1.2,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t3.4.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas (teto)",
+   "valor": 1.1,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t3.4.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — 1ª peça (ocorrência 4)",
+   "valor": "2024-08-07",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t3.4.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — última peça (ocorrência 4)",
+   "valor": "2024-08-08",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t2.5.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — execução (ocorrência 5)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t2.5.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes (ocorrência 5)",
+   "valor": 1.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t2.5.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes com posse da SEM UNIDADE",
+   "valor": 1.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t2.5.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (piso)",
+   "valor": 20.0,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.5.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (teto)",
+   "valor": 42.8,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.5.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — 1ª peça (ocorrência 5)",
+   "valor": "2024-08-09",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t2.5.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — última peça (ocorrência 5)",
+   "valor": "2024-08-09",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t1.2.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Solicitar agendamento de vistoria técnica — execução (ocorrência 2)",
+   "valor": 16.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t1.2.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Solicitar agendamento de vistoria técnica — espera antes (ocorrência 2)",
+   "valor": 5.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t1.2.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Solicitar agendamento de vistoria técnica — espera antes com posse da SEM UNIDADE",
+   "valor": 5.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t1.2.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Solicitar agendamento de vistoria técnica — horas (piso)",
+   "valor": 2.8,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t1.2.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Solicitar agendamento de vistoria técnica — horas (teto)",
+   "valor": 3.6,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t1.2.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Solicitar agendamento de vistoria técnica — 1ª peça (ocorrência 2)",
+   "valor": "2024-08-16",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t1.2.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Solicitar agendamento de vistoria técnica — última peça (ocorrência 2)",
+   "valor": "2024-09-09",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t2.6.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — execução (ocorrência 6)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t2.6.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes (ocorrência 6)",
+   "valor": 2.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t2.6.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes com posse da SEM UNIDADE",
+   "valor": 2.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t2.6.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (piso)",
+   "valor": 10.0,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.6.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (teto)",
+   "valor": 9.9,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.6.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — 1ª peça (ocorrência 6)",
+   "valor": "2024-09-11",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t2.6.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — última peça (ocorrência 6)",
+   "valor": "2024-09-11",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t3.5.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — execução (ocorrência 5)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t3.5.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes (ocorrência 5)",
+   "valor": 11.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t3.5.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes com posse da SEM UNIDADE",
+   "valor": 11.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t3.5.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas (piso)",
+   "valor": 0.8,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t3.5.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas (teto)",
+   "valor": 1.1,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t3.5.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — 1ª peça (ocorrência 5)",
+   "valor": "2024-09-26",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t3.5.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — última peça (ocorrência 5)",
+   "valor": "2024-09-26",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t2.7.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — execução (ocorrência 7)",
+   "valor": 1.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t2.7.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes (ocorrência 7)",
+   "valor": 28.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t2.7.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes com posse da SEM UNIDADE",
+   "valor": 28.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t2.7.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (piso)",
+   "valor": 34.0,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.7.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (teto)",
+   "valor": 59.2,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.7.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — 1ª peça (ocorrência 7)",
+   "valor": "2024-11-06",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t2.7.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — última peça (ocorrência 7)",
+   "valor": "2024-11-07",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t3.6.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — execução (ocorrência 6)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t3.6.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes (ocorrência 6)",
+   "valor": 2.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t3.6.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes com posse da SEM UNIDADE",
+   "valor": 2.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t3.6.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas (piso)",
+   "valor": 0.8,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t3.6.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas (teto)",
+   "valor": 1.1,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t3.6.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — 1ª peça (ocorrência 6)",
+   "valor": "2024-11-11",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t3.6.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — última peça (ocorrência 6)",
+   "valor": "2024-11-11",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t2.8.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — execução (ocorrência 8)",
+   "valor": 16.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t2.8.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes (ocorrência 8)",
+   "valor": 27.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t2.8.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes com posse da SEM UNIDADE",
+   "valor": 27.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t2.8.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (piso)",
+   "valor": 23.0,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.8.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas (teto)",
+   "valor": 27.6,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t2.8.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — 1ª peça (ocorrência 8)",
+   "valor": "2024-12-20",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t2.8.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — última peça (ocorrência 8)",
+   "valor": "2025-01-15",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t3.7.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — execução (ocorrência 7)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t3.7.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes (ocorrência 7)",
+   "valor": 10.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t3.7.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes com posse da SEM UNIDADE",
+   "valor": 10.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t3.7.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas (piso)",
+   "valor": 0.8,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t3.7.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas (teto)",
+   "valor": 1.1,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t3.7.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — 1ª peça (ocorrência 7)",
+   "valor": "2025-01-30",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t3.7.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Encaminhar relatórios e solicitar manifestação — última peça (ocorrência 7)",
+   "valor": "2025-01-30",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t4.1.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar respostas e emitir parecer técnico — execução (ocorrência 1)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t4.1.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar respostas e emitir parecer técnico — espera antes (ocorrência 1)",
+   "valor": 106.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t4.1.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar respostas e emitir parecer técnico — espera antes com posse da SEM UNIDADE",
+   "valor": 106.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t4.1.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar respostas e emitir parecer técnico — horas (piso)",
+   "valor": 24.2,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t4.1.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar respostas e emitir parecer técnico — horas (teto)",
+   "valor": 11.9,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t4.1.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar respostas e emitir parecer técnico — 1ª peça (ocorrência 1)",
+   "valor": "2025-07-08",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t4.1.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar respostas e emitir parecer técnico — última peça (ocorrência 1)",
+   "valor": "2025-07-08",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t5.1.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dar ciência do parecer técnico à concessionária — execução (ocorrência 1)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t5.1.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dar ciência do parecer técnico à concessionária — espera antes (ocorrência 1)",
+   "valor": 55.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t5.1.espera_antes.SCEXEC",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dar ciência do parecer técnico à concessionária — espera antes com posse da SCEXEC",
+   "valor": 55.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t5.1.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dar ciência do parecer técnico à concessionária — horas (piso)",
+   "valor": 0.4,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t5.1.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dar ciência do parecer técnico à concessionária — horas (teto)",
+   "valor": 0.4,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t5.1.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dar ciência do parecer técnico à concessionária — 1ª peça (ocorrência 1)",
+   "valor": "2025-09-23",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t5.1.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dar ciência do parecer técnico à concessionária — última peça (ocorrência 1)",
+   "valor": "2025-09-23",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t6.1.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — execução (ocorrência 1)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t6.1.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — espera antes (ocorrência 1)",
+   "valor": 26.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t6.1.espera_antes.CASAN",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — espera antes com posse da CASAN",
+   "valor": 2.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t6.1.espera_antes.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — espera antes com posse da SEM UNIDADE",
+   "valor": 24.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t6.1.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — horas (piso)",
+   "valor": 4.0,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t6.1.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — horas (teto)",
+   "valor": 2.3,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t6.1.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — 1ª peça (ocorrência 1)",
+   "valor": "2025-10-30",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t6.1.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — última peça (ocorrência 1)",
+   "valor": "2025-10-30",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t7.1.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — execução (ocorrência 1)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t7.1.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — espera antes (ocorrência 1)",
+   "valor": 205.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t7.1.espera_antes.SCEXEC",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — espera antes com posse da SCEXEC",
+   "valor": 2.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t7.1.espera_antes.PROC",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — espera antes com posse da PROC",
+   "valor": 203.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.t7.1.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — horas (piso)",
+   "valor": 6.0,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t7.1.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — horas (teto)",
+   "valor": 12.7,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t7.1.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — 1ª peça (ocorrência 1)",
+   "valor": "2026-08-28",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t7.1.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — última peça (ocorrência 1)",
+   "valor": "2026-08-28",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.t8.1.execucao",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dar ciência do parecer jurídico à concessionária — execução (ocorrência 1)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.t8.1.espera_antes",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dar ciência do parecer jurídico à concessionária — espera antes (ocorrência 1)",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "critico.t8.1.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dar ciência do parecer jurídico à concessionária — horas (piso)",
+   "valor": 0.8,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t8.1.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dar ciência do parecer jurídico à concessionária — horas (teto)",
+   "valor": 1.0,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.t8.1.inicio",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dar ciência do parecer jurídico à concessionária — 1ª peça (ocorrência 1)",
+   "valor": "2026-08-28",
+   "unidade": "data",
+   "definicao": "data de juntada da 1ª peça própria"
+  },
+  {
+   "id": "critico.t8.1.fim",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Dar ciência do parecer jurídico à concessionária — última peça (ocorrência 1)",
+   "valor": "2026-08-28",
+   "unidade": "data",
+   "definicao": "data de juntada da última peça própria"
+  },
+  {
+   "id": "critico.lead",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Lead time do caso",
+   "valor": 636.0,
+   "unidade": "du",
+   "definicao": "dias úteis do início do processo ao último andamento"
+  },
+  {
+   "id": "critico.cauda",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Da última peça mapeada ao último andamento",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre a última ocorrência e o último andamento"
+  },
+  {
+   "id": "critico.posse.CARES",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Posse total da CARES",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.posse.CASAN",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Posse total da CASAN",
+   "valor": 70.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.posse.PROC",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Posse total da PROC",
+   "valor": 203.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.posse.SCEXEC",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Posse total da SCEXEC",
+   "valor": 57.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.posse.SEM UNIDADE",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Posse total da SEM UNIDADE",
+   "valor": 306.0,
+   "unidade": "du",
+   "definicao": "dias úteis em que a unidade era a última a abrir o processo entre as que o tinham aberto; SEM UNIDADE = ninguém com o processo aberto (todas concluíram): processo parado sem dono"
+  },
+  {
+   "id": "critico.terceiros",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Espera de resposta de terceiros (confirmada)",
+   "valor": 138.0,
+   "unidade": "du",
+   "definicao": "dias úteis de ofício/notificação até a resposta (carta, petição em processo relacionado, anexo recebido pelo protocolo), limitados ao prazo dado no ofício + 5 du (sem prazo: 60 du); intervalos unidos"
+  },
+  {
+   "id": "critico.indeterminado",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Ofício até peça externa sem data real",
+   "valor": 41.0,
+   "unidade": "du",
+   "definicao": "dias úteis além do prazo dado ou até peça sem data real: não separável de processo parado"
+  },
+  {
+   "id": "critico.horas_piso",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Horas do caso (piso)",
+   "valor": 320.0,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.horas_teto",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Horas do caso (teto)",
+   "valor": 477.6,
+   "unidade": "h",
+   "definicao": "horas de trabalho estimadas das peças próprias (piso = leitura da peça; teto = laudas × complexidade)"
+  },
+  {
+   "id": "critico.execucao_total",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Soma das execuções das atividades",
+   "valor": 84.0,
+   "unidade": "du",
+   "definicao": "dias úteis da primeira à última peça própria da ocorrência"
+  },
+  {
+   "id": "critico.espera_total",
+   "caso": "SEI-480002/001314/2024",
+   "descricao": "Soma das esperas entre atividades (inclui a inicial)",
+   "valor": 552.0,
+   "unidade": "du",
+   "definicao": "dias úteis entre o fim da ocorrência anterior e o início desta, por unidade com a posse"
+  },
+  {
+   "id": "carteira.processos",
+   "caso": null,
+   "descricao": "Processos SEI do código na base",
+   "valor": 1,
+   "unidade": "processos",
+   "definicao": "processo SEI-480002/001314/2024 (Pesquisa Pública do SEI-RJ)"
+  },
+  {
+   "id": "carteira.lead_mediano_nativos",
+   "caso": null,
+   "descricao": "Lead time mediano — só processos nativos do SEI",
+   "valor": 636.0,
+   "unidade": "du",
+   "definicao": "dias úteis do início do processo ao último andamento"
+  },
+  {
+   "id": "carteira.lead_mediano_todos",
+   "caso": null,
+   "descricao": "Lead time mediano — todos os processos (inclui migrados)",
+   "valor": 636.0,
+   "unidade": "du",
+   "definicao": "dias úteis do início do processo ao último andamento"
+  },
+  {
+   "id": "carteira.com_deliberacao_pct",
+   "caso": null,
+   "descricao": "Processos com deliberação",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": ""
+  },
+  {
+   "id": "coorte.casos",
+   "caso": null,
+   "descricao": "Processos na coorte",
+   "valor": 1,
+   "unidade": "processos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.trilha.nativa",
+   "caso": null,
+   "descricao": "Processos da coorte com trilha nativa",
+   "valor": 1,
+   "unidade": "processos",
+   "definicao": "nativa = trâmite completo no SEI; migrada = processo físico migrado, trâmite parcial; sem = só as peças"
+  },
+  {
+   "id": "coorte.n_caminhos",
+   "caso": null,
+   "descricao": "Caminhos distintos (ordem da 1ª ocorrência de cada atividade)",
+   "valor": 1,
+   "unidade": "caminhos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caminho_mais_frequente.casos",
+   "caso": null,
+   "descricao": "Casos no caminho mais frequente (t2 → t3 → t1 → t4 → t5 → t6 → t7 → t8)",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.fora_do_modelo_substantivas.mediana",
+   "caso": null,
+   "descricao": "Peças substantivas fora do modelo por caso — mediana",
+   "valor": 2.2,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.fora_do_modelo_substantivas.q1",
+   "caso": null,
+   "descricao": "Peças substantivas fora do modelo por caso — q1",
+   "valor": 2.2,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.fora_do_modelo_substantivas.q3",
+   "caso": null,
+   "descricao": "Peças substantivas fora do modelo por caso — q3",
+   "valor": 2.2,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.fora_do_modelo_substantivas.max",
+   "caso": null,
+   "descricao": "Peças substantivas fora do modelo por caso — max",
+   "valor": 2.2,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.fora_do_modelo_substantivas.n",
+   "caso": null,
+   "descricao": "Peças substantivas fora do modelo por caso — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.espera_entre_atividades.mediana",
+   "caso": null,
+   "descricao": "Soma das esperas entre atividades por caso nativo — mediana",
+   "valor": 552.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.espera_entre_atividades.q1",
+   "caso": null,
+   "descricao": "Soma das esperas entre atividades por caso nativo — q1",
+   "valor": 552.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.espera_entre_atividades.q3",
+   "caso": null,
+   "descricao": "Soma das esperas entre atividades por caso nativo — q3",
+   "valor": 552.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.espera_entre_atividades.max",
+   "caso": null,
+   "descricao": "Soma das esperas entre atividades por caso nativo — max",
+   "valor": 552.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.espera_entre_atividades.n",
+   "caso": null,
+   "descricao": "Soma das esperas entre atividades por caso nativo — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.execucao_atividades.mediana",
+   "caso": null,
+   "descricao": "Soma das execuções das atividades por caso nativo — mediana",
+   "valor": 84.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.execucao_atividades.q1",
+   "caso": null,
+   "descricao": "Soma das execuções das atividades por caso nativo — q1",
+   "valor": 84.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.execucao_atividades.q3",
+   "caso": null,
+   "descricao": "Soma das execuções das atividades por caso nativo — q3",
+   "valor": 84.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.execucao_atividades.max",
+   "caso": null,
+   "descricao": "Soma das execuções das atividades por caso nativo — max",
+   "valor": 84.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.execucao_atividades.n",
+   "caso": null,
+   "descricao": "Soma das execuções das atividades por caso nativo — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.horas_piso.mediana",
+   "caso": null,
+   "descricao": "Horas das peças mapeadas por caso nativo (piso) — mediana",
+   "valor": 319.2,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.horas_piso.q1",
+   "caso": null,
+   "descricao": "Horas das peças mapeadas por caso nativo (piso) — q1",
+   "valor": 319.2,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.horas_piso.q3",
+   "caso": null,
+   "descricao": "Horas das peças mapeadas por caso nativo (piso) — q3",
+   "valor": 319.2,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.horas_piso.max",
+   "caso": null,
+   "descricao": "Horas das peças mapeadas por caso nativo (piso) — max",
+   "valor": 319.1,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.horas_piso.n",
+   "caso": null,
+   "descricao": "Horas das peças mapeadas por caso nativo (piso) — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.horas_teto.mediana",
+   "caso": null,
+   "descricao": "Horas das peças mapeadas por caso nativo (teto) — mediana",
+   "valor": 477.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.horas_teto.q1",
+   "caso": null,
+   "descricao": "Horas das peças mapeadas por caso nativo (teto) — q1",
+   "valor": 477.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.horas_teto.q3",
+   "caso": null,
+   "descricao": "Horas das peças mapeadas por caso nativo (teto) — q3",
+   "valor": 477.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.horas_teto.max",
+   "caso": null,
+   "descricao": "Horas das peças mapeadas por caso nativo (teto) — max",
+   "valor": 477.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.horas_teto.n",
+   "caso": null,
+   "descricao": "Horas das peças mapeadas por caso nativo (teto) — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.lead.mediana",
+   "caso": null,
+   "descricao": "Lead time dos casos nativos (encerrados ou não) — mediana",
+   "valor": 636.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.lead.q1",
+   "caso": null,
+   "descricao": "Lead time dos casos nativos (encerrados ou não) — q1",
+   "valor": 636.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.lead.q3",
+   "caso": null,
+   "descricao": "Lead time dos casos nativos (encerrados ou não) — q3",
+   "valor": 636.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.lead.max",
+   "caso": null,
+   "descricao": "Lead time dos casos nativos (encerrados ou não) — max",
+   "valor": 636.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.lead.n",
+   "caso": null,
+   "descricao": "Lead time dos casos nativos (encerrados ou não) — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.terceiros.mediana",
+   "caso": null,
+   "descricao": "Espera de resposta de terceiros por caso nativo (confirmada) — mediana",
+   "valor": 138.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.terceiros.q1",
+   "caso": null,
+   "descricao": "Espera de resposta de terceiros por caso nativo (confirmada) — q1",
+   "valor": 138.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.terceiros.q3",
+   "caso": null,
+   "descricao": "Espera de resposta de terceiros por caso nativo (confirmada) — q3",
+   "valor": 138.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.terceiros.max",
+   "caso": null,
+   "descricao": "Espera de resposta de terceiros por caso nativo (confirmada) — max",
+   "valor": 138.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.terceiros.n",
+   "caso": null,
+   "descricao": "Espera de resposta de terceiros por caso nativo (confirmada) — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.indeterminado.mediana",
+   "caso": null,
+   "descricao": "Ofício até peça externa sem data real, por caso nativo — mediana",
+   "valor": 41.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.indeterminado.q1",
+   "caso": null,
+   "descricao": "Ofício até peça externa sem data real, por caso nativo — q1",
+   "valor": 41.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.indeterminado.q3",
+   "caso": null,
+   "descricao": "Ofício até peça externa sem data real, por caso nativo — q3",
+   "valor": 41.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.indeterminado.max",
+   "caso": null,
+   "descricao": "Ofício até peça externa sem data real, por caso nativo — max",
+   "valor": 41.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.indeterminado.n",
+   "caso": null,
+   "descricao": "Ofício até peça externa sem data real, por caso nativo — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.oficios.mediana",
+   "caso": null,
+   "descricao": "Ofícios por caso nativo — mediana",
+   "valor": 12.0,
+   "unidade": "ofícios",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.oficios.q1",
+   "caso": null,
+   "descricao": "Ofícios por caso nativo — q1",
+   "valor": 12.0,
+   "unidade": "ofícios",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.oficios.q3",
+   "caso": null,
+   "descricao": "Ofícios por caso nativo — q3",
+   "valor": 12.0,
+   "unidade": "ofícios",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.oficios.max",
+   "caso": null,
+   "descricao": "Ofícios por caso nativo — max",
+   "valor": 12.0,
+   "unidade": "ofícios",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.oficios.n",
+   "caso": null,
+   "descricao": "Ofícios por caso nativo — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.retornos.mediana",
+   "caso": null,
+   "descricao": "Retornos a unidade já visitada por caso nativo — mediana",
+   "valor": 1.0,
+   "unidade": "retornos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.retornos.q1",
+   "caso": null,
+   "descricao": "Retornos a unidade já visitada por caso nativo — q1",
+   "valor": 1.0,
+   "unidade": "retornos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.retornos.q3",
+   "caso": null,
+   "descricao": "Retornos a unidade já visitada por caso nativo — q3",
+   "valor": 1.0,
+   "unidade": "retornos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.retornos.max",
+   "caso": null,
+   "descricao": "Retornos a unidade já visitada por caso nativo — max",
+   "valor": 1.0,
+   "unidade": "retornos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.retornos.n",
+   "caso": null,
+   "descricao": "Retornos a unidade já visitada por caso nativo — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.unidades_ativas.mediana",
+   "caso": null,
+   "descricao": "Unidades ativas por caso nativo — mediana",
+   "valor": 3.0,
+   "unidade": "unidades",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.unidades_ativas.q1",
+   "caso": null,
+   "descricao": "Unidades ativas por caso nativo — q1",
+   "valor": 3.0,
+   "unidade": "unidades",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.unidades_ativas.q3",
+   "caso": null,
+   "descricao": "Unidades ativas por caso nativo — q3",
+   "valor": 3.0,
+   "unidade": "unidades",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.unidades_ativas.max",
+   "caso": null,
+   "descricao": "Unidades ativas por caso nativo — max",
+   "valor": 3.0,
+   "unidade": "unidades",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.caso.unidades_ativas.n",
+   "caso": null,
+   "descricao": "Unidades ativas por caso nativo — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.SEM UNIDADE.mediana",
+   "caso": null,
+   "descricao": "Posse total da SEM UNIDADE por caso nativo em que aparece — mediana",
+   "valor": 306.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.SEM UNIDADE.q1",
+   "caso": null,
+   "descricao": "Posse total da SEM UNIDADE por caso nativo em que aparece — q1",
+   "valor": 306.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.SEM UNIDADE.q3",
+   "caso": null,
+   "descricao": "Posse total da SEM UNIDADE por caso nativo em que aparece — q3",
+   "valor": 306.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.SEM UNIDADE.max",
+   "caso": null,
+   "descricao": "Posse total da SEM UNIDADE por caso nativo em que aparece — max",
+   "valor": 306.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.SEM UNIDADE.n",
+   "caso": null,
+   "descricao": "Posse total da SEM UNIDADE por caso nativo em que aparece — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.PROC.mediana",
+   "caso": null,
+   "descricao": "Posse total da PROC por caso nativo em que aparece — mediana",
+   "valor": 203.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.PROC.q1",
+   "caso": null,
+   "descricao": "Posse total da PROC por caso nativo em que aparece — q1",
+   "valor": 203.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.PROC.q3",
+   "caso": null,
+   "descricao": "Posse total da PROC por caso nativo em que aparece — q3",
+   "valor": 203.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.PROC.max",
+   "caso": null,
+   "descricao": "Posse total da PROC por caso nativo em que aparece — max",
+   "valor": 203.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.PROC.n",
+   "caso": null,
+   "descricao": "Posse total da PROC por caso nativo em que aparece — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.CASAN.mediana",
+   "caso": null,
+   "descricao": "Posse total da CASAN por caso nativo em que aparece — mediana",
+   "valor": 70.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.CASAN.q1",
+   "caso": null,
+   "descricao": "Posse total da CASAN por caso nativo em que aparece — q1",
+   "valor": 70.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.CASAN.q3",
+   "caso": null,
+   "descricao": "Posse total da CASAN por caso nativo em que aparece — q3",
+   "valor": 70.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.CASAN.max",
+   "caso": null,
+   "descricao": "Posse total da CASAN por caso nativo em que aparece — max",
+   "valor": 70.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.CASAN.n",
+   "caso": null,
+   "descricao": "Posse total da CASAN por caso nativo em que aparece — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.SCEXEC.mediana",
+   "caso": null,
+   "descricao": "Posse total da SCEXEC por caso nativo em que aparece — mediana",
+   "valor": 57.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.SCEXEC.q1",
+   "caso": null,
+   "descricao": "Posse total da SCEXEC por caso nativo em que aparece — q1",
+   "valor": 57.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.SCEXEC.q3",
+   "caso": null,
+   "descricao": "Posse total da SCEXEC por caso nativo em que aparece — q3",
+   "valor": 57.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.SCEXEC.max",
+   "caso": null,
+   "descricao": "Posse total da SCEXEC por caso nativo em que aparece — max",
+   "valor": 57.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.SCEXEC.n",
+   "caso": null,
+   "descricao": "Posse total da SCEXEC por caso nativo em que aparece — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.CARES.mediana",
+   "caso": null,
+   "descricao": "Posse total da CARES por caso nativo em que aparece — mediana",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.CARES.q1",
+   "caso": null,
+   "descricao": "Posse total da CARES por caso nativo em que aparece — q1",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.CARES.q3",
+   "caso": null,
+   "descricao": "Posse total da CARES por caso nativo em que aparece — q3",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.CARES.max",
+   "caso": null,
+   "descricao": "Posse total da CARES por caso nativo em que aparece — max",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.posse.CARES.n",
+   "caso": null,
+   "descricao": "Posse total da CARES por caso nativo em que aparece — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.casos",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — casos em que ocorre",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.pct_casos",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — % dos casos em que ocorre",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.casos_com_laco",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — casos com 2 ou mais ocorrências",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.espera_antes.mediana",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — espera antes — mediana",
+   "valor": 8.5,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.espera_antes.q1",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — espera antes — q1",
+   "valor": 6.8,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.espera_antes.q3",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — espera antes — q3",
+   "valor": 10.2,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.espera_antes.max",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — espera antes — max",
+   "valor": 12.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.espera_antes.n",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — espera antes — n",
+   "valor": 2,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.execucao.mediana",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — execução — mediana",
+   "valor": 8.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.execucao.q1",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — execução — q1",
+   "valor": 4.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.execucao.q3",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — execução — q3",
+   "valor": 12.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.execucao.max",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — execução — max",
+   "valor": 16.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.execucao.n",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — execução — n",
+   "valor": 2,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.horas_piso.mediana",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — horas por ocorrência (piso) — mediana",
+   "valor": 1.8,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.horas_piso.q1",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — horas por ocorrência (piso) — q1",
+   "valor": 1.2,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.horas_piso.q3",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — horas por ocorrência (piso) — q3",
+   "valor": 2.2,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.horas_piso.max",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — horas por ocorrência (piso) — max",
+   "valor": 2.8,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.horas_piso.n",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — horas por ocorrência (piso) — n",
+   "valor": 2,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.horas_teto.mediana",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — horas por ocorrência (teto) — mediana",
+   "valor": 2.3,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.horas_teto.q1",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — horas por ocorrência (teto) — q1",
+   "valor": 1.7,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.horas_teto.q3",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — horas por ocorrência (teto) — q3",
+   "valor": 3.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.horas_teto.max",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — horas por ocorrência (teto) — max",
+   "valor": 3.6,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t1.horas_teto.n",
+   "caso": null,
+   "descricao": "Solicitar agendamento de vistoria técnica — horas por ocorrência (teto) — n",
+   "valor": 2,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.casos",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — casos em que ocorre",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.pct_casos",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — % dos casos em que ocorre",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.casos_com_laco",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — casos com 2 ou mais ocorrências",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.espera_antes.mediana",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes — mediana",
+   "valor": 10.5,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.espera_antes.q1",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes — q1",
+   "valor": 2.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.espera_antes.q3",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes — q3",
+   "valor": 21.8,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.espera_antes.max",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes — max",
+   "valor": 28.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.espera_antes.n",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — espera antes — n",
+   "valor": 8,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.execucao.mediana",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — execução — mediana",
+   "valor": 4.5,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.execucao.q1",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — execução — q1",
+   "valor": 0.8,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.execucao.q3",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — execução — q3",
+   "valor": 8.5,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.execucao.max",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — execução — max",
+   "valor": 35.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.execucao.n",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — execução — n",
+   "valor": 8,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.horas_piso.mediana",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas por ocorrência (piso) — mediana",
+   "valor": 31.5,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.horas_piso.q1",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas por ocorrência (piso) — q1",
+   "valor": 22.2,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.horas_piso.q3",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas por ocorrência (piso) — q3",
+   "valor": 37.5,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.horas_piso.max",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas por ocorrência (piso) — max",
+   "valor": 76.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.horas_piso.n",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas por ocorrência (piso) — n",
+   "valor": 8,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.horas_teto.mediana",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas por ocorrência (teto) — mediana",
+   "valor": 47.2,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.horas_teto.q1",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas por ocorrência (teto) — q1",
+   "valor": 39.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.horas_teto.q3",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas por ocorrência (teto) — q3",
+   "valor": 64.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.horas_teto.max",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas por ocorrência (teto) — max",
+   "valor": 124.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.horas_teto.n",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — horas por ocorrência (teto) — n",
+   "valor": 8,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.perda.pedido_complementacao",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — casos com sinal de perda pedido_complementacao",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.perda.prazo_concedido",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — casos com sinal de perda prazo_concedido",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t2.perda.reiteracao",
+   "caso": null,
+   "descricao": "Vistoriar unidade e emitir relatório de fiscalização — casos com sinal de perda reiteracao",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.casos",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — casos em que ocorre",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.pct_casos",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — % dos casos em que ocorre",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.casos_com_laco",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — casos com 2 ou mais ocorrências",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.espera_antes.mediana",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes — mediana",
+   "valor": 6.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.espera_antes.q1",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes — q1",
+   "valor": 3.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.espera_antes.q3",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes — q3",
+   "valor": 8.5,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.espera_antes.max",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes — max",
+   "valor": 11.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.espera_antes.n",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — espera antes — n",
+   "valor": 7,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.execucao.mediana",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — execução — mediana",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.execucao.q1",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — execução — q1",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.execucao.q3",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — execução — q3",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.execucao.max",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — execução — max",
+   "valor": 1.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.execucao.n",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — execução — n",
+   "valor": 7,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.horas_piso.mediana",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas por ocorrência (piso) — mediana",
+   "valor": 0.8,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.horas_piso.q1",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas por ocorrência (piso) — q1",
+   "valor": 0.8,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.horas_piso.q3",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas por ocorrência (piso) — q3",
+   "valor": 1.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.horas_piso.max",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas por ocorrência (piso) — max",
+   "valor": 1.2,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.horas_piso.n",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas por ocorrência (piso) — n",
+   "valor": 7,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.horas_teto.mediana",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas por ocorrência (teto) — mediana",
+   "valor": 1.1,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.horas_teto.q1",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas por ocorrência (teto) — q1",
+   "valor": 1.1,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.horas_teto.q3",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas por ocorrência (teto) — q3",
+   "valor": 1.1,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.horas_teto.max",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas por ocorrência (teto) — max",
+   "valor": 1.2,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t3.horas_teto.n",
+   "caso": null,
+   "descricao": "Encaminhar relatórios e solicitar manifestação — horas por ocorrência (teto) — n",
+   "valor": 7,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.casos",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — casos em que ocorre",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.pct_casos",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — % dos casos em que ocorre",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.casos_com_laco",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — casos com 2 ou mais ocorrências",
+   "valor": 0,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.espera_antes.mediana",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — espera antes — mediana",
+   "valor": 106.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.espera_antes.q1",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — espera antes — q1",
+   "valor": 106.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.espera_antes.q3",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — espera antes — q3",
+   "valor": 106.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.espera_antes.max",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — espera antes — max",
+   "valor": 106.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.espera_antes.n",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — espera antes — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.execucao.mediana",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — execução — mediana",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.execucao.q1",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — execução — q1",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.execucao.q3",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — execução — q3",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.execucao.max",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — execução — max",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.execucao.n",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — execução — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.horas_piso.mediana",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — horas por ocorrência (piso) — mediana",
+   "valor": 24.2,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.horas_piso.q1",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — horas por ocorrência (piso) — q1",
+   "valor": 24.2,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.horas_piso.q3",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — horas por ocorrência (piso) — q3",
+   "valor": 24.2,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.horas_piso.max",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — horas por ocorrência (piso) — max",
+   "valor": 24.2,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.horas_piso.n",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — horas por ocorrência (piso) — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.horas_teto.mediana",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — horas por ocorrência (teto) — mediana",
+   "valor": 11.9,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.horas_teto.q1",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — horas por ocorrência (teto) — q1",
+   "valor": 11.9,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.horas_teto.q3",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — horas por ocorrência (teto) — q3",
+   "valor": 11.9,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.horas_teto.max",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — horas por ocorrência (teto) — max",
+   "valor": 11.9,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.horas_teto.n",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — horas por ocorrência (teto) — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t4.perda.reiteracao",
+   "caso": null,
+   "descricao": "Analisar respostas e emitir parecer técnico — casos com sinal de perda reiteracao",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.casos",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — casos em que ocorre",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.pct_casos",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — % dos casos em que ocorre",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.casos_com_laco",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — casos com 2 ou mais ocorrências",
+   "valor": 0,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.espera_antes.mediana",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — espera antes — mediana",
+   "valor": 55.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.espera_antes.q1",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — espera antes — q1",
+   "valor": 55.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.espera_antes.q3",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — espera antes — q3",
+   "valor": 55.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.espera_antes.max",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — espera antes — max",
+   "valor": 55.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.espera_antes.n",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — espera antes — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.execucao.mediana",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — execução — mediana",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.execucao.q1",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — execução — q1",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.execucao.q3",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — execução — q3",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.execucao.max",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — execução — max",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.execucao.n",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — execução — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.horas_piso.mediana",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — horas por ocorrência (piso) — mediana",
+   "valor": 0.4,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.horas_piso.q1",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — horas por ocorrência (piso) — q1",
+   "valor": 0.4,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.horas_piso.q3",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — horas por ocorrência (piso) — q3",
+   "valor": 0.4,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.horas_piso.max",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — horas por ocorrência (piso) — max",
+   "valor": 0.5,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.horas_piso.n",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — horas por ocorrência (piso) — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.horas_teto.mediana",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — horas por ocorrência (teto) — mediana",
+   "valor": 0.4,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.horas_teto.q1",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — horas por ocorrência (teto) — q1",
+   "valor": 0.4,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.horas_teto.q3",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — horas por ocorrência (teto) — q3",
+   "valor": 0.4,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.horas_teto.max",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — horas por ocorrência (teto) — max",
+   "valor": 0.5,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t5.horas_teto.n",
+   "caso": null,
+   "descricao": "Dar ciência do parecer técnico à concessionária — horas por ocorrência (teto) — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.casos",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — casos em que ocorre",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.pct_casos",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — % dos casos em que ocorre",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.casos_com_laco",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — casos com 2 ou mais ocorrências",
+   "valor": 0,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.espera_antes.mediana",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — espera antes — mediana",
+   "valor": 26.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.espera_antes.q1",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — espera antes — q1",
+   "valor": 26.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.espera_antes.q3",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — espera antes — q3",
+   "valor": 26.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.espera_antes.max",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — espera antes — max",
+   "valor": 26.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.espera_antes.n",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — espera antes — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.execucao.mediana",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — execução — mediana",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.execucao.q1",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — execução — q1",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.execucao.q3",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — execução — q3",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.execucao.max",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — execução — max",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.execucao.n",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — execução — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.horas_piso.mediana",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — horas por ocorrência (piso) — mediana",
+   "valor": 4.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.horas_piso.q1",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — horas por ocorrência (piso) — q1",
+   "valor": 4.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.horas_piso.q3",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — horas por ocorrência (piso) — q3",
+   "valor": 4.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.horas_piso.max",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — horas por ocorrência (piso) — max",
+   "valor": 4.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.horas_piso.n",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — horas por ocorrência (piso) — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.horas_teto.mediana",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — horas por ocorrência (teto) — mediana",
+   "valor": 2.3,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.horas_teto.q1",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — horas por ocorrência (teto) — q1",
+   "valor": 2.3,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.horas_teto.q3",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — horas por ocorrência (teto) — q3",
+   "valor": 2.3,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.horas_teto.max",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — horas por ocorrência (teto) — max",
+   "valor": 2.3,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.horas_teto.n",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — horas por ocorrência (teto) — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t6.perda.reiteracao",
+   "caso": null,
+   "descricao": "Reanalisar manifestação e reiterar parecer técnico — casos com sinal de perda reiteracao",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.casos",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — casos em que ocorre",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.pct_casos",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — % dos casos em que ocorre",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.casos_com_laco",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — casos com 2 ou mais ocorrências",
+   "valor": 0,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.espera_antes.mediana",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — espera antes — mediana",
+   "valor": 205.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.espera_antes.q1",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — espera antes — q1",
+   "valor": 205.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.espera_antes.q3",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — espera antes — q3",
+   "valor": 205.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.espera_antes.max",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — espera antes — max",
+   "valor": 205.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.espera_antes.n",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — espera antes — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.execucao.mediana",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — execução — mediana",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.execucao.q1",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — execução — q1",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.execucao.q3",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — execução — q3",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.execucao.max",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — execução — max",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.execucao.n",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — execução — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.horas_piso.mediana",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — horas por ocorrência (piso) — mediana",
+   "valor": 6.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.horas_piso.q1",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — horas por ocorrência (piso) — q1",
+   "valor": 6.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.horas_piso.q3",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — horas por ocorrência (piso) — q3",
+   "valor": 6.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.horas_piso.max",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — horas por ocorrência (piso) — max",
+   "valor": 6.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.horas_piso.n",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — horas por ocorrência (piso) — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.horas_teto.mediana",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — horas por ocorrência (teto) — mediana",
+   "valor": 12.7,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.horas_teto.q1",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — horas por ocorrência (teto) — q1",
+   "valor": 12.7,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.horas_teto.q3",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — horas por ocorrência (teto) — q3",
+   "valor": 12.7,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.horas_teto.max",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — horas por ocorrência (teto) — max",
+   "valor": 12.7,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.horas_teto.n",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — horas por ocorrência (teto) — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t7.perda.reiteracao",
+   "caso": null,
+   "descricao": "Analisar fundamentos jurídicos da fiscalização — casos com sinal de perda reiteracao",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.casos",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — casos em que ocorre",
+   "valor": 1,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.pct_casos",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — % dos casos em que ocorre",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.casos_com_laco",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — casos com 2 ou mais ocorrências",
+   "valor": 0,
+   "unidade": "casos",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.espera_antes.mediana",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — espera antes — mediana",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.espera_antes.q1",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — espera antes — q1",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.espera_antes.q3",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — espera antes — q3",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.espera_antes.max",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — espera antes — max",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.espera_antes.n",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — espera antes — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.execucao.mediana",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — execução — mediana",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.execucao.q1",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — execução — q1",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.execucao.q3",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — execução — q3",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.execucao.max",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — execução — max",
+   "valor": 0.0,
+   "unidade": "du",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.execucao.n",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — execução — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.horas_piso.mediana",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — horas por ocorrência (piso) — mediana",
+   "valor": 0.8,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.horas_piso.q1",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — horas por ocorrência (piso) — q1",
+   "valor": 0.8,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.horas_piso.q3",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — horas por ocorrência (piso) — q3",
+   "valor": 0.8,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.horas_piso.max",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — horas por ocorrência (piso) — max",
+   "valor": 0.8,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.horas_piso.n",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — horas por ocorrência (piso) — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.horas_teto.mediana",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — horas por ocorrência (teto) — mediana",
+   "valor": 1.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.horas_teto.q1",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — horas por ocorrência (teto) — q1",
+   "valor": 1.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.horas_teto.q3",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — horas por ocorrência (teto) — q3",
+   "valor": 1.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.horas_teto.max",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — horas por ocorrência (teto) — max",
+   "valor": 1.0,
+   "unidade": "h",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.t8.horas_teto.n",
+   "caso": null,
+   "descricao": "Dar ciência do parecer jurídico à concessionária — horas por ocorrência (teto) — n",
+   "valor": 1,
+   "unidade": "observações",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.transicao.início.t2",
+   "caso": null,
+   "descricao": "Passagens de início para t2",
+   "valor": 1,
+   "unidade": "passagens",
+   "definicao": "passagens observadas entre ocorrências consecutivas (total que sai de início: 1)"
+  },
+  {
+   "id": "coorte.transicao.início.t2.pct",
+   "caso": null,
+   "descricao": "% das saídas de início que vão para t2",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.transicao.t2.t3",
+   "caso": null,
+   "descricao": "Passagens de t2 para t3",
+   "valor": 6,
+   "unidade": "passagens",
+   "definicao": "passagens observadas entre ocorrências consecutivas (total que sai de t2: 8)"
+  },
+  {
+   "id": "coorte.transicao.t2.t3.pct",
+   "caso": null,
+   "descricao": "% das saídas de t2 que vão para t3",
+   "valor": 75,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.transicao.t2.t1",
+   "caso": null,
+   "descricao": "Passagens de t2 para t1",
+   "valor": 2,
+   "unidade": "passagens",
+   "definicao": "passagens observadas entre ocorrências consecutivas (total que sai de t2: 8)"
+  },
+  {
+   "id": "coorte.transicao.t2.t1.pct",
+   "caso": null,
+   "descricao": "% das saídas de t2 que vão para t1",
+   "valor": 25,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.transicao.t3.t2",
+   "caso": null,
+   "descricao": "Passagens de t3 para t2",
+   "valor": 6,
+   "unidade": "passagens",
+   "definicao": "passagens observadas entre ocorrências consecutivas (total que sai de t3: 7)"
+  },
+  {
+   "id": "coorte.transicao.t3.t2.pct",
+   "caso": null,
+   "descricao": "% das saídas de t3 que vão para t2",
+   "valor": 86,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.transicao.t3.t4",
+   "caso": null,
+   "descricao": "Passagens de t3 para t4",
+   "valor": 1,
+   "unidade": "passagens",
+   "definicao": "passagens observadas entre ocorrências consecutivas (total que sai de t3: 7)"
+  },
+  {
+   "id": "coorte.transicao.t3.t4.pct",
+   "caso": null,
+   "descricao": "% das saídas de t3 que vão para t4",
+   "valor": 14,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.transicao.t1.t3",
+   "caso": null,
+   "descricao": "Passagens de t1 para t3",
+   "valor": 1,
+   "unidade": "passagens",
+   "definicao": "passagens observadas entre ocorrências consecutivas (total que sai de t1: 2)"
+  },
+  {
+   "id": "coorte.transicao.t1.t3.pct",
+   "caso": null,
+   "descricao": "% das saídas de t1 que vão para t3",
+   "valor": 50,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.transicao.t1.t2",
+   "caso": null,
+   "descricao": "Passagens de t1 para t2",
+   "valor": 1,
+   "unidade": "passagens",
+   "definicao": "passagens observadas entre ocorrências consecutivas (total que sai de t1: 2)"
+  },
+  {
+   "id": "coorte.transicao.t1.t2.pct",
+   "caso": null,
+   "descricao": "% das saídas de t1 que vão para t2",
+   "valor": 50,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.transicao.t4.t5",
+   "caso": null,
+   "descricao": "Passagens de t4 para t5",
+   "valor": 1,
+   "unidade": "passagens",
+   "definicao": "passagens observadas entre ocorrências consecutivas (total que sai de t4: 1)"
+  },
+  {
+   "id": "coorte.transicao.t4.t5.pct",
+   "caso": null,
+   "descricao": "% das saídas de t4 que vão para t5",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.transicao.t5.t6",
+   "caso": null,
+   "descricao": "Passagens de t5 para t6",
+   "valor": 1,
+   "unidade": "passagens",
+   "definicao": "passagens observadas entre ocorrências consecutivas (total que sai de t5: 1)"
+  },
+  {
+   "id": "coorte.transicao.t5.t6.pct",
+   "caso": null,
+   "descricao": "% das saídas de t5 que vão para t6",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.transicao.t6.t7",
+   "caso": null,
+   "descricao": "Passagens de t6 para t7",
+   "valor": 1,
+   "unidade": "passagens",
+   "definicao": "passagens observadas entre ocorrências consecutivas (total que sai de t6: 1)"
+  },
+  {
+   "id": "coorte.transicao.t6.t7.pct",
+   "caso": null,
+   "descricao": "% das saídas de t6 que vão para t7",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.transicao.t7.t8",
+   "caso": null,
+   "descricao": "Passagens de t7 para t8",
+   "valor": 1,
+   "unidade": "passagens",
+   "definicao": "passagens observadas entre ocorrências consecutivas (total que sai de t7: 1)"
+  },
+  {
+   "id": "coorte.transicao.t7.t8.pct",
+   "caso": null,
+   "descricao": "% das saídas de t7 que vão para t8",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  },
+  {
+   "id": "coorte.transicao.t8.fim",
+   "caso": null,
+   "descricao": "Passagens de t8 para fim",
+   "valor": 1,
+   "unidade": "passagens",
+   "definicao": "passagens observadas entre ocorrências consecutivas (total que sai de t8: 1)"
+  },
+  {
+   "id": "coorte.transicao.t8.fim.pct",
+   "caso": null,
+   "descricao": "% das saídas de t8 que vão para fim",
+   "valor": 100,
+   "unidade": "%",
+   "definicao": "distribuição na coorte da fase 2 (processos do código com atividade atribuída a cada peça); estatística = mediana, q1, q3, max ou n (número de observações)"
+  }
+ ],
+ "linha_do_tempo": {
+  "SEI-480002/001314/2024": [
+   {
+    "atividade": "t2",
+    "nome": "Vistoriar unidade e emitir relatório de fiscalização",
+    "inicio": "2024-03-07",
+    "fim": "2024-04-29",
+    "pecas": [
+     "Relatório de Fiscalização (69710124)",
+     "Relatório de Fiscalização (69712392)",
+     "Relatório de Fiscalização (69716140)",
+     "Relatório de Fiscalização (72642867)",
+     "Relatório de Fiscalização (72710417)",
+     "Relatório de Fiscalização (72711316)",
+     "Relatório de Fiscalização (72838107)",
+     "Relatório de Fiscalização (72851141)",
+     "Relatório de Fiscalização (72853692)",
+     "Relatório de Fiscalização (72974318)",
+     "Relatório de Fiscalização (72975320)",
+     "Relatório de Fiscalização (72980247)"
+    ],
+    "horas_piso": 76.0,
+    "horas_teto": 124.01142000000002,
+    "execucao_du": 35.0,
+    "espera_antes_du": 19.0,
+    "espera_antes_por_unidade": {
+     "CASAN": 19.0
+    }
+   },
+   {
+    "atividade": "t3",
+    "nome": "Encaminhar relatórios e solicitar manifestação",
+    "inicio": "2024-05-08",
+    "fim": "2024-05-08",
+    "pecas": [
+     "Ofício - NA 349 (74141761)",
+     "E-mail (74179603)"
+    ],
+    "horas_piso": 0.75,
+    "horas_teto": 1.15396,
+    "execucao_du": 0.0,
+    "espera_antes_du": 6.0,
+    "espera_antes_por_unidade": {
+     "CASAN": 6.0
+    }
+   },
+   {
+    "atividade": "t2",
+    "nome": "Vistoriar unidade e emitir relatório de fiscalização",
+    "inicio": "2024-05-10",
+    "fim": "2024-05-20",
+    "pecas": [
+     "Relatório de Fiscalização (74334571)",
+     "Relatório de Fiscalização (74336951)",
+     "Relatório de Fiscalização (74338948)",
+     "Relatório de Fiscalização (74871240)",
+     "Relatório de Fiscalização (74873701)",
+     "Relatório de Fiscalização (74881165)",
+     "Relatório de Fiscalização (74882333)"
+    ],
+    "horas_piso": 48.0,
+    "horas_teto": 78.31590000000001,
+    "execucao_du": 6.0,
+    "espera_antes_du": 2.0,
+    "espera_antes_por_unidade": {
+     "CASAN": 2.0
+    }
+   },
+   {
+    "atividade": "t3",
+    "nome": "Encaminhar relatórios e solicitar manifestação",
+    "inicio": "2024-05-29",
+    "fim": "2024-05-29",
+    "pecas": [
+     "Ofício - NA 452 (75600516)",
+     "E-mail (75783205)"
+    ],
+    "horas_piso": 0.75,
+    "horas_teto": 1.08788,
+    "execucao_du": 0.0,
+    "espera_antes_du": 7.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 7.0
+    }
+   },
+   {
+    "atividade": "t2",
+    "nome": "Vistoriar unidade e emitir relatório de fiscalização",
+    "inicio": "2024-06-03",
+    "fim": "2024-06-06",
+    "pecas": [
+     "Relatório de Fiscalização (75824539)",
+     "Relatório de Fiscalização (75824232)",
+     "Relatório de Fiscalização (76104339)",
+     "Relatório de Fiscalização (76213730)"
+    ],
+    "horas_piso": 30.0,
+    "horas_teto": 43.97776,
+    "execucao_du": 3.0,
+    "espera_antes_du": 2.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 2.0
+    }
+   },
+   {
+    "atividade": "t1",
+    "nome": "Solicitar agendamento de vistoria técnica",
+    "inicio": "2024-06-24",
+    "fim": "2024-06-24",
+    "pecas": [
+     "Ofício - NA 516 (77432319)",
+     "E-mail (77459067)"
+    ],
+    "horas_piso": 0.75,
+    "horas_teto": 1.0869499999999999,
+    "execucao_du": 0.0,
+    "espera_antes_du": 12.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 12.0
+    }
+   },
+   {
+    "atividade": "t3",
+    "nome": "Encaminhar relatórios e solicitar manifestação",
+    "inicio": "2024-06-27",
+    "fim": "2024-06-27",
+    "pecas": [
+     "Ofício - NA 541 (77695170)",
+     "E-mail (77748737)"
+    ],
+    "horas_piso": 1.25,
+    "horas_teto": 1.05922,
+    "execucao_du": 0.0,
+    "espera_antes_du": 3.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 3.0
+    }
+   },
+   {
+    "atividade": "t2",
+    "nome": "Vistoriar unidade e emitir relatório de fiscalização",
+    "inicio": "2024-07-25",
+    "fim": "2024-08-02",
+    "pecas": [
+     "Relatório de Fiscalização (79573103)",
+     "Relatório de Fiscalização (79573239)",
+     "Relatório de Fiscalização (79575319)",
+     "Relatório de Fiscalização (79900134)",
+     "Relatório de Fiscalização (79901118)"
+    ],
+    "horas_piso": 33.0,
+    "horas_teto": 50.515280000000004,
+    "execucao_du": 6.0,
+    "espera_antes_du": 20.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 20.0
+    }
+   },
+   {
+    "atividade": "t3",
+    "nome": "Encaminhar relatórios e solicitar manifestação",
+    "inicio": "2024-08-07",
+    "fim": "2024-08-08",
+    "pecas": [
+     "Ofício - NA 682 (80501066)",
+     "E-mail (80626379)"
+    ],
+    "horas_piso": 1.25,
+    "horas_teto": 1.1029499999999999,
+    "execucao_du": 1.0,
+    "espera_antes_du": 3.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 3.0
+    }
+   },
+   {
+    "atividade": "t2",
+    "nome": "Vistoriar unidade e emitir relatório de fiscalização",
+    "inicio": "2024-08-09",
+    "fim": "2024-08-09",
+    "pecas": [
+     "Relatório de Fiscalização (80654568)",
+     "Relatório de Fiscalização (80655356)",
+     "Relatório de Fiscalização (80656194)",
+     "Relatório de Fiscalização (80656240)"
+    ],
+    "horas_piso": 20.0,
+    "horas_teto": 42.809920000000005,
+    "execucao_du": 0.0,
+    "espera_antes_du": 1.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 1.0
+    }
+   },
+   {
+    "atividade": "t1",
+    "nome": "Solicitar agendamento de vistoria técnica",
+    "inicio": "2024-08-16",
+    "fim": "2024-09-09",
+    "pecas": [
+     "Ofício - NA 708 (81195142)",
+     "E-mail (81213540)",
+     "Ofício - NA 725 (81595411)",
+     "E-mail (81701160)",
+     "Ofício - NA 757 (82718456)",
+     "E-mail (82834832)"
+    ],
+    "horas_piso": 2.75,
+    "horas_teto": 3.57562,
+    "execucao_du": 16.0,
+    "espera_antes_du": 5.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 5.0
+    }
+   },
+   {
+    "atividade": "t2",
+    "nome": "Vistoriar unidade e emitir relatório de fiscalização",
+    "inicio": "2024-09-11",
+    "fim": "2024-09-11",
+    "pecas": [
+     "Relatório de Fiscalização (82895573)"
+    ],
+    "horas_piso": 10.0,
+    "horas_teto": 9.8887,
+    "execucao_du": 0.0,
+    "espera_antes_du": 2.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 2.0
+    }
+   },
+   {
+    "atividade": "t3",
+    "nome": "Encaminhar relatórios e solicitar manifestação",
+    "inicio": "2024-09-26",
+    "fim": "2024-09-26",
+    "pecas": [
+     "Ofício - NA 831 (83969598)",
+     "E-mail (84132825)"
+    ],
+    "horas_piso": 0.75,
+    "horas_teto": 1.14196,
+    "execucao_du": 0.0,
+    "espera_antes_du": 11.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 11.0
+    }
+   },
+   {
+    "atividade": "t2",
+    "nome": "Vistoriar unidade e emitir relatório de fiscalização",
+    "inicio": "2024-11-06",
+    "fim": "2024-11-07",
+    "pecas": [
+     "Relatório de Fiscalização (86161531)",
+     "Relatório de Fiscalização (86162193)",
+     "Relatório de Fiscalização (86826650)",
+     "Relatório de Fiscalização (86826664)",
+     "Relatório de Fiscalização (86827856)",
+     "Relatório de Fiscalização (87028948)"
+    ],
+    "horas_piso": 34.0,
+    "horas_teto": 59.23189,
+    "execucao_du": 1.0,
+    "espera_antes_du": 28.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 28.0
+    }
+   },
+   {
+    "atividade": "t3",
+    "nome": "Encaminhar relatórios e solicitar manifestação",
+    "inicio": "2024-11-11",
+    "fim": "2024-11-11",
+    "pecas": [
+     "Ofício - NA 946 (87188346)",
+     "E-mail (87308946)"
+    ],
+    "horas_piso": 0.75,
+    "horas_teto": 1.06132,
+    "execucao_du": 0.0,
+    "espera_antes_du": 2.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 2.0
+    }
+   },
+   {
+    "atividade": "t2",
+    "nome": "Vistoriar unidade e emitir relatório de fiscalização",
+    "inicio": "2024-12-20",
+    "fim": "2025-01-15",
+    "pecas": [
+     "Relatório de Fiscalização (89901514)",
+     "Relatório de Fiscalização (91278977)",
+     "Relatório de Fiscalização (91213447)"
+    ],
+    "horas_piso": 23.0,
+    "horas_teto": 27.57748,
+    "execucao_du": 16.0,
+    "espera_antes_du": 27.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 27.0
+    }
+   },
+   {
+    "atividade": "t3",
+    "nome": "Encaminhar relatórios e solicitar manifestação",
+    "inicio": "2025-01-30",
+    "fim": "2025-01-30",
+    "pecas": [
+     "Ofício - NA 32 (92310062)",
+     "E-mail (92342599)"
+    ],
+    "horas_piso": 0.75,
+    "horas_teto": 1.0916000000000001,
+    "execucao_du": 0.0,
+    "espera_antes_du": 10.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 10.0
+    }
+   },
+   {
+    "atividade": "t4",
+    "nome": "Analisar respostas e emitir parecer técnico",
+    "inicio": "2025-07-08",
+    "fim": "2025-07-08",
+    "pecas": [
+     "Parecer 250 (104033188)",
+     "Despacho de Encaminhamento de Processo (104117825)"
+    ],
+    "horas_piso": 24.2,
+    "horas_teto": 11.915780000000002,
+    "execucao_du": 0.0,
+    "espera_antes_du": 106.0,
+    "espera_antes_por_unidade": {
+     "SEM UNIDADE": 106.0
+    }
+   },
+   {
+    "atividade": "t5",
+    "nome": "Dar ciência do parecer técnico à concessionária",
+    "inicio": "2025-09-23",
+    "fim": "2025-09-23",
+    "pecas": [
+     "Manifestação 55 (114548072)",
+     "E-mail (114551426)"
+    ],
+    "horas_piso": 0.45,
+    "horas_teto": 0.45,
+    "execucao_du": 0.0,
+    "espera_antes_du": 55.0,
+    "espera_antes_por_unidade": {
+     "SCEXEC": 55.0
+    }
+   },
+   {
+    "atividade": "t6",
+    "nome": "Reanalisar manifestação e reiterar parecer técnico",
+    "inicio": "2025-10-30",
+    "fim": "2025-10-30",
+    "pecas": [
+     "Despacho de Encaminhamento de Processo (117801870)"
+    ],
+    "horas_piso": 4.0,
+    "horas_teto": 2.306312,
+    "execucao_du": 0.0,
+    "espera_antes_du": 26.0,
+    "espera_antes_por_unidade": {
+     "CASAN": 2.0,
+     "SEM UNIDADE": 24.0
+    }
+   },
+   {
+    "atividade": "t7",
+    "nome": "Analisar fundamentos jurídicos da fiscalização",
+    "inicio": "2026-08-28",
+    "fim": "2026-08-28",
+    "pecas": [
+     "Parecer 759 (120665498)"
+    ],
+    "horas_piso": 6.0,
+    "horas_teto": 12.658612,
+    "execucao_du": 0.0,
+    "espera_antes_du": 205.0,
+    "espera_antes_por_unidade": {
+     "SCEXEC": 2.0,
+     "PROC": 203.0
+    }
+   },
+   {
+    "atividade": "t8",
+    "nome": "Dar ciência do parecer jurídico à concessionária",
+    "inicio": "2026-08-28",
+    "fim": "2026-08-28",
+    "pecas": [
+     "Ofício - NA 2606 (140207175)",
+     "E-mail (140220431)"
+    ],
+    "horas_piso": 0.75,
+    "horas_teto": 1.02321,
+    "execucao_du": 0.0,
+    "espera_antes_du": 0.0,
+    "espera_antes_por_unidade": {}
+   }
+  ]
+ }
+}

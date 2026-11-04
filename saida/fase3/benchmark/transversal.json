@@ -1,0 +1,931 @@
+{
+ "familia": "transversal",
+ "processos": [
+  "P01",
+  "P06",
+  "P21"
+ ],
+ "pergunta": "Que práticas documentadas, com resultado medido, reduzem o tempo em que o processo fica sem dono entre etapas (espera antes do parecer jurídico e da sessão, laços de diligência e reiteração, cauda pós-deliberação) na tramitação eletrônica entre secretaria, áreas técnicas, procuradoria e gabinete do relator de um órgão colegiado, e quais salvaguardas e indicadores acompanham a automação e a IA nesse fluxo?",
+ "estrategia_busca": [
+  "OpenAlex API (works?search=): 'process mining public administration electronic process'; 'process mining judicial processes Brazil'; 'mineração de processos processo judicial eletrônico'; 'process mining court case duration'; 'process mining government case management bottleneck'; 'Sistema Eletrônico de Informações SEI processo administrativo eletrônico'; 'mineração de processos Sistema Eletrônico de Informações'; 'lean public sector lead time reduction case study'; 'lean government administrative process lead time results'; 'lean no setor público redução de tempo processo administrativo'; 'kanban visual management public sector office'; 'lean six sigma government permit processing time reduction'; 'lean regulatory agency permitting backlog reduction'; 'lean public services systematic review outcomes'; 'time allocation task juggling judges'; 'multitasking multiarmed bandits Italian judiciary'; 'plenário virtual Supremo Tribunal Federal'; 'metas nacionais Conselho Nacional de Justiça produtividade tribunais'; 'performance targets Brazilian courts'; 'time standards court delay reduction evaluation'; 'caseflow management court delay reduction evidence'; 'statutory deadlines agency review times PDUFA'; 'drug review deadlines safety problems'; 'VICTOR dataset Brazilian Supreme Court'; 'large legal fictions hallucinations'; 'hallucination-free legal research AI tools'; 'robotic process automation social services Trelleborg'; 'robotic process automation public sector case study processing time'; 'generative AI civil servants field experiment productivity government'. A cota diária gratuita do OpenAlex se esgotou no meio da busca (HTTP 429, compartilhada pela rede).",
+  "Crossref API (works/<doi> para conferir todos os DOIs; query.bibliographic): 'implantação Sistema Eletrônico de Informações redução tempo de tramitação'; 'lean office setor público redução lead time'; 'robotic process automation government agency results'; 'kanban gestão visual setor público resultados'; 'Behavioral nudges reduce failure to appear for court'.",
+  "Semantic Scholar API (paper/search): 'behavioral design court appearance text message reminders'; 'electronic court system case duration Brazil'; parte das consultas interrompida por limite de taxa (HTTP 429).",
+  "PubMed E-utilities (esearch/efetch) para o resumo do artigo da Science sobre notificações.",
+  "WebSearch: experimento Copilot do governo britânico; avaliação do i.AI Consult; Victor e MARIA no STF; ANEEL e outros reguladores com IA; FCA/Ofgem/Ofwat com IA generativa; TCU e concessão automática do INSS; RPA em municípios; processo eletrônico e-Proc e tempo de tramitação; Meta 2 do CNJ; lean office LIPOR.",
+  "Leitura direta (WebFetch, curl e pdftotext) dos textos: PDF do artigo da LIPOR (FME Transactions), PDF do artigo do TCU (Administratie si Management Public), dissertação da UnB sobre o MARIA, artigo do Victor (SciELO), relatório do Consult (GOV.UK), relatório do Copilot (GOV.UK), estudo de caso da IFC e notícia do CNJ."
+ ],
+ "casos": [
+  {
+   "id": "B-transversal-01",
+   "pratica": "Fila única por idade do processo (FIFO por caso) no gabinete do julgador",
+   "descricao": "Seis juízes da Corte de Apelação do Trabalho de Roma trocaram a regra de agenda: em vez de priorizar a audiência mais antiga (o que espalha a atenção por muitos processos ao mesmo tempo), passaram a priorizar o processo mais antigo até concluí-lo. A mudança foi acompanhada por oito anos e comparada com 44 juízes que não mudaram.",
+   "contexto": {
+    "pais": "Itália",
+    "orgao": "Corte de Apelação do Trabalho de Roma",
+    "setor": "judiciário",
+    "periodo": "acompanhamento de 8 anos"
+   },
+   "resultado_reportado": "A intervenção reduziu a duração média dos processos em 12% e a probabilidade de recurso à corte suprema em 3,8%, em relação ao grupo de controle de 44 juízes.",
+   "metrica": {
+    "nome": "duração média do processo",
+    "antes": null,
+    "depois": null,
+    "unidade": "%",
+    "variacao_pct": -12
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Robert L. Bray; Decio Coviello; Andrea Ichino; Nicola Persico",
+    "ano": 2016,
+    "titulo": "Multitasking, Multiarmed Bandits, and the Italian Judiciary",
+    "veiculo": "Manufacturing & Service Operations Management, 18(4), 545-558",
+    "doi": "10.1287/msom.2016.0586",
+    "url": "https://doi.org/10.1287/msom.2016.0586",
+    "trecho": "Tracking these judges for eight years, we estimate that our intervention decreased the average case duration by 12% and the probability of a decision being appealed to the Italian supreme court by 3.8%, relative to a 44-judge control sample.",
+    "verificado_em": "https://api.crossref.org/works/10.1287/msom.2016.0586"
+   },
+   "nivel_evidencia": "quase_experimental",
+   "fase_melhoria": [
+    1
+   ],
+   "atividades_alvo": [
+    "P01:t8",
+    "P06:t7",
+    "P21:t9",
+    "P21:t11"
+   ],
+   "aplicabilidade": "É a evidência mais direta de que limitar o número de processos tocados ao mesmo tempo (WIP) e terminar o mais antigo encurta o lead time sem mais gente. Na AGENERSA o gabinete do relator tem a maior posse em P01 (143 du no típico, 324 du no crítico) e processos esperam meses entre peças curtas; uma regra de fila por idade do processo no gabinete, visível num painel, é aplicável sem tecnologia nova.",
+   "parametro_ganho": "Redução de 12% na duração média dos processos com regra de priorização por idade do processo (parâmetro conservador para o tempo em gabinete).",
+   "limitacoes": "Julgadores de corte trabalhista, não conselho de agência; amostra de seis juízes que aderiram voluntariamente. O efeito depende do perfil de conclusão dos casos (taxa crescente com a idade), que precisa ser verificado nos dados do SEI.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-02",
+   "pratica": "Teoria das Restrições aplicada ao fluxo de um tribunal",
+   "descricao": "O fluxo dos processos do Tribunal Distrital de Jerusalém foi analisado pela Teoria das Restrições (identificar a restrição, subordinar o restante a ela) e um conjunto de mudanças operacionais foi implantado para reduzir o tempo de processamento; a intervenção recebeu o prêmio Goldratt de 2012.",
+   "contexto": {
+    "pais": "Israel",
+    "orgao": "Tribunal Distrital de Jerusalém",
+    "setor": "judiciário",
+    "periodo": "intervenção premiada em 2012"
+   },
+   "resultado_reportado": "Dados coletados antes e depois da intervenção indicam redução de lead time; o resumo não traz o número.",
+   "metrica": {
+    "nome": "lead time do processo",
+    "antes": null,
+    "depois": null,
+    "unidade": "",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Shany Azaria; Boaz Ronen; Noam Shamir",
+    "ano": 2023,
+    "titulo": "Justice in time: A theory of constraints approach",
+    "veiculo": "Journal of Operations Management, 69(7), 1202-1208",
+    "doi": "10.1002/joom.1234",
+    "url": "https://doi.org/10.1002/joom.1234",
+    "trecho": "Data collected before and after this intervention indicate the potential of achieving lead‐time reduction by applying TOC to judicial environments.",
+    "verificado_em": "https://api.crossref.org/works/10.1002/joom.1234"
+   },
+   "nivel_evidencia": "estudo_de_caso",
+   "fase_melhoria": [
+    1
+   ],
+   "atividades_alvo": [
+    "P01:t8",
+    "P06:t6",
+    "P06:t7",
+    "P21:t8",
+    "P21:t9"
+   ],
+   "aplicabilidade": "As avaliações de P01, P06 e P21 concluem que o gargalo não é capacidade de uma unidade, e sim espera entre etapas sem marco nem responsável; a TOC organiza exatamente isso (achar a restrição real e subordinar o resto). Serve como referência metodológica para o desenho TO-BE do trecho razões finais → relatoria → sessão.",
+   "parametro_ganho": null,
+   "limitacoes": "O resumo não quantifica o ganho; o texto completo não foi lido. Usar como referência de método, não de parâmetro.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-03",
+   "pratica": "Lean office com mapeamento de processo, quadros de equipe e reuniões diárias",
+   "descricao": "A LIPOR, associação de municípios portugueses para resíduos sólidos, juntou cinco departamentos de apoio e implantou Lean office: mapeamento de cada processo com os envolvidos, eliminação de tarefas sem valor, automação simples, padronização, quadros de equipe (gestão visual) e reuniões diárias de Kaizen, com meta inicial de 25% de melhoria por processo.",
+   "contexto": {
+    "pais": "Portugal",
+    "orgao": "LIPOR (associação de municípios)",
+    "setor": "administração pública / resíduos sólidos",
+    "periodo": "a partir de 2010"
+   },
+   "resultado_reportado": "O fechamento contábil mensal caiu de 8 para 4,5 dias (44%) e o pagamento a fornecedores de 9 para 1,5 dia entre 2010 e 2015; a folha de pagamento caiu de 10 para 5 dias (50%) já em dez/2010; o subprocesso de faturamento dos municípios caiu de 642 para 60 minutos.",
+   "metrica": {
+    "nome": "lead time do fechamento contábil mensal",
+    "antes": 8,
+    "depois": 4.5,
+    "unidade": "dias",
+    "variacao_pct": -44
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Mónica Monteiro; Claudia Pacheco; José Dinis-Carvalho; Francisco Paiva",
+    "ano": 2015,
+    "titulo": "Implementing lean office: A successful case in public sector",
+    "veiculo": "FME Transactions, 43(4), 303-310",
+    "doi": "10.5937/fmet1504303m",
+    "url": "https://www.mas.bg.ac.rs/_media/istrazivanje/fme/vol43/4/05_monteiro_et_al.pdf",
+    "trecho": "The monthly closing accounting process, performed by the Accounting Team (pilot team), reached a reduction of 44% in its lead time from 8 days down to 4,5 days.",
+    "verificado_em": "https://www.mas.bg.ac.rs/_media/istrazivanje/fme/vol43/4/05_monteiro_et_al.pdf"
+   },
+   "nivel_evidencia": "estudo_de_caso",
+   "fase_melhoria": [
+    1,
+    4
+   ],
+   "atividades_alvo": [
+    "P01:t1",
+    "P01:t9",
+    "P01:t13",
+    "P06:t5",
+    "P06:t8",
+    "P21:t7",
+    "P21:t10",
+    "P21:t12"
+   ],
+   "aplicabilidade": "Mostra o pacote Lean de baixo custo (mapeamento com quem executa, quadro visual por equipe, reunião diária) com ganho medido em órgão público de apoio administrativo, que é o perfil da Secretaria Executiva da AGENERSA (acusar recebimento, sortear, publicar, certificar, encerrar). Útil para as etapas sem dono e para a cauda pós-deliberação.",
+   "parametro_ganho": "Redução de 44% a 50% no lead time de rotinas administrativas internas após mapeamento e eliminação de tarefas sem valor.",
+   "limitacoes": "Processos de apoio (contabilidade, folha, pagamentos), não processo decisório colegiado; relato dos próprios autores, sem grupo de controle.",
+   "verificacao": {
+    "veredito": "corrigir",
+    "correcoes_aplicadas": true
+   }
+  },
+  {
+   "id": "B-transversal-04",
+   "pratica": "Plenário virtual (sessões assíncronas) para julgamento colegiado",
+   "descricao": "O Supremo Tribunal Federal ampliou o plenário virtual, em que os votos são lançados em sessão eletrônica assíncrona, para o julgamento de mérito de recursos com repercussão geral e, depois, de quaisquer processos de sua competência.",
+   "contexto": {
+    "pais": "Brasil",
+    "orgao": "Supremo Tribunal Federal",
+    "setor": "judiciário / órgão colegiado",
+    "periodo": "2020"
+   },
+   "resultado_reportado": "Em 2020 o STF julgou o mérito de 128 temas de repercussão geral, recorde histórico, dos quais 104 (81%) no plenário virtual; a autora aponta o risco de precedentes sem fundamentação clara pela ausência de debate prévio.",
+   "metrica": {
+    "nome": "temas de repercussão geral julgados no plenário virtual",
+    "antes": null,
+    "depois": 104,
+    "unidade": "temas (de 128)",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Priscila Leal Seifert Viana",
+    "ano": 2024,
+    "titulo": "O Supremo Tribunal Federal e o plenário virtual: algumas reflexões sobre o movimento de virtualização do Supremo frente aos direitos e as garantias processuais constitucionais",
+    "veiculo": "Revista Eletrônica de Direito Processual, 25(2)",
+    "doi": "10.12957/redp.2024.85266",
+    "url": "https://doi.org/10.12957/redp.2024.85266",
+    "trecho": "totalizando um saldo de 128 temas com mérito julgado. Dentre esses temas, 104 foram analisados por meio do plenário virtual. Os números demonstram a eficiência do plenário virtual",
+    "verificado_em": "https://api.crossref.org/works/10.12957/redp.2024.85266"
+   },
+   "nivel_evidencia": "estudo_de_caso",
+   "fase_melhoria": [
+    1,
+    2
+   ],
+   "atividades_alvo": [
+    "P01:t8",
+    "P06:t7",
+    "P21:t9"
+   ],
+   "aplicabilidade": "Nos três processos o tempo longo fica entre o fim das razões finais e a sessão (82 du e 81 du sem unidade em P06; 24 du e 40 du em P21). Sessão virtual contínua do Conselho-Diretor para casos sem controvérsia (ocorrências de usuário, autos de fiscalização sem defesa relevante) desacopla a deliberação do calendário de sessões presenciais.",
+   "parametro_ganho": "Volume: 81% dos julgamentos de mérito do colegiado em ambiente virtual em um ano; não há parâmetro de redução de tempo.",
+   "limitacoes": "A fonte mede volume julgado, não lead time. Risco de perda de deliberação (votos desconectados); exige regra de destaque para sessão presencial.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-05",
+   "pratica": "Notificação redesenhada e lembrete por mensagem de texto",
+   "descricao": "Em Nova York, o formulário de intimação para comparecimento ao tribunal foi redesenhado para destacar data, local e consequência, e quem informou celular passou a receber lembretes por SMS antes da data marcada. Os dois efeitos foram medidos em estudos de campo.",
+   "contexto": {
+    "pais": "Estados Unidos",
+    "orgao": "Tribunais criminais da cidade de Nova York",
+    "setor": "judiciário",
+    "periodo": "estudos de campo publicados em 2020"
+   },
+   "resultado_reportado": "As intervenções reduziram as faltas ao comparecimento entre 13% e 21% e evitaram cerca de 30 mil mandados de prisão em três anos.",
+   "metrica": {
+    "nome": "faltas ao comparecimento",
+    "antes": null,
+    "depois": null,
+    "unidade": "%",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Alissa Fishbane; Aurelie Ouss; Anuj K. Shah",
+    "ano": 2020,
+    "titulo": "Behavioral nudges reduce failure to appear for court",
+    "veiculo": "Science, 370(6517), eabb6591",
+    "doi": "10.1126/science.abb6591",
+    "url": "https://doi.org/10.1126/science.abb6591",
+    "trecho": "In two field studies in New York City, we make critical information salient by redesigning the summons form and providing text message reminders. These interventions reduce failures to appear by 13 to 21%",
+    "verificado_em": "https://pubmed.ncbi.nlm.nih.gov/33033154/"
+   },
+   "nivel_evidencia": "quase_experimental",
+   "fase_melhoria": [
+    2
+   ],
+   "atividades_alvo": [
+    "P01:t4",
+    "P01:t5",
+    "P01:t7",
+    "P06:t6",
+    "P21:t5",
+    "P21:t8"
+   ],
+   "aplicabilidade": "Em P01 há reiteração de ofício de diligência (85 du entre o ofício e a reiteração no típico) e P21 tem dois ciclos de razões finais. Ofício-modelo que destaca prazo e consequência, com lembrete automático antes do vencimento, ataca a reiteração e o segundo ciclo.",
+   "parametro_ganho": "Redução de 13% a 21% das faltas de resposta no prazo com notificação redesenhada e lembrete automático (a confirmar para concessionárias).",
+   "limitacoes": "Destinatários são pessoas físicas em processo criminal; concessionárias reguladas têm outra motivação. Medida de comparecimento, não de prazo de resposta.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-06",
+   "pratica": "Automação robótica (RPA) na análise de relatórios de controle",
+   "descricao": "O Tribunal de Contas da União passou a usar RPA e scripts na análise dos Relatórios de Gestão Fiscal. O estudo comparou, por regressão, 42 processos de acompanhamento de 2010 a 2024, com e sem uso de RPA, controlando outras variáveis.",
+   "contexto": {
+    "pais": "Brasil",
+    "orgao": "Tribunal de Contas da União",
+    "setor": "controle externo",
+    "periodo": "2010-2024"
+   },
+   "resultado_reportado": "O uso de RPA esteve associado a redução média de 72 dias na duração do processo e a relatórios 14 páginas mais longos, com efeito estatisticamente significativo.",
+   "metrica": {
+    "nome": "duração do processo de acompanhamento",
+    "antes": null,
+    "depois": null,
+    "unidade": "dias",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Hugo Leonardo Menezes de Carvalho; Mônica Aparecida Ferreira",
+    "ano": 2025,
+    "titulo": "Automation and public oversight in Brazil: evaluating the monitoring of fiscal management reports",
+    "veiculo": "Administratie si Management Public, 44, 114-130 (RePEc:rom:rampas:v:2025:y:2025:i:44:p:114-130)",
+    "doi": "",
+    "url": "https://ramp.ase.ro/vol44/44-07.pdf",
+    "trecho": "The results demonstrate that RPA implementation has a statistically significant negative effect on process duration and a positive impact on the length of reports. Specifically, RPA contributed to an average reduction of 72 days in process duration",
+    "verificado_em": "https://ramp.ase.ro/vol44/44-07.pdf"
+   },
+   "nivel_evidencia": "avaliacao_quantitativa",
+   "fase_melhoria": [
+    2
+   ],
+   "atividades_alvo": [
+    "P01:t2",
+    "P01:t10",
+    "P06:t2",
+    "P21:t3"
+   ],
+   "aplicabilidade": "Órgão público brasileiro, processo eletrônico e tarefa repetitiva de conferência de documentos de terceiros, como a conferência de faturas (P01:t10) e a requisição de documentos (P06:t2). Dá ordem de grandeza para o ganho de automatizar a coleta e a conferência.",
+   "parametro_ganho": "Redução média de 72 dias na duração de processos de análise documental com RPA (amostra de 42 processos).",
+   "limitacoes": "Amostra pequena (42 processos) e desenho observacional. O DOI impresso no artigo (10.24818/amp/2025.44-07) não resolveu em doi.org nem consta do Crossref em 30/10/2026; registrado só o identificador RePEc.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-07",
+   "pratica": "Decisão automatizada (RPA) no auxílio social municipal",
+   "descricao": "O município de Trelleborg (Suécia) passou a decidir pedidos de auxílio social com automação robótica de regras, com servidores cuidando dos casos que fogem ao padrão. O estudo de caso ouviu políticos e profissionais e analisou documentos do governo.",
+   "contexto": {
+    "pais": "Suécia",
+    "orgao": "Município de Trelleborg",
+    "setor": "assistência social",
+    "periodo": "implantação descrita em 2019"
+   },
+   "resultado_reportado": "Segundo o estudo, a tecnologia aumentou a accountability, reduziu custos e melhorou a eficiência, com tensões entre conhecimento profissional e tratamento automatizado e entre confiança do cidadão e falta de transparência.",
+   "metrica": {
+    "nome": "",
+    "antes": null,
+    "depois": null,
+    "unidade": "",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Agneta Ranerup; Helle Zinner Henriksen",
+    "ano": 2019,
+    "titulo": "Value positions viewed through the lens of automated decision-making: The case of social services",
+    "veiculo": "Government Information Quarterly, 36(4), 101377",
+    "doi": "10.1016/j.giq.2019.05.004",
+    "url": "https://doi.org/10.1016/j.giq.2019.05.004",
+    "trecho": "The findings reveal that the new technology in some respects has increased accountability, decreased costs, and enhanced efficiency, in association with a focus on citizen centricity.",
+    "verificado_em": "https://api.openalex.org/works/doi:10.1016/j.giq.2019.05.004"
+   },
+   "nivel_evidencia": "estudo_de_caso",
+   "fase_melhoria": [
+    2
+   ],
+   "atividades_alvo": [
+    "P01:t12",
+    "P01:t13",
+    "P21:t12"
+   ],
+   "aplicabilidade": "Referência para decisões de rito que hoje esperam semanas (certidão de ausência de recurso, encerramento ao fim do prazo recursal): regra explícita automatizada com exceção para o servidor. O caso também lista os riscos de transparência a tratar.",
+   "parametro_ganho": null,
+   "limitacoes": "Resultado qualitativo, sem número de tempo; decisão sobre benefício a pessoas, mais sensível que atos de rito.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-08",
+   "pratica": "Classificador de recursos por tema (Victor, STF)",
+   "descricao": "O STF, com a Universidade de Brasília, desenvolveu o Victor, que separa peças e classifica recursos extraordinários por tema de repercussão geral, tarefa antes feita por servidores na triagem.",
+   "contexto": {
+    "pais": "Brasil",
+    "orgao": "Supremo Tribunal Federal",
+    "setor": "judiciário",
+    "periodo": "em uso desde 2018"
+   },
+   "resultado_reportado": "Segundo o artigo, a separação de recursos por tema passou a ser feita em 5 segundos, contra 44 minutos de trabalho humano, com acerto de cerca de 93% na etapa de separação de documentos; os autores apontam resumos inadequados e propõem registrar no processo cada intervenção do sistema.",
+   "metrica": {
+    "nome": "tempo de separação de recurso por tema",
+    "antes": 44,
+    "depois": 0.083,
+    "unidade": "minutos",
+    "variacao_pct": -99.8
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Vivian Cristina Lima López Valle; Josep Ramón Fuentes i Gasó; Attílio Martins Ajus",
+    "ano": 2023,
+    "titulo": "Decisão judicial assistida por inteligência artificial e o Sistema Victor do Supremo Tribunal Federal",
+    "veiculo": "Revista de Investigações Constitucionais, 10(2)",
+    "doi": "10.5380/rinc.v10i2.92598",
+    "url": "https://doi.org/10.5380/rinc.v10i2.92598",
+    "trecho": "conseguiria realizar a atividade de separação de recursos por Tema de Repercussão Geral em 5 segundos",
+    "verificado_em": "https://www.scielo.br/j/rinc/a/YKZfQPLJqT7F3P445KkmwnC/?lang=pt"
+   },
+   "nivel_evidencia": "estudo_de_caso",
+   "fase_melhoria": [
+    3
+   ],
+   "atividades_alvo": [
+    "P01:t1",
+    "P06:t5",
+    "P21:t7",
+    "P21:t1"
+   ],
+   "aplicabilidade": "Triagem e classificação automática na entrada (tipo de processo, tema, precedentes) é o pré-requisito para fila de pauta e para rota sumária em P21 (detecção de resposta fora do prazo na Ouvidoria). A proposta de registrar a intervenção da IA nos autos é salvaguarda aplicável ao SEI.",
+   "parametro_ganho": "Triagem documental de dezenas de minutos para segundos com revisão humana (ordem de grandeza, não meta).",
+   "limitacoes": "O número de tempo vem do próprio STF, citado pelos autores; o artigo não reavalia a acurácia de forma independente.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-09",
+   "pratica": "Minuta de ementa por IA generativa com revisão humana obrigatória (MARIA, STF)",
+   "descricao": "Dissertação avaliou ementas geradas pelo sistema MARIA do STF, antes de qualquer revisão humana, contra as ementas redigidas por servidores para os mesmos 17 acórdãos de ADI, com matriz de dez critérios em três dimensões.",
+   "contexto": {
+    "pais": "Brasil",
+    "orgao": "Supremo Tribunal Federal",
+    "setor": "judiciário",
+    "periodo": "acórdãos publicados de 13/08 a 16/12/2024"
+   },
+   "resultado_reportado": "Na fidelidade das informações a MARIA equiparou-se aos redatores humanos e teve uma alucinação factual em 17 casos; na avaliação global, porém, só 2 ementas MARIA (11,8%) foram adequadas, contra 9 (52,9%) das humanas, e 12 (70,6%) foram inadequadas, sobretudo por falta de concisão. Critério a critério, a MARIA foi igual ou superior em 60,1% das comparações.",
+   "metrica": {
+    "nome": "ementas classificadas como adequadas",
+    "antes": 52.9,
+    "depois": 11.8,
+    "unidade": "% dos casos (humano × MARIA)",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Rodrigo de Macedo e Burgos",
+    "ano": 2026,
+    "titulo": "Inteligência artificial generativa e a redação de ementas no Supremo Tribunal Federal: avaliação empírica do sistema MARIA em ações diretas de inconstitucionalidade",
+    "veiculo": "Dissertação (Mestrado Profissional em Direito, Regulação e Políticas Públicas), Universidade de Brasília, handle 10482/55699",
+    "doi": "",
+    "url": "https://repositorio.unb.br/handle/10482/55699",
+    "trecho": "Nos aspectos de fidelidade informacional, o MARIA equiparou-se aos redatores humanos; o índice de alucinações factuais foi muito baixo (uma ocorrência em dezessete casos).",
+    "verificado_em": "https://repositorio.unb.br/handle/10482/55699"
+   },
+   "nivel_evidencia": "avaliacao_quantitativa",
+   "fase_melhoria": [
+    3
+   ],
+   "atividades_alvo": [
+    "P01:t8",
+    "P06:t7",
+    "P21:t9"
+   ],
+   "aplicabilidade": "É a avaliação mais próxima do que a AGENERSA quer fazer com relatório, voto e deliberação: minuta gerada a partir do voto, comparada com o texto humano por critérios explícitos. Mostra que o ganho está em trocar redação por revisão, e que a revisão humana precisa de lista de checagem (concisão, datas de precedentes, tese).",
+   "parametro_ganho": "Minuta com fidelidade informacional equivalente à humana, mas só 11,8% prontas sem ajuste: planejar revisão de toda minuta.",
+   "limitacoes": "Amostra de 17 casos e um único avaliador; ementas, não votos; ambiente de homologação.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-10",
+   "pratica": "Teste pré-registrado de ferramentas jurídicas de IA com recuperação de documentos",
+   "descricao": "Pesquisadores de Stanford testaram, com conjunto de perguntas pré-registrado, as ferramentas comerciais de pesquisa jurídica com IA da LexisNexis e da Thomson Reuters, que usam geração aumentada por recuperação (RAG), e as compararam com o GPT-4.",
+   "contexto": {
+    "pais": "Estados Unidos",
+    "orgao": "Universidade Stanford (avaliação de ferramentas usadas por profissionais do direito)",
+    "setor": "jurídico",
+    "periodo": "2024"
+   },
+   "resultado_reportado": "As ferramentas com RAG alucinaram menos que o GPT-4, mas ainda entre 17% e 33% das respostas, com diferenças relevantes de responsividade e acurácia entre sistemas.",
+   "metrica": {
+    "nome": "respostas com alucinação",
+    "antes": null,
+    "depois": null,
+    "unidade": "%",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Varun Magesh; Faiz Surani; Matthew Dahl; Mirac Suzgun; Christopher D. Manning; Daniel E. Ho",
+    "ano": 2025,
+    "titulo": "Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools",
+    "veiculo": "Journal of Empirical Legal Studies",
+    "doi": "10.1111/jels.12413",
+    "url": "https://doi.org/10.1111/jels.12413",
+    "trecho": "we find that the AI research tools made by LexisNexis (Lexis+ AI) and Thomson Reuters (Westlaw AI‐Assisted Research and Ask Practical Law AI) each hallucinate between 17% and 33% of the time.",
+    "verificado_em": "https://api.openalex.org/works/doi:10.1111/jels.12413"
+   },
+   "nivel_evidencia": "avaliacao_quantitativa",
+   "fase_melhoria": [
+    3,
+    4
+   ],
+   "atividades_alvo": [
+    "P01:t3",
+    "P06:t4",
+    "P21:t4",
+    "P21:t11"
+   ],
+   "aplicabilidade": "Fundamenta a salvaguarda obrigatória nas minutas de parecer jurídico e de voto: toda citação de norma, deliberação ou precedente gerada por IA precisa ser conferida contra a fonte (de preferência de forma automática, contra a base de deliberações da AGENERSA).",
+   "parametro_ganho": "Taxa de alucinação de 17% a 33% mesmo com RAG: verificação de citação em 100% das minutas.",
+   "limitacoes": "Não é prática de um órgão público; mede ferramentas de pesquisa jurídica dos EUA. O dado de 58% vem de Dahl et al. (2024), Journal of Legal Analysis, DOI 10.1093/jla/laae003, resumo lido no OpenAlex.",
+   "verificacao": {
+    "veredito": "corrigir",
+    "correcoes_aplicadas": true
+   }
+  },
+  {
+   "id": "B-transversal-11",
+   "pratica": "Análise de respostas a consulta pública por IA com revisão humana (Consult)",
+   "descricao": "A unidade de IA do governo britânico (i.AI) usou a ferramenta Consult para gerar temas e classificar as respostas da consulta do Departamento de Trabalho e Pensões sobre benefícios por incapacidade; 125 revisores conferiram 87.738 respostas, aprovando ou alterando os temas antes da classificação.",
+   "contexto": {
+    "pais": "Reino Unido",
+    "orgao": "Incubator for AI / Department for Work and Pensions",
+    "setor": "governo central",
+    "periodo": "avaliação de 27/08/2025"
+   },
+   "resultado_reportado": "O revisor não alterou os temas atribuídos pela ferramenta em 73% das respostas, contra 65% de concordância entre dois revisores humanos; F1 de 0,816 da ferramenta contra um revisor, ante 0,710 entre revisores; sem evidência de viés por condição de deficiência.",
+   "metrica": {
+    "nome": "respostas sem alteração pelo revisor",
+    "antes": 65,
+    "depois": 73,
+    "unidade": "% (revisor × revisor; ferramenta × revisor)",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "oficial",
+    "autores": "Incubator for AI (i.AI), Governo do Reino Unido",
+    "ano": 2025,
+    "titulo": "Consult Evaluation: DWPs Pathways to Work consultation",
+    "veiculo": "Relatório de avaliação publicado em GOV.UK",
+    "doi": "",
+    "url": "https://assets.publishing.service.gov.uk/media/68f63fe01c9076042263f0bd/evaluation-report.pdf",
+    "trecho": "The reviewer made no changes to Consult's mapped themes for 73% of responses. When two reviewers were compared to each other, they gave identical theme mappings for 65% of responses.",
+    "verificado_em": "https://assets.publishing.service.gov.uk/media/68f63fe01c9076042263f0bd/evaluation-report.pdf"
+   },
+   "nivel_evidencia": "avaliacao_quantitativa",
+   "fase_melhoria": [
+    3
+   ],
+   "atividades_alvo": [
+    "P06:t3",
+    "P21:t2",
+    "P21:t6"
+   ],
+   "aplicabilidade": "Modelo de avaliação de qualidade reaproveitável: comparar a IA com a concordância entre dois servidores, e não com uma verdade absoluta. Serve para triagem de reclamações e manifestações (P21) e para leitura de defesas e manifestações de concessionárias.",
+   "parametro_ganho": "Concordância IA × revisor (73%) acima da concordância revisor × revisor (65%) como critério de aceite de uma ferramenta de classificação.",
+   "limitacoes": "Tarefa de classificação temática de texto curto, não análise jurídica; avaliação feita pela própria equipe que desenvolveu a ferramenta.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-12",
+   "pratica": "Assistente de IA generativa em escritório para servidores (experimento interministerial)",
+   "descricao": "O governo britânico distribuiu o Microsoft 365 Copilot a 20 mil servidores de vários órgãos entre 30/09 e 31/12/2024 e mediu uso, tempo poupado e percepção por pesquisa (7.115 respostas) e dados de uso.",
+   "contexto": {
+    "pais": "Reino Unido",
+    "orgao": "Government Digital Service e órgãos participantes",
+    "setor": "governo central",
+    "periodo": "30/09/2024 a 31/12/2024"
+   },
+   "resultado_reportado": "Os usuários relataram economia média de 26 minutos por dia; o relatório registra limitações em trabalho complexo, com nuance ou muitos dados, e que a supervisão humana foi necessária o tempo todo.",
+   "metrica": {
+    "nome": "tempo poupado autodeclarado",
+    "antes": null,
+    "depois": 26,
+    "unidade": "minutos por dia por usuário",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "oficial",
+    "autores": "Government Digital Service, Governo do Reino Unido",
+    "ano": 2025,
+    "titulo": "Microsoft 365 Copilot Experiment: Cross-Government Findings Report",
+    "veiculo": "Relatório corporativo publicado em GOV.UK",
+    "doi": "",
+    "url": "https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report/microsoft-365-copilot-experiment-cross-government-findings-report-html",
+    "trecho": "On average, users observed a time saving of 26 minutes per day.",
+    "verificado_em": "https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report/microsoft-365-copilot-experiment-cross-government-findings-report-html"
+   },
+   "nivel_evidencia": "relato_oficial",
+   "fase_melhoria": [
+    3
+   ],
+   "atividades_alvo": [
+    "P01:t4",
+    "P06:t6",
+    "P21:t5",
+    "P21:t8"
+   ],
+   "aplicabilidade": "Dá ordem de grandeza realista para IA de uso geral (resumos, ofícios, despachos de rotina): ganho modesto por pessoa, sem efeito direto sobre a espera entre etapas, que é o problema dominante da AGENERSA. Reforça que o ganho grande vem do fluxo (fases 1 e 2), não da redação.",
+   "parametro_ganho": "Cerca de 26 minutos por servidor por dia em tarefas de escritório (autodeclarado): teto prudente para ganho de IA de uso geral.",
+   "limitacoes": "Tempo autodeclarado por faixas, sem grupo de controle; último mês afetado por festas de fim de ano.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-13",
+   "pratica": "IA generativa na revisão de relatórios obrigatórios por regulador",
+   "descricao": "A Autoridade do Mercado de Capitais do Quênia usou a plataforma MALENA, da IFC, para analisar as autoavaliações de governança e os documentos de suporte enviados pelos emissores, validar as respostas e propor avaliações com evidência rastreável, mantendo a decisão com os servidores.",
+   "contexto": {
+    "pais": "Quênia",
+    "orgao": "Capital Markets Authority",
+    "setor": "regulação do mercado de capitais",
+    "periodo": "piloto relatado em 2026"
+   },
+   "resultado_reportado": "O tempo médio de revisão por emissor caiu de 15 dias úteis para 30 minutos (redução de 99,6%) e os prazos de revisão e resposta encurtaram cerca de três meses no teste beta; não há número de acurácia.",
+   "metrica": {
+    "nome": "tempo médio de revisão por emissor",
+    "antes": 15,
+    "depois": 0.06,
+    "unidade": "dias úteis",
+    "variacao_pct": -99.6
+   },
+   "fonte": {
+    "camada": "oficial",
+    "autores": "International Finance Corporation (Grupo Banco Mundial)",
+    "ano": 2026,
+    "titulo": "Enabling Efficiency in Regulatory Reporting: Application of Generative Artificial Intelligence to Corporate Governance Disclosures in Kenya",
+    "veiculo": "Estudo de caso IFC",
+    "doi": "",
+    "url": "https://www.ifc.org/en/insights-reports/2026/gen-ai-application-to-cg-disclosures-kenya",
+    "trecho": "Average review time per issuer decreased from 15 business days to 30 minutes",
+    "verificado_em": "https://www.ifc.org/en/insights-reports/2026/gen-ai-application-to-cg-disclosures-kenya"
+   },
+   "nivel_evidencia": "relato_oficial",
+   "fase_melhoria": [
+    3
+   ],
+   "atividades_alvo": [
+    "P01:t2",
+    "P01:t3",
+    "P06:t3",
+    "P21:t2"
+   ],
+   "aplicabilidade": "Único caso localizado de regulador usando IA generativa para conferir documentos enviados por regulados contra uma regra, com resultado medido. Análogo à conferência do pleito de reajuste (P01) e da defesa da concessionária (P06).",
+   "parametro_ganho": "Conferência documental de dias para minutos com revisão humana; usar como teto otimista, não como meta.",
+   "limitacoes": "Relato do próprio desenvolvedor da plataforma (IFC); número de emissores e acurácia não informados.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-14",
+   "pratica": "Mineração de processos nos registros do tribunal com limiares de alerta por atividade",
+   "descricao": "Num tribunal cível italiano, os autores aplicaram mineração de processos aos registros dos processos e discutiram os resultados com os servidores, analisando os processos mais longos e uma matéria específica para achar gargalos e atividades ineficientes.",
+   "contexto": {
+    "pais": "Itália",
+    "orgao": "Tribunal cível italiano (não nomeado no resumo)",
+    "setor": "judiciário",
+    "periodo": "estudo publicado em 2024"
+   },
+   "resultado_reportado": "O estudo identificou gargalos e atividades que prolongam os processos e propôs limiares de tempo por atividade para monitorar a execução e limitar atrasos; registrou inconsistência dos dados por baixa cultura de dados.",
+   "metrica": {
+    "nome": "",
+    "antes": null,
+    "depois": null,
+    "unidade": "",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Serena Racis; Alessandro Spano; Giorgio Latti",
+    "ano": 2024,
+    "titulo": "Process reengineering and public value creation: using process mining in courts",
+    "veiculo": "International Journal of Public Sector Management, 38(4), 482-506",
+    "doi": "10.1108/ijpsm-02-2024-0049",
+    "url": "https://doi.org/10.1108/ijpsm-02-2024-0049",
+    "trecho": "it investigates the trials’ excessive length by focusing on bottlenecks and inefficient activities that slow down trials and identifies activities’ thresholds to monitor the trials’ execution and limit delays.",
+    "verificado_em": "https://api.crossref.org/works/10.1108/ijpsm-02-2024-0049"
+   },
+   "nivel_evidencia": "estudo_de_caso",
+   "fase_melhoria": [
+    4
+   ],
+   "atividades_alvo": [
+    "P01:t11",
+    "P06:t4",
+    "P06:t5",
+    "P21:t4",
+    "P21:t12"
+   ],
+   "aplicabilidade": "É o que a AGENERSA já faz com o andamento do SEI (posse, espera antes de cada atividade), mais o passo seguinte: limiar de tempo por etapa que dispara alerta. Base para o painel de processo sem dono e de estoque por unidade proposto nas três avaliações.",
+   "parametro_ganho": null,
+   "limitacoes": "Diagnóstico sem medida de ganho após a intervenção; problemas de qualidade dos registros também esperados no SEI.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-15",
+   "pratica": "Mineração de processos com dados extraídos do SEI",
+   "descricao": "O Tribunal Regional Eleitoral do Tocantins extraiu do SEI, por SQL, os registros do processo de autorização de viagem, reconstruiu o fluxo real, comparou com o modelo BPMN ideal e mediu desempenho e conformidade.",
+   "contexto": {
+    "pais": "Brasil",
+    "orgao": "Tribunal Regional Eleitoral do Tocantins",
+    "setor": "judiciário eleitoral / administração",
+    "periodo": "estudo publicado em 2025"
+   },
+   "resultado_reportado": "O tempo de ciclo médio observado foi de cerca de 3,38 semanas, quando o ideal seria 8 dias, com retrabalho significativo e desvios de conformidade.",
+   "metrica": {
+    "nome": "tempo de ciclo médio observado",
+    "antes": null,
+    "depois": 3.38,
+    "unidade": "semanas (ideal: 8 dias)",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Fernando Jorge Ebrahim Lima e Silva; Marcelo Lisboa Rocha; Gentil Veloso Barbosa; Marcelo da Silva Lisboa",
+    "ano": 2025,
+    "titulo": "Análise de processos administrativos no setor público via mineração de processos: um estudo de caso no Tribunal Regional Eleitoral do Tocantins",
+    "veiculo": "Observatório de la Economía Latinoamericana, 23(8), e11047",
+    "doi": "10.55905/oelv23n8-064",
+    "url": "https://doi.org/10.55905/oelv23n8-064",
+    "trecho": "Achados preliminares indicam complexidade oculta e retrabalhos significativos, com um tempo de ciclo médio de aproximadamente 3.38 semanas (quando o tempo ideal deveria ser 8 dias), além de desvios de conformidade.",
+    "verificado_em": "https://api.crossref.org/works/10.55905/oelv23n8-064"
+   },
+   "nivel_evidencia": "estudo_de_caso",
+   "fase_melhoria": [
+    4
+   ],
+   "atividades_alvo": [
+    "P01:t1",
+    "P06:t5",
+    "P21:t7"
+   ],
+   "aplicabilidade": "Mesmo sistema (SEI) e mesma técnica do mapeamento da AGENERSA; confirma que o log do SEI basta para medir tempo de ciclo, retrabalho e conformidade ao modelo, e portanto para alimentar indicadores e alertas automáticos sem sistema novo.",
+   "parametro_ganho": null,
+   "limitacoes": "Achados preliminares, processo administrativo simples; sem intervenção nem medida de ganho.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-16",
+   "pratica": "Mineração de processos em ações empresariais de tribunal estadual",
+   "descricao": "Pesquisadores construíram um log de eventos a partir de ações empresariais do Tribunal de Justiça de São Paulo e aplicaram mineração de processos para analisar o desempenho judicial.",
+   "contexto": {
+    "pais": "Brasil",
+    "orgao": "Tribunal de Justiça do Estado de São Paulo",
+    "setor": "judiciário",
+    "periodo": "estudo publicado em 2021"
+   },
+   "resultado_reportado": "Apesar do fluxo ad hoc dos processos, a análise identificou as atividades mais frequentes e os gargalos, indicando causas-raiz das ineficiências.",
+   "metrica": {
+    "nome": "",
+    "antes": null,
+    "depois": null,
+    "unidade": "",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Adriana Jacoto Unger; José Francisco dos Santos Neto; Marcelo Fantinato; Sarajane Marques Peres; Julio Trecenti; Renata Hirota",
+    "ano": 2021,
+    "titulo": "Process mining-enabled jurimetrics",
+    "veiculo": "Proceedings of the Eighteenth International Conference on Artificial Intelligence and Law (ICAIL), 240-244",
+    "doi": "10.1145/3462757.3466137",
+    "url": "https://doi.org/10.1145/3462757.3466137",
+    "trecho": "Although the results show these lawsuits have an ad hoc sequence flow, process mining analysis have allowed to identify most frequent activities and process bottlenecks, providing insights into the root causes of inefficiencies.",
+    "verificado_em": "https://api.openalex.org/works/doi:10.1145/3462757.3466137"
+   },
+   "nivel_evidencia": "estudo_de_caso",
+   "fase_melhoria": [
+    4
+   ],
+   "atividades_alvo": [
+    "P01:t4",
+    "P01:t5",
+    "P21:t8",
+    "P21:t11"
+   ],
+   "aplicabilidade": "Mostra que fluxo pouco estruturado (diligências, reiterações, embargos) ainda permite achar gargalos pelo log, como nos laços de diligência de P01 e nos dois ciclos de razões finais de P21.",
+   "parametro_ganho": null,
+   "limitacoes": "Diagnóstico, sem intervenção; artigo curto de conferência.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-17",
+   "pratica": "Previsão da duração do processo a partir do log de movimentações",
+   "descricao": "Em mais de 60 mil processos da Justiça do Trabalho, os autores agruparam os casos por sequência de movimentações (mineração de processos) e usaram esses grupos, com assunto, classe e formato digital, para prever a duração total do processo.",
+   "contexto": {
+    "pais": "Brasil",
+    "orgao": "Justiça do Trabalho (tribunais regionais)",
+    "setor": "judiciário",
+    "periodo": "estudo publicado em 2024"
+   },
+   "resultado_reportado": "O modelo de gradient boosting previu a duração dos processos com R² de 0,87, e os grupos de movimentação estiveram entre as variáveis mais importantes.",
+   "metrica": {
+    "nome": "R² da previsão de duração",
+    "antes": null,
+    "depois": 0.87,
+    "unidade": "coeficiente",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Luiz Verçosa; Vinicius Silva; Jaqueline Cruz; Carmelo Bastos-Filho; Byron L. D. Bezerra",
+    "ano": 2024,
+    "titulo": "Investigation of lawsuit process duration using machine learning and process mining",
+    "veiculo": "Discover Analytics, 2(1)",
+    "doi": "10.1007/s44257-024-00015-0",
+    "url": "https://doi.org/10.1007/s44257-024-00015-0",
+    "trecho": "The gradient boosting model demonstrated the best performance with an R2-score of 0.87. [...] The clustering features emerged among the most significant for the task.",
+    "verificado_em": "https://api.crossref.org/works/10.1007/s44257-024-00015-0"
+   },
+   "nivel_evidencia": "avaliacao_quantitativa",
+   "fase_melhoria": [
+    4
+   ],
+   "atividades_alvo": [
+    "P01:t8",
+    "P06:t7",
+    "P21:t9",
+    "P21:t12"
+   ],
+   "aplicabilidade": "Permite passar de alerta por idade para alerta por risco: prever, já nas primeiras movimentações do SEI, quais processos de fiscalização ou de ocorrência tendem a passar do prazo-alvo e priorizá-los na pauta.",
+   "parametro_ganho": null,
+   "limitacoes": "Capacidade preditiva, não melhoria implantada; volume da AGENERSA (centenas de processos) é bem menor que o do estudo.",
+   "verificacao": {
+    "veredito": "corrigir",
+    "correcoes_aplicadas": true
+   }
+  },
+  {
+   "id": "B-transversal-18",
+   "pratica": "Prazo legal de decisão com meta de cumprimento (PDUFA, FDA)",
+   "descricao": "Desde 1993 a lei de taxas de medicamentos dos EUA (PDUFA) impõe à FDA prazos-alvo para concluir a revisão de pedidos de registro. Os autores modelaram os tempos de revisão de 1950 a 2005 e testaram se aprovações perto do prazo tinham mais problemas de segurança depois.",
+   "contexto": {
+    "pais": "Estados Unidos",
+    "orgao": "Food and Drug Administration (FDA)",
+    "setor": "regulação sanitária",
+    "periodo": "1950-2005"
+   },
+   "resultado_reportado": "Os prazos concentraram as decisões nas semanas anteriores ao vencimento; medicamentos aprovados nos dois meses antes do prazo tiveram mais retiradas por segurança (razão de chances de 5,5) e mais alertas de tarja preta (4,4).",
+   "metrica": {
+    "nome": "razão de chances de retirada por segurança (aprovação perto do prazo × demais)",
+    "antes": null,
+    "depois": 5.5,
+    "unidade": "razão de chances",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "cientifica",
+    "autores": "Daniel Carpenter; Evan James Zucker; Jerry Avorn",
+    "ano": 2008,
+    "titulo": "Drug-Review Deadlines and Safety Problems",
+    "veiculo": "New England Journal of Medicine, 358(13), 1354-1361",
+    "doi": "10.1056/nejmsa0706341",
+    "url": "https://doi.org/10.1056/nejmsa0706341",
+    "trecho": "Initiation of the PDUFA requirements concentrated the number of approval decisions made in the weeks immediately preceding the deadlines.",
+    "verificado_em": "https://api.openalex.org/works/doi:10.1056/nejmsa0706341"
+   },
+   "nivel_evidencia": "avaliacao_quantitativa",
+   "fase_melhoria": [
+    4
+   ],
+   "atividades_alvo": [
+    "P01:t3",
+    "P01:t8",
+    "P06:t7",
+    "P21:t9"
+   ],
+   "aplicabilidade": "Prazos-alvo por etapa funcionam em regulador (as decisões se concentram antes do vencimento), mas mudam o comportamento: a AGENERSA deve medir qualidade junto com prazo (retrabalho, embargos, reforma) e evitar que o prazo vire o único indicador.",
+   "parametro_ganho": "Metas de prazo concentram decisões antes do vencimento; acompanhar indicador de qualidade (embargos, recursos providos) ao lado do prazo.",
+   "limitacoes": "Contexto de registro de medicamentos, com risco à saúde; efeito de qualidade pode não se repetir em atos de fiscalização e tarifa.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  },
+  {
+   "id": "B-transversal-19",
+   "pratica": "Meta nacional de julgamento do estoque antigo (Meta 2 do CNJ)",
+   "descricao": "Em fevereiro de 2009 o Conselho Nacional de Justiça fixou para os 91 tribunais a meta de julgar os processos distribuídos até 31/12/2005, com acompanhamento periódico dos dados informados pelos tribunais.",
+   "contexto": {
+    "pais": "Brasil",
+    "orgao": "Conselho Nacional de Justiça e 91 tribunais",
+    "setor": "judiciário",
+    "periodo": "fevereiro de 2009 a fevereiro de 2010"
+   },
+   "resultado_reportado": "Foram julgados 2,72 milhões de processos antigos; 60,74% dos processos-alvo foram concluídos e 67% dos 91 tribunais cumpriram mais de 70% da meta; a Justiça do Trabalho concluiu 93,7% do seu estoque-alvo.",
+   "metrica": {
+    "nome": "processos-alvo concluídos",
+    "antes": null,
+    "depois": 60.74,
+    "unidade": "%",
+    "variacao_pct": null
+   },
+   "fonte": {
+    "camada": "oficial",
+    "autores": "Conselho Nacional de Justiça",
+    "ano": 2010,
+    "titulo": "Julgados mais de 2,7 milhões de processos da Meta 2",
+    "veiculo": "Portal CNJ (26/02/2010)",
+    "doi": "",
+    "url": "https://www.cnj.jus.br/julgados-mais-de-27-milhoes-de-processos-da-meta-2/",
+    "trecho": "Como resultado do esforço conjunto, 60,74% dos processos alvos da Meta 2 foram concluídos e 67% dos 91 tribunais brasileiros cumpriram mais de 70% da meta.",
+    "verificado_em": "https://www.cnj.jus.br/julgados-mais-de-27-milhoes-de-processos-da-meta-2/"
+   },
+   "nivel_evidencia": "relato_oficial",
+   "fase_melhoria": [
+    4,
+    1
+   ],
+   "atividades_alvo": [
+    "P01:t11",
+    "P01:t13",
+    "P06:t9",
+    "P21:t12"
+   ],
+   "aplicabilidade": "Meta de estoque por idade é aplicável ao acervo da AGENERSA: em P06 só 56% dos 32 processos da carteira têm deliberação e há processos deliberados sem encerramento em P01 e P21. Uma meta anual de encerrar processos com mais de X du, acompanhada pelo log do SEI, dá dono ao estoque sem dono.",
+   "parametro_ganho": "Meta de estoque antigo com acompanhamento central: cerca de 60% do estoque-alvo concluído em um ano (referência de ordem de grandeza).",
+   "limitacoes": "Balanço do próprio órgão, com dados informados pelos tribunais e sem avaliação independente; não mede efeito sobre qualidade nem sobre o fluxo de casos novos.",
+   "verificacao": {
+    "veredito": "ok",
+    "correcoes_aplicadas": false
+   }
+  }
+ ],
+ "lacunas": [
+  "Limite de WIP ou quadro kanban em órgão público com resultado medido de lead time: só achei a regra de fila por idade em gabinetes de juízes (Bray et al., 2016) e quadros de equipe dentro de um pacote Lean (LIPOR); nenhum caso isolando o efeito do kanban.",
+  "Pauta contínua ou plenário virtual em órgão colegiado (STF, TCU, CNJ, agências) com medida de tempo antes × depois: a literatura lida mede volume julgado e discute qualidade da deliberação, não lead time.",
+  "Mineração de processos sobre log do SEI ou de sistema de processo eletrônico seguida de intervenção e ganho medido: todos os casos encontrados (TRE-TO, TJSP, tribunal italiano, tribunal social alemão) são diagnósticos.",
+  "Alerta automático de processo parado ou sem unidade responsável com resultado medido: não encontrado em fonte verificável.",
+  "Reguladores de energia e saneamento (ANEEL, ARSESP, ANA, Ofgem, Ofwat, ARERA, ERSAR) usando automação ou IA na tramitação com resultado medido: nada localizado; FCA citada em notícia de fórum de reguladores sem número; o único regulador com número é a autoridade de mercado de capitais do Quênia (IFC).",
+  "Efeito do processo eletrônico (e-Proc, PJe, SEI) no tempo de tramitação com desenho robusto: só relatos institucionais e trabalhos de especialização, não incluídos.",
+  "Avaliação de minuta de parecer jurídico, relatório ou voto gerada por IA em agência reguladora: só a avaliação de ementas do STF (MARIA); para salvaguardas de citação, só avaliações de ferramentas comerciais (Stanford).",
+  "Avaliação independente do efeito das metas do CNJ (Meta 2, Justiça em Números) sobre tempo e qualidade: só o balanço oficial do CNJ.",
+  "Notificação eletrônica administrativa (intimação por sistema a concessionárias) com efeito medido no cumprimento de prazo: só o caso de intimação judicial criminal em Nova York.",
+  "Valores de ganho do caso da Teoria das Restrições em Jerusalém (Azaria et al., 2023): o resumo não traz números e o texto completo não foi acessado."
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "codigo": "P06",
+ "casos": 1,
+ "requisitos": {
+  "R-P06-01": {
+   "exigencia": "Todo relatório de fiscalização é encaminhado à concessionária por ofício.",
+   "criticidade": "alta",
+   "tipo": "exige",
+   "conforme": 1,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 0,
+   "pct_conforme": 100.0
+  },
+  "R-P06-02": {
+   "exigencia": "O ofício que encaminha os relatórios e pede manifestação concede ao menos 30 dias.",
+   "criticidade": "alta",
+   "tipo": "prazo_concedido_min",
+   "conforme": 1,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 0,
+   "pct_conforme": 100.0
+  },
+  "R-P06-03": {
+   "exigencia": "Entre o último ofício que pede manifestação sobre os relatórios e o parecer técnico decorre ao menos o prazo concedido (30 dias úteis).",
+   "criticidade": "alta",
+   "tipo": "prazo_min",
+   "conforme": 1,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 0,
+   "pct_conforme": 100.0
+  },
+  "R-P06-04": {
+   "exigencia": "Entre o último relatório que fixa prazo para providências e o parecer técnico que avalia o cumprimento decorre ao menos o prazo concedido (30 dias corridos).",
+   "criticidade": "media",
+   "tipo": "prazo_min",
+   "conforme": 1,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 0,
+   "pct_conforme": 100.0
+  },
+  "R-P06-05": {
+   "exigencia": "O parecer técnico sobre o cumprimento das recomendações é levado ao conhecimento da concessionária.",
+   "criticidade": "alta",
+   "tipo": "exige",
+   "conforme": 1,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 0,
+   "pct_conforme": 100.0
+  },
+  "R-P06-06": {
+   "exigencia": "Entre a ciência do parecer técnico e a reanálise da CASAN decorre ao menos o prazo supletivo de manifestação (15 dias úteis).",
+   "criticidade": "media",
+   "tipo": "prazo_min",
+   "conforme": 1,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 0,
+   "pct_conforme": 100.0
+  },
+  "R-P06-07": {
+   "exigencia": "O parecer jurídico da Procuradoria é precedido do parecer técnico da CASAN.",
+   "criticidade": "media",
+   "tipo": "precede",
+   "conforme": 1,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 0,
+   "pct_conforme": 100.0
+  },
+  "R-P06-08": {
+   "exigencia": "O parecer jurídico que conclui pela regularização é comunicado à concessionária.",
+   "criticidade": "alta",
+   "tipo": "exige",
+   "conforme": 1,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 0,
+   "pct_conforme": 100.0
+  },
+  "R-P06-09": {
+   "exigencia": "A Procuradoria emite o parecer em até 15 dias da remessa dos autos, prorrogáveis por mais 15 com justificativa.",
+   "criticidade": "media",
+   "tipo": "manual",
+   "conforme": 0,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 1,
+   "pct_conforme": null
+  },
+  "R-P06-10": {
+   "exigencia": "A CASAN emite parecer técnico em até 15 dias de instada a se manifestar.",
+   "criticidade": "baixa",
+   "tipo": "manual",
+   "conforme": 0,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 1,
+   "pct_conforme": null
+  },
+  "R-P06-11": {
+   "exigencia": "Toda fiscalização programada é precedida de Aviso de Fiscalização com ao menos 48 horas de antecedência.",
+   "criticidade": "media",
+   "tipo": "manual",
+   "conforme": 0,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 1,
+   "pct_conforme": null
+  },
+  "R-P06-12": {
+   "exigencia": "O relatório de fiscalização chega ao gerente da câmara em até 5 dias úteis da lavratura e recebe o 'De Acordo'.",
+   "criticidade": "baixa",
+   "tipo": "manual",
+   "conforme": 0,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 1,
+   "pct_conforme": null
+  },
+  "R-P06-13": {
+   "exigencia": "Irregularidade passível de advertência ou multa é formalizada em Notificação de Infração, com 30 dias para defesa prévia, antes de qualquer sanção.",
+   "criticidade": "alta",
+   "tipo": "manual",
+   "conforme": 0,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 1,
+   "pct_conforme": null
+  },
+  "R-P06-14": {
+   "exigencia": "A apuração é concluída, com ciência final à concessionária, em até cinco anos do início da fiscalização.",
+   "criticidade": "alta",
+   "tipo": "duracao_max",
+   "conforme": 1,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 0,
+   "pct_conforme": 100.0
+  },
+  "R-P06-15": {
+   "exigencia": "O processo não fica paralisado mais de três anos à espera de despacho ou julgamento.",
+   "criticidade": "alta",
+   "tipo": "manual",
+   "conforme": 0,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 1,
+   "pct_conforme": null
+  },
+  "R-P06-16": {
+   "exigencia": "Não se propõe multa sobre situação já descontada da tarifa pelos indicadores de desempenho.",
+   "criticidade": "media",
+   "tipo": "manual",
+   "conforme": 0,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 1,
+   "pct_conforme": null
+  },
+  "R-P06-17": {
+   "exigencia": "Pedido de arquivamento de processo de fiscalização só é acolhido por proposta justificada do gerente da câmara, ratificada pelo Conselho-Diretor em 10 dias.",
+   "criticidade": "media",
+   "tipo": "manual",
+   "conforme": 0,
+   "nao_conforme": 0,
+   "sem_evidencia": 0,
+   "nao_aplicavel": 1,
+   "pct_conforme": null
+  }
+ }
+}

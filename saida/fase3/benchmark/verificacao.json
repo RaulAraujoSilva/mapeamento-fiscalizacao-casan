@@ -1,0 +1,869 @@
+{
+ "verificado_em": "2026-10-30",
+ "metodo": "DOI e metadados conferidos no Crossref (api.crossref.org/works/<doi>); trecho conferido por comparação normalizada (sem acento, pontuação e espaço) com o resumo do Crossref, Semantic Scholar ou OpenAlex, ou com o texto da página/PDF oficial baixado por curl; resultado, métrica e parâmetro comparados com o mesmo texto. doi_ok = null quando o caso não tem DOI (nesses, a URL/handle foi aberta e conferida).",
+ "casos": {
+  "B-tarifa-01": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo na EconPapers (RePEc)"
+  },
+  "B-tarifa-02": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo na EconPapers (RePEc)"
+  },
+  "B-tarifa-03": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo na EconPapers (RePEc)"
+  },
+  "B-tarifa-04": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": false,
+   "problemas": [
+    "O parâmetro afirma que o prazo-padrão \"reduz a dispersão do tempo de decisão\", o que o estudo não mede: o achado é que os prazos concentraram as decisões nas semanas anteriores ao vencimento e que as aprovações perto do prazo tiveram mais problemas de segurança.",
+    "Observação: caso duplicado de B-transversal-18 (mesmo artigo) em outra família."
+   ],
+   "correcao_sugerida": "parametro_ganho: \"Prazo-padrão concentra as decisões perto do vencimento (efeito observado na FDA); as decisões tomadas nos dois meses anteriores ao prazo tiveram mais problemas de qualidade (razão de chances 5,5 para retirada por segurança). Usar como alerta: prazo por etapa precisa de controle de qualidade das peças produzidas perto do prazo; o estudo não mede ganho de tempo.\"",
+   "veredito": "corrigir",
+   "trecho_conferido_em": "resumo no OpenAlex"
+  },
+  "B-tarifa-05": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Semantic Scholar"
+  },
+  "B-tarifa-06": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": false,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "\"Além de reduzir a frequência de casos tarifários\" não é resultado do processo de Alberta: no resumo, a menor frequência de casos é característica definidora do plano plurianual, não um achado."
+   ],
+   "correcao_sugerida": "resultado_reportado: \"O processo em Alberta produziu evidência de que os planos plurianuais com reajuste indexado podem acelerar o crescimento da produtividade das distribuidoras (o resumo não traz o número).\"",
+   "veredito": "corrigir",
+   "trecho_conferido_em": "PDF do artigo publicado no repositório da OEB (resumo)"
+  },
+  "B-tarifa-07": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-tarifa-08": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null)."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "PDF oficial da Ofgem; página de decisão de 29/11/2019 (14 distribuidoras)"
+  },
+  "B-tarifa-09": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": false,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null).",
+    "O parâmetro lê \"redução de 15% no tempo de trabalho dos analistas\", mas a fonte diz que o trabalho foi concluído 41 dias após o fim do trimestre, contra 48 (15% antes): é prazo de conclusão, não esforço.",
+    "A URL não é de domínio oficial (cópia hospedada pela XBRL International); a especificação pede URL oficial. Procurar a versão em ffiec.gov ou registrar a ressalva."
+   ],
+   "correcao_sugerida": "parametro_ganho: \"Aumento de 66% para 95% de dados aceitos na primeira entrega e conclusão da análise 7 dias mais cedo (41 contra 48 dias após o fim do trimestre, 15% antes), com carga de 550–600 bancos por analista, contra 450–500.\"",
+   "veredito": "corrigir",
+   "trecho_conferido_em": "PDF do white paper do FFIEC (hospedado em xbrl.org)"
+  },
+  "B-tarifa-10": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null)."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "PDF oficial da Ofwat"
+  },
+  "B-tarifa-11": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": false,
+   "problemas": [
+    "O parâmetro usa como ganho a trajetória de metas da ANEEL (442 em 2018 para 292 em 2021), não um resultado realizado; a própria OCDE diz que, em média, a ANEEL fica abaixo das metas. A variação de -34% também é entre metas."
+   ],
+   "correcao_sugerida": "parametro_ganho: null (ou: \"Referência de desenho: indicador de estoque pendente de deliberação com meta anual decrescente — meta da ANEEL de 442 para 292 entre 2018 e 2021; não é ganho realizado.\")",
+   "veredito": "corrigir",
+   "trecho_conferido_em": "PDF oficial da OCDE"
+  },
+  "B-tarifa-12": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": false,
+   "problemas": [
+    "\"Redução de até 40%\" lê como teto um valor que é a média do experimento (o tempo médio caiu 40%); as tarefas eram de redação profissional curta e padronizada, fora do setor regulatório, e isso não está dito no parâmetro."
+   ],
+   "correcao_sugerida": "parametro_ganho: \"Redução média de 40% no tempo de tarefas curtas de redação profissional em experimento controlado (fora do setor regulatório); usar como teto otimista para minutas padronizadas, mantida a revisão humana.\"",
+   "veredito": "corrigir",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-tarifa-13": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "verificado_em aponta para o registro Crossref do preprint SSRN (DOI 10.2139/ssrn.4626276, diferente do DOI do caso), cujo resumo não contém o trecho na íntegra; o trecho está literalmente no resumo da versão publicada.",
+    "Observação de camada: a Minnesota Law Review é revista acadêmica editada por estudantes, sem revisão por pares formal; pode ficar como científica, com essa ressalva."
+   ],
+   "correcao_sugerida": "fonte.verificado_em: \"https://scholarship.law.umn.edu/minnlrev/vol109/iss1/3/\"",
+   "veredito": "corrigir",
+   "trecho_conferido_em": "resumo na página oficial da Minnesota Law Review (scholarship.law.umn.edu)"
+  },
+  "B-tarifa-14": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Semantic Scholar"
+  },
+  "B-fiscalizacao-01": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Observação: caso duplicado de B-usuario-13 (mesmo artigo) em outra família."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "página do artigo na Nature"
+  },
+  "B-fiscalizacao-02": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": false,
+   "resultado_ok": false,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "O trecho não é literal: o resumo diz \"could have averted as much as twice as many injuries by targeting inspections to workplaces with the highest expected averted injuries\"; foram suprimidas palavras sem reticências (o sentido se mantém).",
+    "O resultado cita \"cerca de US$ 1 bilhão de valor social\"; o resumo diz \"up to $850 million in social value\"."
+   ],
+   "correcao_sugerida": "trecho: \"we find that OSHA could have averted as much as twice as many injuries by targeting inspections to workplaces with the highest expected averted injuries and nearly as many by targeting the highest expected level of injuries\"; resultado_reportado: trocar \"cerca de US$ 1 bilhão de valor social na década\" por \"até US$ 850 milhões de valor social na década\".",
+   "veredito": "corrigir",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-fiscalizacao-03": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-fiscalizacao-04": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null)."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "página oficial chicago.github.io"
+  },
+  "B-fiscalizacao-05": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-fiscalizacao-06": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "verificado_em (página HTML da OCDE) devolve 403 a acesso automatizado; o trecho foi confirmado literalmente no PDF oficial (p. 30), que abre."
+   ],
+   "correcao_sugerida": "fonte.verificado_em: \"https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/09/data-driven-information-enabled-regulatory-delivery_bed351cb/8f99ec8c-en.pdf\"",
+   "veredito": "corrigir",
+   "trecho_conferido_em": "PDF oficial da OCDE (8f99ec8c-en.pdf), p. 30"
+  },
+  "B-fiscalizacao-07": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-fiscalizacao-08": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-fiscalizacao-09": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-fiscalizacao-10": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no OpenAlex"
+  },
+  "B-fiscalizacao-11": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-fiscalizacao-12": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-fiscalizacao-13": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo em scholars.duke.edu"
+  },
+  "B-fiscalizacao-14": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null)."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "PDF oficial em gov.br/casacivil"
+  },
+  "B-fiscalizacao-15": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": false,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null).",
+    "O parâmetro fala em \"tempo entre a instrução concluída e a deliberação\"; a fonte diz só \"tempo médio de deliberação dos processos na diretoria\", sem definir o marco inicial.",
+    "A queda de 110 para 80 dias é \"desde 2022\", anterior ao circuito deliberativo (norma de 2025); a notícia associa a melhora à deliberação em bloco e à delegação de competências de 2023. O ganho não deve ser atribuído ao circuito."
+   ],
+   "correcao_sugerida": "parametro_ganho: \"Redução de cerca de 27% no tempo médio de deliberação na diretoria (110 para 80 dias, 2022–2025) e de mais da metade no estoque mensal (758 para 332), associada à deliberação em bloco e à delegação de competências; efeito do circuito deliberativo ainda não medido.\"",
+   "veredito": "corrigir",
+   "trecho_conferido_em": "HTML da notícia em gov.br/aneel"
+  },
+  "B-usuario-01": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "PDF do artigo na REI"
+  },
+  "B-usuario-02": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null).",
+    "Observação: o handle da FGV bloqueia acesso automatizado (desafio anti-robô); trecho confirmado no resumo indexado no OpenAlex."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no OpenAlex (repositório FGV bloqueia acesso automatizado)"
+  },
+  "B-usuario-03": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null)."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "PDF oficial do boletim (gov.br/mj)"
+  },
+  "B-usuario-04": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null).",
+    "Observação: a Ofwat diz que o SIM \"strongly contributed\" para a redução de 60%; \"atribuída ao incentivo\" no parâmetro deve ser lida como contribuição, não causa única."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "PDF oficial da Ofwat"
+  },
+  "B-usuario-05": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Observação: o trecho junta duas frases não contíguas do resumo sem reticências; ambas estão literalmente no resumo."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-usuario-06": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no OpenAlex"
+  },
+  "B-usuario-07": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-usuario-08": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": false,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null).",
+    "A queda no número de compensações (80 para 20 milhões) decorre, segundo a fonte, de mudança de regra para concentrar valores nos consumidores com pior continuidade; não mede substituição de processo individual por crédito automático. A métrica de -75% não é ganho de eficiência.",
+    "Observação: a fonte é reprodução da nota da ANEEL no site da ARSAL (órgão oficial); a camada oficial se mantém, mas o ideal é citar a página da própria ANEEL."
+   ],
+   "correcao_sugerida": "parametro_ganho: null (ou: \"Referência de desenho: compensação por regra objetiva fora do rito sancionador; a fonte não mede efeito sobre o volume de reclamações ou de processos.\"). metrica: usar o valor médio por compensação (cerca de 4 vezes maior) ou deixar sem variação de ganho.",
+   "veredito": "corrigir",
+   "trecho_conferido_em": "página da ARSAL"
+  },
+  "B-usuario-09": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null)."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "página oficial da ERSE"
+  },
+  "B-usuario-10": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no OpenAlex"
+  },
+  "B-usuario-11": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-usuario-12": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Semantic Scholar"
+  },
+  "B-usuario-13": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Observação: caso duplicado de B-fiscalizacao-01 (mesmo artigo) em outra família."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "página do artigo na Nature"
+  },
+  "B-usuario-14": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-usuario-15": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-usuario-16": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null).",
+    "Observação: caso duplicado de B-transversal-12 (mesmo relatório) em outra família. Os 24 minutos em redação de documentos são autorrelato."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "página oficial em gov.uk"
+  },
+  "B-transversal-01": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-transversal-02": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-transversal-03": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": false,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "O pagamento a fornecedores partiu de 9 dias (Tabelas 2 e 6), não de 10, e não é \"em média\"; os 4,5 dias do fechamento contábil e 1,5 dia dos fornecedores são de 2015, cinco anos após o início (em dez/2010 eram 6 e 3,5 dias)."
+   ],
+   "correcao_sugerida": "resultado_reportado: \"O fechamento contábil mensal caiu de 8 para 4,5 dias (44%) e o pagamento a fornecedores de 9 para 1,5 dia entre 2010 e 2015; a folha de pagamento caiu de 10 para 5 dias (50%) já em dez/2010; o subprocesso de faturamento dos municípios caiu de 642 para 60 minutos.\"",
+   "veredito": "corrigir",
+   "trecho_conferido_em": "PDF do artigo em mas.bg.ac.rs"
+  },
+  "B-transversal-04": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-transversal-05": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no PubMed"
+  },
+  "B-transversal-06": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null).",
+    "Observação: sem DOI; resultado de regressão em 42 processos (associação, não efeito causal identificado); \"contribuiu\" é palavra dos autores."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "PDF do artigo em ramp.ase.ro"
+  },
+  "B-transversal-07": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Semantic Scholar"
+  },
+  "B-transversal-08": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "texto integral na SciELO"
+  },
+  "B-transversal-09": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null).",
+    "Observação: os números de 11,8%, 52,9%, 70,6% e 60,1% não estão no resumo; foram confirmados no PDF integral da dissertação."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no repositório da UnB e PDF integral"
+  },
+  "B-transversal-10": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": false,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "\"O estudo da mesma equipe com modelos de uso geral encontrou alucinação em pelo menos 58%\" não está nesta fonte (é de outro artigo, não citado no caso); o resumo diz apenas que as ferramentas alucinam menos que o GPT-4."
+   ],
+   "correcao_sugerida": "resultado_reportado: \"As ferramentas com RAG alucinaram menos que o GPT-4, mas ainda entre 17% e 33% das respostas, com diferenças relevantes de responsividade e acurácia entre sistemas.\"",
+   "veredito": "corrigir",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-transversal-11": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null)."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "PDF oficial em gov.uk"
+  },
+  "B-transversal-12": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null).",
+    "Observação: caso duplicado de B-usuario-16 (mesmo relatório) em outra família."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "página oficial em gov.uk"
+  },
+  "B-transversal-13": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null)."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "página oficial da IFC"
+  },
+  "B-transversal-14": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Observação: estudo de diagnóstico (gargalos e limiares propostos), sem ganho medido após intervenção."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-transversal-15": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Observação: diagnóstico AS-IS (\"achados preliminares\"), sem ganho medido."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-transversal-16": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Observação: diagnóstico por mineração de processos, sem ganho medido."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no Semantic Scholar"
+  },
+  "B-transversal-17": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "O trecho descreve o método e não sustenta o resultado reportado (R² de 0,87); o resumo tem frase literal que sustenta."
+   ],
+   "correcao_sugerida": "trecho: \"The gradient boosting model demonstrated the best performance with an R2-score of 0.87. [...] The clustering features emerged among the most significant for the task.\"",
+   "veredito": "corrigir",
+   "trecho_conferido_em": "resumo no Crossref"
+  },
+  "B-transversal-18": {
+   "doi_ok": true,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Observação: caso duplicado de B-tarifa-04 (mesmo artigo) em outra família."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "resumo no OpenAlex"
+  },
+  "B-transversal-19": {
+   "doi_ok": null,
+   "metadados_ok": true,
+   "trecho_ok": true,
+   "resultado_ok": true,
+   "camada_ok": true,
+   "parametro_ok": true,
+   "problemas": [
+    "Sem DOI: URL/handle aberto e conferido como da fonte indicada (doi_ok = null)."
+   ],
+   "correcao_sugerida": null,
+   "veredito": "ok",
+   "trecho_conferido_em": "página oficial do CNJ"
+  }
+ },
+ "resumo": {
+  "ok": 51,
+  "corrigir": 13,
+  "excluir": 0
+ },
+ "observacoes_gerais": [
+  "Os 44 DOIs distintos existem no Crossref, com título, ano, veículo e primeiro autor compatíveis com o declarado.",
+  "Os 64 trechos foram encontrados no texto da fonte; só B-fiscalizacao-02 não é literal (palavras suprimidas sem reticências).",
+  "Três pares de casos repetem a mesma fonte em famílias diferentes: B-fiscalizacao-01/B-usuario-13, B-tarifa-04/B-transversal-18, B-usuario-16/B-transversal-12. Não é erro de fonte, mas infla a contagem de casos independentes."
+ ]
+}

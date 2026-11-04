@@ -1,0 +1,803 @@
+{
+ "codigo": "P06",
+ "nome": "Fiscalização técnica de campo (programada e por demanda)",
+ "casos": 1,
+ "situacao": "estudo_de_caso",
+ "auditoria_classificador": null,
+ "trilha": {
+  "nativa": 1
+ },
+ "lead_nativos_encerrados": null,
+ "por_caso_nativo": {
+  "espera_entre_atividades": {
+   "n": 1,
+   "mediana": 552.0,
+   "q1": 552.0,
+   "q3": 552.0,
+   "max": 552.0
+  },
+  "execucao_atividades": {
+   "n": 1,
+   "mediana": 84.0,
+   "q1": 84.0,
+   "q3": 84.0,
+   "max": 84.0
+  },
+  "horas_piso": {
+   "n": 1,
+   "mediana": 319.2,
+   "q1": 319.2,
+   "q3": 319.2,
+   "max": 319.1
+  },
+  "horas_teto": {
+   "n": 1,
+   "mediana": 477.0,
+   "q1": 477.0,
+   "q3": 477.0,
+   "max": 477.0
+  },
+  "lead": {
+   "n": 1,
+   "mediana": 636.0,
+   "q1": 636.0,
+   "q3": 636.0,
+   "max": 636.0
+  },
+  "terceiros": {
+   "n": 1,
+   "mediana": 138.0,
+   "q1": 138.0,
+   "q3": 138.0,
+   "max": 138.0
+  },
+  "indeterminado": {
+   "n": 1,
+   "mediana": 41.0,
+   "q1": 41.0,
+   "q3": 41.0,
+   "max": 41.0
+  },
+  "oficios": {
+   "n": 1,
+   "mediana": 12.0,
+   "q1": 12.0,
+   "q3": 12.0,
+   "max": 12.0
+  },
+  "retornos": {
+   "n": 1,
+   "mediana": 1.0,
+   "q1": 1.0,
+   "q3": 1.0,
+   "max": 1.0
+  },
+  "unidades_ativas": {
+   "n": 1,
+   "mediana": 3.0,
+   "q1": 3.0,
+   "q3": 3.0,
+   "max": 3.0
+  }
+ },
+ "posse_por_unidade_nativos": {
+  "SEM UNIDADE": {
+   "n": 1,
+   "mediana": 306.0,
+   "q1": 306.0,
+   "q3": 306.0,
+   "max": 306.0
+  },
+  "PROC": {
+   "n": 1,
+   "mediana": 203.0,
+   "q1": 203.0,
+   "q3": 203.0,
+   "max": 203.0
+  },
+  "CASAN": {
+   "n": 1,
+   "mediana": 70.0,
+   "q1": 70.0,
+   "q3": 70.0,
+   "max": 70.0
+  },
+  "SCEXEC": {
+   "n": 1,
+   "mediana": 57.0,
+   "q1": 57.0,
+   "q3": 57.0,
+   "max": 57.0
+  },
+  "CARES": {
+   "n": 1,
+   "mediana": 0.0,
+   "q1": 0.0,
+   "q3": 0.0,
+   "max": 0.0
+  }
+ },
+ "fora_do_modelo_pct_substantivas": {
+  "n": 1,
+  "mediana": 2.2,
+  "q1": 2.2,
+  "q3": 2.2,
+  "max": 2.2
+ },
+ "fora_do_modelo_pct_expediente": {
+  "n": 1,
+  "mediana": 0.0,
+  "q1": 0.0,
+  "q3": 0.0,
+  "max": 0.0
+ },
+ "variantes": [
+  {
+   "sequencia": "t2 → t3 → t2 → t3 → t2 → t1 → t3 → t2 → t3 → t2 → t1 → t2 → t3 → t2 → t3 → t2 → t3 → t4 → t5 → t6 → t7 → t8",
+   "casos": 1,
+   "pct": 100
+  }
+ ],
+ "n_variantes": 1,
+ "caminhos": [
+  {
+   "sequencia": "t2 → t3 → t1 → t4 → t5 → t6 → t7 → t8",
+   "casos": 1,
+   "pct": 100
+  }
+ ],
+ "n_caminhos": 1,
+ "transicoes": {
+  "início": [
+   {
+    "para": "t2",
+    "n": 1,
+    "pct": 100
+   }
+  ],
+  "t2": [
+   {
+    "para": "t3",
+    "n": 6,
+    "pct": 75
+   },
+   {
+    "para": "t1",
+    "n": 2,
+    "pct": 25
+   }
+  ],
+  "t3": [
+   {
+    "para": "t2",
+    "n": 6,
+    "pct": 86
+   },
+   {
+    "para": "t4",
+    "n": 1,
+    "pct": 14
+   }
+  ],
+  "t1": [
+   {
+    "para": "t3",
+    "n": 1,
+    "pct": 50
+   },
+   {
+    "para": "t2",
+    "n": 1,
+    "pct": 50
+   }
+  ],
+  "t4": [
+   {
+    "para": "t5",
+    "n": 1,
+    "pct": 100
+   }
+  ],
+  "t5": [
+   {
+    "para": "t6",
+    "n": 1,
+    "pct": 100
+   }
+  ],
+  "t6": [
+   {
+    "para": "t7",
+    "n": 1,
+    "pct": 100
+   }
+  ],
+  "t7": [
+   {
+    "para": "t8",
+    "n": 1,
+    "pct": 100
+   }
+  ],
+  "t8": [
+   {
+    "para": "fim",
+    "n": 1,
+    "pct": 100
+   }
+  ]
+ },
+ "atividades": {
+  "t1": {
+   "nome": "Solicitar agendamento de vistoria técnica",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 1,
+   "execucao_du": {
+    "n": 2,
+    "mediana": 8.0,
+    "q1": 4.0,
+    "q3": 12.0,
+    "max": 16.0
+   },
+   "espera_antes_du": {
+    "n": 2,
+    "mediana": 8.5,
+    "q1": 6.8,
+    "q3": 10.2,
+    "max": 12.0
+   },
+   "horas_piso": {
+    "n": 2,
+    "mediana": 1.8,
+    "q1": 1.2,
+    "q3": 2.2,
+    "max": 2.8
+   },
+   "horas_teto": {
+    "n": 2,
+    "mediana": 2.3,
+    "q1": 1.7,
+    "q3": 3.0,
+    "max": 3.6
+   },
+   "ferramentas": [],
+   "insumos": [],
+   "competencias": [
+    {
+     "item": "gestao_processual (basico)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "redacao_oficial (basico)",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "sinais_perda": [],
+   "fichas_por_modelo": {
+    "anthropic/claude-haiku-5.5": 4
+   },
+   "ausente_em": 0
+  },
+  "t2": {
+   "nome": "Vistoriar unidade e emitir relatório de fiscalização",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 1,
+   "execucao_du": {
+    "n": 8,
+    "mediana": 4.5,
+    "q1": 0.8,
+    "q3": 8.5,
+    "max": 35.0
+   },
+   "espera_antes_du": {
+    "n": 8,
+    "mediana": 10.5,
+    "q1": 2.0,
+    "q3": 21.8,
+    "max": 28.0
+   },
+   "horas_piso": {
+    "n": 8,
+    "mediana": 31.5,
+    "q1": 22.2,
+    "q3": 37.5,
+    "max": 76.0
+   },
+   "horas_teto": {
+    "n": 8,
+    "mediana": 47.2,
+    "q1": 39.0,
+    "q3": 64.0,
+    "max": 124.0
+   },
+   "ferramentas": [
+    {
+     "item": "checklist de aspectos gerais da estação elevatória",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "checklist de aspectos gerais da estação elevatória (anexo)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "checklist de conformidade (anexo do relatório)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "checklist de conformidade da estação elevatória",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "checklist de conservação e operação (anexo)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "checklist de conservação, operação e manutenção",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "checklist de conservação, operação e manutenção (anexo)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "checklist de conservação, operação e manutenção da estação elevatória (anexo)",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "insumos": [
+    {
+     "item": "ABNT NBR 12208:2020, sobre armazenamento de resíduos",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "Anexo (checklist) do relatório",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "Boas práticas sanitárias e de engenharia, usadas como referência",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "Contrato de Concessão, base da ação de acompanhamento",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "Contrato de Concessão, quanto às atribuições da Agência",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "Contrato de Concessão, que fundamenta a atuação da agência",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "competencias": [
+    {
+     "item": "ambiental (basico)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "auditoria_controle (basico)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "auditoria_controle (intermediario)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "engenharia_saneamento (basico)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "engenharia_saneamento (intermediario)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "juridico_regulatoria (basico)",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "sinais_perda": [
+    {
+     "item": "pedido_complementacao",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "prazo_concedido",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "reiteracao",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "fichas_por_modelo": {
+    "anthropic/claude-haiku-5.5": 41
+   },
+   "ausente_em": 0
+  },
+  "t3": {
+   "nome": "Encaminhar relatórios e solicitar manifestação",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 1,
+   "execucao_du": {
+    "n": 7,
+    "mediana": 0.0,
+    "q1": 0.0,
+    "q3": 0.0,
+    "max": 1.0
+   },
+   "espera_antes_du": {
+    "n": 7,
+    "mediana": 6.0,
+    "q1": 3.0,
+    "q3": 8.5,
+    "max": 11.0
+   },
+   "horas_piso": {
+    "n": 7,
+    "mediana": 0.8,
+    "q1": 0.8,
+    "q3": 1.0,
+    "max": 1.2
+   },
+   "horas_teto": {
+    "n": 7,
+    "mediana": 1.1,
+    "q1": 1.1,
+    "q3": 1.1,
+    "max": 1.2
+   },
+   "ferramentas": [],
+   "insumos": [],
+   "competencias": [
+    {
+     "item": "gestao_processual (basico)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "redacao_oficial (basico)",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "sinais_perda": [],
+   "fichas_por_modelo": {
+    "anthropic/claude-haiku-5.5": 7
+   },
+   "ausente_em": 0
+  },
+  "t4": {
+   "nome": "Analisar respostas e emitir parecer técnico",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 0,
+   "execucao_du": {
+    "n": 1,
+    "mediana": 0.0,
+    "q1": 0.0,
+    "q3": 0.0,
+    "max": 0.0
+   },
+   "espera_antes_du": {
+    "n": 1,
+    "mediana": 106.0,
+    "q1": 106.0,
+    "q3": 106.0,
+    "max": 106.0
+   },
+   "horas_piso": {
+    "n": 1,
+    "mediana": 24.2,
+    "q1": 24.2,
+    "q3": 24.2,
+    "max": 24.2
+   },
+   "horas_teto": {
+    "n": 1,
+    "mediana": 11.9,
+    "q1": 11.9,
+    "q3": 11.9,
+    "max": 11.9
+   },
+   "ferramentas": [
+    {
+     "item": "análise documental das manifestações, cronogramas e evidências apresentados",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "insumos": [
+    {
+     "item": "Contrato de Concessão, Regulamento de Serviços e Anexo IV",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "Leis federais nº 11.445/2007 e nº 14.026/2020",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "competencias": [
+    {
+     "item": "auditoria_controle (intermediario)",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "engenharia_saneamento (intermediario)",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "sinais_perda": [
+    {
+     "item": "reiteracao",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "fichas_por_modelo": {
+    "anthropic/claude-haiku-5.5": 2
+   },
+   "ausente_em": 0
+  },
+  "t5": {
+   "nome": "Dar ciência do parecer técnico à concessionária",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 0,
+   "execucao_du": {
+    "n": 1,
+    "mediana": 0.0,
+    "q1": 0.0,
+    "q3": 0.0,
+    "max": 0.0
+   },
+   "espera_antes_du": {
+    "n": 1,
+    "mediana": 55.0,
+    "q1": 55.0,
+    "q3": 55.0,
+    "max": 55.0
+   },
+   "horas_piso": {
+    "n": 1,
+    "mediana": 0.4,
+    "q1": 0.4,
+    "q3": 0.4,
+    "max": 0.5
+   },
+   "horas_teto": {
+    "n": 1,
+    "mediana": 0.4,
+    "q1": 0.4,
+    "q3": 0.4,
+    "max": 0.5
+   },
+   "ferramentas": [],
+   "insumos": [],
+   "competencias": [],
+   "sinais_perda": [],
+   "fichas_por_modelo": {},
+   "ausente_em": 0
+  },
+  "t6": {
+   "nome": "Reanalisar manifestação e reiterar parecer técnico",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 0,
+   "execucao_du": {
+    "n": 1,
+    "mediana": 0.0,
+    "q1": 0.0,
+    "q3": 0.0,
+    "max": 0.0
+   },
+   "espera_antes_du": {
+    "n": 1,
+    "mediana": 26.0,
+    "q1": 26.0,
+    "q3": 26.0,
+    "max": 26.0
+   },
+   "horas_piso": {
+    "n": 1,
+    "mediana": 4.0,
+    "q1": 4.0,
+    "q3": 4.0,
+    "max": 4.0
+   },
+   "horas_teto": {
+    "n": 1,
+    "mediana": 2.3,
+    "q1": 2.3,
+    "q3": 2.3,
+    "max": 2.3
+   },
+   "ferramentas": [
+    {
+     "item": "análise normativa",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "insumos": [
+    {
+     "item": "Marco Legal do Saneamento Básico, art. 11",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "competencias": [
+    {
+     "item": "juridico_regulatoria (especialista)",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "sinais_perda": [
+    {
+     "item": "reiteracao",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "fichas_por_modelo": {
+    "anthropic/claude-haiku-5.5": 1
+   },
+   "ausente_em": 0
+  },
+  "t7": {
+   "nome": "Analisar fundamentos jurídicos da fiscalização",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 0,
+   "execucao_du": {
+    "n": 1,
+    "mediana": 0.0,
+    "q1": 0.0,
+    "q3": 0.0,
+    "max": 0.0
+   },
+   "espera_antes_du": {
+    "n": 1,
+    "mediana": 205.0,
+    "q1": 205.0,
+    "q3": 205.0,
+    "max": 205.0
+   },
+   "horas_piso": {
+    "n": 1,
+    "mediana": 6.0,
+    "q1": 6.0,
+    "q3": 6.0,
+    "max": 6.0
+   },
+   "horas_teto": {
+    "n": 1,
+    "mediana": 12.7,
+    "q1": 12.7,
+    "q3": 12.7,
+    "max": 12.7
+   },
+   "ferramentas": [
+    {
+     "item": "análise normativa",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "insumos": [
+    {
+     "item": "competências legais da AGENERSA",
+     "casos": 1,
+     "pct": 100
+    },
+    {
+     "item": "item 25.2 do Contrato de Concessão",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "competencias": [
+    {
+     "item": "juridico_regulatoria (especialista)",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "sinais_perda": [
+    {
+     "item": "reiteracao",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "fichas_por_modelo": {
+    "anthropic/claude-haiku-5.5": 1
+   },
+   "ausente_em": 0
+  },
+  "t8": {
+   "nome": "Dar ciência do parecer jurídico à concessionária",
+   "casos": 1,
+   "pct_casos": 100,
+   "casos_com_laco": 0,
+   "execucao_du": {
+    "n": 1,
+    "mediana": 0.0,
+    "q1": 0.0,
+    "q3": 0.0,
+    "max": 0.0
+   },
+   "espera_antes_du": {
+    "n": 1,
+    "mediana": 0.0,
+    "q1": 0.0,
+    "q3": 0.0,
+    "max": 0.0
+   },
+   "horas_piso": {
+    "n": 1,
+    "mediana": 0.8,
+    "q1": 0.8,
+    "q3": 0.8,
+    "max": 0.8
+   },
+   "horas_teto": {
+    "n": 1,
+    "mediana": 1.0,
+    "q1": 1.0,
+    "q3": 1.0,
+    "max": 1.0
+   },
+   "ferramentas": [],
+   "insumos": [],
+   "competencias": [
+    {
+     "item": "redacao_oficial (basico)",
+     "casos": 1,
+     "pct": 100
+    }
+   ],
+   "sinais_perda": [],
+   "fichas_por_modelo": {
+    "anthropic/claude-haiku-5.5": 1
+   },
+   "ausente_em": 0
+  }
+ },
+ "fichas_por_modelo": {
+  "anthropic/claude-haiku-5.5": 57
+ }
+}

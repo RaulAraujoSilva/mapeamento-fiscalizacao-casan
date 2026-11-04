@@ -1,0 +1,308 @@
+{
+ "codigo": "P06",
+ "casos": [
+  {
+   "numero": "SEI-480002/001314/2024",
+   "encerrado": false,
+   "lead_du": 636.0,
+   "terceiros_du": 138.0,
+   "indeterminado_du": 41.0,
+   "cauda_du": 0.0,
+   "posse_du": {
+    "CARES": 0.0,
+    "CASAN": 70.0,
+    "PROC": 203.0,
+    "SCEXEC": 57.0,
+    "SEM UNIDADE": 306.0
+   },
+   "ocorrencias": [
+    {
+     "atividade": "t2",
+     "inicio": "2024-03-07 00:00:00",
+     "fim": "2024-04-29 00:00:00",
+     "espera_antes_du": 19.0,
+     "execucao_du": 35.0,
+     "espera_antes_por_unidade": {
+      "CASAN": 19.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 76.0,
+     "horas_teto": 124.01
+    },
+    {
+     "atividade": "t3",
+     "inicio": "2024-05-08 00:00:00",
+     "fim": "2024-05-08 00:00:00",
+     "espera_antes_du": 6.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "CASAN": 6.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 0.75,
+     "horas_teto": 1.15
+    },
+    {
+     "atividade": "t2",
+     "inicio": "2024-05-10 00:00:00",
+     "fim": "2024-05-20 00:00:00",
+     "espera_antes_du": 2.0,
+     "execucao_du": 6.0,
+     "espera_antes_por_unidade": {
+      "CASAN": 2.0
+     },
+     "espera_antes_terceiros_du": 2.0,
+     "horas_piso": 48.0,
+     "horas_teto": 78.32
+    },
+    {
+     "atividade": "t3",
+     "inicio": "2024-05-29 00:00:00",
+     "fim": "2024-05-29 00:00:00",
+     "espera_antes_du": 7.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 7.0
+     },
+     "espera_antes_terceiros_du": 7.0,
+     "horas_piso": 0.75,
+     "horas_teto": 1.09
+    },
+    {
+     "atividade": "t2",
+     "inicio": "2024-06-03 00:00:00",
+     "fim": "2024-06-06 00:00:00",
+     "espera_antes_du": 2.0,
+     "execucao_du": 3.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 2.0
+     },
+     "espera_antes_terceiros_du": 2.0,
+     "horas_piso": 30.0,
+     "horas_teto": 43.98
+    },
+    {
+     "atividade": "t1",
+     "inicio": "2024-06-24 00:00:00",
+     "fim": "2024-06-24 00:00:00",
+     "espera_antes_du": 12.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 12.0
+     },
+     "espera_antes_terceiros_du": 12.0,
+     "horas_piso": 0.75,
+     "horas_teto": 1.09
+    },
+    {
+     "atividade": "t3",
+     "inicio": "2024-06-27 00:00:00",
+     "fim": "2024-06-27 00:00:00",
+     "espera_antes_du": 3.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 3.0
+     },
+     "espera_antes_terceiros_du": 3.0,
+     "horas_piso": 1.25,
+     "horas_teto": 1.06
+    },
+    {
+     "atividade": "t2",
+     "inicio": "2024-07-25 00:00:00",
+     "fim": "2024-08-02 00:00:00",
+     "espera_antes_du": 20.0,
+     "execucao_du": 6.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 20.0
+     },
+     "espera_antes_terceiros_du": 20.0,
+     "horas_piso": 33.0,
+     "horas_teto": 50.52
+    },
+    {
+     "atividade": "t3",
+     "inicio": "2024-08-07 00:00:00",
+     "fim": "2024-08-08 00:00:00",
+     "espera_antes_du": 3.0,
+     "execucao_du": 1.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 3.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 1.25,
+     "horas_teto": 1.1
+    },
+    {
+     "atividade": "t2",
+     "inicio": "2024-08-09 00:00:00",
+     "fim": "2024-08-09 00:00:00",
+     "espera_antes_du": 1.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 1.0
+     },
+     "espera_antes_terceiros_du": 1.0,
+     "horas_piso": 20.0,
+     "horas_teto": 42.81
+    },
+    {
+     "atividade": "t1",
+     "inicio": "2024-08-16 00:00:00",
+     "fim": "2024-09-09 00:00:00",
+     "espera_antes_du": 5.0,
+     "execucao_du": 16.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 5.0
+     },
+     "espera_antes_terceiros_du": 3.0,
+     "horas_piso": 2.75,
+     "horas_teto": 3.58
+    },
+    {
+     "atividade": "t2",
+     "inicio": "2024-09-11 00:00:00",
+     "fim": "2024-09-11 00:00:00",
+     "espera_antes_du": 2.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 2.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 10.0,
+     "horas_teto": 9.89
+    },
+    {
+     "atividade": "t3",
+     "inicio": "2024-09-26 00:00:00",
+     "fim": "2024-09-26 00:00:00",
+     "espera_antes_du": 11.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 11.0
+     },
+     "espera_antes_terceiros_du": 1.0,
+     "horas_piso": 0.75,
+     "horas_teto": 1.14
+    },
+    {
+     "atividade": "t2",
+     "inicio": "2024-11-06 00:00:00",
+     "fim": "2024-11-07 00:00:00",
+     "espera_antes_du": 28.0,
+     "execucao_du": 1.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 28.0
+     },
+     "espera_antes_terceiros_du": 6.0,
+     "horas_piso": 34.0,
+     "horas_teto": 59.23
+    },
+    {
+     "atividade": "t3",
+     "inicio": "2024-11-11 00:00:00",
+     "fim": "2024-11-11 00:00:00",
+     "espera_antes_du": 2.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 2.0
+     },
+     "espera_antes_terceiros_du": 1.0,
+     "horas_piso": 0.75,
+     "horas_teto": 1.06
+    },
+    {
+     "atividade": "t2",
+     "inicio": "2024-12-20 00:00:00",
+     "fim": "2025-01-15 00:00:00",
+     "espera_antes_du": 27.0,
+     "execucao_du": 16.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 27.0
+     },
+     "espera_antes_terceiros_du": 27.0,
+     "horas_piso": 23.0,
+     "horas_teto": 27.58
+    },
+    {
+     "atividade": "t3",
+     "inicio": "2025-01-30 00:00:00",
+     "fim": "2025-01-30 00:00:00",
+     "espera_antes_du": 10.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 10.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 0.75,
+     "horas_teto": 1.09
+    },
+    {
+     "atividade": "t4",
+     "inicio": "2025-07-08 00:00:00",
+     "fim": "2025-07-08 00:00:00",
+     "espera_antes_du": 106.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "SEM UNIDADE": 106.0
+     },
+     "espera_antes_terceiros_du": 32.0,
+     "horas_piso": 24.2,
+     "horas_teto": 11.92
+    },
+    {
+     "atividade": "t5",
+     "inicio": "2025-09-23 00:00:00",
+     "fim": "2025-09-23 00:00:00",
+     "espera_antes_du": 55.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "SCEXEC": 55.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 0.45,
+     "horas_teto": 0.45
+    },
+    {
+     "atividade": "t6",
+     "inicio": "2025-10-30 00:00:00",
+     "fim": "2025-10-30 00:00:00",
+     "espera_antes_du": 26.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "CASAN": 2.0,
+      "SEM UNIDADE": 24.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 4.0,
+     "horas_teto": 2.31
+    },
+    {
+     "atividade": "t7",
+     "inicio": "2026-08-28 00:00:00",
+     "fim": "2026-08-28 00:00:00",
+     "espera_antes_du": 205.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {
+      "SCEXEC": 2.0,
+      "PROC": 203.0
+     },
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 6.0,
+     "horas_teto": 12.66
+    },
+    {
+     "atividade": "t8",
+     "inicio": "2026-08-28 00:00:00",
+     "fim": "2026-08-28 00:00:00",
+     "espera_antes_du": 0.0,
+     "execucao_du": 0.0,
+     "espera_antes_por_unidade": {},
+     "espera_antes_terceiros_du": 0.0,
+     "horas_piso": 0.75,
+     "horas_teto": 1.02
+    }
+   ]
+  }
+ ]
+}

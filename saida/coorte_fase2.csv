@@ -1,0 +1,2 @@
+﻿numero,processo_principal,nome_processo,lote,origem,trilha,no_piloto,encerrado,lead_du,n_docs,cobertura_substantivas,confianca
+SEI-480002/001314/2024,P06,Fiscalização técnica de campo (programada e por demanda),1,sei2,nativa,True,False,636.0,75,0.978,alta

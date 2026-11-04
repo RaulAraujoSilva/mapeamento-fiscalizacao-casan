@@ -1,0 +1,25 @@
+name: testes
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    env:
+      PERFIL: rj_agenersa_igua  # perfil deste caso (saida/ é do processo SEI-480002/001314/2024)
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt -r requirements-coleta.txt
+      - name: Saídas sem dados pessoais (portão de publicação)
+        run: python scripts/sanear_saida.py --verificar
+      - name: Testes
+        run: python -m pytest -q tests

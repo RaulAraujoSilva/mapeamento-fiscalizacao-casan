@@ -1,0 +1,163 @@
+{
+ "codigo": "P06",
+ "nome": "Fiscalização técnica de campo (programada e por demanda)",
+ "situacao": "estudo_de_caso",
+ "casos_coorte": 1,
+ "casos_nativos": 1,
+ "auditoria_classificador": null,
+ "por_caso": {
+  "lead_du": {
+   "n": 1,
+   "media": 636.0,
+   "mediana": 636.0,
+   "q1": 636.0,
+   "q3": 636.0,
+   "max": 636.0
+  },
+  "lead_encerrados_du": null,
+  "espera_entre_atividades_du": {
+   "n": 1,
+   "media": 552.0,
+   "mediana": 552.0,
+   "q1": 552.0,
+   "q3": 552.0,
+   "max": 552.0
+  },
+  "execucao_du": {
+   "n": 1,
+   "media": 84.0,
+   "mediana": 84.0,
+   "q1": 84.0,
+   "q3": 84.0,
+   "max": 84.0
+  },
+  "terceiros_du": {
+   "n": 1,
+   "media": 138.0,
+   "mediana": 138.0,
+   "q1": 138.0,
+   "q3": 138.0,
+   "max": 138.0
+  },
+  "sem_unidade_du": {
+   "n": 1,
+   "media": 306.0,
+   "mediana": 306.0,
+   "q1": 306.0,
+   "q3": 306.0,
+   "max": 306.0
+  },
+  "horas_piso": {
+   "n": 1,
+   "media": 319.1,
+   "mediana": 319.1,
+   "q1": 319.1,
+   "q3": 319.1,
+   "max": 319.1
+  },
+  "horas_teto": {
+   "n": 1,
+   "media": 477.1,
+   "mediana": 477.1,
+   "q1": 477.1,
+   "q3": 477.1,
+   "max": 477.1
+  },
+  "ocorrencias": {
+   "n": 1,
+   "media": 22.0,
+   "mediana": 22.0,
+   "q1": 22.0,
+   "q3": 22.0,
+   "max": 22.0
+  }
+ },
+ "posse_por_unidade": {
+  "SEM UNIDADE": {
+   "n": 1,
+   "mediana": 306.0,
+   "q1": 306.0,
+   "q3": 306.0,
+   "max": 306.0
+  },
+  "PROC": {
+   "n": 1,
+   "mediana": 203.0,
+   "q1": 203.0,
+   "q3": 203.0,
+   "max": 203.0
+  },
+  "CASAN": {
+   "n": 1,
+   "mediana": 70.0,
+   "q1": 70.0,
+   "q3": 70.0,
+   "max": 70.0
+  },
+  "SCEXEC": {
+   "n": 1,
+   "mediana": 57.0,
+   "q1": 57.0,
+   "q3": 57.0,
+   "max": 57.0
+  },
+  "CARES": {
+   "n": 1,
+   "mediana": 0.0,
+   "q1": 0.0,
+   "q3": 0.0,
+   "max": 0.0
+  }
+ },
+ "anual": {
+  "processos": 3.7,
+  "horas": {
+   "piso": 1180.9,
+   "teto": 1765.1
+  },
+  "fte": {
+   "piso": 0.65,
+   "teto": 0.97
+  },
+  "custo_reais": {
+   "piso": 38627,
+   "esperado": 77091,
+   "teto": 127020
+  }
+ },
+ "volume": {
+  "media_anual": 3.7,
+  "por_ano": {
+   "2023": 6,
+   "2024": 4,
+   "2025": 1
+  },
+  "revocacao_coorte": null,
+  "coorte_com_deliberacao": 0
+ },
+ "parametros": {
+  "custo_hora_base": {
+   "Especialista em Regulação": 32.71,
+   "Analista Técnico": 26.17,
+   "Assistente Técnico de Regulação": 12.46
+  },
+  "cargo_padrao": "Especialista em Regulação",
+  "fator_custo_total": {
+   "piso": 1.0,
+   "esperado": 1.6,
+   "teto": 2.2
+  },
+  "vencimento_base_2022": {
+   "Especialista em Regulação": 5670.0,
+   "Analista Técnico": 4536.0,
+   "Assistente Técnico de Regulação": 2160.0
+  },
+  "horas_ano_fte": 1816.0
+ },
+ "carimbo": "d80a3624fd68a3edc50a078178a485957243c562153fce283ae35c0c77048e35",
+ "ressalvas": [
+  "Horas por peça são estimativa (hipótese até a calibração com servidores).",
+  "Volume anual é piso: só processos que chegaram a deliberação.",
+  "Custo-hora parte do vencimento base inicial de 2022; o fator de custo total é hipótese."
+ ]
+}

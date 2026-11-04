@@ -1,0 +1,565 @@
+{
+ "codigo": "P06",
+ "melhorias": [
+  {
+   "id": "M-P06-01",
+   "fase": 1,
+   "titulo": "Prazo interno e fila por antiguidade para o parecer jurídico da Procuradoria",
+   "descricao": "Quando a CASAN conclui a reanálise (t6), o processo vai à Procuradoria com o marcador \"Aguardando parecer jurídico\" e a data de entrada. A Procuradoria passa a cumprir o prazo regimental do parecer (15 dias da remessa, prorrogáveis por mais 15 com justificativa registrada nos autos) e atende a fila de processos de fiscalização por ordem de antiguidade, visível no controle de prazos do SEI. O parecer é juntado na data de assinatura, e não só no dia do ofício de ciência. O juízo jurídico continua inteiramente com a Procuradoria.",
+   "atividades": [
+    "t7"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t7"
+    ],
+    "parte": "toda",
+    "cenarios": {
+     "conservador": 42,
+     "esperado": 21,
+     "otimista": 11
+    }
+   },
+   "fatos": [
+    "coorte.t7.espera_antes.mediana",
+    "critico.t7.1.espera_antes.PROC",
+    "critico.t7.1.espera_antes.SCEXEC",
+    "coorte.posse.PROC.mediana",
+    "coorte.t7.perda.reiteracao"
+   ],
+   "requisitos": [
+    "R-P06-09",
+    "R-P06-07"
+   ],
+   "benchmark": [
+    "B-transversal-01",
+    "B-transversal-02"
+   ],
+   "hipotese": false,
+   "justificativa_parametro": "Tetos derivados do prazo do R-P06-09 (15 dias da remessa, prorrogáveis por mais 15), convertidos para dias úteis: otimista 11 du ≈ 15 dias corridos (prazo sem prorrogação); esperado 21 du ≈ 30 dias corridos (prazo com a prorrogação); conservador 42 du = o dobro do esperado, como meta de transição. No único caso, a espera antes do parecer jurídico é de 205 du, 203 du deles com a Procuradoria (posse no SEI, que não prova fila nem análise: a avaliação AS-IS registra que o Parecer 759 tem número de 2025 e data no SEI igual à do ofício de ciência). B-transversal-01 sustenta a regra de fila por antiguidade sem mais gente; B-transversal-02 sustenta tratar a espera sem marco entre etapas como a restrição. O teto não é desconto do benchmark: o parâmetro vem do prazo normativo. Com 1 caso, o tamanho do corte depende inteiramente desse caso; a confirmar com a Procuradoria quanto dos 203 du foi análise.",
+   "riscos": "Capacidade da Procuradoria, que atende outros processos: o prazo pode deslocar a fila de outros códigos ou reduzir a profundidade do parecer. Se parte dos 203 du foi demora de juntada e não de análise, o ganho real no tempo de decisão é menor que o simulado (o ganho seria no registro).",
+   "dependencias": "Ordem de serviço do Conselho-Diretor ou da Procuradoria-Geral fixando a fila por antiguidade e o registro da prorrogação; marcador e controle de prazos configurados no SEI pela Secretaria Executiva.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-02",
+   "fase": 1,
+   "titulo": "Dono e marco para o parecer técnico depois do prazo de manifestação da concessionária",
+   "descricao": "O ofício que encaminha o último relatório (t3) passa a registrar no SEI a data de vencimento do prazo de manifestação, e o processo fica aberto na CASAN com o marcador \"Aguardando resposta da concessionária\", nunca sem unidade. Vencido o prazo (com ou sem resposta), a CASAN tem o prazo regimental para emitir o parecer técnico (t4) sobre o cumprimento das recomendações. A resposta da concessionária é juntada ao processo no dia em que chega, para que o prazo dela fique separado do tempo da agência.",
+   "atividades": [
+    "t4"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t4"
+    ],
+    "parte": "toda",
+    "cenarios": {
+     "conservador": 60,
+     "esperado": 45,
+     "otimista": 41
+    }
+   },
+   "fatos": [
+    "coorte.t4.espera_antes.mediana",
+    "critico.t4.1.espera_antes.SEM UNIDADE",
+    "coorte.posse.SEM UNIDADE.mediana",
+    "coorte.transicao.t3.t4",
+    "coorte.t4.perda.reiteracao"
+   ],
+   "requisitos": [
+    "R-P06-03",
+    "R-P06-04",
+    "R-P06-10",
+    "R-P06-02"
+   ],
+   "benchmark": [
+    "B-transversal-02",
+    "B-transversal-01"
+   ],
+   "hipotese": false,
+   "justificativa_parametro": "O teto respeita o prazo legal mínimo protegido (R-P06-03: 30 du entre o último ofício e o parecer técnico; R-P06-04: 30 dias corridos desde o último relatório): nenhum cenário fica abaixo de 30 du. Otimista 41 du = 30 du de prazo da concessionária + 15 dias corridos (≈ 11 du) do R-P06-10 para a CASAN emitir o parecer; esperado 45 du = 30 du + 15 du (prazo do R-P06-10 lido em dias úteis); conservador 60 du = prazo da concessionária dobrado, para acomodar resposta no fim do prazo e juntada tardia. No único caso a espera foi de 106 du, toda sem unidade com o processo aberto, e a parte que é prazo da concessionária não se separa porque as respostas não foram coletadas (terceiros = 0 por falta de evidência, não por ausência de resposta). Benchmarks sustentam o mecanismo (marco e responsável para a etapa seguinte; fila por antiguidade), não o número.",
+   "riscos": "Se a concessionária respondeu perto do fim de um prazo maior que 30 du, ou se houve prorrogação concedida, o teto corta tempo de terceiro que o simulador não enxerga (terceiros = 0 por falta das respostas nos autos): o ganho pode estar superestimado. Prazo curto para a CASAN pode baixar a profundidade da análise do cumprimento.",
+   "dependencias": "Ordem de serviço da CASAN e da Secretaria Executiva sobre o marcador e a juntada imediata da resposta; controle de prazos do SEI configurado.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-03",
+   "fase": 1,
+   "titulo": "Ciência do parecer técnico em prazo curto e com dono na Secretaria Executiva",
+   "descricao": "Assinado o parecer técnico (t4), a Secretaria Executiva emite o ofício de ciência à concessionária (t5) em prazo interno curto, com prazo de manifestação expresso, e o processo recebe o marcador da etapa. A Secretaria passa a trabalhar a fila de ciências pendentes diariamente, pela mais antiga.",
+   "atividades": [
+    "t5"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t5"
+    ],
+    "parte": "toda",
+    "cenarios": {
+     "conservador": 15,
+     "esperado": 10,
+     "otimista": 5
+    }
+   },
+   "fatos": [
+    "coorte.t5.espera_antes.mediana",
+    "critico.t5.1.espera_antes.SCEXEC",
+    "coorte.t5.horas_piso.mediana",
+    "coorte.posse.SCEXEC.mediana"
+   ],
+   "requisitos": [
+    "R-P06-05",
+    "R-P06-06"
+   ],
+   "benchmark": [
+    "B-transversal-01"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, a calibrar com a Secretaria Executiva. A peça de ciência custa 0,4 h (horas estimadas) e no único caso esperou 55 du com a Secretaria. Otimista 5 du (uma semana útil); esperado 10 du (duas semanas, folga para assinatura e fila); conservador 15 du (três semanas). Não há benchmark que dê o número; B-transversal-01 sustenta só o mecanismo de fila por antiguidade.",
+   "riscos": "Volume de ciências de outros códigos na Secretaria; se a demora vier de decisão sobre o conteúdo do ofício (e não de fila), o teto não se cumpre sem a CASAN enviar a minuta do ofício junto com o parecer.",
+   "dependencias": "Ordem de serviço da Secretaria Executiva; marcador no SEI.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-04",
+   "fase": 1,
+   "titulo": "Reanálise da CASAN logo após o prazo supletivo de manifestação",
+   "descricao": "Dada ciência do parecer técnico (t5), o processo fica aberto na CASAN até a reanálise (t6), com a data de vencimento do prazo supletivo registrada. Vencido o prazo, a CASAN reanalisa a manifestação em prazo interno curto; sem manifestação, registra a reiteração do parecer e segue.",
+   "atividades": [
+    "t6"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t6"
+    ],
+    "parte": "toda",
+    "cenarios": {
+     "conservador": 24,
+     "esperado": 20,
+     "otimista": 17
+    }
+   },
+   "fatos": [
+    "coorte.t6.espera_antes.mediana",
+    "critico.t6.1.espera_antes.SEM UNIDADE",
+    "critico.t6.1.espera_antes.CASAN",
+    "coorte.t6.perda.reiteracao"
+   ],
+   "requisitos": [
+    "R-P06-06",
+    "R-P06-10"
+   ],
+   "benchmark": [],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese. O teto respeita o prazo legal mínimo protegido do R-P06-06 (15 du): esperado 20 du = 15 du de prazo + 5 du para a reanálise; otimista 17 du = 15 du + 2 du; conservador 24 du = 15 du + 9 du (perto do observado). No único caso a espera foi de 26 du, 24 du sem unidade. Ganho pequeno, incluído para fechar a etapa sem dono.",
+   "riscos": "Manifestação longa da concessionária pode exigir mais tempo de reanálise; nesse caso o prazo interno é prorrogado com registro.",
+   "dependencias": "Ordem de serviço da CASAN; marcador no SEI.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-05",
+   "fase": 1,
+   "titulo": "Relatório de vistoria encaminhado à concessionária em até 5 dias úteis",
+   "descricao": "Cada relatório de fiscalização (t2) vai ao gerente da câmara para o \"De Acordo\" e é encaminhado à concessionária por ofício (t3) logo depois, sem que o processo fique sem unidade nesse intervalo. Os relatórios do mesmo ciclo que fiquem prontos na mesma semana vão no mesmo ofício.",
+   "atividades": [
+    "t3"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t3"
+    ],
+    "parte": "sem_unidade",
+    "cenarios": {
+     "conservador": 8,
+     "esperado": 5,
+     "otimista": 3
+    }
+   },
+   "fatos": [
+    "coorte.t3.espera_antes.mediana",
+    "coorte.t3.espera_antes.max",
+    "coorte.t3.casos_com_laco",
+    "coorte.transicao.t2.t3"
+   ],
+   "requisitos": [
+    "R-P06-12",
+    "R-P06-01",
+    "R-P06-02"
+   ],
+   "benchmark": [],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese. Esperado 5 du = prazo do R-P06-12 (relatório ao gerente em 5 dias úteis da lavratura), aplicado só à parte sem unidade da espera antes do encaminhamento; otimista 3 du; conservador 8 du. No único caso, as esperas antes dos encaminhamentos têm mediana de 6 du e máximo de 11 du. O teto só alcança as esperas sem unidade acima do teto.",
+   "riscos": "Parte do intervalo pode ser trabalho de campo e de redação feito fora do SEI; nesse caso o ganho é de registro, não de tempo.",
+   "dependencias": "Ordem de serviço da CASAN; modelo de ofício de encaminhamento.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-06",
+   "fase": 1,
+   "titulo": "Calendário do ciclo de vistorias combinado de uma vez com a concessionária",
+   "descricao": "No início do ciclo, a CASAN envia à concessionária o calendário de todas as vistorias do ciclo (unidades e datas) num único ofício de agendamento, em vez de agendar vistoria a vistoria. O processo fica aberto na CASAN durante todo o ciclo, com o marcador da próxima vistoria.",
+   "atividades": [
+    "t2"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t2"
+    ],
+    "parte": "sem_unidade",
+    "cenarios": {
+     "conservador": 20,
+     "esperado": 15,
+     "otimista": 10
+    }
+   },
+   "fatos": [
+    "coorte.t2.espera_antes.mediana",
+    "coorte.t2.espera_antes.max",
+    "critico.t2.7.espera_antes.SEM UNIDADE",
+    "critico.t2.8.espera_antes.SEM UNIDADE",
+    "coorte.t2.casos_com_laco",
+    "coorte.transicao.t2.t1"
+   ],
+   "requisitos": [
+    "R-P06-11"
+   ],
+   "benchmark": [],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, a calibrar com a CASAN. O teto vale só para a parte sem unidade da espera antes de cada vistoria: esperado 15 du (três semanas entre vistorias do mesmo ciclo), otimista 10 du, conservador 20 du. No único caso, a espera antes das vistorias tem mediana de 10,5 du e máximo de 28 du; só as maiores são cortadas. O aviso de 48 horas do R-P06-11 continua respeitado pelo calendário.",
+   "riscos": "A avaliação AS-IS registra que o processo concluído no SEI pode esconder trabalho de campo e logística (equipe, veículo, agenda da concessionária): se o intervalo for capacidade de campo, o calendário não o reduz. Só a CASAN pode dizer quanto é estoque e quanto é campo.",
+   "dependencias": "Plano anual de fiscalização da CASAN; anuência da concessionária ao calendário.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-07",
+   "fase": 2,
+   "titulo": "Painel de etapa seguinte e alerta de prazo vencido sobre o andamento do SEI",
+   "descricao": "Painel alimentado pelos andamentos do SEI que mostra, para cada processo de fiscalização, o último ato, a unidade com o processo aberto (ou nenhuma), a data de vencimento do prazo dado à concessionária e a etapa seguinte com responsável. Alerta automático à CASAN no dia em que vence o prazo de manifestação sobre os relatórios e quando o processo fica sem unidade além do limite interno. Com o vencimento visível, o prazo interno do parecer técnico baixa.",
+   "atividades": [
+    "t4"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t4"
+    ],
+    "parte": "toda",
+    "cenarios": {
+     "conservador": 55,
+     "esperado": 40,
+     "otimista": 35
+    }
+   },
+   "fatos": [
+    "coorte.t4.espera_antes.mediana",
+    "critico.t4.1.espera_antes.SEM UNIDADE",
+    "coorte.posse.SEM UNIDADE.mediana",
+    "coorte.caso.indeterminado.mediana"
+   ],
+   "requisitos": [
+    "R-P06-03",
+    "R-P06-04",
+    "R-P06-10"
+   ],
+   "benchmark": [
+    "B-fiscalizacao-14",
+    "B-transversal-14",
+    "B-transversal-15"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese no número; mecanismo com benchmark. Contagem dupla evitada: o painel só soma porque baixa o teto da fase 1 (M-P06-02) de 45 para 40 du no esperado (60 → 55 no conservador; 41 → 35 no otimista), pela nova capacidade de ver o vencimento no dia; nenhum cenário fica abaixo dos 30 du protegidos pelo R-P06-03 e R-P06-04. Esperado 40 du = 30 du + 10 du (15 dias corridos do R-P06-10 menos a demora de perceber o vencimento); otimista 35 du; conservador 55 du. B-fiscalizacao-14 (ANEEL: alertas automáticos elevaram a conformidade em envio de informações) e B-transversal-14/15 (limiar de tempo por etapa a partir do log, inclusive do SEI) sustentam o mecanismo, não o parâmetro.",
+   "riscos": "Painel sem dono vira tela que ninguém olha; alerta em excesso é ignorado. O efeito no tempo depende de a CASAN agir no dia do alerta.",
+   "dependencias": "Acesso aos andamentos do SEI (relatórios ou API) com atualização diária; registro estruturado do prazo concedido em cada ofício; responsável pelo painel na Secretaria Executiva.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-08",
+   "fase": 2,
+   "titulo": "Ofício de ciência gerado por modelo na assinatura do parecer técnico",
+   "descricao": "Quando o parecer técnico (t4) é assinado no SEI, o sistema gera o ofício de ciência (t5) pelo modelo único, com número do processo, parecer, recomendações pendentes e prazo de manifestação preenchidos, e o coloca no bloco de assinatura da Secretaria Executiva no mesmo dia; o envio por e-mail à concessionária sai com a assinatura.",
+   "atividades": [
+    "t5"
+   ],
+   "efeito": {
+    "tipo": "teto_espera",
+    "atividades": [
+     "t5"
+    ],
+    "parte": "toda",
+    "cenarios": {
+     "conservador": 10,
+     "esperado": 3,
+     "otimista": 1
+    }
+   },
+   "fatos": [
+    "coorte.t5.espera_antes.mediana",
+    "critico.t5.1.espera_antes.SCEXEC",
+    "coorte.t5.horas_piso.mediana"
+   ],
+   "requisitos": [
+    "R-P06-05",
+    "R-P06-06"
+   ],
+   "benchmark": [
+    "B-transversal-06",
+    "B-transversal-07"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese no número. Baixa o teto da fase 1 (M-P06-03) de 10 para 3 du no esperado (15 → 10 no conservador; 5 → 1 no otimista), porque a peça deixa de ser redigida e só é conferida e assinada. B-transversal-06 (RPA em análise documental em órgão público brasileiro, com redução média de duração) e B-transversal-07 (regra de rito automatizada com exceção para o servidor) sustentam o mecanismo; resultado de outro setor é teto, não meta, e não foi convertido em parâmetro.",
+   "riscos": "Modelo com campo errado sai em série; por isso a Secretaria confere e assina cada ofício.",
+   "dependencias": "Modelo de documento no SEI com campos; integração ou rotina que leia o parecer assinado; definição dos campos obrigatórios pela CASAN.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-09",
+   "fase": 2,
+   "titulo": "Ofícios de encaminhamento e de ciência por modelo com campos preenchidos",
+   "descricao": "Os ofícios de encaminhamento dos relatórios (t3), de ciência do parecer técnico (t5) e de ciência do parecer jurídico (t8) passam a sair do modelo único com os dados do processo preenchidos (unidade vistoriada, relatórios anexos, prazo e base normativa); o servidor confere e assina.",
+   "atividades": [
+    "t3",
+    "t5",
+    "t8"
+   ],
+   "efeito": {
+    "tipo": "reduz_horas_pct",
+    "atividades": [
+     "t3",
+     "t5",
+     "t8"
+    ],
+    "cenarios": {
+     "conservador": 20,
+     "esperado": 40,
+     "otimista": 60
+    }
+   },
+   "fatos": [
+    "coorte.t3.horas_piso.mediana",
+    "coorte.t5.horas_piso.mediana",
+    "coorte.t8.horas_piso.mediana",
+    "coorte.caso.oficios.mediana"
+   ],
+   "requisitos": [
+    "R-P06-01",
+    "R-P06-02",
+    "R-P06-08"
+   ],
+   "benchmark": [
+    "B-transversal-06"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, horas a calibrar. Horas líquidas da conferência: cada ofício custa menos de 1,5 h estimada; o modelo elimina a redação e a busca de dados (cerca de 60% a 70% do tempo da peça), mas toda peça é conferida e assinada (cerca de 20% a 30%). Esperado 40% líquido; otimista 60%; conservador 20% (modelo pouco usado). Efeito absoluto pequeno: são peças curtas.",
+   "riscos": "Prazo concedido abaixo do mínimo (R-P06-02) se o campo for preenchido errado; o modelo traz o prazo mínimo como padrão e bloqueia valor menor.",
+   "dependencias": "Modelos de documento no SEI; tabela de unidades vistoriadas e de prazos padrão.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-10",
+   "fase": 2,
+   "titulo": "Checklist de campo estruturado e relatório de fiscalização gerado por modelo",
+   "descricao": "A vistoria (t2) passa a ser registrada num formulário estruturado (unidade, item verificado, constatação, foto, exigência, prazo, base normativa), e o relatório de fiscalização sai por modelo a partir do formulário, alimentando a matriz de não conformidades por unidade. O fiscal revisa e assina.",
+   "atividades": [
+    "t2"
+   ],
+   "efeito": {
+    "tipo": "reduz_horas_pct",
+    "atividades": [
+     "t2"
+    ],
+    "cenarios": {
+     "conservador": 5,
+     "esperado": 10,
+     "otimista": 20
+    }
+   },
+   "fatos": [
+    "coorte.t2.horas_piso.mediana",
+    "coorte.t2.horas_teto.mediana",
+    "coorte.t2.perda.pedido_complementacao",
+    "coorte.t2.perda.reiteracao",
+    "coorte.t2.casos_com_laco"
+   ],
+   "requisitos": [
+    "R-P06-12",
+    "R-P06-04"
+   ],
+   "benchmark": [
+    "B-transversal-06"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, horas a calibrar com a CASAN. A vistoria em campo não muda; muda a transcrição e a montagem do relatório. Conta: se a montagem do relatório (transcrição de anotações, tabela de constatações, formatação) for cerca de 20% a 25% das horas de t2 e o formulário eliminar metade disso, descontada a revisão do relatório gerado (cerca de 2% a 5%), o líquido fica em cerca de 10% no esperado; conservador 5%; otimista 20%. B-transversal-06 é de outro setor (análise documental): dá só a direção, não o número.",
+   "riscos": "Formulário rígido pode empobrecer a descrição da constatação; campo livre continua disponível. Dependência de equipamento em campo (tablet, conectividade).",
+   "dependencias": "Formulário eletrônico de campo; modelo do relatório no SEI; padrão de enquadramento das não conformidades definido pela CASAN.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-11",
+   "fase": 2,
+   "titulo": "Matriz de cumprimento das recomendações como base do parecer técnico",
+   "descricao": "Cada não conformidade dos relatórios do ciclo fica numa matriz (unidade, exigência, prazo, situação); quando a resposta da concessionária chega e é juntada, a CASAN marca na matriz o que foi atendido. O parecer técnico de fechamento (t4) e a reanálise (t6) partem da matriz pronta, e não da releitura de todos os relatórios.",
+   "atividades": [
+    "t4",
+    "t6"
+   ],
+   "efeito": {
+    "tipo": "reduz_horas_pct",
+    "atividades": [
+     "t4",
+     "t6"
+    ],
+    "cenarios": {
+     "conservador": 10,
+     "esperado": 20,
+     "otimista": 30
+    }
+   },
+   "fatos": [
+    "coorte.t4.horas_piso.mediana",
+    "coorte.t4.horas_teto.mediana",
+    "coorte.t6.horas_piso.mediana",
+    "coorte.t2.casos_com_laco",
+    "coorte.t4.perda.reiteracao"
+   ],
+   "requisitos": [
+    "R-P06-05",
+    "R-P06-10"
+   ],
+   "benchmark": [
+    "B-fiscalizacao-14"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, horas a calibrar. A parcela do parecer técnico que é reler relatórios e consolidar a situação de cada recomendação foi estimada em cerca de 30% a 40% das horas de t4 e t6; a matriz elimina a maior parte dela, mas a CASAN confere a situação marcada (revisão de cerca de 10%). Esperado 20% líquido; conservador 10%; otimista 30%. B-fiscalizacao-14 (plano de melhoria acompanhado pela ANEEL) sustenta o acompanhamento estruturado do cumprimento; não dá o percentual.",
+   "riscos": "Matriz desatualizada leva a parecer errado sobre o cumprimento; a situação de cada item precisa da evidência anexada.",
+   "dependencias": "Formulário estruturado da M-P06-10; juntada da resposta da concessionária no SEI.",
+   "controle_humano": ""
+  },
+  {
+   "id": "M-P06-12",
+   "fase": 3,
+   "titulo": "Minuta do relatório de fiscalização a partir do checklist e das fotos, com base normativa verificada",
+   "descricao": "Com o checklist estruturado (M-P06-10) e as fotos legendadas, a IA monta a minuta da parte narrativa do relatório no modelo da CASAN, lista as não conformidades com a base normativa citada da base de normas e deliberações (com verificação automática de cada citação), e recupera as recomendações do relatório anterior da mesma unidade para apontar reincidência. O fiscal confere, ajusta e assina; o gerente dá o \"De Acordo\".",
+   "atividades": [
+    "t2"
+   ],
+   "efeito": {
+    "tipo": "reduz_horas_pct",
+    "atividades": [
+     "t2"
+    ],
+    "cenarios": {
+     "conservador": 3,
+     "esperado": 8,
+     "otimista": 15
+    }
+   },
+   "fatos": [
+    "coorte.t2.horas_piso.mediana",
+    "coorte.t2.horas_teto.mediana",
+    "coorte.t2.perda.reiteracao",
+    "coorte.t2.casos_com_laco"
+   ],
+   "requisitos": [
+    "R-P06-12",
+    "R-P06-13"
+   ],
+   "benchmark": [
+    "B-transversal-09",
+    "B-transversal-12"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, horas a calibrar. Aplica-se sobre as horas que sobram depois do formulário (M-P06-10). Conta: a redação narrativa e o enquadramento normativo somam cerca de 20% das horas restantes de t2; a minuta economiza cerca de metade (10%), e a revisão humana de 100% das minutas e citações custa cerca de 2% a 4%. Líquido esperado 8%; conservador 3% (minutas muito reescritas); otimista 15%. Benchmarks são teto e cautela: B-transversal-12 (cerca de 26 min por servidor por dia com IA de uso geral) dá a ordem de grandeza modesta; B-transversal-09 mostra que só 11,8% das minutas saíram prontas sem ajuste, por isso toda minuta é revista e a revisão é descontada. A vistoria em si não muda e o lead time não muda.",
+   "riscos": "Constatação mal descrita ou dispositivo citado errado entra no relatório e vicia a exigência; por isso nada vai ao documento sem conferência do fiscal. Dependência do formulário da fase 2.",
+   "dependencias": "Formulário estruturado (M-P06-10); base de normas e deliberações com os dispositivos de saneamento; serviço de modelo de linguagem com cláusula de não uso dos dados para treino e hospedagem compatível com a LGPD; norma interna sobre uso de IA, com registro nos autos de que a minuta foi assistida.",
+   "controle_humano": "O fiscal que fez a vistoria confere 100% das constatações e das legendas contra o checklist e as fotos antes de assinar; 100% das citações de norma passam por verificação automática contra a base e pela conferência do gerente da CASAN no \"De Acordo\"; por amostra, 1 relatório por mês é revisto às cegas por um segundo fiscal, que registra as correções feitas na minuta."
+  },
+  {
+   "id": "M-P06-13",
+   "fase": 3,
+   "titulo": "Extração da resposta da concessionária e pré-análise do cumprimento",
+   "descricao": "Quando a resposta da concessionária (ou a manifestação após a ciência) é juntada, a IA extrai, item a item, o que a concessionária diz ter feito e as evidências anexadas, e propõe na matriz de cumprimento (M-P06-11) a situação de cada recomendação (atendida, parcialmente atendida, não atendida, sem evidência), com a página de origem. A CASAN confirma ou corrige cada item e redige a conclusão do parecer técnico ou da reanálise.",
+   "atividades": [
+    "t4",
+    "t6"
+   ],
+   "efeito": {
+    "tipo": "reduz_horas_pct",
+    "atividades": [
+     "t4",
+     "t6"
+    ],
+    "cenarios": {
+     "conservador": 5,
+     "esperado": 12,
+     "otimista": 25
+    }
+   },
+   "fatos": [
+    "coorte.t4.horas_piso.mediana",
+    "coorte.t6.horas_piso.mediana",
+    "coorte.t6.perda.reiteracao",
+    "coorte.t4.perda.reiteracao"
+   ],
+   "requisitos": [
+    "R-P06-10",
+    "R-P06-05",
+    "R-P06-06"
+   ],
+   "benchmark": [
+    "B-transversal-13",
+    "B-transversal-11"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, horas a calibrar. Aplica-se sobre as horas que sobram depois da matriz (M-P06-11). Conta: a leitura da resposta e a conferência das evidências somam cerca de 30% das horas restantes; a extração economiza cerca de 60% disso (18%), e a revisão item a item pela CASAN custa cerca de 6%. Líquido esperado 12%; conservador 5%; otimista 25%. B-transversal-13 (regulador com IA generativa conferindo relatórios de regulados: revisão de dias para minutos) é de outro setor e serve de teto, não de meta; B-transversal-11 dá o critério de aceite (concordância IA × revisor comparada com a de dois revisores).",
+   "riscos": "Classificação errada de uma recomendação como atendida esvazia a exigência e pode fechar o ciclo indevidamente; por isso a conclusão é sempre da CASAN e cada item tem a página de origem.",
+   "dependencias": "Juntada da resposta da concessionária no SEI em formato legível (texto ou PDF pesquisável); matriz da M-P06-11; serviço de modelo de linguagem contratado nas mesmas condições da M-P06-12.",
+   "controle_humano": "O técnico da CASAN confirma ou corrige 100% dos itens propostos, contra a página de origem, antes de assinar; a conclusão do parecer é redigida e assinada pelo técnico e revista pelo gerente; por trimestre, 1 parecer é refeito às cegas por um segundo técnico e a concordância por item é comparada com a da IA."
+  },
+  {
+   "id": "M-P06-14",
+   "fase": 3,
+   "titulo": "Minuta do parecer jurídico com precedentes e entendimento firmado verificados contra a base",
+   "descricao": "Recebido o processo, a Procuradoria conta com uma minuta de relatório dos autos (Relator de Voto) e com a busca de precedentes e do entendimento firmado sobre o alcance da fiscalização (a fiscalização não se limita aos indicadores de desempenho) na base de normas e deliberações (Especialista), cada citação verificada automaticamente contra a fonte. O procurador decide, redige a conclusão e assina.",
+   "atividades": [
+    "t7"
+   ],
+   "efeito": {
+    "tipo": "reduz_horas_pct",
+    "atividades": [
+     "t7"
+    ],
+    "cenarios": {
+     "conservador": 5,
+     "esperado": 10,
+     "otimista": 20
+    }
+   },
+   "fatos": [
+    "coorte.t7.horas_piso.mediana",
+    "coorte.t7.horas_teto.mediana",
+    "coorte.t7.perda.reiteracao"
+   ],
+   "requisitos": [
+    "R-P06-09",
+    "R-P06-07",
+    "R-P06-16"
+   ],
+   "benchmark": [
+    "B-transversal-09",
+    "B-transversal-12"
+   ],
+   "hipotese": true,
+   "justificativa_parametro": "Hipótese, horas a calibrar com a Procuradoria. Conta: o relatório dos autos e a pesquisa de normas e precedentes somam cerca de 30% das horas do parecer; a minuta e a busca economizam cerca de metade (15%), e a conferência de 100% das citações e do relatório custa cerca de 5%. Líquido esperado 10%; conservador 5%; otimista 20%. B-transversal-09 (só 11,8% das minutas prontas sem ajuste) obriga a revisão de toda minuta; B-transversal-12 dá a ordem de grandeza modesta do ganho de IA de uso geral. O juízo jurídico não é automatizado.",
+   "riscos": "Citação inexistente ou revogada abre nulidade; precedente fora de contexto pode induzir a conclusão. A tese repetida da concessionária pode ser tratada sem ler o argumento novo; por isso o procurador lê a manifestação integral.",
+   "dependencias": "Relator de Voto e Especialista (já existentes na agência) com acesso aos autos do SEI; norma interna sobre uso de IA na Procuradoria, com registro nos autos.",
+   "controle_humano": "O procurador confere 100% das citações (após a verificação automática contra a base) e o relatório dos autos contra as peças antes de assinar; a conclusão é sempre do procurador; por semestre, a Procuradoria-Geral revê às cegas 1 parecer assistido e registra as correções."
+  }
+ ]
+}

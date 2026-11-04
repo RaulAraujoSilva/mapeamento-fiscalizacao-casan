@@ -1,0 +1,1797 @@
+{
+ "codigo": "P06",
+ "processos_coorte": 1,
+ "deliberacoes_do_tipo": 233,
+ "nota": "Candidatos por frequência de citação; a curadoria escolhe, lê o texto e transcreve o trecho.",
+ "normas": [
+  {
+   "raiz": "CC",
+   "rotulo": "Contrato de Concessão",
+   "tipo": "clausula_contratual",
+   "pecas": 13,
+   "deliberacoes_do_tipo": 488,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "CC:CL1:P3",
+     "rotulo": "Cláusula Primeira do Contrato de Concessão, § 3º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 145,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CC:CL10",
+     "rotulo": "Cláusula Décima do Contrato de Concessão",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 76,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CC:CL4:P1:ITEM6",
+     "rotulo": "Cláusula Quarta do Contrato de Concessão, § 1º, item 6",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 46,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CC:CL4:P1:ITEM11",
+     "rotulo": "Cláusula Quarta do Contrato de Concessão, § 1º, item 11",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 35,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CC:CL10:IV",
+     "rotulo": "Cláusula Décima do Contrato de Concessão, inciso IV",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 33,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CC",
+     "rotulo": "Contrato de Concessão",
+     "pecas": 13,
+     "processos": 1,
+     "deliberacoes_do_tipo": 7,
+     "atividades": {
+      "t2": 12,
+      "t4": 1
+     },
+     "variante": "Contrato de Concessão"
+    },
+    {
+     "disp_id": "CC:CL10:II",
+     "rotulo": "Cláusula Décima do Contrato de Concessão, inciso II",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 15,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CC:CL4:P1",
+     "rotulo": "Cláusula Quarta do Contrato de Concessão, § 1º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 15,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CC:CL4:P1:ITEMSEIS",
+     "rotulo": "Cláusula Quarta do Contrato de Concessão, § 1º, item SEIS",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 15,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CC:ANEXO2:PARTE2:ITEM13-A",
+     "rotulo": "Anexo II do Contrato de Concessão, Parte 2, item 13-A",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 12,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CC:CL4:P1:ITEMII",
+     "rotulo": "Cláusula Quarta do Contrato de Concessão, § 1º, item II",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 8,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CC:CL4:P1:ITEM8",
+     "rotulo": "Cláusula Quarta do Contrato de Concessão, § 1º, item 8",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 7,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CC:CL8:P9",
+     "rotulo": "Cláusula Oitava do Contrato de Concessão, § 9º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 7,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CC:ANEXO2:PARTE2:ITEM13",
+     "rotulo": "Anexo II do Contrato de Concessão, Parte 2, item 13",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 5,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CC:CL4",
+     "rotulo": "Cláusula Quarta do Contrato de Concessão",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 5,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "IN:1/2007",
+   "rotulo": "Instrução Normativa AGENERSA nº 1/2007",
+   "tipo": "instrucao_normativa",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 258,
+   "texto": {
+    "titulo": "Dispõe sobre os procedimentos a serem adotados pela Agência Reguladora de Energia e Saneamento Básico do Estado do Rio de Janeiro nas ações de fiscalização das obrigações legais e contratuais das concessionárias Ceg e Ceg Rio e na aplicação de penalidades àquelas concessionárias, quando for o caso.",
+    "txt": "data/txt/biblioteca/instrucoesnormativas/IN01.txt",
+    "tabela": "normativo"
+   },
+   "dispositivos": [
+    {
+     "disp_id": "IN:1/2007:art19:IV",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007, art. 19, inciso IV",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 110,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:1/2007",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 39,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:1/2007:art16:VIII",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007, art. 16, inciso VIII",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 17,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:1/2007:art6:P2",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007, art. 6º, § 2º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 16,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:1/2007:art12:I",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007, art. 12, inciso I",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 15,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:1/2007:art17:VI",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007, art. 17, inciso VI",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 15,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:1/2007:art18:I",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007, art. 18, inciso I",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 15,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:1/2007:art20",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007, art. 20",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 3,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:1/2007:art6",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007, art. 6º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 3,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:1/2007:art16",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007, art. 16",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:1/2007:art16:I",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007, art. 16, inciso I",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:1/2007:art16:III",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007, art. 16, inciso III",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:1/2007:art2",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007, art. 2º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:1/2007:art2:PU",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007, art. 2º, parágrafo único",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:1/2007:art6:P2:I",
+     "rotulo": "Instrução Normativa AGENERSA nº 1/2007, art. 6º, § 2º, inciso I",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "LEI:8987/1995",
+   "rotulo": "Lei nº 8.987/1995",
+   "tipo": "lei",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 35,
+   "texto": {
+    "titulo": "Lei nº 8.987 de 13 de fevereiro de 1995.",
+    "txt": "data/txt/biblioteca/legislacao-e-normas-tecnicas/LEI89871995.txt",
+    "tabela": "normativo"
+   },
+   "dispositivos": [
+    {
+     "disp_id": "LEI:8987/1995:art6:P1",
+     "rotulo": "Lei nº 8.987/1995, art. 6º, § 1º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 11,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "LEI:8987/1995:art31:I",
+     "rotulo": "Lei nº 8.987/1995, art. 31, inciso I",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 8,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "LEI:8987/1995:art7",
+     "rotulo": "Lei nº 8.987/1995, art. 7º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 5,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "LEI:8987/1995:art6:P1:I",
+     "rotulo": "Lei nº 8.987/1995, art. 6º, § 1º, inciso I",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 4,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "LEI:8987/1995",
+     "rotulo": "Lei nº 8.987/1995",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "LEI:8987/1995:art6",
+     "rotulo": "Lei nº 8.987/1995, art. 6º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "LEI:8987/1995:art7:I",
+     "rotulo": "Lei nº 8.987/1995, art. 7º, inciso I",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "LEI:8987/1995:art25:P1",
+     "rotulo": "Lei nº 8.987/1995, art. 25, § 1º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "LEI:11445/2007",
+   "rotulo": "Lei nº 11.445/2007",
+   "tipo": "lei",
+   "pecas": 34,
+   "deliberacoes_do_tipo": 0,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "LEI:11445/2007",
+     "rotulo": "Lei nº 11.445/2007",
+     "pecas": 34,
+     "processos": 1,
+     "deliberacoes_do_tipo": 0,
+     "atividades": {
+      "t2": 34
+     },
+     "variante": "Lei Federal nº 11.445/2007"
+    }
+   ]
+  },
+  {
+   "raiz": "NT:215/BRA",
+   "rotulo": "NT-215/BRA",
+   "tipo": "norma_tecnica",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 23,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "NT:215/BRA",
+     "rotulo": "NT-215/BRA",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 23,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "NT:131/BRA",
+   "rotulo": "NT-131/BRA",
+   "tipo": "norma_tecnica",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 22,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "NT:131/BRA",
+     "rotulo": "NT-131/BRA",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 22,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "NT:813/BRA",
+   "rotulo": "NT-813/BRA",
+   "tipo": "norma_tecnica",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 17,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "NT:813/BRA",
+     "rotulo": "NT-813/BRA",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 17,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "CF:1988",
+   "rotulo": "Constituição Federal de 1988",
+   "tipo": "constituicao",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 16,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "CF:1988:art175:PU:IV",
+     "rotulo": "Constituição Federal de 1988, art. 175, parágrafo único, inciso IV",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 10,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CF:1988:art175:PU:X",
+     "rotulo": "Constituição Federal de 1988, art. 175, parágrafo único, inciso X",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CF:1988:art37",
+     "rotulo": "Constituição Federal de 1988, art. 37",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CF:1988:art5:ITEMLIV",
+     "rotulo": "Constituição Federal de 1988, art. 5º, item LIV",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CF:1988:art5:LIV",
+     "rotulo": "Constituição Federal de 1988, art. 5º, inciso LIV",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CF:1988:art5:LXXVIII",
+     "rotulo": "Constituição Federal de 1988, art. 5º, inciso LXXVIII",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CF:1988:art7:P1:XXXI",
+     "rotulo": "Constituição Federal de 1988, art. 7º, § 1º, inciso XXXI",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "RIP",
+   "rotulo": "Regulamento de Instalações Prediais (RIP)",
+   "tipo": "outro",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 11,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "RIP",
+     "rotulo": "Regulamento de Instalações Prediais (RIP)",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 11,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "MANUAL",
+   "rotulo": "Manual de Procedimentos para a Prestação dos Serviços Públicos de Saneamento Básico",
+   "tipo": "outro",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 9,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "MANUAL:ESPECIFICACOES-SINALIZACAO:CEG",
+     "rotulo": "Manual Especificações Sinalização — Gerência de Relações Externas — CEG",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 4,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "MANUAL:SEGURANCA:CEG",
+     "rotulo": "Manual de Segurança para Obras de Construção e Manutenção de Redes e Ramais — CEG",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 4,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "MANUAL:NORMAS-OBRAS-VIAS-PUBLICAS",
+     "rotulo": "Manual de Normas para Execução de Obras, Reparos e Serviços em Vias Públicas",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "NT-S13-BRA",
+   "rotulo": "NT-S13-BRA — Procedimento para Sinalização de Obras de Canalização",
+   "tipo": "norma_tecnica",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 9,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "NT-S13-BRA",
+     "rotulo": "NT-S13-BRA — Procedimento para Sinalização de Obras de Canalização",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 9,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "IN:19/2011",
+   "rotulo": "Instrução Normativa AGENERSA nº 19/2011",
+   "tipo": "instrucao_normativa",
+   "pecas": 1,
+   "deliberacoes_do_tipo": 7,
+   "texto": {
+    "titulo": "Dispõe sobre os procedimentos a serem adotados pela Agência Reguladora de Energia e Saneamento Básico do estado do Rio de Janeiro – Agenersa, com relação às reclamações dos usuários dos serviços públicos concedidos, registradas no sistema da ouvidoria, com o objetivo de contribuir para o aperfeiçoamento e a melhoria dos padrões e mecanismos de transparência, presteza, eficiência e segurança dos serviços e das atividades desenvolvidas pela Agenersa.",
+    "txt": "data/txt/biblioteca/instrucoesnormativas/IN19_0.txt",
+    "tabela": "normativo"
+   },
+   "dispositivos": [
+    {
+     "disp_id": "IN:19/2011:art2",
+     "rotulo": "Instrução Normativa AGENERSA nº 19/2011, art. 2º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 3,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:19/2011",
+     "rotulo": "Instrução Normativa AGENERSA nº 19/2011",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:19/2011:art1:P2",
+     "rotulo": "Instrução Normativa AGENERSA nº 19/2011, art. 1º, § 2º",
+     "pecas": 1,
+     "processos": 1,
+     "deliberacoes_do_tipo": 0,
+     "atividades": {
+      "fora_do_modelo": 1
+     },
+     "variante": "Instrução Normativa AGENERSA/CD nº 19/2011, art. 1º, § 2º"
+    },
+    {
+     "disp_id": "IN:19/2011:art2:I",
+     "rotulo": "Instrução Normativa AGENERSA nº 19/2011, art. 2º, inciso I",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:19/2011:art2:III",
+     "rotulo": "Instrução Normativa AGENERSA nº 19/2011, art. 2º, inciso III",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "RES:676/2019",
+   "rotulo": "Resolução AGENERSA nº 676/2019",
+   "tipo": "resolucao",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 8,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "RES:676/2019",
+     "rotulo": "Resolução AGENERSA nº 676/2019",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 8,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "LINDB",
+   "rotulo": "LINDB — Lei de Introdução às Normas do Direito Brasileiro",
+   "tipo": "lei",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 7,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "LINDB:art22:P2",
+     "rotulo": "LINDB — Lei de Introdução às Normas do Direito Brasileiro, art. 22, § 2º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 6,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "LINDB:art20",
+     "rotulo": "LINDB — Lei de Introdução às Normas do Direito Brasileiro, art. 20",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "DEC:45344/2015",
+   "rotulo": "Decreto nº 45.344/2015",
+   "tipo": "decreto",
+   "pecas": 2,
+   "deliberacoes_do_tipo": 4,
+   "texto": {
+    "titulo": "Decreto nº 45.344, de 17 de agosto de 2015.",
+    "txt": "data/txt/biblioteca/legislacao-e-normas-tecnicas/TEXTODECRETO45344.txt",
+    "tabela": "normativo"
+   },
+   "dispositivos": [
+    {
+     "disp_id": "DEC:45344/2015:art3:IX",
+     "rotulo": "Decreto nº 45.344/2015, art. 3º, inciso IX",
+     "pecas": 1,
+     "processos": 1,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {
+      "fora_do_modelo": 1
+     },
+     "variante": "Decreto nº 45.344/2015, art. 3º, inciso IX"
+    },
+    {
+     "disp_id": "DEC:45344/2015:art17:I",
+     "rotulo": "Decreto nº 45.344/2015, art. 17, inciso I",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "DEC:45344/2015:art2:IX",
+     "rotulo": "Decreto nº 45.344/2015, art. 2º, inciso IX",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "DEC:45344/2015:art3:I",
+     "rotulo": "Decreto nº 45.344/2015, art. 3º, inciso I",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "DEC:45344/2015:art3:VI",
+     "rotulo": "Decreto nº 45.344/2015, art. 3º, inciso VI",
+     "pecas": 1,
+     "processos": 1,
+     "deliberacoes_do_tipo": 0,
+     "atividades": {
+      "fora_do_modelo": 1
+     },
+     "variante": "Decreto nº 45.344/2015, art. 3º, inciso VI"
+    }
+   ]
+  },
+  {
+   "raiz": "IN:66/2016",
+   "rotulo": "Instrução Normativa AGENERSA nº 66/2016",
+   "tipo": "instrucao_normativa",
+   "pecas": 2,
+   "deliberacoes_do_tipo": 4,
+   "texto": {
+    "titulo": "Cedae - fiscalização e penalidades",
+    "txt": "data/txt/biblioteca/instrucoesnormativas/IN66_0.txt",
+    "tabela": "normativo"
+   },
+   "dispositivos": [
+    {
+     "disp_id": "IN:66/2016",
+     "rotulo": "Instrução Normativa AGENERSA nº 66/2016",
+     "pecas": 1,
+     "processos": 1,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {
+      "fora_do_modelo": 1
+     },
+     "variante": "Instrução Normativa AGENERSA nº 066/2016"
+    },
+    {
+     "disp_id": "IN:66/2016:art15:I",
+     "rotulo": "Instrução Normativa AGENERSA nº 66/2016, art. 15, inciso I",
+     "pecas": 1,
+     "processos": 1,
+     "deliberacoes_do_tipo": 0,
+     "atividades": {
+      "fora_do_modelo": 1
+     },
+     "variante": "Instrução Normativa AGENERSA/CD nº 66/2016, arts. 15, inciso I, 18, inciso I e 22, inciso IV"
+    },
+    {
+     "disp_id": "IN:66/2016:art15:II",
+     "rotulo": "Instrução Normativa AGENERSA nº 66/2016, art. 15, inciso II",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:66/2016:art19:VIII",
+     "rotulo": "Instrução Normativa AGENERSA nº 66/2016, art. 19, inciso VIII",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:66/2016:art2:PU:I",
+     "rotulo": "Instrução Normativa AGENERSA nº 66/2016, art. 2º, parágrafo único, inciso I",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "IN:7/2007",
+   "rotulo": "Instrução Normativa AGENERSA nº 7/2007",
+   "tipo": "instrucao_normativa",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 6,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "IN:7/2007:art6:P2",
+     "rotulo": "Instrução Normativa AGENERSA nº 7/2007, art. 6º, § 2º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 5,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:7/2007",
+     "rotulo": "Instrução Normativa AGENERSA nº 7/2007",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "RES:774/2021",
+   "rotulo": "Resolução AGENERSA nº 774/2021",
+   "tipo": "resolucao",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 6,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "RES:774/2021",
+     "rotulo": "Resolução AGENERSA nº 774/2021",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 6,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "ABNT:NBR12962",
+   "rotulo": "ABNT NBR 12962",
+   "tipo": "norma_tecnica",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 5,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "ABNT:NBR12962",
+     "rotulo": "ABNT NBR 12962",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 5,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "DELIB:23/2006",
+   "rotulo": "Deliberação AGENERSA nº 23/2006",
+   "tipo": "deliberacao",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 5,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "DELIB:23/2006",
+     "rotulo": "Deliberação AGENERSA nº 23/2006",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 4,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "DELIB:23/2006:art1",
+     "rotulo": "Deliberação AGENERSA nº 23/2006, art. 1º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "IN:14/2010",
+   "rotulo": "Instrução Normativa AGENERSA nº 14/2010",
+   "tipo": "instrucao_normativa",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 5,
+   "texto": {
+    "titulo": "Dispõe sobre a competência para emissão de auto de infração relativo às penalidades aplicadas pelo conselho-diretor em processos regulatórios.",
+    "txt": "data/txt/biblioteca/instrucoesnormativas/IN14_0.txt",
+    "tabela": "normativo"
+   },
+   "dispositivos": [
+    {
+     "disp_id": "IN:14/2010",
+     "rotulo": "Instrução Normativa AGENERSA nº 14/2010",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 5,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "LEI:13655/2018",
+   "rotulo": "Lei nº 13.655/2018",
+   "tipo": "lei",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 5,
+   "texto": {
+    "titulo": "Lei Federal nº 13.655, de 2018",
+    "txt": "data/txt/legislacao_externa/LEI-13655-2018.txt",
+    "tabela": "legislacao_externa"
+   },
+   "dispositivos": [
+    {
+     "disp_id": "LEI:13655/2018",
+     "rotulo": "Lei nº 13.655/2018",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 3,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "LEI:13655/2018:art20",
+     "rotulo": "Lei nº 13.655/2018, art. 20",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "LEI:13655/2018:art20:PU",
+     "rotulo": "Lei nº 13.655/2018, art. 20, parágrafo único",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "LEI:6890/2014",
+   "rotulo": "Lei nº 6.890/2014",
+   "tipo": "lei",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 5,
+   "texto": {
+    "titulo": "Lei nº 6890 de 18 de setembro de 2014",
+    "txt": "data/txt/biblioteca/legislacao-e-normas-tecnicas/LEI6890-2014.txt",
+    "tabela": "normativo"
+   },
+   "dispositivos": [
+    {
+     "disp_id": "LEI:6890/2014",
+     "rotulo": "Lei nº 6.890/2014",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 4,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "LEI:6890/2014:art1:P3",
+     "rotulo": "Lei nº 6.890/2014, art. 1º, § 3º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "RES:673/2019",
+   "rotulo": "Resolução AGENERSA nº 673/2019",
+   "tipo": "resolucao",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 5,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "RES:673/2019",
+     "rotulo": "Resolução AGENERSA nº 673/2019",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 5,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "RI:AGENERSA",
+   "rotulo": "Regimento Interno da AGENERSA",
+   "tipo": "regimento",
+   "pecas": 1,
+   "deliberacoes_do_tipo": 4,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "RI:AGENERSA:art17",
+     "rotulo": "Regimento Interno da AGENERSA, art. 17",
+     "pecas": 1,
+     "processos": 1,
+     "deliberacoes_do_tipo": 0,
+     "atividades": {
+      "t7": 1
+     },
+     "variante": "Regimento Interno da AGENERSA, art. 17"
+    },
+    {
+     "disp_id": "RI:AGENERSA:art27:III",
+     "rotulo": "Regimento Interno da AGENERSA, art. 27, inciso III",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "RI:AGENERSA:art48",
+     "rotulo": "Regimento Interno da AGENERSA, art. 48",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "RI:AGENERSA:art50",
+     "rotulo": "Regimento Interno da AGENERSA, art. 50",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "RI:AGENERSA:art53:P1",
+     "rotulo": "Regimento Interno da AGENERSA, art. 53, § 1º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "IN:7/2009",
+   "rotulo": "Instrução Normativa AGENERSA nº 7/2009",
+   "tipo": "instrucao_normativa",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 4,
+   "texto": {
+    "titulo": "Dispõe sobre os procedimentos a serem adotados pela Agência Reguladora de Energia e Saneamento Básico do Estado do Rio de Janeiro – Agenersa, nas ações de fiscalização das obrigações legais e contratuais das concessionárias Águas de Juturnaíba e Prolagos e na aplicação de penalidades àquelas concessionárias, quando for o caso.",
+    "txt": "data/txt/biblioteca/instrucoesnormativas/IN07_0.txt",
+    "tabela": "normativo"
+   },
+   "dispositivos": [
+    {
+     "disp_id": "IN:7/2009",
+     "rotulo": "Instrução Normativa AGENERSA nº 7/2009",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:7/2009:art14:II",
+     "rotulo": "Instrução Normativa AGENERSA nº 7/2009, art. 14, inciso II",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "IN:7/2009:art24:I:ALg",
+     "rotulo": "Instrução Normativa AGENERSA nº 7/2009, art. 24, inciso I, alínea g",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "LEI:4556/2005",
+   "rotulo": "Lei nº 4.556/2005",
+   "tipo": "lei",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 4,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "LEI:4556/2005:art3:I",
+     "rotulo": "Lei nº 4.556/2005, art. 3º, inciso I",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "LEI:4556/2005",
+     "rotulo": "Lei nº 4.556/2005",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "LEI:4556/2005:art2",
+     "rotulo": "Lei nº 4.556/2005, art. 2º",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "NORMA",
+   "rotulo": "Norma Técnica nº 813-BRA",
+   "tipo": "norma_tecnica",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 4,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "NORMA:813-BRA",
+     "rotulo": "Norma Técnica nº 813-BRA",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 3,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "NORMA:PE.00084.GN-DG",
+     "rotulo": "Norma PE.00084.GN-DG",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "NR:23",
+   "rotulo": "Norma Regulamentadora NR-23",
+   "tipo": "norma_tecnica",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 4,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "NR:23:ITEM23.14.2",
+     "rotulo": "Norma Regulamentadora NR-23, item 23.14.2",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 4,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "NR:6",
+   "rotulo": "Norma Regulamentadora NR-6",
+   "tipo": "norma_tecnica",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 4,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "NR:6",
+     "rotulo": "Norma Regulamentadora NR-6",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 4,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "RES:606/2017",
+   "rotulo": "Resolução AGENERSA nº 606/2017",
+   "tipo": "resolucao",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 4,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "RES:606/2017",
+     "rotulo": "Resolução AGENERSA nº 606/2017",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 4,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "ABNT:NBR12712",
+   "rotulo": "ABNT NBR 12712",
+   "tipo": "norma_tecnica",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 3,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "ABNT:NBR12712",
+     "rotulo": "ABNT NBR 12712",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 3,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "ABNT:NBR15526",
+   "rotulo": "ABNT NBR 15526",
+   "tipo": "norma_tecnica",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 3,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "ABNT:NBR15526",
+     "rotulo": "ABNT NBR 15526",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 3,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "COD:CDC",
+   "rotulo": "Código (CDC)",
+   "tipo": "codigo",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 3,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "COD:CDC:art22",
+     "rotulo": "Código (CDC), art. 22",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "COD:CDC:art6:I",
+     "rotulo": "Código (CDC), art. 6º, inciso I",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "COD:CDC:art6:X",
+     "rotulo": "Código (CDC), art. 6º, inciso X",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "DEC:23317/1997",
+   "rotulo": "Decreto nº 23.317/1997",
+   "tipo": "decreto",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 3,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "DEC:23317/1997",
+     "rotulo": "Decreto nº 23.317/1997",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "DEC:23317/1997:ITEM29",
+     "rotulo": "Decreto nº 23.317/1997, item 29",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "LEI:13665/2018",
+   "rotulo": "Lei nº 13.665/2018",
+   "tipo": "lei",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 3,
+   "texto": {
+    "titulo": "Lei Federal nº 13.665, de 2018 — Autoriza o Poder Executivo a desapropriar, em favor da União, o imóvel que especifica, cujo domínio direto pertence ao Estado do Rio Grande do Sul.",
+    "txt": "data/txt/legislacao_externa/LEI-13665-2018.txt",
+    "tabela": "legislacao_externa"
+   },
+   "dispositivos": [
+    {
+     "disp_id": "LEI:13665/2018",
+     "rotulo": "Lei nº 13.665/2018",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 3,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "NT:905/BRA",
+   "rotulo": "NT-905/BRA",
+   "tipo": "norma_tecnica",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 3,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "NT:905/BRA",
+     "rotulo": "NT-905/BRA",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 3,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "ABNT:NBR13434",
+   "rotulo": "ABNT NBR 13434",
+   "tipo": "norma_tecnica",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 2,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "ABNT:NBR13434",
+     "rotulo": "ABNT NBR 13434",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "ABNT:NBR5426",
+   "rotulo": "ABNT NBR 5426",
+   "tipo": "norma_tecnica",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 2,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "ABNT:NBR5426",
+     "rotulo": "ABNT NBR 5426",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 2,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  },
+  {
+   "raiz": "CGF",
+   "rotulo": "Condições Gerais de Fornecimento",
+   "tipo": "clausula_contratual",
+   "pecas": 0,
+   "deliberacoes_do_tipo": 2,
+   "texto": null,
+   "dispositivos": [
+    {
+     "disp_id": "CGF:CL5:ITEM5.2",
+     "rotulo": "Cláusula Quinta do Condições Gerais de Fornecimento, item 5.2",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    },
+    {
+     "disp_id": "CGF:CL7:ITEM7.2",
+     "rotulo": "Cláusula Sétima do Condições Gerais de Fornecimento, item 7.2",
+     "pecas": 0,
+     "processos": 0,
+     "deliberacoes_do_tipo": 1,
+     "atividades": {},
+     "variante": null
+    }
+   ]
+  }
+ ],
+ "citacoes_nao_mapeadas": [
+  {
+   "texto": "Decreto Federal nº 7.217/2010",
+   "pecas": 34,
+   "processos": 1
+  },
+  {
+   "texto": "Resoluções do CONAMA",
+   "pecas": 32,
+   "processos": 1
+  },
+  {
+   "texto": "normas técnicas da ABNT",
+   "pecas": 23,
+   "processos": 1
+  },
+  {
+   "texto": "Portarias do Ministério da Saúde e da Vigilância Sanitária",
+   "pecas": 21,
+   "processos": 1
+  },
+  {
+   "texto": "Portarias do Ministério da Saúde e Vigilância Sanitária",
+   "pecas": 11,
+   "processos": 1
+  },
+  {
+   "texto": "Resoluções editadas pela AGENERSA",
+   "pecas": 11,
+   "processos": 1
+  },
+  {
+   "texto": "artigos do Contrato de Concessão",
+   "pecas": 11,
+   "processos": 1
+  },
+  {
+   "texto": "normativas técnicas da ABNT",
+   "pecas": 9,
+   "processos": 1
+  },
+  {
+   "texto": "Contrato de Concessão dos Serviços Públicos de Fornecimento de Água e Esgotamento Sanitário nos Municípios do Bloco 1",
+   "pecas": 4,
+   "processos": 1
+  },
+  {
+   "texto": "normas editadas pela AGENERSA (sem número no texto)",
+   "pecas": 3,
+   "processos": 1
+  },
+  {
+   "texto": "resoluções editadas pela AGENERSA",
+   "pecas": 3,
+   "processos": 1
+  },
+  {
+   "texto": "Leis nº 11.445/2007 e nº 14.026/2020",
+   "pecas": 2,
+   "processos": 1
+  },
+  {
+   "texto": "Portaria AGENERSA N° 746 - 19 de julho de 2022",
+   "pecas": 2,
+   "processos": 1
+  },
+  {
+   "texto": "Resoluções da AGENERSA (texto: aquelas editas pela AGENERSA)",
+   "pecas": 2,
+   "processos": 1
+  },
+  {
+   "texto": "artigos do Contrato de Concessão (sem numeração no texto)",
+   "pecas": 2,
+   "processos": 1
+  },
+  {
+   "texto": "resoluções do CONAMA",
+   "pecas": 2,
+   "processos": 1
+  },
+  {
+   "texto": "ABNT NBR 12208:2020",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Anexo III – Indicadores de Desempenho",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Anexo IV – Caderno de Encargos",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Contrato de Concessão (artigos não numerados no texto)",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Contrato de Concessão, cláusula 25.5.6 (citada pela Concessionária)",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Contrato de Concessão, cláusulas 23.1.4 a 23.1.7",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Contrato de Concessão, item 25.2",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Decreto Estadual nº 38.618/2005, art. 10, caput e inciso I",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Decreto nº 45.344/15, arts. 2º caput e 3º inciso I",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Deliberação AGENERSA Nº. 4534, de 26 de Janeiro de 2023",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Deliberação AGENERSA nº 4.064, de 30/01/2020",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Deliberação AGENERSA nº 4.069/2020",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Deliberação AGENERSA nº 4.111/2020, mantida pela Deliberação nº 4.150/2020",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Deliberação AGENERSA nº 4.216/2021",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Deliberação Nº 4216/2021",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Instrução Normativa AGENERSA/CD nº 66/2016, art. 21, inciso I",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Instrução Normativa CODIR nº 128/2024, arts. 1º, 2º e 3º",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Lei Estadual nº 4.556/2005, art. 4º, incisos I, IV e VI",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Lei Estadual nº 5.427/2009, art. 71, inciso IV",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Lei Federal nº 11.445/2007, art. 3º, III, c/c art. 11, §2º, II (citada pela Concessionária)",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Lei nº 8.987/1995, arts. 6º, parágrafo primeiro, e 31, incisos I e IV",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Marco Legal do Saneamento Básico (citado pela CASAN)",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Marco Legal do Saneamento Básico, art. 11, II",
+   "pecas": 1,
+   "processos": 1
+  },
+  {
+   "texto": "Marco Legal do Saneamento Básico, art. 23",
+   "pecas": 1,
+   "processos": 1
+  }
+ ],
+ "contratos": [
+  {
+   "concessionaria_canonica": "CEG",
+   "id_canonico": "ADITIVO-3-CEG/2014",
+   "tipo": "aditivo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "CEG",
+   "id_canonico": "DOC-CEG-TERMO-DE-ACORDO-EXTRAJUDICIA/2024",
+   "tipo": "acordo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "CEG Rio",
+   "id_canonico": "ADITIVO-3-CEG-RIO/2014",
+   "tipo": "aditivo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "CEG Rio",
+   "id_canonico": "DOC-CEG-TERMO-DE-ACORDO-EXTRAJUDICIA/2024",
+   "tipo": "acordo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "Águas da Condessa",
+   "id_canonico": "DOC-CONDESSA-ACORDO-DE-COOPERACAO-TECNICA/2022",
+   "tipo": "acordo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "Águas da Condessa",
+   "id_canonico": "ADITIVO-2-CONDESSA/2023",
+   "tipo": "aditivo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "Águas de Paraty",
+   "id_canonico": "ADITIVO-3-PARATY/2024",
+   "tipo": "aditivo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "Águas de Juturnaíba",
+   "id_canonico": "ADITIVO-9-CAJ/2023",
+   "tipo": "aditivo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "Prolagos",
+   "id_canonico": "ADITIVO-4-PROLAGOS/2018",
+   "tipo": "aditivo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "Águas de Pádua",
+   "id_canonico": "ADITIVO-3-PADUA/2024",
+   "tipo": "aditivo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "Águas da Imperatriz",
+   "id_canonico": "ADITIVO-1-IMPERATRIZ/2023",
+   "tipo": "aditivo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "Rio+Saneamento",
+   "id_canonico": "ADITIVO-1-RIOMAIS/2022",
+   "tipo": "aditivo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "Águas do Rio",
+   "id_canonico": "ADITIVO-1-ADR4/2021",
+   "tipo": "aditivo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "Iguá Saneamento",
+   "id_canonico": "ADITIVO-1-IGUA/2021",
+   "tipo": "aditivo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "Cedae",
+   "id_canonico": "ADITIVO-1-CEDAE/2024~ea54c8",
+   "tipo": "aditivo",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "Centro Sul",
+   "id_canonico": "CONTRATO-CENTROSUL/2016",
+   "tipo": "contrato",
+   "vigente": 1
+  },
+  {
+   "concessionaria_canonica": "Vale do Café",
+   "id_canonico": "CONTRATO-CONVALE/2016",
+   "tipo": "contrato",
+   "vigente": 1
+  }
+ ]
+}

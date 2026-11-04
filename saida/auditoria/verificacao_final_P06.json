@@ -1,0 +1,624 @@
+{
+  "codigo": "P06",
+  "afirmacoes": [
+    {
+      "bloco": "sintese",
+      "texto": "Estudo de caso de 1 processo, o único do código na carteira",
+      "veredito": "correta",
+      "fonte": "fatos_P06 carteira.processos=1; coorte.casos=1",
+      "comentario": ""
+    },
+    {
+      "bloco": "sintese",
+      "texto": "com trilha nativa do SEI",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.trilha.nativa=1",
+      "comentario": ""
+    },
+    {
+      "bloco": "sintese",
+      "texto": "toda mediana citada é a de um único caso nativo",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.casos=1; procedimento_P06 casos=1",
+      "comentario": "Os n maiores que 1 (ex.: t2, n=8) são ocorrências dentro do mesmo caso, não casos distintos."
+    },
+    {
+      "bloco": "sintese",
+      "texto": "O processo está aberto",
+      "veredito": "correta",
+      "fonte": "fichas_P06 processo.casos (ainda em andamento); fichas_P06 t8.obs",
+      "comentario": ""
+    },
+    {
+      "bloco": "sintese",
+      "texto": "o lead time de 636 du vai do início ao último andamento e ainda pode crescer",
+      "veredito": "correta",
+      "fonte": "fatos_P06 definicoes.lead; carteira.lead_mediano_nativos=636",
+      "comentario": ""
+    },
+    {
+      "bloco": "sintese",
+      "texto": "o último ato coletado, o ofício de ciência do parecer jurídico, é um fim provisório",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t8.obs ('Última peça coletada; segue em andamento')",
+      "comentario": "Leitura consistente com o status em andamento."
+    },
+    {
+      "bloco": "sintese",
+      "texto": "O trabalho está concentrado no ciclo de vistorias e relatórios da CASAN",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t2.*.horas_piso somam 274,0 h de 319,2 h (86%); fichas_P06 t2.trabalho_h piso=274.0",
+      "comentario": ""
+    },
+    {
+      "bloco": "sintese",
+      "texto": "espera de 106 du antes do parecer técnico e de 205 du antes do parecer jurídico",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t4.1.espera_antes=106; critico.t7.1.espera_antes=205",
+      "comentario": ""
+    },
+    {
+      "bloco": "sintese",
+      "texto": "a espera entre atividades tem mediana de 552 du",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.caso.espera_entre_atividades.mediana=552",
+      "comentario": ""
+    },
+    {
+      "bloco": "sintese",
+      "texto": "a execução das atividades, mediana de 84 du",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.caso.execucao_atividades.mediana=84",
+      "comentario": ""
+    },
+    {
+      "bloco": "sintese",
+      "texto": "horas de 319,2 h a 477 h no caso nativo, piso e teto da mediana",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.caso.horas_piso.mediana=319.2; coorte.caso.horas_teto.mediana=477.0",
+      "comentario": "fichas_P06 arredonda (320,0 h e 477,6 h); a avaliação usa os valores de fatos_P06, coerentes com a definição."
+    },
+    {
+      "bloco": "sintese",
+      "texto": "As horas são estimativa pelo conteúdo das peças, hipótese a calibrar",
+      "veredito": "correta",
+      "fonte": "fatos_P06 definicoes.horas; fichas_P06 lacunas ('Tempo de trabalho estimado pelo conteúdo, não medido')",
+      "comentario": ""
+    },
+    {
+      "bloco": "sintese",
+      "texto": "Nenhuma peça da concessionária foi coletada",
+      "veredito": "correta",
+      "fonte": "saida/bpmn/docs_P06.csv: 74 de 75 documentos com autoria 'agenersa'; o único 'externa' é a deliberação (compilação do DOE)",
+      "comentario": ""
+    },
+    {
+      "bloco": "sintese",
+      "texto": "a auditoria às cegas do rótulo de atividade não avaliou peças substantivas",
+      "veredito": "contradita",
+      "fonte": "saida/auditoria/auditoria_fichas.json (30 documentos de SEI-480002/001314/2024, com verificação do campo 'tarefa' e itens de Relatórios de Fiscalização e do Parecer 250); saida/auditoria/reclassificacao_cega.csv (1 linha, nível de processo)",
+      "comentario": "A auditoria cega existe para este processo e cobre peças substantivas (relatórios de 7 a 9 laudas, Parecer 250, despachos). O único artefato de classificação às cegas é de nível de processo. O texto não corresponde aos arquivos. Corrigir a frase."
+    },
+    {
+      "bloco": "leitura_metricas",
+      "texto": "O lead time é de 636 du até o último andamento (mediana do único caso nativo, igual à da carteira dos nativos)",
+      "veredito": "correta",
+      "fonte": "fatos_P06 carteira.lead_mediano_nativos=636; coorte.caso.lead.mediana=636",
+      "comentario": ""
+    },
+    {
+      "bloco": "leitura_metricas",
+      "texto": "o lead time é provisório, porque o processo está aberto",
+      "veredito": "correta",
+      "fonte": "fichas_P06 processo.casos (em andamento)",
+      "comentario": "Inferência coerente com o status."
+    },
+    {
+      "bloco": "leitura_metricas",
+      "texto": "a eficiência do ciclo fica entre 8,4% e 12,5%",
+      "veredito": "correta",
+      "fonte": "fichas_P06 processo.casos[0].pce_pct='8.4–12.5'; fórmula em scripts/fichas_atividades.py (piso/teto ÷ (lead × 6 h))",
+      "comentario": "Valor não consta em fatos_P06; conferido na ficha e na fórmula."
+    },
+    {
+      "bloco": "leitura_metricas",
+      "texto": "89% do tempo está em espera dominante",
+      "veredito": "correta",
+      "fonte": "fichas_P06 processo.casos[0].pct_tempo_espera_dominante=89",
+      "comentario": "Valor não consta em fatos_P06; conferido na ficha."
+    },
+    {
+      "bloco": "leitura_metricas",
+      "texto": "no parecer técnico o piso estimado (24,2 h) supera o teto (11,9 h)",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t4.1.horas_piso=24.2; critico.t4.1.horas_teto=11.9",
+      "comentario": ""
+    },
+    {
+      "bloco": "leitura_metricas",
+      "texto": "O tempo de terceiros aparece como 0 du",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.caso.terceiros.mediana=0",
+      "comentario": ""
+    },
+    {
+      "bloco": "leitura_metricas",
+      "texto": "o indeterminado como 182 du",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.caso.indeterminado.mediana=182",
+      "comentario": ""
+    },
+    {
+      "bloco": "leitura_metricas",
+      "texto": "como as respostas e a manifestação da concessionária não estão entre as peças coletadas, o zero não significa resposta imediata",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t2/t4/t6 obs; docs_P06.csv",
+      "comentario": ""
+    },
+    {
+      "bloco": "leitura_metricas",
+      "texto": "o tempo da concessionária fica misturado às esperas e ao indeterminado",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.caso.terceiros.mediana=0 e ausência de peças da concessionária",
+      "comentario": "Inferência metodológica coerente."
+    },
+    {
+      "bloco": "leitura_metricas",
+      "texto": "O caso tem 12 ofícios",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.caso.oficios.mediana=12; docs_P06.csv (12 ofícios)",
+      "comentario": ""
+    },
+    {
+      "bloco": "leitura_metricas",
+      "texto": "1 retorno a unidade já visitada",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.caso.retornos.mediana=1",
+      "comentario": ""
+    },
+    {
+      "bloco": "leitura_metricas",
+      "texto": "3 unidades ativas (CASAN, Secretaria Executiva e Procuradoria)",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.caso.unidades_ativas.mediana=3; posse CASAN/SCEXEC/PROC",
+      "comentario": ""
+    },
+    {
+      "bloco": "gargalo",
+      "texto": "A maior espera antes de uma atividade é a do parecer jurídico, de 205 du",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t7.1.espera_antes=205 (maior entre todas as ocorrências)",
+      "comentario": ""
+    },
+    {
+      "bloco": "gargalo",
+      "texto": "dos quais 203 du com a Procuradoria e 2 du com a Secretaria Executiva",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t7.1.espera_antes.PROC=203; .SCEXEC=2",
+      "comentario": ""
+    },
+    {
+      "bloco": "gargalo",
+      "texto": "A segunda maior é a do parecer técnico, de 106 du sem nenhuma unidade com o processo aberto",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t4.1.espera_antes.SEM UNIDADE=106",
+      "comentario": ""
+    },
+    {
+      "bloco": "gargalo",
+      "texto": "intervalo que provavelmente inclui o prazo de resposta da concessionária",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t4.obs (respostas não juntadas); fatos_P06 coorte.t2.perda.prazo_concedido=1",
+      "comentario": "Hipótese declarada como provável e a confirmar. Não há prazo de resposta extraído por intervalo nos fatos."
+    },
+    {
+      "bloco": "gargalo",
+      "texto": "Depois do parecer técnico vêm mais 55 du com a Secretaria Executiva antes da comunicação de ciência, peça estimada em 0,4 h",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t5.1.espera_antes.SCEXEC=55; critico.t5.1.horas_piso=0.4",
+      "comentario": ""
+    },
+    {
+      "bloco": "gargalo",
+      "texto": "26 du antes da reanálise da CASAN",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t6.1.espera_antes=26 (SEM UNIDADE 24; CASAN 2)",
+      "comentario": ""
+    },
+    {
+      "bloco": "gargalo",
+      "texto": "24,2 h no piso do parecer técnico e de 6 h a 12,7 h no parecer jurídico",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t4.1.horas_piso=24.2; critico.t7.1.horas_piso=6.0; critico.t7.1.horas_teto=12.7",
+      "comentario": ""
+    },
+    {
+      "bloco": "gargalo",
+      "texto": "o Parecer 759 leva número de 2025, mas sua data no SEI é o mesmo dia do ofício de ciência",
+      "veredito": "correta",
+      "fonte": "saida/bpmn/docs_P06.csv: Parecer 759 data_inclusao=2026-08-28 = Ofício - NA 2606 (2026-08-28); número 759/2025 em dados/relator/extractions.parquet",
+      "comentario": "A data do corpo do parecer é 25/06/2026 (extraction); a afirmação se refere à data SEI, correta."
+    },
+    {
+      "bloco": "gargalo",
+      "texto": "A posse registrada no SEI não prova que a unidade estava trabalhando nem que havia fila",
+      "veredito": "correta",
+      "fonte": "fatos_P06 definicoes.posse",
+      "comentario": "Ressalva metodológica coerente com a definição."
+    },
+    {
+      "bloco": "variabilidade",
+      "texto": "Com um único caso não há dispersão entre casos (1 caminho)",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.n_caminhos=1",
+      "comentario": ""
+    },
+    {
+      "bloco": "variabilidade",
+      "texto": "a espera antes da vistoria vai de q1 2 du a q3 21,8 du (máximo de 28 du, em 8 ocorrências)",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.t2.espera_antes q1=2.0, q3=21.8, max=28.0, n=8",
+      "comentario": ""
+    },
+    {
+      "bloco": "variabilidade",
+      "texto": "a execução vai de q1 0,8 du a q3 8,5 du (máximo de 35 du, no primeiro lote)",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.t2.execucao q1=0.8, q3=8.5, max=35.0; critico.t2.1.execucao=35",
+      "comentario": ""
+    },
+    {
+      "bloco": "variabilidade",
+      "texto": "as horas por ocorrência vão de q1 22,2 h a q3 37,5 h (máximo de 76 h)",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.t2.horas_piso q1=22.2, q3=37.5, max=76.0",
+      "comentario": "Refere-se ao piso, não citado no texto."
+    },
+    {
+      "bloco": "variabilidade",
+      "texto": "As atividades depois do ciclo têm uma ocorrência cada, sem quartis",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.t4..t8 .n=1",
+      "comentario": ""
+    },
+    {
+      "bloco": "variabilidade",
+      "texto": "As causas aparentes são o tamanho de cada lote de relatórios e o calendário de campo, a confirmar",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t1.obs (ofícios de agendamento a partir da metade do ciclo)",
+      "comentario": "Hipótese declarada como a confirmar."
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "Espera: 106 du sem unidade antes do parecer técnico, 55 du com a Secretaria Executiva, 26 du antes da reanálise e 205 du antes do parecer jurídico, 203 du com a Procuradoria",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t4.1.espera_antes.SEM UNIDADE=106; critico.t5.1.espera_antes.SCEXEC=55; critico.t6.1.espera_antes=26; critico.t7.1.espera_antes=205 e .PROC=203",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "Estoque: processo sem nenhuma unidade com ele aberto por 306 du (mediana do único caso nativo), a maior posse",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.posse.SEM UNIDADE.mediana=306 (maior que PROC 203)",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "182 du de tempo indeterminado",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.caso.indeterminado.mediana=182",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "a maior parte das esperas antes de vistoria e de encaminhamento fica sem unidade (28 du e 27 du antes de duas vistorias)",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t2.7.espera_antes.SEM UNIDADE=28; critico.t2.8.espera_antes.SEM UNIDADE=27; fichas_P06 t2.posse_na_espera (SEM UNIDADE 80 du; CASAN 21 du)",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "a reanálise da CASAN, que reitera o Parecer 250, e o parecer jurídico, ambas com sinal de reiteração",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t6 e t7 sinais_perda 'Reiteração'; fatos_P06 coorte.t6.perda.reiteracao=1; coorte.t7.perda.reiteracao=1",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "relatórios de vistoria registram pedido de complementação, prazo concedido e reiteração de exigência (subprodutos da ETA)",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t2.sinais_perda (Pedido de complementação; Prazo concedido; Reiteração: subprodutos da ETA); fatos_P06 coorte.t2.perda.*=1",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "o próprio parecer técnico tem sinal de reiteração ao concluir pelo cumprimento apenas parcial",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t4.sinais_perda 'Reiteração' e conclusoes_de_merito; fatos_P06 coorte.t4.perda.reiteracao=1",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "as respostas, os planos de ação e a manifestação da concessionária não estão juntados entre as peças coletadas",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t4/t6 obs; docs_P06.csv (sem peças da concessionária)",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "os relatórios recorrem a Google Earth e Google Maps para localizar as estações",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t2.fontes_externas ('Google Earth', 'Google Maps')",
+      "comentario": "Não consta em fatos_P06."
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "o parecer técnico consolida, a partir da releitura, os 42 relatórios do ciclo",
+      "veredito": "correta",
+      "fonte": "fichas_P06 processo.insumos ('42 relatórios'); docs_P06.csv (42 Relatórios de Fiscalização); fichas_P06 t4.descritivo",
+      "comentario": "Número fora de fatos_P06; conferido nas fichas."
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "a vistoria com relatório concentra o trabalho do processo, de 274 h a 436,3 h no conjunto das ocorrências",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t2.trabalho_h piso=274.0, teto=436.3; soma das 8 ocorrências em fatos_P06 critico.t2.*.horas_piso=274.0 e horas_teto=436.3",
+      "comentario": "Soma conferida ocorrência a ocorrência."
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "relatórios de estrutura repetida a partir de checklist de conservação, operação e manutenção e de registro fotográfico",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t2.ferramentas e t2.descritivo",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "Cada lote de relatórios e cada pedido de agendamento gera ofício e e-mail próprios",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t1 e t3 (ofícios e e-mail); docs_P06.csv",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "12 ofícios no caso, em 7 encaminhamentos de lote e 2 pedidos de agendamento",
+      "veredito": "imprecisa",
+      "fonte": "fatos_P06 coorte.t3.n=7 ocorrências; coorte.t1.n=2 ocorrências; docs_P06.csv (ofícios de agendamento NA 516, 708, 725 e 757; ciência NA 2606)",
+      "comentario": "Os 12 ofícios são 7 (lotes) + 4 (agendamento) + 1 (ciência). Os '2 pedidos' são ocorrências, que geraram 4 ofícios. A soma 7 + 2 não fecha em 12."
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "o encaminhamento tem execução de mediana de 0 du, mas espera antes de mediana de 6 du",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.t3.execucao.mediana=0; coorte.t3.espera_antes.mediana=6",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "A ciência do parecer técnico e a do parecer jurídico repetem o par comunicação e e-mail",
+      "veredito": "correta",
+      "fonte": "docs_P06.csv (t5: E-mail + Manifestação 55; t8: E-mail + Ofício - NA 2606)",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "a reanálise da CASAN transcreve e reitera as conclusões do Parecer 250 e os argumentos da concessionária",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t6.trabalho_reproduzido ('conclusões do parecer transcritas e reiteradas'; argumentos transcritos e rebatidos)",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "o parecer jurídico adota os fundamentos da CASAN",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t7.trabalho_reproduzido ('adotados pela Procuradoria')",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "o parecer técnico resume obrigações do Contrato de Concessão, do Regulamento de Serviços e do Anexo IV",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t4.trabalho_reproduzido",
+      "comentario": ""
+    },
+    {
+      "bloco": "desperdicios",
+      "texto": "um relatório reproduz as recomendações do Relatório de Fiscalização nº 66/2022 e trechos do Plano Diretor de Abastecimento de Magé",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t2.trabalho_reproduzido (Relatório nº 66/2022; PDA de Magé); dados/relator/extractions.parquet cita o Relatório nº 66/2022",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "No caso, 306 du sem nenhuma unidade, 106 du antes do parecer técnico e 55 du antes da ciência",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.posse.SEM UNIDADE.mediana=306; critico.t4.1.espera_antes=106; critico.t5.1.espera_antes.SCEXEC=55",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "das 662 fiscalizações de 2025 (volume do código)",
+      "veredito": "correta",
+      "fonte": "fichas_P06 processo.inventario.volume ('662 fiscalizações em 2025')",
+      "comentario": "Número fora de fatos_P06; conferido nas fichas."
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "mediana de 6 du antes de cada encaminhamento de lote e de 8,5 du antes de cada agendamento",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.t3.espera_antes.mediana=6; coorte.t1.espera_antes.mediana=8.5",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "mediana de 0,8 h no encaminhamento",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.t3.horas_piso.mediana=0.8",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "Trabalho: menos de uma hora por ofício",
+      "veredito": "imprecisa",
+      "fonte": "fatos_P06 coorte.t3.horas_piso.mediana=0.8; coorte.t3.horas_teto.mediana=1.1",
+      "comentario": "Só o piso (0,8 h) fica abaixo de uma hora. A mediana do teto é 1,1 h."
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "mediana de 31,5 h a 47,2 h por ocorrência de vistoria (único caso nativo, 8 ocorrências)",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.t2.horas_piso.mediana=31.5; coorte.t2.horas_teto.mediana=47.2; n=8",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "espera antes da vistoria, de mediana de 10,5 du no caso nativo",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.t2.espera_antes.mediana=10.5",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "mediana de 1,8 h a 2,3 h por ocorrência de agendamento (2 ocorrências)",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.t1.horas_piso.mediana=1.8; coorte.t1.horas_teto.mediana=2.3; n=2",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "espera antes mediana de 8,5 du e execução mediana de 8 du com máximo de 16 du, na ocorrência em que saíram três ofícios",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.t1.espera_antes.mediana=8.5; coorte.t1.execucao.mediana=8, max=16; fichas_P06 t1 (ocorrência 2024-08-16 a 2024-09-09, execução 16 du); docs_P06.csv (NA 708, 725 e 757 nesse intervalo)",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "t3: mediana de 0,8 h a 1,1 h por ocorrência",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.t3.horas_piso.mediana=0.8; coorte.t3.horas_teto.mediana=1.1",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "espera de máximo de 11 du, em 7 ocorrências (encaminhamento)",
+      "veredito": "correta",
+      "fonte": "fatos_P06 coorte.t3.espera_antes.max=11; .n=7",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "24,2 h (piso) e 11,9 h (teto) estimadas para o parecer técnico",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t4.1.horas_piso=24.2; critico.t4.1.horas_teto=11.9",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "Trabalho de 4 h no piso e 2,3 h no teto (reanálise); espera de 26 du, sendo 24 du sem unidade e 2 du com a CASAN",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t6.1.horas_piso=4.0; horas_teto=2.3; espera_antes=26; SEM UNIDADE=24; CASAN=2",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "Trabalho de 6 h a 12,7 h e espera de 205 du, 203 du com a Procuradoria (parecer jurídico)",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t7.1.horas_piso=6.0; horas_teto=12.7; espera_antes=205; PROC=203",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "Trabalho de 0,8 h a 1 h; espera de 0 du, porque o ofício saiu no mesmo dia do parecer (ciência do parecer jurídico)",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t8.1.espera_antes=0; horas_piso=0.8; horas_teto=1.0; t7 e t8 com início em 2026-08-28",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "Trabalho de 0,4 h na comunicação de ciência do parecer técnico",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t5.1.horas_piso=0.4; horas_teto=0.4",
+      "comentario": ""
+    },
+    {
+      "bloco": "oportunidades",
+      "texto": "Entendimento firmado: 26 du antes da reanálise e 205 du antes do parecer jurídico, com sinal de reiteração nas duas",
+      "veredito": "correta",
+      "fonte": "fatos_P06 critico.t6.1.espera_antes=26; critico.t7.1.espera_antes=205; fichas_P06 sinais_perda 'Reiteração' em t6 e t7",
+      "comentario": ""
+    },
+    {
+      "bloco": "atividades",
+      "texto": "t1 (valor 'necessária sem valor'): agendar a vistoria é logística necessária ao acesso às unidades, sem constatação técnica",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t1.descritivo ('oficia a concessionária para agendar a vistoria')",
+      "comentario": "Juízo de valor coerente com a descrição."
+    },
+    {
+      "bloco": "atividades",
+      "texto": "t2 (agrega valor): a vistoria e o relatório são o núcleo da fiscalização; constatam não conformidades e fixam exigências",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t2.descritivo ('relatório de fiscalização com as não conformidades ... e as recomendações ou exigências')",
+      "comentario": ""
+    },
+    {
+      "bloco": "atividades",
+      "texto": "t2: concentra a maior parte das peças do processo",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t2.obs; t2.n_docs=42 de 75 documentos (docs_P06.csv)",
+      "comentario": ""
+    },
+    {
+      "bloco": "atividades",
+      "texto": "t3: encaminhar relatórios com prazo de manifestação é exigência do contraditório, sem acrescentar constatação",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t3.descritivo (pedido de manifestação em prazo)",
+      "comentario": "A referência ao contraditório é juízo normativo, sem contradito nas fontes."
+    },
+    {
+      "bloco": "atividades",
+      "texto": "t4 (agrega valor): o parecer técnico verifica se as recomendações foram cumpridas e fecha o ciclo com conclusão de mérito",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t4.descritivo e conclusoes_de_merito",
+      "comentario": ""
+    },
+    {
+      "bloco": "atividades",
+      "texto": "t5: dar ciência do parecer à concessionária é ato de comunicação",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t5.obs ('é comunicação da Secretaria à concessionária, não manifestação da regulada')",
+      "comentario": ""
+    },
+    {
+      "bloco": "atividades",
+      "texto": "t6: a reanálise responde à contestação da concessionária e reitera o parecer já emitido",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t6.descritivo; trabalho_reproduzido; sinais_perda 'Reiteração'",
+      "comentario": ""
+    },
+    {
+      "bloco": "atividades",
+      "texto": "t7: controle de legalidade diante do pedido de arquivamento formulado pela concessionária",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t7.descritivo",
+      "comentario": ""
+    },
+    {
+      "bloco": "atividades",
+      "texto": "t8: a ciência do parecer jurídico encaminha as providências à concessionária",
+      "veredito": "correta",
+      "fonte": "fichas_P06 t8.descritivo",
+      "comentario": ""
+    }
+  ],
+  "resumo": {
+    "total": 87,
+    "correta": 84,
+    "imprecisa": 2,
+    "alucinada": 0,
+    "contradita": 1,
+    "pct_alucinacao": 0.0,
+    "pct_imprecisao": 2.3,
+    "aprovado": true
+  }
+}

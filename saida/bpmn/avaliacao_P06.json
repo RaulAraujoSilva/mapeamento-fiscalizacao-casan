@@ -1,0 +1,470 @@
+{
+ "codigo": "P06",
+ "sintese": "Estudo de caso de 1 processo, o único do código na carteira, com trilha nativa do SEI: nada aqui é padrão nem tendência, e toda mediana citada é a de um único caso nativo, portanto instável. O processo está aberto e o último ato coletado, o ofício de ciência do parecer jurídico, é um fim provisório: o lead time de 636 du vai do início ao último andamento e ainda pode crescer. O trabalho está concentrado no ciclo de vistorias e relatórios da CASAN, e o tempo está nas esperas depois do ciclo, de 106 du antes do parecer técnico e de 205 du antes do parecer jurídico; no caso nativo, a espera entre atividades tem mediana de 552 du e a execução das atividades, mediana de 84 du. As horas (de 319,2 h a 477 h no caso nativo, piso e teto da mediana) são estimativa pelo conteúdo das peças, hipótese a calibrar com os servidores. Nenhuma peça da concessionária foi coletada e o rótulo de atividade das peças veio dos vínculos do próprio caso, sem classificador nem auditoria às cegas de rótulo fora do piloto (as fichas de trabalho, estas sim, tiveram amostra auditada), o que limita a leitura das esperas.",
+ "fatos_sintese": [
+  "coorte.casos",
+  "coorte.trilha.nativa",
+  "carteira.processos",
+  "coorte.caso.lead.mediana",
+  "carteira.lead_mediano_nativos",
+  "critico.t4.1.espera_antes",
+  "critico.t7.1.espera_antes",
+  "coorte.caso.espera_entre_atividades.mediana",
+  "coorte.caso.execucao_atividades.mediana",
+  "coorte.caso.horas_piso.mediana",
+  "coorte.caso.horas_teto.mediana"
+ ],
+ "leitura_metricas": "O lead time é de 636 du até o último andamento (mediana do único caso nativo, igual à mediana da carteira dos nativos) e é provisório, porque o processo está aberto. Pelas fichas, a eficiência do ciclo fica entre 8,4% e 12,5% e 89% do tempo está em espera dominante; as horas são hipótese a calibrar, e no parecer técnico o piso estimado (24,2 h) supera o teto (11,9 h), o que mostra que valem só como ordem de grandeza. O tempo de terceiros aparece como 138 du e o indeterminado como 41 du: as respostas da concessionária não estão entre as peças coletadas, por isso a janela de terceiros sai dos prazos que os ofícios e relatórios concederam (limitada ao prazo dado), não da data real da resposta; o indeterminado não se separa de processo parado. O caso tem 12 ofícios, 1 retorno a unidade já visitada e 3 unidades ativas (CASAN, Secretaria Executiva e Procuradoria).",
+ "fatos_leitura_metricas": [
+  "coorte.caso.lead.mediana",
+  "carteira.lead_mediano_nativos",
+  "critico.t4.1.horas_piso",
+  "critico.t4.1.horas_teto",
+  "coorte.caso.terceiros.mediana",
+  "coorte.caso.indeterminado.mediana",
+  "coorte.caso.oficios.mediana",
+  "coorte.caso.retornos.mediana",
+  "coorte.caso.unidades_ativas.mediana"
+ ],
+ "gargalo": {
+  "onde": "Nas esperas entre o fim do ciclo de vistorias e os atos de conclusão, sobretudo antes do parecer jurídico e antes do parecer técnico, e não na vistoria nem na redação dos pareceres. Trata-se de uma restrição de fluxo (falta de marco e de responsável pela etapa seguinte), a confirmar com as unidades, e não de falta de capacidade de uma unidade: a posse registrada no SEI não prova que a unidade estava trabalhando nem que havia fila.",
+  "evidencia": "A maior espera antes de uma atividade é a do parecer jurídico, de 205 du, dos quais 203 du com a Procuradoria e 2 du com a Secretaria Executiva. Isso é posse no SEI: o Parecer 759 leva número de 2025, mas sua data no SEI é o mesmo dia do ofício de ciência, de modo que não se sabe se a Procuradoria analisava, aguardava distribuição ou só juntou a peça depois, e não se conclui fila da Procuradoria. A segunda maior é a do parecer técnico, de 106 du sem nenhuma unidade com o processo aberto, intervalo que provavelmente inclui o prazo de resposta da concessionária, cujas respostas não foram coletadas (a confirmar). Depois do parecer técnico vêm mais 55 du com a Secretaria Executiva antes da comunicação de ciência, peça estimada em 0,4 h, e 26 du antes da reanálise da CASAN. O trabalho estimado das atividades de conclusão é pequeno diante dessas esperas: 24,2 h no piso do parecer técnico e de 6 h a 12,7 h no parecer jurídico, hipótese a calibrar com os servidores.",
+  "atividades": [
+   "t4",
+   "t5",
+   "t6",
+   "t7"
+  ],
+  "fatos_usados": [
+   "critico.t7.1.espera_antes",
+   "critico.t7.1.espera_antes.PROC",
+   "critico.t7.1.espera_antes.SCEXEC",
+   "critico.t7.1.inicio",
+   "critico.t8.1.inicio",
+   "critico.t4.1.espera_antes.SEM UNIDADE",
+   "critico.t5.1.espera_antes.SCEXEC",
+   "critico.t5.1.horas_piso",
+   "critico.t6.1.espera_antes",
+   "critico.t4.1.horas_piso",
+   "critico.t7.1.horas_piso",
+   "critico.t7.1.horas_teto"
+  ]
+ },
+ "variabilidade": "Com um único caso não há dispersão entre casos (1 caminho; toda mediana é a do único caso nativo), e a comparação típico × crítico não se aplica. A dispersão que existe é entre as ocorrências do laço de vistorias dentro do caso: a espera antes da vistoria vai de q1 2 du a q3 21,8 du (máximo de 28 du, em 8 ocorrências), a execução vai de q1 0,8 du a q3 8,5 du (máximo de 35 du, no primeiro lote, o maior) e as horas por ocorrência vão de q1 22,2 h a q3 37,5 h (máximo de 76 h). As causas aparentes são o tamanho de cada lote de relatórios e o calendário de campo, a confirmar com a CASAN. As atividades depois do ciclo têm uma ocorrência cada, sem quartis.",
+ "fatos_variabilidade": [
+  "coorte.n_caminhos",
+  "coorte.t2.espera_antes.q1",
+  "coorte.t2.espera_antes.q3",
+  "coorte.t2.espera_antes.max",
+  "coorte.t2.espera_antes.n",
+  "coorte.t2.execucao.q1",
+  "coorte.t2.execucao.q3",
+  "coorte.t2.execucao.max",
+  "coorte.t2.horas_piso.q1",
+  "coorte.t2.horas_piso.q3",
+  "coorte.t2.horas_piso.max"
+ ],
+ "desperdicios": [
+  {
+   "tipo": "Espera",
+   "evidencia": "Esperas longas depois do ciclo de vistorias, cada uma terminando numa peça curta: 106 du sem unidade antes do parecer técnico, 55 du com a Secretaria Executiva antes da comunicação de ciência (peça estimada em 0,4 h), 26 du antes da reanálise da CASAN e 205 du antes do parecer jurídico, 203 du deles com a Procuradoria. A atribuição por unidade é posse no SEI, não prova de trabalho nem de fila; a parte da espera que é prazo da concessionária não se separa, porque as respostas dela não foram coletadas.",
+   "atividades": [
+    "t4",
+    "t5",
+    "t6",
+    "t7"
+   ],
+   "severidade": "alta",
+   "fatos_usados": [
+    "critico.t4.1.espera_antes.SEM UNIDADE",
+    "critico.t5.1.espera_antes.SCEXEC",
+    "critico.t5.1.horas_piso",
+    "critico.t6.1.espera_antes",
+    "critico.t7.1.espera_antes",
+    "critico.t7.1.espera_antes.PROC"
+   ]
+  },
+  {
+   "tipo": "Estoque",
+   "evidencia": "Processo sem nenhuma unidade com ele aberto por 306 du (mediana do único caso nativo), a maior posse do processo, e 41 du de tempo indeterminado, que não se separa de processo parado. Durante o ciclo, a maior parte das esperas antes de vistoria e de encaminhamento fica sem unidade (por exemplo, 28 du e 27 du antes de duas vistorias), mas ali o processo concluído no SEI pode esconder trabalho de campo feito fora do sistema: só a CASAN pode dizer quanto é estoque e quanto é campo.",
+   "atividades": [
+    "t1",
+    "t2",
+    "t3",
+    "t4",
+    "t6"
+   ],
+   "severidade": "média",
+   "fatos_usados": [
+    "coorte.posse.SEM UNIDADE.mediana",
+    "coorte.caso.indeterminado.mediana",
+    "critico.t2.7.espera_antes.SEM UNIDADE",
+    "critico.t2.8.espera_antes.SEM UNIDADE"
+   ]
+  },
+  {
+   "tipo": "Defeitos/retrabalho",
+   "evidencia": "A contestação da concessionária sobre o alcance da fiscalização (que ela queria limitada aos indicadores de desempenho) abriu duas rodadas depois do parecer técnico: a reanálise da CASAN, que reitera o Parecer 250, e o parecer jurídico, ambas com sinal de reiteração. Os relatórios de vistoria também registram pedido de complementação, prazo concedido e reiteração de exigência (por exemplo, o tratamento dos subprodutos da ETA), e o próprio parecer técnico tem sinal de reiteração ao concluir pelo cumprimento apenas parcial das recomendações.",
+   "atividades": [
+    "t2",
+    "t4",
+    "t6",
+    "t7"
+   ],
+   "severidade": "média",
+   "fatos_usados": [
+    "coorte.t6.perda.reiteracao",
+    "coorte.t7.perda.reiteracao",
+    "coorte.t4.perda.reiteracao",
+    "coorte.t2.perda.pedido_complementacao",
+    "coorte.t2.perda.prazo_concedido",
+    "coorte.t2.perda.reiteracao"
+   ]
+  },
+  {
+   "tipo": "Movimentação",
+   "evidencia": "Busca de informação fora do processo: as respostas, os planos de ação e a manifestação da concessionária que o parecer técnico, a reanálise e o parecer jurídico analisam não estão juntados entre as peças coletadas; os relatórios recorrem a Google Earth e Google Maps para localizar as estações; e o parecer técnico consolida, a partir da releitura, os 42 relatórios do ciclo.",
+   "atividades": [
+    "t2",
+    "t4",
+    "t6",
+    "t7"
+   ],
+   "severidade": "média",
+   "fatos_usados": [
+    "coorte.t4.casos"
+   ]
+  },
+  {
+   "tipo": "Talento não aproveitado",
+   "evidencia": "Especialistas em regulação redigem relatórios de estrutura repetida a partir de checklist de conservação, operação e manutenção e de registro fotográfico; pelas fichas, a vistoria com relatório concentra o trabalho do processo (de 274 h a 436,3 h no conjunto das ocorrências, hipótese a calibrar), parte dele de montagem do texto, e não de constatação técnica.",
+   "atividades": [
+    "t2"
+   ],
+   "severidade": "média",
+   "fatos_usados": [
+    "coorte.t2.horas_piso.n"
+   ]
+  },
+  {
+   "tipo": "Transporte",
+   "evidencia": "Cada lote de relatórios e cada pedido de agendamento gera ofício e e-mail próprios: 12 ofícios no caso, entre encaminhamentos de lote, pedidos de agendamento de vistoria e a ciência do parecer jurídico; o encaminhamento tem execução de mediana de 0 du, mas espera antes de mediana de 6 du (único caso nativo). A ciência do parecer técnico e a do parecer jurídico repetem o par comunicação e e-mail.",
+   "atividades": [
+    "t1",
+    "t3",
+    "t5",
+    "t8"
+   ],
+   "severidade": "baixa",
+   "fatos_usados": [
+    "coorte.caso.oficios.mediana",
+    "coorte.t3.espera_antes.n",
+    "coorte.t1.espera_antes.n",
+    "coorte.t3.execucao.mediana",
+    "coorte.t3.espera_antes.mediana"
+   ]
+  },
+  {
+   "tipo": "Superprodução",
+   "evidencia": "Transcrição de peças anteriores: a reanálise da CASAN transcreve e reitera as conclusões do Parecer 250 e os argumentos da concessionária; o parecer jurídico adota os fundamentos da CASAN; o parecer técnico resume obrigações do Contrato de Concessão, do Regulamento de Serviços e do Anexo IV; e um relatório reproduz as recomendações do Relatório de Fiscalização nº 66/2022 e trechos do Plano Diretor de Abastecimento de Magé da concessionária.",
+   "atividades": [
+    "t2",
+    "t4",
+    "t6",
+    "t7"
+   ],
+   "severidade": "baixa",
+   "fatos_usados": [
+    "coorte.t6.perda.reiteracao"
+   ]
+  }
+ ],
+ "atividades": {
+  "t1": {
+   "valor": "necessária sem valor",
+   "justificativa_valor": "Agendar a vistoria com a concessionária é logística necessária ao acesso às unidades, mas não produz constatação técnica.",
+   "potencial_ia": "médio",
+   "tipos_ia": [
+    "automação de tramitação (RPA no SEI)",
+    "redação assistida de minuta"
+   ],
+   "aplicacao_ia": "Gerar o ofício de agendamento a partir do calendário anual de vistorias (unidades, município, datas) e enviá-lo por e-mail à concessionária com o número do processo, registrando a confirmação recebida.",
+   "ganho_esperado": "Trabalho pequeno: mediana de 1,8 h a 2,3 h por ocorrência (único caso nativo, 2 ocorrências). No único caso nativo, a espera antes tem mediana de 8,5 du e a execução, mediana de 8 du com máximo de 16 du, na ocorrência em que saíram três ofícios; o ganho em espera vem de agendar o ciclo de uma vez, não da IA (a medir).",
+   "controle_humano": "A definição das unidades a vistoriar e das datas e a assinatura do ofício continuam com a gerência da CASAN.",
+   "melhoria_lean": "Enviar à concessionária, no início do ciclo, o calendário anual de vistorias com as unidades e janelas de data, e juntar ao processo a confirmação recebida.",
+   "fatos_usados": [
+    "coorte.t1.horas_piso.mediana",
+    "coorte.t1.horas_teto.mediana",
+    "coorte.t1.espera_antes.n",
+    "coorte.t1.espera_antes.mediana",
+    "coorte.t1.execucao.mediana",
+    "coorte.t1.execucao.max"
+   ]
+  },
+  "t2": {
+   "valor": "agrega valor",
+   "justificativa_valor": "A vistoria e o relatório são o núcleo da fiscalização: constatam as não conformidades e fixam as exigências à concessionária.",
+   "potencial_ia": "alto",
+   "tipos_ia": [
+    "redação assistida de minuta",
+    "verificação de conformidade",
+    "extração de dados de documentos",
+    "busca de precedentes e normas"
+   ],
+   "aplicacao_ia": "A partir do checklist preenchido em campo e das fotos legendadas, montar a minuta do relatório no modelo da CASAN, listar as não conformidades com a base normativa (contrato, normas da ABNT, legislação de saneamento), recuperar as recomendações do relatório anterior da mesma unidade para apontar reincidência e conferir licença de operação e outorga informadas.",
+   "ganho_esperado": "Só tempo de trabalho: mediana de 31,5 h a 47,2 h por ocorrência (único caso nativo, 8 ocorrências), hipótese a calibrar com os servidores. Não reduz espera: a espera antes da vistoria, de mediana de 10,5 du no caso nativo, depende do calendário de campo.",
+   "controle_humano": "A vistoria, a constatação técnica, o juízo sobre a gravidade e a assinatura do relatório continuam com o especialista e a gerência.",
+   "melhoria_lean": "Padronizar o checklist e o modelo de relatório por tipo de unidade (elevatória, estação de tratamento, obra) e emitir o relatório logo após a vistoria, sem esperar o lote.",
+   "fatos_usados": [
+    "coorte.t2.horas_piso.mediana",
+    "coorte.t2.horas_teto.mediana",
+    "coorte.t2.horas_piso.n",
+    "coorte.t2.espera_antes.mediana"
+   ]
+  },
+  "t3": {
+   "valor": "necessária sem valor",
+   "justificativa_valor": "Encaminhar os relatórios com prazo de manifestação é exigência do contraditório, mas não acrescenta constatação.",
+   "potencial_ia": "alto",
+   "tipos_ia": [
+    "automação de tramitação (RPA no SEI)",
+    "monitoramento de prazos e alertas"
+   ],
+   "aplicacao_ia": "Ao ser assinado o relatório, gerar o ofício com a lista de relatórios e o prazo de manifestação, enviar o e-mail à concessionária e abrir o controle do prazo de resposta.",
+   "ganho_esperado": "Trabalho: mediana de 0,8 h a 1,1 h por ocorrência (único caso nativo). Espera: mediana de 6 du antes de cada encaminhamento no único caso nativo (máximo de 11 du, em 7 ocorrências), que o envio automático reduz.",
+   "controle_humano": "A definição do prazo e a assinatura do ofício continuam com a gerência da CASAN.",
+   "melhoria_lean": "Combinar com a emissão do relatório: enviar cada relatório assinado, ou adotar cadência fixa de envio, em vez de lotes de tamanho variável.",
+   "fatos_usados": [
+    "coorte.t3.horas_piso.mediana",
+    "coorte.t3.horas_teto.mediana",
+    "coorte.t3.espera_antes.mediana",
+    "coorte.t3.espera_antes.max",
+    "coorte.t3.espera_antes.n"
+   ]
+  },
+  "t4": {
+   "valor": "agrega valor",
+   "justificativa_valor": "O parecer técnico verifica se as recomendações foram cumpridas e fecha o ciclo anual com uma conclusão de mérito.",
+   "potencial_ia": "alto",
+   "tipos_ia": [
+    "extração de dados de documentos",
+    "cálculo e conferência automática",
+    "sumarização e linha do tempo",
+    "redação assistida de minuta"
+   ],
+   "aplicacao_ia": "Extrair de cada relatório as não conformidades e exigências e, das respostas e planos de ação da concessionária juntados ao processo, o que foi atendido, com prazo e evidência; montar a matriz de cumprimento por unidade e a minuta do parecer a partir dela.",
+   "ganho_esperado": "Trabalho: 24,2 h no piso e 11,9 h no teto (estimativas divergentes, hipótese a calibrar), boa parte para consolidar 42 relatórios. Espera: os 106 du sem unidade antes do parecer são o alvo, com a matriz pronta quando vence o último prazo de resposta; a parte que é prazo da concessionária não se reduz e hoje não se separa (a medir).",
+   "controle_humano": "O juízo sobre o cumprimento, a conclusão do parecer e a concordância do gerente continuam com a CASAN.",
+   "melhoria_lean": "Juntar ao processo as respostas da concessionária à medida que chegam e fixar prazo interno para o parecer após o último prazo de resposta.",
+   "fatos_usados": [
+    "critico.t4.1.horas_piso",
+    "critico.t4.1.horas_teto",
+    "critico.t4.1.espera_antes.SEM UNIDADE"
+   ]
+  },
+  "t5": {
+   "valor": "necessária sem valor",
+   "justificativa_valor": "Dar ciência do parecer à concessionária garante o contraditório, mas é ato de comunicação.",
+   "potencial_ia": "alto",
+   "tipos_ia": [
+    "automação de tramitação (RPA no SEI)",
+    "monitoramento de prazos e alertas"
+   ],
+   "aplicacao_ia": "Gerar a comunicação de ciência e o e-mail assim que o parecer técnico é encaminhado à Secretaria Executiva, no tipo de documento correto, e alertar se a ciência não sair em prazo interno.",
+   "ganho_esperado": "Trabalho de 0,4 h; o que se reduz é a espera de 55 du com a Secretaria Executiva antes da comunicação (posse no SEI, a confirmar se havia outra providência nesse intervalo).",
+   "controle_humano": "A assinatura da comunicação continua com a Secretaria Executiva.",
+   "melhoria_lean": "Prazo interno curto para a ciência e modelo padronizado de comunicação com prazo de manifestação explícito.",
+   "fatos_usados": [
+    "critico.t5.1.horas_piso",
+    "critico.t5.1.espera_antes.SCEXEC"
+   ]
+  },
+  "t6": {
+   "valor": "necessária sem valor",
+   "justificativa_valor": "A reanálise responde à contestação da concessionária e é parte do contraditório, mas reitera o parecer já emitido.",
+   "potencial_ia": "médio",
+   "tipos_ia": [
+    "busca de precedentes e normas",
+    "redação assistida de minuta"
+   ],
+   "aplicacao_ia": "Localizar na manifestação da concessionária os argumentos já enfrentados e trazer os dispositivos do Marco Legal do Saneamento, do Regulamento de Serviços e do Contrato de Concessão que os rebatem, com minuta do despacho para revisão do especialista.",
+   "ganho_esperado": "Trabalho de 4 h no piso e 2,3 h no teto (hipótese). Espera de 26 du antes da reanálise, 24 du sem unidade e 2 du com a CASAN; o ganho em espera depende do alerta de etapa seguinte (a medir).",
+   "controle_humano": "O juízo técnico sobre a contestação e a assinatura do despacho continuam com o especialista e a gerência da CASAN.",
+   "melhoria_lean": "Usar o entendimento já firmado sobre o alcance da fiscalização como referência, sem refazer a argumentação a cada contestação.",
+   "fatos_usados": [
+    "critico.t6.1.horas_piso",
+    "critico.t6.1.horas_teto",
+    "critico.t6.1.espera_antes",
+    "critico.t6.1.espera_antes.SEM UNIDADE",
+    "critico.t6.1.espera_antes.CASAN"
+   ]
+  },
+  "t7": {
+   "valor": "necessária sem valor",
+   "justificativa_valor": "O controle de legalidade diante do pedido de arquivamento dá segurança jurídica à fiscalização, mas não acrescenta constatação técnica.",
+   "potencial_ia": "médio",
+   "tipos_ia": [
+    "sumarização e linha do tempo",
+    "busca de precedentes e normas"
+   ],
+   "aplicacao_ia": "Preparar para o procurador o resumo do processo (relatórios, parecer técnico, contestação e reanálise) e a pesquisa de normas e de pareceres anteriores sobre o alcance da fiscalização.",
+   "ganho_esperado": "Trabalho de 6 h a 12,7 h (hipótese). Espera de 205 du antes do parecer, 203 du com a Procuradoria pela posse no SEI; se foi fila ou trabalho, e quando o parecer foi de fato emitido, está a confirmar, e o ganho em espera fica a medir.",
+   "controle_humano": "A análise jurídica, a conclusão do parecer e a assinatura continuam com o procurador.",
+   "melhoria_lean": "Registrar a data de distribuição ao procurador e a data de assinatura do parecer, para separar fila de trabalho.",
+   "fatos_usados": [
+    "critico.t7.1.horas_piso",
+    "critico.t7.1.horas_teto",
+    "critico.t7.1.espera_antes",
+    "critico.t7.1.espera_antes.PROC"
+   ]
+  },
+  "t8": {
+   "valor": "necessária sem valor",
+   "justificativa_valor": "A ciência do parecer jurídico encaminha as providências à concessionária, mas é ato de comunicação.",
+   "potencial_ia": "alto",
+   "tipos_ia": [
+    "automação de tramitação (RPA no SEI)",
+    "monitoramento de prazos e alertas"
+   ],
+   "aplicacao_ia": "Gerar o ofício de ciência e o e-mail a partir do parecer assinado e abrir o acompanhamento do cumprimento das providências.",
+   "ganho_esperado": "Trabalho de 0,8 h a 1 h; espera de 0 du, porque o ofício saiu no mesmo dia do parecer. O ganho está em fixar prazo e acompanhar o cumprimento, não em tempo.",
+   "controle_humano": "A assinatura do ofício e a decisão sobre as medidas seguintes continuam com a Secretaria Executiva e a Diretoria.",
+   "melhoria_lean": "Fixar no ofício prazo para as providências e prever o ato seguinte (verificação de cumprimento ou encaminhamento sancionador).",
+   "fatos_usados": [
+    "critico.t8.1.horas_piso",
+    "critico.t8.1.horas_teto",
+    "critico.t8.1.espera_antes"
+   ]
+  }
+ },
+ "oportunidades": [
+  {
+   "titulo": "Painel de etapa seguinte e alerta de processo parado",
+   "categoria": "IA + Lean",
+   "descricao": "Painel alimentado pelo andamento do SEI que mostra, para cada processo de fiscalização, o último ato, a unidade com o processo aberto (ou nenhuma), o prazo dado à concessionária no último ofício e a etapa seguinte com responsável, e alerta quando o prazo de resposta vence, quando o parecer técnico é encaminhado sem ciência à concessionária ou quando o processo fica sem unidade além de um limite interno.",
+   "atividades": [
+    "t4",
+    "t5",
+    "t6",
+    "t7"
+   ],
+   "ganho_esperado": "Ataca a espera, não o trabalho: no caso, 306 du sem nenhuma unidade com o processo aberto, 106 du antes do parecer técnico e 55 du antes da ciência. A redução depende de a gestão agir sobre o alerta e de quanto dessas esperas é prazo da concessionária (a medir; estudo de caso de 1 processo).",
+   "impacto": "alto",
+   "esforco": "baixo",
+   "prerequisitos": "Extração periódica do andamento no SEI, inclusive de quem tem o processo aberto (já feita para este mapeamento); prazos internos por etapa e responsável pela etapa seguinte aprovados pela gestão; registro do prazo dado em cada ofício.",
+   "riscos": "Virar relatório sem dono; apontar como parado o processo que está em campo ou aguardando prazo legítimo da concessionária (prever marcação desses estados).",
+   "fatos_usados": [
+    "coorte.posse.SEM UNIDADE.mediana",
+    "critico.t4.1.espera_antes.SEM UNIDADE",
+    "critico.t5.1.espera_antes.SCEXEC",
+    "coorte.casos"
+   ]
+  },
+  {
+   "titulo": "Matriz de não conformidades e de cumprimento por unidade vistoriada",
+   "categoria": "IA + Lean",
+   "descricao": "Cada relatório de fiscalização alimenta uma matriz estruturada (unidade, não conformidade, exigência, prazo, base normativa); a IA extrai esses campos do relatório e, quando a resposta ou o plano de ação da concessionária chega e é juntado ao processo, registra o que foi atendido e o que segue pendente. O parecer técnico de fechamento do ciclo parte da matriz pronta, e não da releitura de 42 relatórios.",
+   "atividades": [
+    "t2",
+    "t3",
+    "t4"
+   ],
+   "ganho_esperado": "Trabalho: parte das 24,2 h (piso) e 11,9 h (teto) estimadas para o parecer técnico, hipótese a calibrar. Espera: com a matriz viva, o parecer pode sair logo depois do último prazo de resposta, em vez dos 106 du sem unidade observados no caso (redução a medir).",
+   "impacto": "alto",
+   "esforco": "médio",
+   "prerequisitos": "Juntar ao processo as respostas e planos de ação da concessionária (hoje não estão entre as peças coletadas); modelo padronizado de relatório com campos identificáveis.",
+   "riscos": "Extração errada de exigência ou de prazo; tomar a resposta formal da concessionária por cumprimento real sem vistoria de verificação.",
+   "fatos_usados": [
+    "critico.t4.1.horas_piso",
+    "critico.t4.1.horas_teto",
+    "critico.t4.1.espera_antes.SEM UNIDADE"
+   ]
+  },
+  {
+   "titulo": "Comunicação padronizada e automática com a concessionária",
+   "categoria": "IA + Lean",
+   "descricao": "Modelos únicos de ofício para agendamento, envio de relatórios, ciência do parecer técnico e ciência do parecer jurídico, com geração e envio automáticos do ofício e do e-mail quando a peça de origem é assinada; calendário anual de vistorias enviado de uma vez; o ofício de ciência do parecer jurídico passa a fixar prazo para as providências.",
+   "atividades": [
+    "t1",
+    "t3",
+    "t5",
+    "t8"
+   ],
+   "ganho_esperado": "Espera curta e repetida: mediana de 6 du antes de cada encaminhamento de lote e de 8,5 du antes de cada agendamento (único caso nativo), além de 55 du antes da ciência do parecer técnico. Trabalho: mediana de 0,8 h no piso e de 1,1 h no teto por encaminhamento (caso nativo).",
+   "impacto": "médio",
+   "esforco": "baixo",
+   "prerequisitos": "Modelos aprovados pela gerência e pela Secretaria Executiva; permissão de automação no SEI; endereço institucional da concessionária confirmado.",
+   "riscos": "Envio a destinatário errado (ver a divergência entre Águas do Rio e Iguá); perda de ajuste caso a caso no texto.",
+   "fatos_usados": [
+    "coorte.t3.espera_antes.mediana",
+    "coorte.t1.espera_antes.mediana",
+    "critico.t5.1.espera_antes.SCEXEC",
+    "coorte.t3.horas_piso.mediana",
+    "coorte.t3.horas_teto.mediana"
+   ]
+  },
+  {
+   "titulo": "Minuta do relatório de fiscalização a partir do checklist de campo",
+   "categoria": "IA",
+   "descricao": "Com o checklist preenchido em campo e as fotos legendadas, a IA monta a minuta do relatório no modelo da CASAN, lista as não conformidades com a base normativa, recupera as recomendações do relatório anterior da mesma unidade para apontar reincidência e confere licença e outorga informadas.",
+   "atividades": [
+    "t2"
+   ],
+   "ganho_esperado": "Só trabalho, não espera: mediana de 31,5 h a 47,2 h por ocorrência de vistoria (único caso nativo, 8 ocorrências), hipótese a calibrar; o efeito na carteira depende de quantas das 662 fiscalizações de 2025 seguem o mesmo modelo de relatório (a medir).",
+   "impacto": "médio",
+   "esforco": "médio",
+   "prerequisitos": "Checklist digital padronizado por tipo de unidade; acervo de relatórios anteriores pesquisável.",
+   "riscos": "Minuta aceita sem revisão; não conformidade vista em campo e não registrada no checklist ficar de fora.",
+   "fatos_usados": [
+    "coorte.t2.horas_piso.mediana",
+    "coorte.t2.horas_teto.mediana",
+    "coorte.t2.horas_piso.n"
+   ]
+  },
+  {
+   "titulo": "Entendimento firmado sobre o alcance da fiscalização",
+   "categoria": "IA + Lean",
+   "descricao": "Registrar o entendimento do Parecer 759 (a fiscalização não se limita aos indicadores de desempenho) como orientação da agência, com busca de precedentes e normas que a CASAN e a Procuradoria consultem quando a mesma tese voltar, e prever a remessa à Procuradoria só quando a contestação trouxer argumento novo. O juízo jurídico continua com a Procuradoria.",
+   "atividades": [
+    "t6",
+    "t7"
+   ],
+   "ganho_esperado": "Evita repetir a rodada de reanálise e de parecer jurídico quando a tese se repetir: no caso, 26 du antes da reanálise e 205 du antes do parecer jurídico, com sinal de reiteração nas duas. Se a tese se repete em outros processos é pergunta de validação (a medir).",
+   "impacto": "médio",
+   "esforco": "médio",
+   "prerequisitos": "Decisão da Diretoria e da Procuradoria sobre registrar o entendimento; acervo de pareceres pesquisável.",
+   "riscos": "Aplicar o entendimento a contestação com argumento novo; parecer de um caso tomado como norma sem ato formal.",
+   "fatos_usados": [
+    "critico.t6.1.espera_antes",
+    "critico.t7.1.espera_antes",
+    "coorte.t6.perda.reiteracao",
+    "coorte.t7.perda.reiteracao"
+   ]
+  }
+ ],
+ "indicadores_sugeridos": [
+  "Dias úteis desde o último ato em processos de fiscalização sem unidade com o processo aberto",
+  "Dias úteis entre o encaminhamento do relatório e a resposta da concessionária, com a resposta juntada ao processo",
+  "Percentual de não conformidades atendidas no prazo, por unidade vistoriada e por ciclo",
+  "Dias úteis entre o parecer técnico e a ciência à concessionária",
+  "Dias úteis entre a distribuição ao procurador e a assinatura do parecer jurídico",
+  "Reincidência: não conformidades repetidas na mesma unidade entre ciclos"
+ ],
+ "perguntas_validacao": [
+  "As peças (ofícios, parecer técnico, ofício de ciência) se dirigem à Águas do Rio – Bloco 1, mas o interessado registrado no SEI é a Concessionária Iguá Rio de Janeiro S.A.: o processo trata da Iguá, da Águas do Rio, ou o interessado está cadastrado errado? Isso muda a qual contrato e a qual bloco as conclusões se aplicam.",
+  "Nenhuma peça da concessionária foi coletada: as respostas aos ofícios, os planos de ação, a manifestação contra o parecer técnico e o pedido de arquivamento só aparecem citados nos pareceres e despachos. Onde estão juntados (processos relacionados, protocolo, e-mail)? Sem eles, o tempo de resposta da concessionária não se mede e fica misturado às esperas.",
+  "O processo está aberto e o último ato coletado é o ofício de ciência do parecer jurídico, sem prazo: o fim do modelo é provisório. Qual ato encerra o ciclo (verificação do cumprimento, processo sancionador, arquivamento, novo ciclo anual)?",
+  "O Parecer 759 leva número de 2025, mas sua data no SEI coincide com a do ofício de ciência: quando foi elaborado e assinado? A posse da Procuradoria antes dele foi fila de distribuição, análise ou espera de assinatura e juntada?",
+  "Os intervalos sem unidade com o processo aberto durante o ciclo de vistorias são trabalho de campo e redação fora do SEI ou processo parado?",
+  "A espera sem unidade antes do parecer técnico inclui quanto do prazo de manifestação dado à concessionária nos ofícios? Houve cobrança das respostas que não foram juntadas?",
+  "O gargalo declarado (esperas entre o fim do ciclo e os atos de conclusão, e não a vistoria) corresponde à percepção da CASAN, da Secretaria Executiva e da Procuradoria?",
+  "Um processo por concessionária e por ciclo anual é a regra? Quantos processos de fiscalização seguem este mesmo fluxo, já que a carteira coletada tem só este?",
+  "A remessa à Procuradoria é obrigatória sempre que a concessionária contesta, ou foi decisão deste caso? A tese de que a fiscalização se limita aos indicadores de desempenho aparece em outros processos?",
+  "As horas estimadas por peça (vistoria e relatório, parecer técnico, parecer jurídico) são compatíveis com o esforço real? São hipótese a calibrar com os servidores.",
+  "A comunicação de ciência do parecer técnico foi registrada com o tipo SEI Manifestação: é praxe usar esse tipo para comunicação da Secretaria à concessionária?"
+ ],
+ "validado_contra": {
+  "fatos_sha": "adb0fd443811ca5f",
+  "data": "2026-11-04 15:10"
+ }
+}

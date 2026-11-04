@@ -1,0 +1,14 @@
+# Dependências dos scripts do pipeline (scripts/) e dos testes (tests/). Instalação: pip install -r requirements.txt
+# Coletor do SEI (coleta/): requirements-coleta.txt. Versões mínimas = as usadas no caso de referência (Python 3.12).
+pandas>=2.2
+numpy>=1.26
+pyarrow>=15.0        # parquet do banco do relator / coletor (dados/relator/*.parquet)
+openpyxl>=3.1        # planilhas Mapeamento_SEI_*.xlsx e leitura de .xlsx em montar_base_normas.py
+pytest>=7.4
+
+# opcionais, por etapa
+requests>=2.31       # fichas_trabalho.py com OpenRouter (OPENROUTER_API_KEY)
+anthropic>=0.109     # fichas_trabalho.py --modelo claude-*, classificar_novos.py, classificar_atividades.py
+pypdf>=4.0           # montar_base_normas.py com textos de normas em PDF
+psycopg[binary]>=3.1 # exportar_relator.py (só AGENERSA: banco do relator de voto)
+python-dotenv>=1.0   # exportar_relator.py --env-file

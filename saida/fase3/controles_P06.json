@@ -1,0 +1,384 @@
+{
+ "codigo": "P06",
+ "indicadores": [
+  {
+   "id": "I-P06-01",
+   "nome": "Lead time da fiscalização, da primeira vistoria à ciência do parecer jurídico",
+   "definicao": "Para cada processo de fiscalização nativo do SEI: dias úteis da primeira peça da fiscalização (relatório de vistoria ou ofício de agendamento) até a ciência do parecer jurídico à concessionária, ou até a data de corte se o processo estiver aberto, pela mesma regra de estadia, posse e espera do mapeamento. Estatística: mediana da coorte móvel dos processos dos últimos 24 meses, com q1 e q3.",
+   "calculo": {
+    "tipo": "lead",
+    "atividades": [
+     "t2",
+     "t8"
+    ]
+   },
+   "fonte_dados": "andamentos do SEI",
+   "frequencia": "mensal",
+   "linha_base": {
+    "valor": 636.0,
+    "unidade": "du",
+    "fato": "coorte.caso.lead.mediana"
+   },
+   "metas": [
+    {
+     "fase": 1,
+     "valor": 348.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.1.esperado.lead.mediana"
+     }
+    },
+    {
+     "fase": 2,
+     "valor": 336.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.2.esperado.lead.mediana"
+     }
+    },
+    {
+     "fase": 3,
+     "valor": 336.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.3.esperado.lead.mediana"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Processo aberto cuja idade passa da meta da fase vigente, ou mediana mensal acima da meta por 2 meses seguidos.",
+    "destinatario": "gerência da CASAN e Secretaria Executiva"
+   },
+   "melhorias": [
+    "M-P06-01",
+    "M-P06-02",
+    "M-P06-03",
+    "M-P06-04",
+    "M-P06-05",
+    "M-P06-06",
+    "M-P06-07",
+    "M-P06-08"
+   ],
+   "responsavel": "Secretaria Executiva",
+   "observacao": "Coorte de 1 caso (estudo de caso): a mediana é o próprio caso e é instável; trate as metas como ordem de grandeza e recalcule com a coorte móvel assim que houver mais processos. A fase 3 não muda o lead (reduz horas). Mais da metade do ganho simulado vem de uma só melhoria (M-P06-01, prazo do parecer jurídico): sem ela, o ganho de lead no esperado cai para cerca de um quarto (sensibilidade em resultado_tobe_P06.json). A meta só vale depois de a Procuradoria confirmar quanto dos 203 du de posse foi análise."
+  },
+  {
+   "id": "I-P06-02",
+   "nome": "Espera antes do parecer jurídico",
+   "definicao": "Para cada processo: dias úteis entre o fim da reanálise da CASAN (t6), ou a remessa à Procuradoria, e a assinatura do parecer jurídico (t7). Estatística: mediana e máximo dos processos com parecer no período (12 meses).",
+   "calculo": {
+    "tipo": "espera_antes",
+    "atividades": [
+     "t7"
+    ],
+    "requisito": "R-P06-09"
+   },
+   "fonte_dados": "andamentos e peças do SEI (data de assinatura do parecer, não de juntada)",
+   "frequencia": "mensal",
+   "linha_base": {
+    "valor": 205.0,
+    "unidade": "du",
+    "fato": "coorte.t7.espera_antes.mediana"
+   },
+   "metas": [
+    {
+     "fase": 1,
+     "valor": 21,
+     "origem": {
+      "tipo": "norma",
+      "ref": "R-P06-09"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Processo na Procuradoria há mais de 11 du (15 dias corridos) sem parecer e sem prorrogação registrada; e há mais de 21 du (30 dias corridos) em qualquer caso.",
+    "destinatario": "Procuradoria-Geral e Secretaria Executiva"
+   },
+   "melhorias": [
+    "M-P06-01",
+    "M-P06-14"
+   ],
+   "responsavel": "Procuradoria",
+   "observacao": "Meta = prazo do R-P06-09 (15 dias prorrogáveis por mais 15) convertido para dias úteis, igual ao teto esperado da M-P06-01. A data de assinatura do parecer precisa ser registrada; no caso, o parecer foi juntado no dia do ofício de ciência."
+  },
+  {
+   "id": "I-P06-03",
+   "nome": "Espera antes do parecer técnico, depois do prazo de manifestação da concessionária",
+   "definicao": "Para cada processo: dias úteis entre o último ofício que encaminha relatórios e pede manifestação (t3) e o parecer técnico da CASAN (t4), separando o prazo concedido (protegido, R-P06-03) do tempo da agência depois do vencimento. Estatística: mediana dos processos com parecer técnico nos últimos 12 meses.",
+   "calculo": {
+    "tipo": "espera_antes",
+    "atividades": [
+     "t4"
+    ],
+    "requisito": "R-P06-10"
+   },
+   "fonte_dados": "andamentos do SEI e prazo registrado no ofício",
+   "frequencia": "mensal",
+   "linha_base": {
+    "valor": 106.0,
+    "unidade": "du",
+    "fato": "coorte.t4.espera_antes.mediana"
+   },
+   "metas": [
+    {
+     "fase": 1,
+     "valor": 45,
+     "origem": {
+      "tipo": "norma",
+      "ref": "R-P06-10"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Prazo de manifestação vencido e processo sem parecer técnico há mais de 15 dias; processo sem unidade com ele aberto depois do ofício de encaminhamento.",
+    "destinatario": "gerência da CASAN"
+   },
+   "melhorias": [
+    "M-P06-02",
+    "M-P06-07"
+   ],
+   "responsavel": "CASAN",
+   "observacao": "Meta = 30 du protegidos pelo R-P06-03 mais os 15 dias do R-P06-10 (lidos em dias úteis), igual ao teto esperado da M-P06-02. O teto de 40 du da fase 2 (M-P06-07) é hipótese e não virou meta. A resposta da concessionária não foi coletada; sem a juntada, o indicador não separa o tempo de terceiro."
+  },
+  {
+   "id": "I-P06-04",
+   "nome": "Horas de trabalho por processo",
+   "definicao": "Soma das horas estimadas (piso) das peças de cada processo, pela tabela de horas por peça do mapeamento; mediana dos processos concluídos no ano. Hipótese até a calibração com os servidores.",
+   "calculo": {
+    "tipo": "horas",
+    "atividades": [
+     "t2",
+     "t4",
+     "t6",
+     "t7"
+    ]
+   },
+   "fonte_dados": "peças do SEI e tabela de horas por peça",
+   "frequencia": "anual",
+   "linha_base": {
+    "valor": 319.2,
+    "unidade": "h por processo (piso)",
+    "fato": "coorte.caso.horas_piso.mediana"
+   },
+   "metas": [
+    {
+     "fase": 2,
+     "valor": 283.1,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.2.esperado.horas_piso.mediana"
+     }
+    },
+    {
+     "fase": 3,
+     "valor": 260.1,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.3.esperado.horas_piso.mediana"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Horas por processo acima da linha de base em 2 anos seguidos depois da implantação da fase 2.",
+    "destinatario": "gerência da CASAN"
+   },
+   "melhorias": [
+    "M-P06-09",
+    "M-P06-10",
+    "M-P06-11",
+    "M-P06-12",
+    "M-P06-13",
+    "M-P06-14"
+   ],
+   "responsavel": "CASAN",
+   "observacao": "Horas e custo são hipótese; a maior parte vem da vistoria e do relatório (t2). Coorte de 1 caso (estudo de caso): a mediana é o próprio caso e é instável; trate as metas como ordem de grandeza e recalcule com a coorte móvel assim que houver mais processos."
+  },
+  {
+   "id": "I-P06-05",
+   "nome": "Apuração concluída em até cinco anos do início da fiscalização",
+   "definicao": "Percentual dos processos em que a ciência final à concessionária (t8) ocorre em até cinco anos do início da fiscalização (teste duracao_max do R-P06-14); processos abertos entram quando vencem ou concluem.",
+   "calculo": {
+    "tipo": "conformidade",
+    "atividades": [
+     "t2",
+     "t8"
+    ],
+    "requisito": "R-P06-14"
+   },
+   "fonte_dados": "andamentos do SEI",
+   "frequencia": "mensal",
+   "linha_base": {
+    "valor": 100.0,
+    "unidade": "% conforme",
+    "fonte": "conformidade_P06.json"
+   },
+   "metas": [
+    {
+     "fase": 1,
+     "valor": 100.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.1.esperado.conformidade_temporal.R-P06-14"
+     }
+    },
+    {
+     "fase": 2,
+     "valor": 100.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.2.esperado.conformidade_temporal.R-P06-14"
+     }
+    },
+    {
+     "fase": 3,
+     "valor": 100.0,
+     "origem": {
+      "tipo": "simulacao",
+      "ref": "fases.3.esperado.conformidade_temporal.R-P06-14"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Processo aberto com mais de quatro anos desde o início da fiscalização; maior intervalo entre peças acima de um ano (risco de paralisação, R-P06-15).",
+    "destinatario": "Presidência do Conselho-Diretor; controle interno"
+   },
+   "melhorias": [
+    "M-P06-01",
+    "M-P06-02",
+    "M-P06-07"
+   ],
+   "responsavel": "Secretaria Executiva",
+   "referencia_legal": {
+    "valor": 100,
+    "unidade": "% conforme",
+    "requisito": "R-P06-14"
+   },
+   "observacao": "O único caso já cumpre; a meta simulada é 100% nas três fases. O indicador protege contra regressão, não mede ganho."
+  },
+  {
+   "id": "I-P06-06",
+   "nome": "Qualidade: reincidência da mesma não conformidade na mesma unidade",
+   "definicao": "Percentual de não conformidades constatadas num ciclo de vistorias que reaparecem na mesma unidade no ciclo seguinte (matriz de não conformidades da M-P06-10); como linha de base provisória, peças de vistoria com sinal de reiteração de exigência.",
+   "calculo": {
+    "tipo": "laco",
+    "atividades": [
+     "t2"
+    ]
+   },
+   "fonte_dados": "matriz de não conformidades (formulário de campo) e peças do SEI",
+   "frequencia": "por ciclo de vistorias",
+   "linha_base": {
+    "valor": 1,
+    "unidade": "processo com reiteração de exigência em 1",
+    "fato": "coorte.t2.perda.reiteracao"
+   },
+   "metas": [
+    {
+     "fase": 2,
+     "valor": 40,
+     "origem": {
+      "tipo": "benchmark",
+      "ref": "B-fiscalizacao-14"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Segunda constatação da mesma não conformidade na mesma unidade: o caso muda de status e vai à via sancionadora (notificação de infração, R-P06-13).",
+    "destinatario": "gerência da CASAN"
+   },
+   "melhorias": [
+    "M-P06-10",
+    "M-P06-11",
+    "M-P06-12"
+   ],
+   "responsavel": "CASAN",
+   "observacao": "Indicador de qualidade ao lado dos de prazo: prazo sozinho empurra decisões para a véspera. Meta = redução de cerca de 40% da recorrência com plano de melhoria acompanhado (B-fiscalizacao-14, ANEEL), em % de redução sobre a taxa medida no primeiro ciclo com a matriz; a linha de base em taxa só existe depois da fase 2."
+  },
+  {
+   "id": "I-P06-07",
+   "nome": "Qualidade da decisão: retornos e reiterações depois do parecer técnico",
+   "definicao": "Número de retornos do processo a uma etapa já concluída (nova reanálise técnica, novo parecer jurídico, devolução para nova instrução) por processo, no período; acompanhar junto do lead time.",
+   "calculo": {
+    "tipo": "laco",
+    "atividades": [
+     "t4",
+     "t6",
+     "t7"
+    ]
+   },
+   "fonte_dados": "andamentos e peças do SEI",
+   "frequencia": "semestral",
+   "linha_base": {
+    "valor": 1.0,
+    "unidade": "retornos por processo",
+    "fato": "coorte.caso.retornos.mediana"
+   },
+   "metas": [
+    {
+     "fase": 1,
+     "valor": 1.0,
+     "origem": {
+      "tipo": "benchmark",
+      "ref": "B-transversal-18"
+     }
+    }
+   ],
+   "alerta": {
+    "regra": "Retornos por processo acima da linha de base depois da implantação dos prazos internos (sinal de que o prazo baixou a qualidade).",
+    "destinatario": "Presidência do Conselho-Diretor"
+   },
+   "melhorias": [
+    "M-P06-01",
+    "M-P06-02",
+    "M-P06-13",
+    "M-P06-14"
+   ],
+   "responsavel": "Secretaria Executiva",
+   "observacao": "Meta de não piorar: B-transversal-18 mostra que prazo-alvo concentra decisões antes do vencimento com mais problemas de qualidade; os prazos das melhorias de fase 1 não podem aumentar retornos."
+  }
+ ],
+ "controles_qualidade_ia": [
+  {
+   "id": "Q-P06-01",
+   "melhorias": [
+    "M-P06-12"
+   ],
+   "verificacao": "Em cada relatório assistido: cada constatação e legenda confere com o checklist e a foto; cada dispositivo citado existe na base de normas, está vigente e corresponde à não conformidade; as recomendações anteriores apontadas como reincidência existem no relatório anterior da mesma unidade.",
+   "amostragem": "100% das constatações e citações (verificação automática contra a base e conferência do fiscal); 1 relatório por mês revisto às cegas por um segundo fiscal",
+   "criterio_aceite": "Relatório assinado sem constatação divergente do checklist ou da foto e sem citação que não confira com a base.",
+   "indicador": "Taxa de campos da minuta corrigidos pelo fiscal; taxa de citações não confirmadas pela verificação automática",
+   "meta": "0 citação inválida em relatório assinado; taxa de correção a calibrar no piloto (hipótese)",
+   "responsavel": "gerência da CASAN"
+  },
+  {
+   "id": "Q-P06-02",
+   "melhorias": [
+    "M-P06-13"
+   ],
+   "verificacao": "Para cada recomendação, a situação proposta pela IA (atendida, parcial, não atendida, sem evidência) confere com a resposta e a evidência na página de origem; a conclusão do parecer é do técnico.",
+   "amostragem": "100% dos itens conferidos pelo técnico; 1 parecer por trimestre refeito às cegas por um segundo técnico",
+   "criterio_aceite": "Nenhum item marcado como atendido sem evidência na página citada; concordância IA × técnico ao menos igual à concordância entre dois técnicos (critério de B-transversal-11).",
+   "indicador": "Concordância por item IA × técnico e técnico × técnico; itens reclassificados pelo técnico",
+   "meta": "Concordância IA × técnico ≥ concordância técnico × técnico; 0 item atendido sem evidência em parecer assinado",
+   "responsavel": "gerência da CASAN"
+  },
+  {
+   "id": "Q-P06-03",
+   "melhorias": [
+    "M-P06-14"
+   ],
+   "verificacao": "Cada norma, deliberação ou precedente citado na minuta existe na base, está vigente e diz o que a minuta afirma; o relatório dos autos confere com as peças; a conclusão é do procurador.",
+   "amostragem": "100% das citações (verificação automática e conferência do procurador); 1 parecer por semestre revisto às cegas pela Procuradoria-Geral",
+   "criterio_aceite": "Parecer assinado sem citação que não confira e sem fato do relatório divergente das peças.",
+   "indicador": "Taxa de citações inválidas detectadas antes da assinatura; correções no relatório dos autos",
+   "meta": "0 citação inválida em parecer assinado",
+   "responsavel": "Procuradoria"
+  }
+ ],
+ "auditoria_continua": [
+  "A-P06-01",
+  "A-P06-02",
+  "A-P06-03",
+  "A-P06-05"
+ ]
+}

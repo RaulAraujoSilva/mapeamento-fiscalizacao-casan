@@ -1,0 +1,114 @@
+{
+ "A_trilha": {
+  "processos_com_posse": 1,
+  "posse_com_lacuna_ou_sobreposicao": 0,
+  "docs_cruzados_sei2_relator": 75,
+  "unidade_diverge": 0,
+  "tipo_diverge": 0,
+  "data_diverge": 0,
+  "docs_fora_da_estadia_pct": 63.9
+ },
+ "B_fichas": {
+  "fichas_com_texto": 60,
+  "numeros_citados": 159,
+  "numeros_sem_ancora": 1,
+  "pct_sem_ancora": 0.6,
+  "por_campo": {
+   "insumos": {
+    "citados": 113,
+    "sem_ancora": 0
+   },
+   "entregavel": {
+    "citados": 36,
+    "sem_ancora": 0
+   },
+   "calculos": {
+    "citados": 7,
+    "sem_ancora": 1
+   },
+   "tarefa": {
+    "citados": 1,
+    "sem_ancora": 0
+   },
+   "sinais_perda": {
+    "citados": 2,
+    "sem_ancora": 0
+   }
+  },
+  "exemplos": [
+   {
+    "ref": "SEI-480002/001314/2024:91213447",
+    "campo": "calculos",
+    "numero": "22,116",
+    "contexto": "Balanço de vazões apresentado pelo autor (água bruta mais água de barragem igual a água tratada): 20,28 l/s e 1,836 l/s somam 22,116 l/s, diferente dos 21,82 l/s indicados"
+   }
+  ]
+ },
+ "D_modelos": {
+  "tarefas": 8,
+  "freq_diverge": 0,
+  "tarefas_com_peca_fora_da_raia": 2,
+  "divergencias": [
+   {
+    "codigo": "P06",
+    "tarefa": "t6",
+    "nome": "Reanalisar manifestação e reiterar parecer técnico",
+    "freq_modelo": null,
+    "casos_com_pecas": 1,
+    "freq_diverge": false,
+    "du_modelo": null,
+    "espera_antes_fichas": "26",
+    "horas_modelo": null,
+    "horas_fichas": "4.0 / 2.3",
+    "unidades_das_pecas": [
+     "CASAN",
+     "SCEXEC"
+    ],
+    "pecas_fora_da_raia": [
+     "SCEXEC"
+    ]
+   },
+   {
+    "codigo": "P06",
+    "tarefa": "t7",
+    "nome": "Analisar fundamentos jurídicos da fiscalização",
+    "freq_modelo": null,
+    "casos_com_pecas": 1,
+    "freq_diverge": false,
+    "du_modelo": null,
+    "espera_antes_fichas": "205",
+    "horas_modelo": null,
+    "horas_fichas": "6.0 / 12.7",
+    "unidades_das_pecas": [
+     "PROC",
+     "SCEXEC"
+    ],
+    "pecas_fora_da_raia": [
+     "SCEXEC"
+    ]
+   }
+  ]
+ },
+ "E_cronologia": [
+  {
+   "codigo": "P06",
+   "caso": "SEI-480002/001314/2024",
+   "pares": 28,
+   "inversoes": 2,
+   "pct": 7.1
+  }
+ ],
+ "F_avaliacoes": {
+  "P06": {
+   "numeros_citados": 70,
+   "sem_ancora": 1,
+   "exemplos": [
+    {
+     "campo": "validado_contra.fatos_sha",
+     "numero": "443811",
+     "trecho": "adb0fd443811ca5f"
+    }
+   ]
+  }
+ }
+}

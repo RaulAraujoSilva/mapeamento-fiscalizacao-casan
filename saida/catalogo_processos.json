@@ -1,0 +1,290 @@
+[
+ {
+  "id": "P01",
+  "macro": "F1",
+  "macroprocesso": "Regulação econômico-tarifária",
+  "nome": "Reajuste tarifário anual (saneamento e gás)",
+  "escopo": "Pedido da concessionária ou data contratual → cálculo paramétrico (IPCA-E/IRC e IDG) pela CAPET → parecer jurídico → relatoria e deliberação (ou decisão cautelar) → publicação e monitoramento da aplicação",
+  "unidades": "CAPET; Procuradoria; Conselheiro-Relator; CODIR; SECEX"
+ },
+ {
+  "id": "P02",
+  "macro": "F1",
+  "macroprocesso": "Regulação econômico-tarifária",
+  "nome": "Revisão tarifária ordinária (quinquenal) de gás e saneamento",
+  "escopo": "Agenda da revisão → plano de negócios e base de ativos → taxa de remuneração → notas técnicas CAPET → consulta/audiência pública → deliberação → novas tarifas",
+  "unidades": "CAPET; CODIR; Procuradoria; consultoria externa (FGV)"
+ },
+ {
+  "id": "P03",
+  "macro": "F1",
+  "macroprocesso": "Regulação econômico-tarifária",
+  "nome": "Reequilíbrio econômico-financeiro e aditivos contratuais",
+  "escopo": "Pleito de reequilíbrio → análise de risco e fluxo de caixa marginal (CAPET) → parecer jurídico → negociação/termo → deliberação → aditivo",
+  "unidades": "CAPET; Procuradoria; CODIR; poder concedente"
+ },
+ {
+  "id": "P04",
+  "macro": "F1",
+  "macroprocesso": "Regulação econômico-tarifária",
+  "nome": "Homologação de planos de investimento e obras",
+  "escopo": "Apresentação do plano/projeto → análise técnica e econômica → deliberação de homologação → acompanhamento da execução",
+  "unidades": "CAPET; Câmara de Saneamento (CASAN); CODIR"
+ },
+ {
+  "id": "P05",
+  "macro": "F1",
+  "macroprocesso": "Regulação econômico-tarifária",
+  "nome": "Acompanhamento econômico-financeiro das reguladas",
+  "escopo": "Recebimento de demonstrações anuais, movimentações de outorga variável e certidões → análise CAPET → nota técnica → decisão em reunião interna",
+  "unidades": "CAPET; CODIR"
+ },
+ {
+  "id": "P06",
+  "macro": "F2",
+  "macroprocesso": "Fiscalização, monitoramento e sanção",
+  "nome": "Fiscalização técnica de campo (programada e por demanda)",
+  "escopo": "Plano anual de fiscalização → agenda → vistoria in loco → Relatório de Fiscalização (RF) → notificação de não conformidade → acompanhamento da correção",
+  "unidades": "CASAN (saneamento); CAENE (energia/gás); CARES (resíduos)"
+ },
+ {
+  "id": "P07",
+  "macro": "F2",
+  "macroprocesso": "Fiscalização, monitoramento e sanção",
+  "nome": "Processo sancionador (auto de infração à cobrança da multa)",
+  "escopo": "Notificação de infração → auto de infração → defesa/impugnação (5 dias) → parecer jurídico → julgamento (Câmara ou CODIR) → recurso → cobrança/inscrição em dívida ativa",
+  "unidades": "Câmaras Técnicas; SECEX; Procuradoria; CAPET (cálculo); CODIR"
+ },
+ {
+  "id": "P08",
+  "macro": "F2",
+  "macroprocesso": "Fiscalização, monitoramento e sanção",
+  "nome": "Monitoramento de metas contratuais e do IDG (verificador independente)",
+  "escopo": "Reporte mensal/anual da concessionária → aferição trimestral pelo verificador (FIPE) → validação pela AGENERSA → publicação de metas e IDG → efeito no reajuste",
+  "unidades": "Câmara de Saneamento; CAPET; verificador independente"
+ },
+ {
+  "id": "P09",
+  "macro": "F2",
+  "macroprocesso": "Fiscalização, monitoramento e sanção",
+  "nome": "Inspeção periódica de segurança em instalações de gás",
+  "escopo": "Cronograma de inspeções quinquenais → credenciamento de inspetores → registro e acompanhamento → aplicação de multa por descumprimento",
+  "unidades": "CAENE; Ouvidoria"
+ },
+ {
+  "id": "P10",
+  "macro": "F2",
+  "macroprocesso": "Fiscalização, monitoramento e sanção",
+  "nome": "Cooperação técnica com municípios para fiscalização complementar",
+  "escopo": "Adesão do município → termo de cooperação → capacitação → registro de ocorrências pelo município → tratamento pela Câmara",
+  "unidades": "SECEX; CASAN"
+ },
+ {
+  "id": "P11",
+  "macro": "F2",
+  "macroprocesso": "Fiscalização, monitoramento e sanção",
+  "nome": "Certificação de informações regulatórias (SNIS/SINISA)",
+  "escopo": "Recebimento dos dados da prestadora → auditoria de consistência → relatório de certificação → publicação",
+  "unidades": "CASAN"
+ },
+ {
+  "id": "P35",
+  "macro": "F2",
+  "macroprocesso": "Fiscalização, monitoramento e sanção",
+  "nome": "Gestão de interrupções e crises de abastecimento",
+  "escopo": "Aviso prévio de paradas programadas → monitoramento da operação (CSFA/CCO) → acionamento em crise (plano de contingência, caminhão-pipa, prioridade a hospitais) → vistoria → comunicação pública → apuração de responsabilidade e sanção",
+  "unidades": "CASAN; CSFA; Ouvidoria; Comunicação; Presidência"
+ },
+ {
+  "id": "P12",
+  "macro": "F3",
+  "macroprocesso": "Regulamentação",
+  "nome": "Elaboração de normas (agenda regulatória, AIR, consulta e edição)",
+  "escopo": "Agenda regulatória → AIR → minuta → consulta/audiência pública → análise das contribuições → aprovação pelo CODIR → publicação → avaliação de resultado (ARR)",
+  "unidades": "Comissão da Agenda Regulatória; Câmaras Técnicas; Procuradoria; CODIR"
+ },
+ {
+  "id": "P13",
+  "macro": "F3",
+  "macroprocesso": "Regulamentação",
+  "nome": "Consulta e audiência pública",
+  "escopo": "Proposta da unidade → autuação → aviso → período de contribuições → audiência → relatório de análise das contribuições → decisão",
+  "unidades": "SECEX; Relator; unidade proponente; Ouvidoria"
+ },
+ {
+  "id": "P14",
+  "macro": "F3",
+  "macroprocesso": "Regulamentação",
+  "nome": "Interpretação contratual e solução de conflitos (conciliação)",
+  "escopo": "Pedido de interpretação ou conflito → instrução → Comissão de Conciliação ou relatoria → acordo homologado ou deliberação definitiva",
+  "unidades": "Relator; Comissão de Conciliação; Procuradoria; CODIR"
+ },
+ {
+  "id": "P15",
+  "macro": "F4",
+  "macroprocesso": "Decisão regulatória colegiada",
+  "nome": "Instrução e julgamento do processo regulatório",
+  "escopo": "Pleito/abertura → classificação e autuação (SECEX) → parecer técnico da Câmara → parecer jurídico → sorteio de relator → relatório e voto → pauta → sessão (presencial ou virtual) → deliberação → publicação no DOERJ",
+  "unidades": "SECEX; Câmaras Técnicas; Procuradoria; Conselheiros-Relatores; CODIR"
+ },
+ {
+  "id": "P16",
+  "macro": "F4",
+  "macroprocesso": "Decisão regulatória colegiada",
+  "nome": "Recursos e embargos contra deliberações",
+  "escopo": "Interposição (embargos 5 dias; recurso 10 dias) → contrarrazões → novo relator → julgamento",
+  "unidades": "SECEX; Procuradoria; Conselheiro-Relator; CODIR"
+ },
+ {
+  "id": "P17",
+  "macro": "F4",
+  "macroprocesso": "Decisão regulatória colegiada",
+  "nome": "Cumprimento de deliberações e encerramento de processos",
+  "escopo": "Publicação da deliberação → notificação → acompanhamento das determinações → certificação do cumprimento → arquivamento ou novo processo",
+  "unidades": "SECEX; Câmaras Técnicas"
+ },
+ {
+  "id": "P18",
+  "macro": "F5",
+  "macroprocesso": "Gestão das concessões e outorgas",
+  "nome": "Prorrogação, relicitação e alteração de concessões",
+  "escopo": "Manifestação do poder concedente → estudos e modelagem → parecer da agência sobre edital/prorrogação → aditivos e transferências de controle",
+  "unidades": "CODIR; CAPET; CAENE; Procuradoria"
+ },
+ {
+  "id": "P19",
+  "macro": "F5",
+  "macroprocesso": "Gestão das concessões e outorgas",
+  "nome": "Regulação do mercado livre de gás (CUSD e migração)",
+  "escopo": "Minuta de CUSD → consulta pública → pareceres CAENE/CAPET → regras de migração e consumo mínimo → análise de pedidos de migração → acordo/aditivo",
+  "unidades": "CAENE; CAPET; Procuradoria; CODIR"
+ },
+ {
+  "id": "P20",
+  "macro": "F6",
+  "macroprocesso": "Relacionamento com usuários e sociedade",
+  "nome": "Atendimento e tratamento de manifestações dos usuários (Ouvidoria)",
+  "escopo": "Registro da manifestação → triagem e classificação → encaminhamento à concessionária → resposta e verificação → reiteração → encerramento ou ocorrência à Câmara",
+  "unidades": "Ouvidoria; Câmaras Técnicas"
+ },
+ {
+  "id": "P21",
+  "macro": "F6",
+  "macroprocesso": "Relacionamento com usuários e sociedade",
+  "nome": "Apuração de ocorrência de usuário pelo Conselho-Diretor",
+  "escopo": "Reclamação não resolvida na Ouvidoria → abertura de ocorrência → instrução técnica → relatoria → deliberação (determinação ou penalidade)",
+  "unidades": "Ouvidoria; SECEX; Câmaras Técnicas; Relator; CODIR"
+ },
+ {
+  "id": "P22",
+  "macro": "F6",
+  "macroprocesso": "Relacionamento com usuários e sociedade",
+  "nome": "Transparência e resposta a órgãos de controle e ao Ministério Público",
+  "escopo": "Recebimento de ofício/recomendação → distribuição → resposta técnica e jurídica → acompanhamento de prazos e determinações → publicação",
+  "unidades": "Procuradoria; SECEX; gabinetes; Ouvidoria"
+ },
+ {
+  "id": "P23",
+  "macro": "F6",
+  "macroprocesso": "Relacionamento com usuários e sociedade",
+  "nome": "Secretariado dos colegiados contratuais (Comitês, Conselhos de Titulares, CSFA)",
+  "escopo": "Convocação → pauta → reunião → ata → encaminhamento de demandas → resposta da agência",
+  "unidades": "Câmara de Saneamento; SECEX"
+ },
+ {
+  "id": "P36",
+  "macro": "F6",
+  "macroprocesso": "Relacionamento com usuários e sociedade",
+  "nome": "Regulação e fiscalização comercial (faturamento, medição, corte, religação e tarifa social)",
+  "escopo": "Regras de faturamento, medição e tarifa social → fiscalização amostral de contas e cadastros → tratamento de reclamações comerciais → determinação de devolução ou correção → sanção → acompanhamento de cumprimento",
+  "unidades": "CASAN; CAPET; Ouvidoria; Procuradoria"
+ },
+ {
+  "id": "P24",
+  "macro": "G1",
+  "macroprocesso": "Governança, estratégia e controle",
+  "nome": "Planejamento estratégico, plano anual e relatório de atividades",
+  "escopo": "Diagnóstico → objetivos e metas → planos anuais das unidades (05/10–30/11) → monitoramento → relatório anual (até 05/01)",
+  "unidades": "Presidência; SECEX; Assessoria de Relações Institucionais; todas as unidades"
+ },
+ {
+  "id": "P25",
+  "macro": "G1",
+  "macroprocesso": "Governança, estratégia e controle",
+  "nome": "Gestão de riscos, integridade e controle interno",
+  "escopo": "Política de riscos → matriz por processo → plano de auditoria interna (PLANAT) → relatório (RANAT) → acompanhamento de recomendações",
+  "unidades": "Auditoria/UCI; Corregedoria; UGI; Presidência"
+ },
+ {
+  "id": "P26",
+  "macro": "G2",
+  "macroprocesso": "Informação e conhecimento regulatório",
+  "nome": "Gestão documental e do processo eletrônico (SEI)",
+  "escopo": "Protocolo → classificação (regulatório/administrativo) → autuação → tramitação → nível de acesso → arquivamento",
+  "unidades": "SECEX; ASSIN; protocolo"
+ },
+ {
+  "id": "P27",
+  "macro": "G2",
+  "macroprocesso": "Informação e conhecimento regulatório",
+  "nome": "Inteligência regulatória e gestão de dados e conhecimento",
+  "escopo": "Coleta de dados das reguladas → base integrada → painéis e indicadores → apoio a decisões, crises e fiscalização baseada em risco",
+  "unidades": "Unidade de Inteligência Regulatória; ASSIN; Câmaras"
+ },
+ {
+  "id": "P28",
+  "macro": "S1",
+  "macroprocesso": "Pessoas",
+  "nome": "Gestão de pessoas (provimento, carreira e capacitação)",
+  "escopo": "Planejamento da força de trabalho → concurso e provimento → avaliação e progressão → capacitação (Escola de Regulação)",
+  "unidades": "ASRHU; SUPAD; Presidência"
+ },
+ {
+  "id": "P29",
+  "macro": "S2",
+  "macroprocesso": "Contratações e logística",
+  "nome": "Contratações e licitações",
+  "escopo": "Demanda → estudo técnico preliminar → termo de referência → licitação/pregão → homologação → contrato",
+  "unidades": "SUPAD; Comissão de Contratação; Procuradoria"
+ },
+ {
+  "id": "P30",
+  "macro": "S2",
+  "macroprocesso": "Contratações e logística",
+  "nome": "Gestão de contratos administrativos (inclusive verificador independente)",
+  "escopo": "Designação de fiscal → acompanhamento da execução → medição e pagamento → aditivos → renovação ou nova contratação",
+  "unidades": "SUPAD; fiscais de contrato; Câmaras"
+ },
+ {
+  "id": "P31",
+  "macro": "S3",
+  "macroprocesso": "Orçamento, finanças e arrecadação",
+  "nome": "Arrecadação da Taxa de Regulação e gestão do Fundo",
+  "escopo": "Apuração da base de cálculo (0,5% da receita) → recolhimento até o 10º dia útil → conferência → multa e juros por atraso → repartição e aplicação",
+  "unidades": "CAPET; SUPOF"
+ },
+ {
+  "id": "P32",
+  "macro": "S3",
+  "macroprocesso": "Orçamento, finanças e arrecadação",
+  "nome": "Orçamento, finanças, contabilidade e patrimônio",
+  "escopo": "Proposta orçamentária (PPA/LDO/LOA) → execução (empenho, liquidação, pagamento) → contabilidade → patrimônio e almoxarifado → prestação de contas",
+  "unidades": "SUPOF; Assessoria de Contabilidade; SUPAD"
+ },
+ {
+  "id": "P33",
+  "macro": "S4",
+  "macroprocesso": "Tecnologia e comunicação",
+  "nome": "Gestão de tecnologia da informação",
+  "escopo": "Demanda de sistema → priorização no PDTIC → desenvolvimento ou aquisição → sustentação",
+  "unidades": "ASSIN"
+ },
+ {
+  "id": "P34",
+  "macro": "S4",
+  "macroprocesso": "Tecnologia e comunicação",
+  "nome": "Comunicação institucional",
+  "escopo": "Plano de comunicação → produção de conteúdo e site → imprensa → campanhas (Agenersa na Rua)",
+  "unidades": "Assessoria de Comunicação"
+ }
+]

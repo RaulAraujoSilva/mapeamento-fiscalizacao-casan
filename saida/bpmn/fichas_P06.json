@@ -1,0 +1,841 @@
+{
+ "processo": {
+  "codigo": "P06",
+  "nome": "Fiscalização técnica de campo (programada e por demanda)",
+  "escopo": "Das vistorias anuais programadas nas unidades da concessionária à ciência do parecer jurídico sobre a fiscalização",
+  "fontes": "Processo SEI-480002/001314/2024 (caso designado; único processo do código na carteira, ainda em andamento): relatórios de fiscalização e ofícios da CASAN à concessionária ao longo do ciclo anual de vistorias, Parecer técnico CASAN, comunicação da Secretaria Executiva com o parecer, despacho da CASAN que reitera o parecer diante da manifestação da concessionária, despacho da Secretaria à Procuradoria, parecer da Procuradoria e ofício de ciência. A instauração do processo para vistorias anuais é a relatada no parecer da Procuradoria; a deliberação juntada no início é compilação do Diário Oficial e não sustenta etapa por si só. As respostas da concessionária aos ofícios e a manifestação da regulada são citadas nos pareceres e despachos, mas não estão juntadas entre as peças coletadas. Os processos de fiscalização relacionados não foram analisados.",
+  "casos": [
+   {
+    "numero": "SEI-480002/001314/2024",
+    "papel": "designado",
+    "lead_du": 636.0,
+    "trabalho_piso_h": 320.0,
+    "trabalho_teto_h": 477.6,
+    "pce_pct": "8.4–12.5",
+    "passagens": 6,
+    "retornos": 1,
+    "aguardando_terceiros_du": 0.0,
+    "pct_tempo_espera_dominante": 89.0
+   }
+  ],
+  "carteira": {
+   "processos": 1,
+   "nativos": 1,
+   "lead_mediano_du": 636.0,
+   "com_deliberacao_pct": 100,
+   "retornos_medio": 1.0,
+   "por_ano": {
+    "2024": 1
+   }
+  },
+  "inventario": {
+   "volume": "662 fiscalizações em 2025 (587 em 2024; 222 em 2023); CASAN tramitou 6.569 processos em 2025",
+   "dores": "Volume triplicou sem padronização declarada (manuais e checklists ainda em criação); planejamento por risco não evidenciado; fiscalizações motivadas por reclamações em áreas críticas (Gramacho, Nova Iguaçu)",
+   "base": "Lei 4.556/2005, art. 4º, IV; Decreto 38.618/2005, arts. 26–28 e 33-A; IN 128/2024",
+   "unidades": "CASAN (saneamento); CAENE (energia/gás); CARES (resíduos)"
+  },
+  "n_atividades": 8
+ },
+ "atividades": {
+  "t1": {
+   "id": "t1",
+   "nome": "Solicitar agendamento de vistoria técnica",
+   "unidade": "Câmara Técnica de Saneamento (CASAN)",
+   "status": "normal",
+   "nota": null,
+   "freq": null,
+   "descritivo": "A CASAN oficia a concessionária para agendar a vistoria técnica anual em conjuntos de unidades de um município, indicando as estações e a data pretendida, ou para convidá-la a uma vistoria técnica conjunta. O ofício segue por e-mail à concessionária e pede que a resposta indique o processo. Nem todas as vistorias relatadas no processo têm ofício de agendamento juntado.",
+   "gatilho": "Unidades da concessionária previstas na vistoria técnica anual",
+   "saida": "Ofício e e-mail à concessionária solicitando agendamento ou vistoria conjunta",
+   "observacoes": "Os ofícios de agendamento aparecem a partir da metade do ciclo; nos primeiros relatórios não há ofício de agendamento juntado. A confirmação da concessionária não está juntada.",
+   "casos_com_evidencia": 1,
+   "n_docs": 8,
+   "tramite_associado": [],
+   "documentos": [
+    "E-mail",
+    "Ofício - NA 516",
+    "Ofício - NA 708",
+    "Ofício - NA 725",
+    "Ofício - NA 757"
+   ],
+   "entradas_externas": [],
+   "laudas": "9",
+   "trabalho_h": {
+    "piso": "3.5",
+    "teto": "4.7",
+    "modelo": null
+   },
+   "espera_du": {
+    "antes": "17",
+    "execucao": "16",
+    "ocorrencias": "2",
+    "posse_na_espera": [
+     "SEM UNIDADE 17 du"
+    ],
+    "detalhe": [
+     "crítico: 2024-06-24 a 2024-06-24 — espera antes 12 du, execução 0 du",
+     "crítico: 2024-08-16 a 2024-09-09 — espera antes 5 du, execução 16 du"
+    ]
+   },
+   "insumos": {
+    "Documentos do próprio processo": [
+     "processo SEI de fiscalização da concessionária"
+    ]
+   },
+   "fontes_externas": [],
+   "ferramentas": [],
+   "calculos": [],
+   "testes": [],
+   "competencias": [
+    {
+     "area": "Redação oficial",
+     "nivel": "básico",
+     "evidencias": [
+      "solicitar agendamento de Vistoria Técnica nas instalações localizadas no Município de Rio Bonito",
+      "sirvo-me deste para solicitar confirmação da Concessionária"
+     ]
+    },
+    {
+     "area": "Gestão processual",
+     "nivel": "básico",
+     "evidencias": [
+      "Datas das Vistorias – 28/08/2024, 29/08/2024 e 30/08/2024"
+     ]
+    }
+   ],
+   "base_normativa": [
+    "Portaria AGENERSA N° 746 - 19 de julho de 2022"
+   ],
+   "cargos": [
+    "Gerente (2)",
+    "Assistente (2)"
+   ],
+   "sinais_perda": {},
+   "prazos_citados": [],
+   "conclusoes_de_merito": [],
+   "trabalho_reproduzido": [],
+   "lacunas": [
+    "4 documento(s) sem texto disponível (restritos ou não baixados)",
+    "Tempo de trabalho estimado pelo conteúdo, não medido"
+   ]
+  },
+  "t2": {
+   "id": "t2",
+   "nome": "Vistoriar unidade e emitir relatório de fiscalização",
+   "unidade": "Câmara Técnica de Saneamento (CASAN)",
+   "status": "normal",
+   "nota": null,
+   "freq": null,
+   "descritivo": "O especialista da CASAN vistoria in loco estação elevatória de água ou de esgoto, estação de tratamento ou obra de reforma da concessionária, com checklist e registro fotográfico, e emite relatório de fiscalização com as não conformidades encontradas e as recomendações ou exigências à concessionária. Alguns relatórios pedem cronogramas, histórico de manutenção ou solução para o lodo; outros acompanham o andamento de obra.",
+   "gatilho": "Vistoria programada ou agendada em unidade operada pela concessionária",
+   "saida": "Relatório de fiscalização com não conformidades e recomendações à concessionária",
+   "observacoes": "Atividade repetida ao longo de todo o ciclo anual; concentra a maior parte das peças do processo.",
+   "casos_com_evidencia": 1,
+   "n_docs": 42,
+   "tramite_associado": [],
+   "documentos": [
+    "Relatório de Fiscalização"
+   ],
+   "entradas_externas": [],
+   "laudas": "272",
+   "trabalho_h": {
+    "piso": "274.0",
+    "teto": "436.3",
+    "modelo": null
+   },
+   "espera_du": {
+    "antes": "101",
+    "execucao": "67",
+    "ocorrencias": "8",
+    "posse_na_espera": [
+     "SEM UNIDADE 80 du",
+     "CASAN 21 du"
+    ],
+    "detalhe": [
+     "crítico: 2024-03-07 a 2024-04-29 — espera antes 19 du, execução 35 du",
+     "crítico: 2024-05-10 a 2024-05-20 — espera antes 2 du, execução 6 du",
+     "crítico: 2024-06-03 a 2024-06-06 — espera antes 2 du, execução 3 du",
+     "crítico: 2024-07-25 a 2024-08-02 — espera antes 20 du, execução 6 du",
+     "crítico: 2024-08-09 a 2024-08-09 — espera antes 1 du, execução 0 du",
+     "crítico: 2024-09-11 a 2024-09-11 — espera antes 2 du, execução 0 du",
+     "crítico: 2024-11-06 a 2024-11-07 — espera antes 28 du, execução 1 du",
+     "crítico: 2024-12-20 a 2025-01-15 — espera antes 27 du, execução 16 du"
+    ]
+   },
+   "insumos": {
+    "Vistoria/campo": [
+     "vistoria in loco da estação elevatória na Praça Paris",
+     "vistoria in loco da estação elevatória",
+     "Vistoria em campo da estação elevatória, com medição de pressões",
+     "vistoria in loco na EEE 35 em 26/03/2024",
+     "Vistoria in loco da EEE Comida Árabe em 02/04/2024",
+     "vistoria periódica in loco da EEE Parque dos Patins"
+    ],
+    "Documentos da regulada": [
+     "informações prestadas pela coordenadora de operações da concessionária",
+     "informação do encarregado da concessionária sobre o acionamento",
+     "informação do operador sobre a potência da motobomba",
+     "informação do operador sobre o destino dos resíduos do gradeamento",
+     "Informações técnicas do representante da concessionária e plaqueta do motor",
+     "Plano Diretor de Abastecimento de Água (PDA) de Magé"
+    ],
+    "Bases externas": [
+     "localização por mapa",
+     "localização por imagem de satélite",
+     "localização da estação no Google Maps",
+     "localização da estação no Google Earth"
+    ],
+    "Documentos do próprio processo": [
+     "Anexo do relatório com os itens vistoriados",
+     "Relatório de Fiscalização nº 66/2022 (vistoria anterior)"
+    ],
+    "Normas e contratos": [
+     "artigos do Contrato de Concessão como base de atribuição",
+     "Boas práticas sanitárias e de engenharia, usadas como referência",
+     "Contrato de Concessão, base da ação de acompanhamento",
+     "Lei Federal nº 11.445/2007 e Decreto Federal nº 7.217/2010",
+     "legislação de saneamento aplicável",
+     "ABNT NBR 12208:2020, sobre armazenamento de resíduos"
+    ],
+    "Sistemas e bases internas": [
+     "Anexo (checklist) do relatório"
+    ]
+   },
+   "fontes_externas": [
+    "Google Earth",
+    "Google Earth (localização da elevatória)",
+    "Google Earth (localização da estação)",
+    "Google Earth (localização da unidade)",
+    "Google Earth (localização do ponto)",
+    "Google Earth (localização)",
+    "Google Maps",
+    "Google Maps (localização da estação)"
+   ],
+   "ferramentas": [
+    "vistoria in loco",
+    "vistoria in loco com checklist (anexo)",
+    "vistoria in loco com checklist de estação elevatória",
+    "vistoria in loco com checklist do anexo",
+    "registro fotográfico da estação",
+    "checklist de conservação, operação e manutenção (anexo)",
+    "registro fotográfico em vistoria in loco",
+    "checklist de conservação, operação e manutenção da estação elevatória (anexo)"
+   ],
+   "calculos": [
+    "Potência em operação: 3 motores de 150 cv, totalizando 450 cv, de 600 cv instalados",
+    "Balanço de vazões apresentado pelo autor (água bruta mais água de barragem igual a água tratada): 20,28 l/s e 1,836 l/s somam 22,116 l/s, diferente dos 21,82 l/s indicados"
+   ],
+   "testes": [
+    "conferência, por checklist SIM/NÃO, de conservação, operação e manutenção da estação elevatória",
+    "verificação de itens de boas práticas sanitárias e de engenharia",
+    "Verificação de conformidade dos itens vistoriados, conforme checklist",
+    "Medição das pressões manométricas da motobomba em funcionamento",
+    "verificação de conformidade dos itens do anexo de conservação e operação"
+   ],
+   "competencias": [
+    {
+     "area": "Engenharia de saneamento",
+     "nivel": "intermediário",
+     "evidencias": [
+      "O painel de controle da motobomba está em excelente estado",
+      "No momento da vistoria, a bomba estava em funcionamento com pressão"
+     ]
+    },
+    {
+     "area": "Auditoria e controle",
+     "nivel": "intermediário",
+     "evidencias": [
+      "Como indicado no anexo do relatório, a maioria dos itens vistoriados",
+      "Ausência de sinalização do risco de choque elétrico no painel elétrico"
+     ]
+    },
+    {
+     "area": "Ambiental",
+     "nivel": "básico",
+     "evidencias": [
+      "o armazenamento dos resíduos estava em desacordo com a norma",
+      "não tem LO e tão pouco Outorga de Direito de Uso de Recursos Hídricos"
+     ]
+    },
+    {
+     "area": "Jurídico-regulatória",
+     "nivel": "básico",
+     "evidencias": [
+      "A concessionária deverá sanar as não conformidades"
+     ]
+    }
+   ],
+   "base_normativa": [
+    "Lei Federal nº 11.445/2007",
+    "Decreto Federal nº 7.217/2010",
+    "Resoluções do CONAMA",
+    "normas técnicas da ABNT",
+    "Portarias do Ministério da Saúde e da Vigilância Sanitária",
+    "Contrato de Concessão",
+    "Resoluções editadas pela AGENERSA",
+    "Portarias do Ministério da Saúde e Vigilância Sanitária"
+   ],
+   "cargos": [
+    "Especialista em Regulação (63)",
+    "Gerente (41)",
+    "Assessor (38)",
+    "Assistente (29)"
+   ],
+   "sinais_perda": {
+    "Pedido de complementação": [
+     "informar qual é a potência do conjunto motobomba da Estação Elevatória vistoriada",
+     "informar qual é a potência do conjunto motobomba",
+     "Providenciar o Prontuário de Instalações Elétricas, Atestado de Saúde Ocupacional e outros documentos."
+    ],
+    "Prazo concedido": [
+     "no prazo de 20 (vinte) dias"
+    ],
+    "Reiteração": [
+     "Tratamento e disposição adequada dos subprodutos da ETA"
+    ]
+   },
+   "prazos_citados": [
+    "20 dias (cumprimento, concessionaria)",
+    "30 dias (cumprimento, concessionaria)"
+   ],
+   "conclusoes_de_merito": [
+    "Recomenda-se que as não conformidades observadas sejam sanadas",
+    "recomenda sanar as não conformidades observadas",
+    "Considera a maioria dos itens conforme às boas práticas e aponta quatro não conformidades",
+    "A maioria dos itens está conforme as boas práticas; inconformidades no abrigo e na área devem ser sanadas",
+    "Constata não conformidades na EEE Comida Árabe e exige providências em 20 (vinte) dias."
+   ],
+   "trabalho_reproduzido": [
+    "AGENERSA/CASAN (Relatório nº 66/2022): Lista das recomendações da vistoria anterior, reproduzida na Tabela 1",
+    "Concessionária Águas do Rio (PDA de Magé): Divisão do município em cinco sistemas de abastecimento, com quatro administrados pela concessionária",
+    "Concessionária Águas do Rio (PDA de Magé): Quantidade e composição dos sistemas de abastecimento do município de Magé, segundo o PDA",
+    "Concessionária Águas do Rio (Plano Diretor de Abastecimento de Água de Magé): número de sistemas de abastecimento do município e quais são administrados pela concessionária",
+    "Concessionária Águas do Rio (Plano Diretor de Abastecimento de Água): descrição dos sistemas de abastecimento do município de Magé e de sua administração"
+   ],
+   "lacunas": [
+    "1 documento(s) sem texto disponível (restritos ou não baixados)",
+    "Tempo de trabalho estimado pelo conteúdo, não medido"
+   ]
+  },
+  "t3": {
+   "id": "t3",
+   "nome": "Encaminhar relatórios e solicitar manifestação",
+   "unidade": "Câmara Técnica de Saneamento (CASAN)",
+   "status": "normal",
+   "nota": null,
+   "freq": null,
+   "descritivo": "A CASAN reúne os relatórios de fiscalização já emitidos e os encaminha à concessionária por ofício, com pedido de manifestação em prazo, e envia o ofício por e-mail. O ciclo se repete a cada lote de relatórios ao longo do ano.",
+   "gatilho": "Lote de relatórios de fiscalização concluído pela câmara",
+   "saida": "Ofício e e-mail à concessionária com relatórios anexos e prazo de manifestação",
+   "observacoes": "As respostas da concessionária a esses ofícios são citadas no parecer técnico e no parecer jurídico, mas não estão juntadas entre as peças coletadas do processo.",
+   "casos_com_evidencia": 1,
+   "n_docs": 14,
+   "tramite_associado": [],
+   "documentos": [
+    "E-mail",
+    "Ofício - NA 32",
+    "Ofício - NA 349",
+    "Ofício - NA 452",
+    "Ofício - NA 541",
+    "Ofício - NA 682",
+    "Ofício - NA 831",
+    "Ofício - NA 946"
+   ],
+   "entradas_externas": [],
+   "laudas": "14",
+   "trabalho_h": {
+    "piso": "6.2",
+    "teto": "7.7",
+    "modelo": null
+   },
+   "espera_du": {
+    "antes": "42",
+    "execucao": "1",
+    "ocorrencias": "7",
+    "posse_na_espera": [
+     "SEM UNIDADE 36 du",
+     "CASAN 6 du"
+    ],
+    "detalhe": [
+     "crítico: 2024-05-08 a 2024-05-08 — espera antes 6 du, execução 0 du",
+     "crítico: 2024-05-29 a 2024-05-29 — espera antes 7 du, execução 0 du",
+     "crítico: 2024-06-27 a 2024-06-27 — espera antes 3 du, execução 0 du",
+     "crítico: 2024-08-07 a 2024-08-08 — espera antes 3 du, execução 1 du",
+     "crítico: 2024-09-26 a 2024-09-26 — espera antes 11 du, execução 0 du",
+     "crítico: 2024-11-11 a 2024-11-11 — espera antes 2 du, execução 0 du",
+     "crítico: 2025-01-30 a 2025-01-30 — espera antes 10 du, execução 0 du"
+    ]
+   },
+   "insumos": {
+    "Documentos do próprio processo": [
+     "Doze Relatórios de Fiscalização AGENERSA/CASAN (nº 10 a 55/2024) encaminhados em anexo",
+     "Sete relatórios de fiscalização AGENERSA/CASAN encaminhados com o ofício",
+     "Relatório 070/2024 - EEE Aquarela do Brasil (encaminhado)",
+     "Relatório 073/2024 - EEE Parafuso (encaminhado)",
+     "Relatório 065 - EEE Leblon (encaminhado)",
+     "Relatório 090/2024 - EEE André Azevedo (encaminhado)"
+    ]
+   },
+   "fontes_externas": [],
+   "ferramentas": [],
+   "calculos": [],
+   "testes": [],
+   "competencias": [
+    {
+     "area": "Redação oficial",
+     "nivel": "básico",
+     "evidencias": [
+      "Seguem os relatórios de fiscalização:",
+      "sirvo-me deste para encaminhar os Relatórios de Fiscalização"
+     ]
+    },
+    {
+     "area": "Gestão processual",
+     "nivel": "básico",
+     "evidencias": [
+      "prazo de 30 (trinta) dias"
+     ]
+    }
+   ],
+   "base_normativa": [],
+   "cargos": [
+    "Gerente (7)"
+   ],
+   "sinais_perda": {},
+   "prazos_citados": [
+    "30 dias (cumprimento, concessionaria)",
+    "30 dias (diligencia, concessionaria)",
+    "30 dias (rito, concessionaria)"
+   ],
+   "conclusoes_de_merito": [],
+   "trabalho_reproduzido": [
+    "AGENERSA/CASAN (Relatórios nº 111, 123, 135, 134 e 159/2024): recomendações técnicas dos cinco relatórios, apenas citadas e encaminhadas, sem reprodução do conteúdo",
+    "CASAN (relatórios de fiscalização listados): Orientações e recomendações técnicas dos quatro relatórios, apenas referidas"
+   ],
+   "lacunas": [
+    "7 documento(s) sem texto disponível (restritos ou não baixados)",
+    "Tempo de trabalho estimado pelo conteúdo, não medido"
+   ]
+  },
+  "t4": {
+   "id": "t4",
+   "nome": "Analisar respostas e emitir parecer técnico",
+   "unidade": "Câmara Técnica de Saneamento (CASAN)",
+   "status": "normal",
+   "nota": null,
+   "freq": null,
+   "descritivo": "A CASAN analisa as providências, respostas formais, planos de ação e cronogramas apresentados pela concessionária aos relatórios de fiscalização do ciclo anual e emite parecer técnico, com concordância do gerente da câmara. O parecer conclui pelo cumprimento parcial das recomendações, com pendências estruturais, operacionais e ambientais, e é encaminhado por despacho à Secretaria Executiva.",
+   "gatilho": "Respostas e planos de ação da concessionária às fiscalizações do ciclo",
+   "saida": "Parecer técnico sobre o cumprimento das recomendações e despacho à Secretaria Executiva",
+   "observacoes": "As respostas analisadas não estão juntadas entre as peças coletadas; o parecer as descreve.",
+   "casos_com_evidencia": 1,
+   "n_docs": 2,
+   "tramite_associado": [],
+   "documentos": [
+    "Despacho de Encaminhamento de Processo",
+    "Parecer 250"
+   ],
+   "entradas_externas": [],
+   "laudas": "12",
+   "trabalho_h": {
+    "piso": "24.2",
+    "teto": "11.9",
+    "modelo": null
+   },
+   "espera_du": {
+    "antes": "106",
+    "execucao": "0",
+    "ocorrencias": "1",
+    "posse_na_espera": [
+     "SEM UNIDADE 106 du"
+    ],
+    "detalhe": [
+     "crítico: 2025-07-08 a 2025-07-08 — espera antes 106 du, execução 0 du"
+    ]
+   },
+   "insumos": {
+    "Documentos do próprio processo": [
+     "Relatórios de fiscalização de 2024 das unidades (42 relatórios)"
+    ],
+    "Documentos da regulada": [
+     "Respostas formais, relatórios técnicos e planos de ação da concessionária"
+    ],
+    "Normas e contratos": [
+     "Contrato de Concessão, Regulamento de Serviços e Anexo IV",
+     "Leis federais nº 11.445/2007 e nº 14.026/2020"
+    ]
+   },
+   "fontes_externas": [],
+   "ferramentas": [
+    "análise documental das manifestações, cronogramas e evidências apresentados"
+   ],
+   "calculos": [],
+   "testes": [
+    "Verificação do cumprimento de prazos e cronogramas nas unidades fiscalizadas",
+    "Verificação da comprovação técnica e documental do cumprimento das obrigações"
+   ],
+   "competencias": [
+    {
+     "area": "Auditoria e controle",
+     "nivel": "intermediário",
+     "evidencias": [
+      "o acompanhamento contínuo, com auditorias, inspeções em campo e análise de evidências"
+     ]
+    },
+    {
+     "area": "Engenharia de saneamento",
+     "nivel": "intermediário",
+     "evidencias": [
+      "especialmente em unidades críticas como ETEs, ETAs, EEEs e UTs"
+     ]
+    }
+   ],
+   "base_normativa": [
+    "Deliberação Nº 4216/2021",
+    "Contrato de Concessão",
+    "Regulamento de Serviços",
+    "Anexo IV – Caderno de Encargos",
+    "Anexo III – Indicadores de Desempenho",
+    "Leis nº 11.445/2007 e nº 14.026/2020",
+    "normas técnicas da ABNT e da ANA"
+   ],
+   "cargos": [
+    "Especialista em Regulação (1)",
+    "Gerente (1)",
+    "Assistente (1)"
+   ],
+   "sinais_perda": {
+    "Reiteração": [
+     "permanecem pendências significativas em relação à implementação efetiva das adequações exigidas"
+    ]
+   },
+   "prazos_citados": [],
+   "conclusoes_de_merito": [
+    "Identifica cumprimento apenas parcial das recomendações e conclui que a concessionária deve intensificar esforços"
+   ],
+   "trabalho_reproduzido": [
+    "Concessionária Águas do Rio – Bloco 1: justificativas de ausência histórica de investimentos e de período de carência contratual",
+    "Contrato de Concessão, Regulamento de Serviços e Anexo IV: resumo das obrigações, procedimentos e padrões contratuais aplicáveis"
+   ],
+   "lacunas": [
+    "Tempo de trabalho estimado pelo conteúdo, não medido"
+   ]
+  },
+  "t5": {
+   "id": "t5",
+   "nome": "Dar ciência do parecer técnico à concessionária",
+   "unidade": "Secretaria Executiva (SCEXEC)",
+   "status": "normal",
+   "nota": null,
+   "freq": null,
+   "descritivo": "A Secretaria Executiva encaminha à concessionária, para ciência, o parecer técnico da CASAN, por comunicação enviada por e-mail, informando que os autos estão disponíveis para consulta. A peça não formula pedidos nem fixa prazo.",
+   "gatilho": "Parecer técnico da CASAN encaminhado à Secretaria Executiva",
+   "saida": "Comunicação e e-mail à concessionária com o parecer técnico anexo",
+   "observacoes": "A peça tem o tipo SEI Manifestação, mas é comunicação da Secretaria à concessionária, não manifestação da regulada.",
+   "casos_com_evidencia": 1,
+   "n_docs": 2,
+   "tramite_associado": [],
+   "documentos": [
+    "E-mail",
+    "Manifestação 55"
+   ],
+   "entradas_externas": [],
+   "laudas": "2",
+   "trabalho_h": {
+    "piso": "0.5",
+    "teto": "0.5",
+    "modelo": null
+   },
+   "espera_du": {
+    "antes": "55",
+    "execucao": "0",
+    "ocorrencias": "1",
+    "posse_na_espera": [
+     "SCEXEC 55 du"
+    ],
+    "detalhe": [
+     "crítico: 2025-09-23 a 2025-09-23 — espera antes 55 du, execução 0 du"
+    ]
+   },
+   "insumos": {},
+   "fontes_externas": [],
+   "ferramentas": [],
+   "calculos": [],
+   "testes": [],
+   "competencias": [],
+   "base_normativa": [],
+   "cargos": [
+    "Assistente (1)"
+   ],
+   "sinais_perda": {},
+   "prazos_citados": [],
+   "conclusoes_de_merito": [],
+   "trabalho_reproduzido": [],
+   "lacunas": [
+    "2 documento(s) sem texto disponível (restritos ou não baixados)",
+    "Tempo de trabalho estimado pelo conteúdo, não medido"
+   ]
+  },
+  "t6": {
+   "id": "t6",
+   "nome": "Reanalisar manifestação e reiterar parecer técnico",
+   "unidade": "Câmara Técnica de Saneamento (CASAN)",
+   "status": "normal",
+   "nota": null,
+   "freq": null,
+   "descritivo": "A Secretaria Executiva encaminha à CASAN a manifestação da concessionária sobre o parecer técnico. A CASAN reanalisa a manifestação, reitera o parecer e rebate a tese de que a fiscalização se limita aos indicadores de desempenho, com base no Marco Legal do Saneamento, no Regulamento de Serviços e no Contrato de Concessão.",
+   "gatilho": "Manifestação da concessionária contestando o alcance da fiscalização",
+   "saida": "Despacho da CASAN que reitera o parecer técnico e contrapõe os argumentos",
+   "observacoes": "A manifestação da concessionária é citada nos despachos, mas não está juntada entre as peças coletadas. O despacho da Secretaria que abre a passagem entra como trâmite.",
+   "casos_com_evidencia": 1,
+   "n_docs": 1,
+   "tramite_associado": [
+    "Despacho de Encaminhamento de Processo (SCEXEC)"
+   ],
+   "documentos": [
+    "Despacho de Encaminhamento de Processo"
+   ],
+   "entradas_externas": [],
+   "laudas": "7",
+   "trabalho_h": {
+    "piso": "4.0",
+    "teto": "2.3",
+    "modelo": null
+   },
+   "espera_du": {
+    "antes": "26",
+    "execucao": "0",
+    "ocorrencias": "1",
+    "posse_na_espera": [
+     "SEM UNIDADE 24 du",
+     "CASAN 2 du"
+    ],
+    "detalhe": [
+     "crítico: 2025-10-30 a 2025-10-30 — espera antes 26 du, execução 0 du"
+    ]
+   },
+   "insumos": {
+    "Documentos do próprio processo": [
+     "Parecer 250/2025 (doc. 104033188)"
+    ],
+    "Documentos da regulada": [
+     "Resposta da Águas do Rio de 23 de outubro (doc. 117463902)"
+    ],
+    "Normas e contratos": [
+     "Marco Legal do Saneamento Básico, art. 11"
+    ]
+   },
+   "fontes_externas": [],
+   "ferramentas": [
+    "análise normativa"
+   ],
+   "calculos": [],
+   "testes": [
+    "Confronto da limitação proposta pela Concessionária com a Lei do Marco do Saneamento, o Contrato e o Regulamento de Serviços"
+   ],
+   "competencias": [
+    {
+     "area": "Jurídico-regulatória",
+     "nivel": "especialista",
+     "evidencias": [
+      "Tais dispositivos demonstram que a fiscalização da Agenersa não se limita à aferição de indicadores"
+     ]
+    }
+   ],
+   "base_normativa": [
+    "Marco Legal do Saneamento Básico, art. 11, II",
+    "Marco Legal do Saneamento Básico, art. 23",
+    "Marco Legal do Saneamento Básico, art. 25",
+    "Regulamento de Serviços do Contrato de Concessão, art. 3, item 1",
+    "Contrato de Concessão, cláusulas 23.1.4 a 23.1.7",
+    "Contrato de Concessão, cláusula 25.5.6 (citada pela Concessionária)",
+    "Lei Federal nº 11.445/2007, art. 3º, III, c/c art. 11, §2º, II (citada pela Concessionária)"
+   ],
+   "cargos": [
+    "Especialista em Regulação (2)"
+   ],
+   "sinais_perda": {
+    "Reiteração": [
+     "Desta forma, esta Câmara reitera o Parecer 250/2025 no que concerne à necessidade"
+    ]
+   },
+   "prazos_citados": [],
+   "conclusoes_de_merito": [
+    "Afirma que a fiscalização não se limita à aferição de indicadores e reitera o Parecer 250/2025."
+   ],
+   "trabalho_reproduzido": [
+    "Câmara Técnica de Saneamento (Parecer 250/2025): conclusões do parecer transcritas e reiteradas",
+    "Águas do Rio (resposta de 23 de outubro): argumentos sobre indicadores e carência contratual, transcritos e rebatidos"
+   ],
+   "lacunas": [
+    "Tempo de trabalho estimado pelo conteúdo, não medido"
+   ]
+  },
+  "t7": {
+   "id": "t7",
+   "nome": "Analisar fundamentos jurídicos da fiscalização",
+   "unidade": "Procuradoria (PROC)",
+   "status": "normal",
+   "nota": null,
+   "freq": null,
+   "descritivo": "A Secretaria Executiva remete os autos à Procuradoria com resumo das fiscalizações e das manifestações, diante do pedido de arquivamento formulado pela concessionária. A Procuradoria analisa os fundamentos jurídicos, conclui que o papel fiscalizatório da agência vai além dos indicadores de desempenho, reconhece a regularidade da atuação da CASAN e indica que a concessionária seja cientificada para regularizar os pontos apontados.",
+   "gatilho": "Autos remetidos pela Secretaria diante da contestação e do pedido de arquivamento",
+   "saida": "Parecer jurídico sobre a regularidade e o alcance da fiscalização",
+   "observacoes": "O despacho da Secretaria que abre a passagem entra como trâmite.",
+   "casos_com_evidencia": 1,
+   "n_docs": 1,
+   "tramite_associado": [
+    "Despacho de Encaminhamento de Processo (SCEXEC)"
+   ],
+   "documentos": [
+    "Parecer 759"
+   ],
+   "entradas_externas": [],
+   "laudas": "20",
+   "trabalho_h": {
+    "piso": "6.0",
+    "teto": "12.7",
+    "modelo": null
+   },
+   "espera_du": {
+    "antes": "205",
+    "execucao": "0",
+    "ocorrencias": "1",
+    "posse_na_espera": [
+     "PROC 203 du",
+     "SCEXEC 2 du"
+    ],
+    "detalhe": [
+     "crítico: 2026-08-28 a 2026-08-28 — espera antes 205 du, execução 0 du"
+    ]
+   },
+   "insumos": {
+    "Documentos do próprio processo": [
+     "parecer 250/2025 da CASAN, citado como base"
+    ],
+    "Documentos da regulada": [
+     "manifestação da concessionária que pede arquivamento"
+    ],
+    "Normas e contratos": [
+     "item 25.2 do Contrato de Concessão",
+     "competências legais da AGENERSA"
+    ]
+   },
+   "fontes_externas": [],
+   "ferramentas": [
+    "análise normativa"
+   ],
+   "calculos": [],
+   "testes": [
+    "verificação de conformidade dos atos de fiscalização com as normas invocadas"
+   ],
+   "competencias": [
+    {
+     "area": "Jurídico-regulatória",
+     "nivel": "especialista",
+     "evidencias": [
+      "verifica-se que estão em consonância com as normas invocadas"
+     ]
+    }
+   ],
+   "base_normativa": [
+    "Lei Estadual nº 4.556/2005, art. 4º, incisos I, IV e VI",
+    "Decreto Estadual nº 38.618/2005, art. 10, caput e inciso I",
+    "Regimento Interno da AGENERSA, art. 17",
+    "Regimento Interno da AGENERSA, art. 27, inciso II",
+    "Regimento Interno da AGENERSA, art. 28, incisos I e XIII",
+    "Regimento Interno da AGENERSA, art. 53, §1º",
+    "Instrução Normativa CODIR nº 128/2024, arts. 1º, 2º e 3º",
+    "Lei Estadual nº 5.427/2009, art. 71, inciso IV"
+   ],
+   "cargos": [
+    "Procurador (1)"
+   ],
+   "sinais_perda": {
+    "Reiteração": [
+     "sobretudo diante do histórico de notificações e da reincidência da pendência"
+    ]
+   },
+   "prazos_citados": [
+    "30 dias (rito, concessionaria)"
+   ],
+   "conclusoes_de_merito": [
+    "corrobora a opinião técnica da CASAN e reconhece a legitimidade da fiscalização"
+   ],
+   "trabalho_reproduzido": [
+    "CASAN: fundamentos do parecer técnico sobre a abrangência do papel fiscalizatório, reiterados pela CASAN e adotados pela Procuradoria",
+    "Concessionária Águas do Rio: alegação de que a fiscalização deve se limitar às obrigações de resultado e aos indicadores de desempenho"
+   ],
+   "lacunas": [
+    "Tempo de trabalho estimado pelo conteúdo, não medido"
+   ]
+  },
+  "t8": {
+   "id": "t8",
+   "nome": "Dar ciência do parecer jurídico à concessionária",
+   "unidade": "Secretaria Executiva (SCEXEC)",
+   "status": "normal",
+   "nota": null,
+   "freq": null,
+   "descritivo": "A Secretaria Executiva dá ciência à concessionária do parecer da Procuradoria por ofício enviado por e-mail, para ciência e adoção das providências cabíveis quanto às recomendações e determinações. O ofício não fixa prazo.",
+   "gatilho": "Parecer jurídico da Procuradoria emitido",
+   "saida": "Ofício e e-mail à concessionária com o parecer jurídico para providências",
+   "observacoes": "Última peça coletada; o processo segue em andamento sem registro posterior de cumprimento.",
+   "casos_com_evidencia": 1,
+   "n_docs": 2,
+   "tramite_associado": [],
+   "documentos": [
+    "E-mail",
+    "Ofício - NA 2606"
+   ],
+   "entradas_externas": [],
+   "laudas": "2",
+   "trabalho_h": {
+    "piso": "0.8",
+    "teto": "1.0",
+    "modelo": null
+   },
+   "espera_du": {
+    "antes": "0",
+    "execucao": "0",
+    "ocorrencias": "1",
+    "posse_na_espera": [],
+    "detalhe": [
+     "crítico: 2026-08-28 a 2026-08-28 — espera antes 0 du, execução 0 du"
+    ]
+   },
+   "insumos": {
+    "Documentos do próprio processo": [
+     "Parecer nº 759/2025/AGENERSA/PROC, da Procuradoria Geral"
+    ]
+   },
+   "fontes_externas": [],
+   "ferramentas": [],
+   "calculos": [],
+   "testes": [],
+   "competencias": [
+    {
+     "area": "Redação oficial",
+     "nivel": "básico",
+     "evidencias": [
+      "encaminha-se o referido Parecer para ciência e adoção das providências cabíveis"
+     ]
+    }
+   ],
+   "base_normativa": [],
+   "cargos": [
+    "Assessora (1)"
+   ],
+   "sinais_perda": {},
+   "prazos_citados": [],
+   "conclusoes_de_merito": [],
+   "trabalho_reproduzido": [
+    "Procuradoria Geral da AGENERSA: Conclusão do Parecer 759/2025, que ratifica o poder fiscalizatório e acolhe a conclusão da CASAN"
+   ],
+   "lacunas": [
+    "1 documento(s) sem texto disponível (restritos ou não baixados)",
+    "Tempo de trabalho estimado pelo conteúdo, não medido"
+   ]
+  }
+ }
+}

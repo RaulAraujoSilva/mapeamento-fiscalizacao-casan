@@ -1,0 +1,84 @@
+﻿numero,tipo,data,data_inclusao,unidade,descricao,categoria,natureza_trabalho,horas_base,data_efetiva,data_real_conhecida,pede_prorrogacao,estadia_idx,atribuicao,numero_processo
+68285969,Deliberação,2024-02-07,2024-02-07,AGENERSA/CASAN,,deliberacao,decisao,1.0,2021-04-28,True,False,0,dentro,SEI-480002/001314/2024
+69710124,Relatório de Fiscalização,2024-03-07,2024-03-07,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-03-05,True,False,0,dentro,SEI-480002/001314/2024
+69712392,Relatório de Fiscalização,2024-03-07,2024-03-07,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-03-05,True,False,0,dentro,SEI-480002/001314/2024
+69716140,Relatório de Fiscalização,2024-03-07,2024-03-07,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-03-05,True,False,0,dentro,SEI-480002/001314/2024
+72642867,Relatório de Fiscalização,2024-04-19,2024-04-19,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-04-19,True,False,0,dentro,SEI-480002/001314/2024
+72710417,Relatório de Fiscalização,2024-04-24,2024-04-24,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-04-24,True,False,0,dentro,SEI-480002/001314/2024
+72711316,Relatório de Fiscalização,2024-04-24,2024-04-24,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-04-24,True,False,0,dentro,SEI-480002/001314/2024
+72838107,Relatório de Fiscalização,2024-04-25,2024-04-25,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-04-25,True,False,0,dentro,SEI-480002/001314/2024
+72851141,Relatório de Fiscalização,2024-04-25,2024-04-25,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-04-25,True,False,0,dentro,SEI-480002/001314/2024
+72853692,Relatório de Fiscalização,2024-04-25,2024-04-25,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-04-25,True,False,0,dentro,SEI-480002/001314/2024
+72974318,Relatório de Fiscalização,2024-04-29,2024-04-29,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-04-02,True,False,0,dentro,SEI-480002/001314/2024
+72975320,Relatório de Fiscalização,2024-04-29,2024-04-29,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-04-26,True,False,0,dentro,SEI-480002/001314/2024
+72980247,Relatório de Fiscalização,2024-04-29,2024-04-29,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-04-02,True,False,0,dentro,SEI-480002/001314/2024
+74141761,Ofício - NA 349,2024-05-08,2024-05-08,AGENERSA/CASAN,,oficio,comunicacao,0.75,2024-05-08,True,False,0,dentro,SEI-480002/001314/2024
+74179603,E-mail,2024-05-08,2024-05-08,AGENERSA/CASAN,,email,comunicacao,0.25,2024-05-08,True,False,0,dentro,SEI-480002/001314/2024
+74334571,Relatório de Fiscalização,2024-05-10,2024-05-10,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-04-04,True,False,0,dentro,SEI-480002/001314/2024
+74336951,Relatório de Fiscalização,2024-05-10,2024-05-10,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-04-02,True,False,0,dentro,SEI-480002/001314/2024
+74338948,Relatório de Fiscalização,2024-05-10,2024-05-10,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-05-07,True,False,0,dentro,SEI-480002/001314/2024
+74871240,Relatório de Fiscalização,2024-05-20,2024-05-20,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-05-17,True,False,0,dentro,SEI-480002/001314/2024
+74873701,Relatório de Fiscalização,2024-05-20,2024-05-20,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-05-17,True,False,0,dentro,SEI-480002/001314/2024
+74881165,Relatório de Fiscalização,2024-05-20,2024-05-20,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-04-04,True,False,0,dentro,SEI-480002/001314/2024
+74882333,Relatório de Fiscalização,2024-05-20,2024-05-20,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-05-17,True,False,0,dentro,SEI-480002/001314/2024
+75600516,Ofício - NA 452,2024-05-29,2024-05-29,AGENERSA/CASAN,,oficio,comunicacao,0.75,2024-05-28,True,False,0,proxima,SEI-480002/001314/2024
+75783205,E-mail,2024-05-29,2024-05-29,AGENERSA/CASAN,,email,comunicacao,0.25,2024-05-29,True,False,0,proxima,SEI-480002/001314/2024
+75824232,Relatório de Fiscalização,2024-06-04,2024-06-04,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-06-03,True,False,0,proxima,SEI-480002/001314/2024
+75824539,Relatório de Fiscalização,2024-06-03,2024-06-03,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-06-03,True,False,0,proxima,SEI-480002/001314/2024
+76104339,Relatório de Fiscalização,2024-06-06,2024-06-06,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-06-05,True,False,0,proxima,SEI-480002/001314/2024
+76213730,Relatório de Fiscalização,2024-06-06,2024-06-06,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-04-10,True,False,0,proxima,SEI-480002/001314/2024
+77432319,Ofício - NA 516,2024-06-24,2024-06-24,AGENERSA/CASAN,,oficio,comunicacao,0.75,2024-06-24,True,False,0,proxima,SEI-480002/001314/2024
+77459067,E-mail,2024-06-24,2024-06-24,AGENERSA/CASAN,,email,comunicacao,0.25,2024-06-24,True,False,0,proxima,SEI-480002/001314/2024
+77695170,Ofício - NA 541,2024-06-27,2024-06-27,AGENERSA/CASAN,,oficio,comunicacao,0.75,2024-06-27,True,False,0,proxima,SEI-480002/001314/2024
+77748737,E-mail,2024-06-27,2024-06-27,AGENERSA/CASAN,,email,comunicacao,0.25,2024-06-27,True,False,0,proxima,SEI-480002/001314/2024
+79573239,Relatório de Fiscalização,2024-07-25,2024-07-25,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-07-24,True,False,0,proxima,SEI-480002/001314/2024
+79573103,Relatório de Fiscalização,2024-07-25,2024-07-25,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-07-24,True,False,0,proxima,SEI-480002/001314/2024
+79575319,Relatório de Fiscalização,2024-07-25,2024-07-25,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-07-24,True,False,0,proxima,SEI-480002/001314/2024
+79900134,Relatório de Fiscalização,2024-07-31,2024-07-31,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-06-26,True,False,0,proxima,SEI-480002/001314/2024
+79901118,Relatório de Fiscalização,2024-08-02,2024-08-02,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-06-26,True,False,0,proxima,SEI-480002/001314/2024
+SEI-480002/006468/2024,Agenersa: Fiscalização,2024-07-31,2024-07-31,AGENERSA/CASAN,,processo_relacionado,tramitacao,0.0,2024-07-31,False,False,0,proxima,SEI-480002/001314/2024
+80501066,Ofício - NA 682,2024-08-07,2024-08-07,AGENERSA/CASAN,,oficio,comunicacao,0.75,2024-08-07,True,False,0,proxima,SEI-480002/001314/2024
+80626379,E-mail,2024-08-08,2024-08-08,AGENERSA/CASAN,,email,comunicacao,0.25,2024-08-08,True,False,0,proxima,SEI-480002/001314/2024
+80655356,Relatório de Fiscalização,2024-08-09,2024-08-09,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-08-09,True,False,0,proxima,SEI-480002/001314/2024
+80654568,Relatório de Fiscalização,2024-08-09,2024-08-09,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-07-16,True,False,0,proxima,SEI-480002/001314/2024
+80656194,Relatório de Fiscalização,2024-08-09,2024-08-09,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-08-09,True,False,0,proxima,SEI-480002/001314/2024
+80656240,Relatório de Fiscalização,2024-08-09,2024-08-09,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-07-16,True,False,0,proxima,SEI-480002/001314/2024
+SEI-480002/006899/2024,Agenersa: Fiscalização,2024-08-14,2024-08-14,AGENERSA/CASAN,,processo_relacionado,tramitacao,0.0,2024-08-14,False,False,0,proxima,SEI-480002/001314/2024
+81195142,Ofício - NA 708,2024-08-16,2024-08-16,AGENERSA/CASAN,,oficio,comunicacao,0.75,2024-08-16,True,False,0,proxima,SEI-480002/001314/2024
+81213540,E-mail,2024-08-16,2024-08-16,AGENERSA/CASAN,,email,comunicacao,0.25,2024-08-16,True,False,0,proxima,SEI-480002/001314/2024
+81595411,Ofício - NA 725,2024-08-23,2024-08-23,AGENERSA/CASAN,,oficio,comunicacao,0.75,2024-08-22,True,False,0,proxima,SEI-480002/001314/2024
+81701160,E-mail,2024-08-23,2024-08-23,AGENERSA/CASAN,,email,comunicacao,0.25,2024-08-23,True,False,0,proxima,SEI-480002/001314/2024
+SEI-480002/007581/2024,Agenersa: Fiscalização,2024-09-05,2024-09-05,AGENERSA/CASAN,,processo_relacionado,tramitacao,0.0,2024-09-05,False,False,0,proxima,SEI-480002/001314/2024
+82718456,Ofício - NA 757,2024-09-09,2024-09-09,AGENERSA/CASAN,,oficio,comunicacao,0.75,2024-09-06,True,False,0,proxima,SEI-480002/001314/2024
+82834832,E-mail,2024-09-09,2024-09-09,AGENERSA/CASAN,,email,comunicacao,0.25,2024-09-09,True,False,0,proxima,SEI-480002/001314/2024
+82895573,Relatório de Fiscalização,2024-09-11,2024-09-11,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-09-10,True,False,0,proxima,SEI-480002/001314/2024
+83969598,Ofício - NA 831,2024-09-26,2024-09-26,AGENERSA/CASAN,,oficio,comunicacao,0.75,2024-09-25,True,False,0,proxima,SEI-480002/001314/2024
+84132825,E-mail,2024-09-26,2024-09-26,AGENERSA/CASAN,,email,comunicacao,0.25,2024-09-26,True,False,0,proxima,SEI-480002/001314/2024
+SEI-480002/008431/2024,Agenersa: Fiscalização,2024-10-04,2024-10-04,AGENERSA/CASAN,,processo_relacionado,tramitacao,0.0,2024-10-04,False,False,0,proxima,SEI-480002/001314/2024
+86162193,Relatório de Fiscalização,2024-11-06,2024-11-06,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-10-24,True,False,0,proxima,SEI-480002/001314/2024
+86161531,Relatório de Fiscalização,2024-11-06,2024-11-06,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-10-24,True,False,0,proxima,SEI-480002/001314/2024
+86827856,Relatório de Fiscalização,2024-11-06,2024-11-06,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-08-20,True,False,0,proxima,SEI-480002/001314/2024
+86826650,Relatório de Fiscalização,2024-11-06,2024-11-06,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-11-05,True,False,0,proxima,SEI-480002/001314/2024
+86826664,Relatório de Fiscalização,2024-11-06,2024-11-06,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-11-05,True,False,0,proxima,SEI-480002/001314/2024
+87028948,Relatório de Fiscalização,2024-11-07,2024-11-07,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-11-07,True,False,0,proxima,SEI-480002/001314/2024
+87188346,Ofício - NA 946,2024-11-11,2024-11-11,AGENERSA/CASAN,,oficio,comunicacao,0.75,2024-11-08,True,False,0,proxima,SEI-480002/001314/2024
+SEI-480002/009552/2024,Agenersa: Fiscalização,2024-11-08,2024-11-08,AGENERSA/CASAN,,processo_relacionado,tramitacao,0.0,2024-11-08,False,False,0,proxima,SEI-480002/001314/2024
+87308946,E-mail,2024-11-11,2024-11-11,AGENERSA/CASAN,,email,comunicacao,0.25,2024-11-11,True,False,0,proxima,SEI-480002/001314/2024
+89901514,Relatório de Fiscalização,2024-12-20,2024-12-20,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2024-12-19,True,False,0,proxima,SEI-480002/001314/2024
+91213447,Relatório de Fiscalização,2025-01-15,2025-01-15,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2025-01-13,True,False,0,proxima,SEI-480002/001314/2024
+91278977,Relatório de Fiscalização,2024-11-07,2025-01-14,AGENERSA/CASAN,,relatorio_fiscalizacao,fiscalizacao,8.0,2025-01-14,False,False,0,proxima,SEI-480002/001314/2024
+SEI-480002/000962/2025,Agenersa: Fiscalização,2025-01-28,2025-01-28,AGENERSA/CASAN,,processo_relacionado,tramitacao,0.0,2025-01-28,False,False,3,proxima,SEI-480002/001314/2024
+92310062,Ofício - NA 32,2025-01-30,2025-01-30,AGENERSA/CASAN,,oficio,comunicacao,0.75,2025-01-30,True,False,3,proxima,SEI-480002/001314/2024
+92342599,E-mail,2025-01-30,2025-01-30,AGENERSA/CASAN,,email,comunicacao,0.25,2025-01-30,True,False,3,proxima,SEI-480002/001314/2024
+SEI-480002/002556/2025,Agenersa: Fiscalização,2025-03-19,2025-03-19,AGENERSA/CASAN,,processo_relacionado,tramitacao,0.0,2025-03-19,False,False,3,proxima,SEI-480002/001314/2024
+104033188,Parecer 250,2025-07-08,2025-07-08,AGENERSA/CASAN,,parecer,analise,6.0,2025-07-08,True,False,3,proxima,SEI-480002/001314/2024
+104117825,Despacho de Encaminhamento de Processo,2025-07-08,2025-07-08,AGENERSA/CASAN,,despacho_encaminhamento,tramitacao,0.1,2025-07-08,True,False,3,proxima,SEI-480002/001314/2024
+114548072,Manifestação 55,2025-09-23,2025-09-23,AGENERSA/SCEXEC,,peca_externa,juntada,0.2,2025-09-23,True,False,2,dentro,SEI-480002/001314/2024
+114551426,E-mail,2025-09-23,2025-09-23,AGENERSA/SCEXEC,,email,comunicacao,0.25,2025-09-23,True,False,2,dentro,SEI-480002/001314/2024
+SEI-480002/009234/2025,Agenersa: Fiscalização,2025-10-24,2025-10-24,AGENERSA/SCEXEC,,processo_relacionado,tramitacao,0.0,2025-10-24,False,False,4,proxima,SEI-480002/001314/2024
+117500524,Despacho de Encaminhamento de Processo,2025-10-27,2025-10-27,AGENERSA/SCEXEC,,despacho_encaminhamento,tramitacao,0.1,2025-10-27,True,False,6,dentro,SEI-480002/001314/2024
+117801870,Despacho de Encaminhamento de Processo,2025-10-30,2025-10-30,AGENERSA/CASAN,,despacho_encaminhamento,tramitacao,0.1,2025-10-30,True,False,5,dentro,SEI-480002/001314/2024
+117907053,Despacho de Encaminhamento de Processo,2025-11-03,2025-11-03,AGENERSA/SCEXEC,,despacho_encaminhamento,tramitacao,0.1,2025-11-03,True,False,7,dentro,SEI-480002/001314/2024
+120665498,Parecer 759,2026-08-28,2026-08-28,AGENERSA/PROC,,parecer,analise,6.0,2026-06-25,True,False,8,dentro,SEI-480002/001314/2024
+140207175,Ofício - NA 2606,2026-08-28,2026-08-28,AGENERSA/SCEXEC,,oficio,comunicacao,0.75,2026-08-28,True,False,9,dentro,SEI-480002/001314/2024
+140220431,E-mail,2026-08-28,2026-08-28,AGENERSA/SCEXEC,,email,comunicacao,0.25,2026-08-28,True,False,9,dentro,SEI-480002/001314/2024

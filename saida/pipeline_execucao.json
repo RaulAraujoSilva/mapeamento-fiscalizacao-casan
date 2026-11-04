@@ -1,0 +1,149 @@
+{
+ "inicio": "2026-11-04 15:10:51",
+ "commit": "ae0673d+alterações",
+ "etapas": [
+  {
+   "etapa": "testes_regras",
+   "portao": true,
+   "ok": true,
+   "segundos": 3.4
+  },
+  {
+   "etapa": "trilhas",
+   "portao": false,
+   "ok": true,
+   "segundos": 1.1
+  },
+  {
+   "etapa": "asis_piloto",
+   "portao": false,
+   "ok": true,
+   "segundos": 1.8
+  },
+  {
+   "etapa": "fatos",
+   "portao": false,
+   "ok": true,
+   "segundos": 1.1
+  },
+  {
+   "etapa": "fichas_atividades",
+   "portao": false,
+   "ok": true,
+   "segundos": 1.3
+  },
+  {
+   "etapa": "gerar_bpmn",
+   "portao": false,
+   "ok": true,
+   "segundos": 1.1
+  },
+  {
+   "etapa": "auditoria",
+   "portao": false,
+   "ok": true,
+   "segundos": 1.2
+  },
+  {
+   "etapa": "procedimento",
+   "portao": false,
+   "ok": true,
+   "segundos": 1.1
+  },
+  {
+   "etapa": "resumo_fase2",
+   "portao": false,
+   "ok": true,
+   "segundos": 0.8
+  },
+  {
+   "etapa": "volume_anual",
+   "portao": false,
+   "ok": true,
+   "segundos": 1.2
+  },
+  {
+   "etapa": "normas_processo",
+   "portao": false,
+   "ok": true,
+   "segundos": 1.2
+  },
+  {
+   "etapa": "verificar_normas",
+   "portao": true,
+   "ok": true,
+   "segundos": 1.2
+  },
+  {
+   "etapa": "conformidade",
+   "portao": false,
+   "ok": true,
+   "segundos": 1.1
+  },
+  {
+   "etapa": "linha_base",
+   "portao": false,
+   "ok": true,
+   "segundos": 0.9
+  },
+  {
+   "etapa": "benchmark_md",
+   "portao": false,
+   "ok": true,
+   "segundos": 1.1
+  },
+  {
+   "etapa": "insumo_tobe",
+   "portao": false,
+   "ok": true,
+   "segundos": 0.9
+  },
+  {
+   "etapa": "validar_tobe",
+   "portao": true,
+   "ok": true,
+   "segundos": 1.1
+  },
+  {
+   "etapa": "simular_tobe",
+   "portao": false,
+   "ok": true,
+   "segundos": 1.0
+  },
+  {
+   "etapa": "validar_controles",
+   "portao": true,
+   "ok": true,
+   "segundos": 1.1
+  },
+  {
+   "etapa": "priorizacao_automacao",
+   "portao": false,
+   "ok": true,
+   "segundos": 1.8
+  },
+  {
+   "etapa": "validar_avaliacoes",
+   "portao": true,
+   "ok": true,
+   "segundos": 1.0
+  },
+  {
+   "etapa": "testes_saidas",
+   "portao": true,
+   "ok": true,
+   "segundos": 3.1
+  },
+  {
+   "etapa": "site",
+   "portao": false,
+   "ok": true,
+   "segundos": 0.9
+  }
+ ],
+ "fatos_sha": {
+  "P06": "adb0fd443811ca5f"
+ },
+ "fim": "2026-11-04 15:11:23",
+ "ok": true
+}
